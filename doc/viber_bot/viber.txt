@@ -1,0 +1,2 @@
+token: 493485f29be7d0b2-5c3b17e052d80d9c-cce8f10885d1f13a
+url:https://chatapi.viber.com/pa/send_message

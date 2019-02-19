@@ -1,0 +1,34 @@
+https://wf.mail.ru/minigames/marketplace/api/all
+	
+		
+Запрос на покупку
+https://wf.mail.ru/minigames/marketplace/api/info?type=inventory&entity_id=3800
+ОтветЖ
+{"state":"Success","data":{"inv_id":98481304,"cost":40}}
+
+Подтверждение покупки:
+https://wf.mail.ru/minigames/marketplace/api/buy
+https://wf.mail.ru/minigames/marketplace/api/buy?entity_id=3889&cost=40&type=inventory
+	entity_id=3889
+cost=40
+type=inventory
+
+POST /minigames/marketplace/api/buy HTTP/1.1
+Host: wf.mail.ru
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0
+Accept: application/json, text/plain, */*
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Referer: https://wf.mail.ru/minigames/bpservices
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 37
+Connection: keep-alive
+Cookie: VID=2WLKZY31RUXn0000070E14nn:163524702643:190760132:161a24e-0-17e74bd; p=zUIAAHK/OgAA; i=AQBVcWFcFgATAAhwJVAAAaIAAeoCASMDAeEEAV4FAVkGAgIHAjcHAiwJATUJAToJATwJAUUJAU0JAVEJAVMJAVUJAVYJAVoJAWAJAWcJAWkJAXMJAXQJAXUJAXsKAUMLAR8PASEPASIPASUPASYPAUMQAUQQAUYQAVkQARQACBYHuAABugABuwABygABzwAB2wABi04BgAAJAQGBAAoEDgOyB5cABQIBrrsBCAQBAgABTgIIBAGQBQFjAggKA0gAAbYEAcQEAYsCCA0EbwABcAABcQAB+wABkQIIBAEHAAGTAgimN2wAAW0AAW8AAXEAAXQAAXUAAaQAAaoAAa4AAbAAAbIAAbMAAbcAAboAAcIAAcUAAdIAAdMAAdQAARIBASIBATUBATgBAT0BAW4BAQICAQUCAQoCAQ4CARICARYCAWoCAeECAVAEAVIEAfAEAfIEAfMEAfYEAfcEAWAFAXEFAXMFAXUFAaAFAaQFAaYFAakFARAGAREGARMGASYGAVUGAYEGAdhjASkECAQBAQAB3AQIBAEBAAHhBAkBAf8FBQIBtV0GBQIB7L0HCAQBuBUBKQkIBAH5AgFxCgUCAcLHCwUCAe7mCwUCAQDnCwUCAQA=; b=E0YAAEBFFtgAJAAABJSmlMb6S0zBxqLLYK8lU7gn6DLwP28pyjbADD1eMgUA; c=2Q9kXAAAAISF4QARAAQAWAIBAAIA; mrcu=CBC3595D1BEA70137C5ED40A86BC; _ga=GA1.2.1989504472.1499274188; searchuid=447013681530627659; s=ww=1920|wh=987|fver=31; yandexuid=1336886251502114161; _ym_uid=1507474222932652125; __atuvc=116%7C3%2C67%7C4%2C41%7C5%2C16%7C6%2C27%7C7; _ym_d=1545670476; mc2=games.mail.ru; s_cp=skipNotificationsTo=1547733397102; _ga=GA1.3.1989504472.1499274188; Mpop=1548175758:616e7b6e5a025100190502190805001b05051d070d4568515c455f000703040c1f06737c165f544250195956515e4e5f4a5a594f195f53515517434c:gera.ladozhskiy@mail.ru:; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAABAAAICuAcA; __utma=224113629.1989504472.1499274188.1550064637.1550070735.38; __utmz=224113629.1547652849.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); MRGToken=981a5b85-0357-4e08-b061-6fcc774e0507; mrreferer=https://wf.mail.ru/; mrcurrentpath=/inventory/; n_js_t=1550070733; n_js_d=254855320; has_js=1; PHPSESSID=d4dubi0jdac4v47f8ot4mm2u03; mrssts=5ae100ff5986d5e8cf29e1d2428e0077%3A1550070738; _gid=GA1.3.1628532588.1550064637; tmr_detect=0%7C1550070741325; t_0=1; __utmc=224113629; _ym_isad=2; _csrf=kgq9U_ll83MNEaDVntasCHjRR3KMyf4U; __atuvs=5c6433cd88020497001; __utmb=224113629.2.10.1550070735; __utmt=1; _ym_visorc_27036375=w; _identity=%5B%22739800070%22%2C%2228ec2815ba5e52adba5170ea4bb6f382443bdf31%22%2C1800%5D; mg_token=28ec2815ba5e52adba5170ea4bb6f382443bdf31; mr1lad=5c6433d23d49993c-21-21-; t_21=1
+
+https://wf.mail.ru/minigames/marketplace/api/info?type=inventory&entity_id=3889
+
+продажа ответ:
+data:application/json,{"state":"Success","data":null}
+
+
+proxi: http://www.rosinstrument.com/proxy/
