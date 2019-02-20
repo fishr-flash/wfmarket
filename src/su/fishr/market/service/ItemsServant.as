@@ -129,6 +129,22 @@ package su.fishr.market.service
 			return wg;
 		}
 		
+		public function getHistory():Array
+		{
+			var data:Array = [];
+			const len:int = _weaponGroups.length;
+			for (var i:int = 0; i < len; i++) 
+			{
+				const jlen:int = _weaponGroups[ i ].went.length;
+				for (var j:int = 0; j < jlen; j++) 
+				{
+					data = data.concat( _weaponGroups[ i ].went[ j ].history );
+				}
+			}
+			
+			return data;
+		}
+		
 		
 		private function init():void 
 		{

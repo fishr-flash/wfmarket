@@ -9,6 +9,7 @@ package su.fishr.market.service
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.components.BackgroundShape;
+	import su.fishr.market.service.utils.dateFormat;
 	import su.fishr.utils.AddZerroDate;
 	
 	/**
@@ -39,11 +40,11 @@ package su.fishr.market.service
 		{
 			
 			
-			const date:Date = new Date;
-			const strDate:String = AddZerroDate( date.hours )
-									+ ":" + AddZerroDate( date.minutes ) 
-									+ ":" + AddZerroDate( date.seconds )
-									+ ":" + AddZerroDate( date.milliseconds, 3 );
+			const date:Array = dateFormat();
+			const strDate:String = date[ 3 ]
+									+ ":" + date[ 4 ]
+									+ ":" + date[ 5 ]
+									+ ":" + date[ 6 ];
 			if ( _area.text.length > 30000 ) 
 					_area.text = _area.text.slice( 0, 2000);
 			

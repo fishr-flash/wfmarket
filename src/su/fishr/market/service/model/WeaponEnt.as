@@ -4,6 +4,7 @@ package su.fishr.market.service.model
 	import flash.events.EventDispatcher;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.service.Logw;
+	import su.fishr.market.service.utils.dateFormat;
 	import su.fishr.utils.Dumper;
 	/**
 	 * ...
@@ -19,6 +20,7 @@ package su.fishr.market.service.model
 		protected var _entity_id:int;
 		protected var _liquidity:int;
 		protected var _diff:int;
+		protected var _history:Array = new Array;
 		
 		
 		
@@ -63,6 +65,11 @@ package su.fishr.market.service.model
 		public function get diff():int 
 		{
 			return _diff;
+		}
+		
+		public function get history():Array 
+		{
+			return _history;
 		}
 		
 		public function WeaponEnt( event:Event = null ) 
@@ -133,6 +140,25 @@ package su.fishr.market.service.model
 					
 			_entity_id = data.entity_id;
 			_type = data.type;
+			
+			const time:Array = dateFormat();
+			_history.push({
+				time:{
+					day:time[ 0 ]
+					,month:time[ 1 ]
+					,year:time[ 2 ]
+					,hourse:time[ 3 ]
+					,minutes:time[ 4 ]
+					,seconds:time[ 5 ]
+				}
+				,key:_key
+				, entity_id:_entity_id
+				, cost:_cost
+				, liquidity:_liquidity
+				, count: data.count
+				
+			});
+			
 			
 		}
 		

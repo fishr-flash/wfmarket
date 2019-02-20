@@ -4,6 +4,7 @@ package su.fishr.market
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.net.FileReference;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
 	import su.fishr.market.components.PriceOfWeapons;
@@ -15,6 +16,7 @@ package su.fishr.market
 	import su.fishr.market.service.connections.TelegramBot;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
+	import su.fishr.market.service.utils.dateFormat;
 	import su.fishr.utils.AddZerroDate;
 	import su.fishr.utils.Dumper;
 	
@@ -24,7 +26,8 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 0, 1, 1 ];
+		public static const VERSION:Array = [ 1, 2, 1 ];
+		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
 		public static const CHARGE_RATIO:Number = 1.05;
@@ -44,6 +47,7 @@ package su.fishr.market
 		private var _btnOnBuy:Button;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
+		private var _btnUnload:Button;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -106,10 +110,19 @@ package su.fishr.market
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
+			_btnUnload = new Button;
+			_btnUnload.label = "unl";
+			_btnUnload.x = _btnRequest.x + _btnRequest.width + 5;
+			_btnUnload.y = _btnRequest.y;
+			_btnUnload.setSize( wdthBtns, _btnRequest.height );
+			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
+			this.addChild( _btnUnload );
+			_btnUnload.enabled = false;
+			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _btnRequest.x + _btnRequest.width + 5;
-			_btnOnAlert.y = _btnRequest.y;
+			_btnOnAlert.x = _btnUnload.x + _btnUnload.width + 5;
+			_btnOnAlert.y = _btnUnload.y;
 			_btnOnAlert.setSize( wdthBtns, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
@@ -167,6 +180,43 @@ package su.fishr.market
 		}
 		
 		/**
+		 * [158] => Object (6): 
+					key:(str,29) Fabarm XLR5 Prestige Синдикат
+					time:Object (6): 
+						minutes:(str,2) 29
+						month:(str,2) 02
+						seconds:(str,2) 14
+						year:(str,4) 2019
+						hourse:(str,2) 21
+						day:(str,2) 20
+					entity_id:(int,4) 3890
+					liquidity:(int,1) 0
+					count:(int,2) 65
+					cost:(int,4) 3150
+		 * @param	e
+		 */
+		private function onUnload(e:MouseEvent):void 
+		{
+			const data:Array = _servant.getHistory();
+			const jsn:String = JSON.stringify( data );
+			const fileRef:FileReference = new FileReference;
+			const dt:Array = dateFormat();
+			const name:String = "hist_" 
+								+ dt[ 0 ] 
+								+ dt[ 1 ] 
+								+ dt[ 2 ] 
+								+ "_"
+								+ dt[ 3 ] 
+								+ dt[ 4 ] 
+								+ dt[ 5 ] ;
+			fileRef.save( jsn, name );
+			
+			
+			
+			
+		}
+		
+		/**
 		 * e.data: [object WeaponEnt]: 
 			variables (0): 
 			constants (0): 
@@ -187,13 +237,13 @@ package su.fishr.market
 				_buy_counter--;
 				const went:WeaponEnt = e.data as WeaponEnt;
 			
-				new BotBuyer( went.entity_id, went.cost, went.type, bayResult )
+				new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
 			}
 			else if ( _btnOnBuy.selected == true )
 			{
 				_btnOnBuy.selected = false;
 				
-				bayResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
+				buyResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
 				
 			}
 			
@@ -222,10 +272,10 @@ package su.fishr.market
 				class:(str,9) universal
 				type:(str,9) inventory
 			 */
-			const bot:BotBuyer = new BotBuyer( 2995, 50, "inventory", bayResult )
+			const bot:BotBuyer = new BotBuyer( 2995, 50, "inventory", buyResult )
 		}
 		
-		private function bayResult( d:Object ):void
+		private function buyResult( d:Object ):void
 		{
 			
 			//////////////////////TRACE/////////////////////////////////
@@ -316,6 +366,8 @@ package su.fishr.market
 			
 			
 			_price.setWeaponData( _servant.getWeaponData() );
+			
+			_btnUnload.enabled = true;
 		}
 		
 		
