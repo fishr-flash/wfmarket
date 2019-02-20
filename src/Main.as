@@ -29,8 +29,8 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
-			stage.stageWidth = 1266;
-			stage.stageHeight = 900;
+			//stage.stageWidth = 2400;
+			//stage.stageHeight = 1200;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			
 			

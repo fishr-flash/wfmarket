@@ -17,6 +17,7 @@ package su.fishr.market.service.model
 		protected var _maxcost:int;
 		protected var _cost:int;
 		protected var _entity_id:int;
+		protected var _liquidity:int;
 		protected var _diff:int;
 		
 		
@@ -52,6 +53,11 @@ package su.fishr.market.service.model
 		public function get type():String 
 		{
 			return _type;
+		}
+		
+		public function get liquidity():int 
+		{
+			return _liquidity;
 		}
 		
 		public function get diff():int 
@@ -116,7 +122,7 @@ package su.fishr.market.service.model
 			//data.min_cost *=  Math.random();
 			const truecost:int = MarketplaceWF.getCostOnCharge( data.min_cost );
 			_diff =  truecost - _cost;
-			
+			if( _cost && _diff ) _liquidity++;
 			_cost = truecost;
 			
 			

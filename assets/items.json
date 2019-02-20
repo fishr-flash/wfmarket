@@ -50,7 +50,7 @@
 		, "key_word":"РПД Custom"
 		, "id_market":""
 		, "kind":"weapon"
-		, "low_cost":800
+		, "low_cost":750
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -68,7 +68,7 @@
 		, "key_word":"АК \"Альфа\""
 		, "id_market":""
 		, "kind":"weapon"
-		, "low_cost":8000
+		, "low_cost":7000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -95,7 +95,7 @@
 		, "key_word":"Micro-Roni"
 		, "id_market":""
 		, "kind":"weapon"
-		, "low_cost":0
+		, "low_cost":7000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -113,13 +113,13 @@
 		, "key_word":"Fabarm XLR5"
 		, "id_market":""
 		, "kind":"weapon"
-		, "low_cost":3465
+		, "low_cost":3150
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"H&K MP5A"
-		, "key_word":"H&K MP5A"
+		"name":"H&K MP5A5 Custom Синдикат"
+		, "key_word":"H&K MP5A5 Custom Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
@@ -132,12 +132,12 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
-		, "auto_cost":70
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"AT30"
-		, "key_word":"AT30"
+		"name":"AT308 Синдикат"
+		, "key_word":"AT308 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
@@ -145,12 +145,12 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"SAI GRY AR"
-		, "key_word":"SAI GRY AR"
+		"name":"SAI GRY AR-15 Синдикат"
+		, "key_word":"SAI GRY AR-15 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
-		, "auto_cost":400
+		, "auto_cost":300
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -196,8 +196,8 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"ОРСИС"
-		, "key_word":"ОРСИС"
+		"name":"ОРСИС Т-5000 Карбон"
+		, "key_word":"ОРСИС Т-5000 Карбон"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":1008
@@ -205,8 +205,8 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"MSBS Radon"
-		, "key_word":"MSBS Radon"
+		"name":"MSBS Radon Карбон"
+		, "key_word":"MSBS Radon Карбон"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
@@ -214,8 +214,8 @@
 		, "exclude":[  ]
 	}
 	,{
-		"name":"ПП-2000"
-		, "key_word":"ПП-2000"
+		"name":"ПП-2000 Карбон"
+		, "key_word":"ПП-2000 Карбон"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42
@@ -227,7 +227,7 @@
 		, "key_word":"Fostech Origin"
 		, "id_market":""
 		, "kind":"weapon"
-		, "low_cost":42
+		, "low_cost":2700
 		, "auto_cost":60
 		, "exclude":[ ]
 	}
@@ -250,8 +250,8 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"Sidewinder Venom"
-		, "key_word":"Sidewinder Venom"
+		"name":"Sidewinder Venom Карбон"
+		, "key_word":"Sidewinder Venom Карбон"
 		, "id_market":""
 		, "kind":"weapon"
 		, "low_cost":42

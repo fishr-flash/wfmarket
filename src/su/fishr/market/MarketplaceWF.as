@@ -15,6 +15,7 @@ package su.fishr.market
 	import su.fishr.market.service.connections.TelegramBot;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
+	import su.fishr.utils.AddZerroDate;
 	import su.fishr.utils.Dumper;
 	
 	/**
@@ -23,6 +24,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
+		public static const VERSION:Array = [ 0, 1, 1 ];
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
 		public static const CHARGE_RATIO:Number = 1.05;
@@ -38,9 +40,10 @@ package su.fishr.market
 		private var _infoField:Sprite;
 		private var _price:PriceOfWeapons;
 		private var _btnOnAlert:Button;
-		private var _buy_counter:int = 3;
+		private var _buy_counter:int = 10;
 		private var _btnOnBuy:Button;
 		private var _onPausePlay:Boolean;
+		private var _versionLabel:TFItem;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -60,7 +63,7 @@ package su.fishr.market
 		{
 			//setSize( 1266, 900 );
 			
-			const back:BackgroundShape = new BackgroundShape( 1600, 1100 );
+			const back:BackgroundShape = new BackgroundShape( 1800, 900 );
 			this.addChild( back ) ;
 			
 						
@@ -124,10 +127,25 @@ package su.fishr.market
 			
 			const href:TFItem = new TFItem;
 			href.htmlText = '<a href="https://wf.mail.ru/inventory" target="_blank" > market</a>';
+			href.y = _btnOnBuy.y - 5;
 			href.x = _btnOnBuy.x + _btnOnBuy.width + 5;
-			href.y = _btnOnBuy.y;
 			this.addChild( href );
 			
+			
+			_versionLabel = new TFItem;
+			_versionLabel.text = configureVersion();
+			_versionLabel.x = href.x + 10;// back.width - _versionLabel.width;
+			_versionLabel.y = href.y + 15;
+			_versionLabel.scaleX = _versionLabel.scaleY = .7;
+			this.addChild( _versionLabel );
+			function configureVersion():String
+			{
+				return AddZerroDate( VERSION[ 0 ] )
+				+ "." 
+				+ AddZerroDate( VERSION[ 1 ] )
+				+ "." 
+				+ AddZerroDate( VERSION[ 2 ], 3 );
+			}
 			
 			
 			
@@ -175,7 +193,7 @@ package su.fishr.market
 			{
 				_btnOnBuy.selected = false;
 				
-				bayResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:went.cost, count: _buy_counter } );
+				bayResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
 				
 			}
 			
@@ -299,6 +317,8 @@ package su.fishr.market
 			
 			_price.setWeaponData( _servant.getWeaponData() );
 		}
+		
+		
 
 	}
 

@@ -105,7 +105,8 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].mincost
 								, _weaponGroups[ i ].maxcost 
 								, _weaponGroups[ i ].went[ 0 ].entity_id
-								, _weaponGroups[ i ].session_cost] )
+								, _weaponGroups[ i ].session_cost 
+								, _weaponGroups[ i ].liquidity] );
 								
 								
 				const lenj:int = _weaponGroups[ i ].went.length;
@@ -115,7 +116,8 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].went[ j ].cost
 								, _weaponGroups[ i ].went[ j ].mincost
 								, _weaponGroups[ i ].went[ j ].maxcost 
-								, _weaponGroups[ i ].went[ j ].entity_id ] );
+								, _weaponGroups[ i ].went[ j ].entity_id 
+								, _weaponGroups[ i ].went[ j ].liquidity ] );
 								
 								
 				}

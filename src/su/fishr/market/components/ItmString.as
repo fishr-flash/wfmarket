@@ -24,6 +24,8 @@ package su.fishr.market.components
 		private var ownerName:String;
 		private var _colorCost:uint;
 		private var _colorSession:uint;
+		private var _colorLiquidity:uint;
+		private var _oldLiquidity:uint;
 		
 		
 		
@@ -44,7 +46,7 @@ package su.fishr.market.components
 		
 		private function init(arr:Array):void 
 		{
-			_colorCost = _colorSession =  MarketplaceWF.FONT_COLOR;
+			_colorLiquidity = _colorCost = _colorSession =  MarketplaceWF.FONT_COLOR;
 			_mainItm = new TFItem;
 			this.addChild( _mainItm );
 			
@@ -91,13 +93,24 @@ package su.fishr.market.components
 							+ "mx: <font color=\"#" + colorMax.toString( 16 ) + "\" ><b>" + addgap( arr[ 3 ] ) + "</b></font>"
 							+ "";
 							
-			if ( arr.length > 5 ) 
+			if ( arr.length > 6 ) 
 			{
 					_colorSession = _oldSession > 0 && _oldSession < arr[ 5 ]?COLOR_UP:_oldSession > 0 && _oldSession > arr[ 5 ]?COLOR_DOWN:_colorSession;
 					_oldSession = arr[ 5 ];
-					resar += "ss: <font color=\"#" + _colorSession.toString( 16 ) + "\" ><b>" + addgap( arr[ 5 ] ) + "</b></font>"
+					resar += "ss: <font color=\"#" + _colorSession.toString( 16 ) + "\" ><b>" + addgap( arr[ 5 ] ) + "</b></font>";
+					
+					_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 6 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 6 ] ) + "</b></font>";
+					
+					_oldLiquidity = arr[ 6 ];
+					
 			}
-			
+			else
+			{
+				_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 5 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 5 ] ) + "</b></font>";
+				_oldLiquidity = arr[ 5 ];
+			}
 			
 							
 					  

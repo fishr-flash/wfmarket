@@ -219,6 +219,7 @@ package su.fishr.market.service.model
 					cst = _went[ i ].cost;
 					owner = i;
 					_diff = _went[ i ].diff;
+					_liquidity = _went[ i ].liquidity;
 					
 				}
 					

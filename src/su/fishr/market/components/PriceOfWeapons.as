@@ -22,7 +22,7 @@ package su.fishr.market.components
 		{
 			super();
 			
-			_back = new BackgroundShape( 1300, 400 );
+			_back = new BackgroundShape( 1400, 400 );
 			this.addChild( _back ) ;
 			
 			
@@ -36,10 +36,10 @@ package su.fishr.market.components
 			
 			
 			
-			this.scrollRect = new Rectangle( 0, 0, _back.width, _back.height - 10);
+			this.scrollRect = new Rectangle( 0, 0, _back.width, _back.height);
 			_vscroll = new VScroller;
 			
-			_vscroll.x = _back.width - 30;
+			_vscroll.x = this.scrollRect.width + 25;
 			_vscroll.y = this.y;
 			this.parent.addChild( _vscroll );
 			
@@ -150,7 +150,9 @@ package su.fishr.market.components
 			}
 			
 			_back.scaleY = ( _back.height / this.height );
+			
 			_vscroll.update();
+			
 		}
 		
 		private function searchItms( keyWord:String ):int

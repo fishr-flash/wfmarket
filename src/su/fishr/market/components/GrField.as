@@ -118,23 +118,7 @@ package su.fishr.market.components
 			
 		}
 		
-		private function formatWeaponEnt( arr:Array ):String 
-		{
-			
-			const len:int = arr.length;
-			
-			var resar:String  =
-				 arr[ 0 ]  + "				"
-							+ "cost: " + arr[ 1 ] 
-							+ ", min: " + arr[ 2 ] 
-							+ ", max: " + arr[ 3 ] 
-							+ "";
-							
-				if ( arr.length > 5 ) 
-							resar += ", session: " + arr[ 5 ];
-					  
-			return resar;
-		}
+		
 		
 		
 		private function searchTf( key:int ):int
