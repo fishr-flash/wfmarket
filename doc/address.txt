@@ -34,3 +34,7 @@ data:application/json,{"state":"Success","data":null}
 proxi: http://www.rosinstrument.com/proxy/
 
 back: #343343
+
+графики
+https://d3js.org/
+https://google-developers.appspot.com/chart/interactive/docs/quick_start
