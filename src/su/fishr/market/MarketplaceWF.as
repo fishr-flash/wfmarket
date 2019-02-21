@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 3, 1 ];
+		public static const VERSION:Array = [ 1, 3, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -112,7 +112,7 @@ package su.fishr.market
 			
 			_btnUnload = new Button;
 			_btnUnload.label = "unl";
-			_btnUnload.x = _btnRequest.x + _btnRequest.width + 5;
+			_btnUnload.x = _btnRequest.x + _btnRequest.width + 25;
 			_btnUnload.y = _btnRequest.y;
 			_btnUnload.setSize( wdthBtns, _btnRequest.height );
 			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
@@ -121,7 +121,7 @@ package su.fishr.market
 			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _btnUnload.x + _btnUnload.width + 5;
+			_btnOnAlert.x = _btnUnload.x + _btnUnload.width + 25;
 			_btnOnAlert.y = _btnUnload.y;
 			_btnOnAlert.setSize( wdthBtns, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );

@@ -121,10 +121,18 @@ package su.fishr.market.components
 		{
 			const strLen:int = prev?WIDTH_COLUMN:WIDTH_COLUMN_2;
 			
-			const len:int = strLen - str.length;
-			for (var i:int = 0; i < len; i++) 
+			if ( strLen > str.length )
 			{
-				str += " ";
+				const len:int = strLen - str.length;
+				for (var i:int = 0; i < len; i++) 
+				{
+					str += " ";
+				}
+			}
+			else
+			{
+				str = str.slice( 0, strLen - 2 );
+				str += "  ";
 			}
 			
 			return str
