@@ -20,7 +20,7 @@ package su.fishr.market.service.model
 		protected var _entity_id:int;
 		protected var _liquidity:int;
 		protected var _diff:int;
-		protected var _history:Array = new Array;
+		protected var _history:Object = {};
 		
 		
 		
@@ -67,7 +67,7 @@ package su.fishr.market.service.model
 			return _diff;
 		}
 		
-		public function get history():Array 
+		public function get history():Object 
 		{
 			return _history;
 		}
@@ -98,6 +98,17 @@ package su.fishr.market.service.model
 		
 		public function init(data:Object):WeaponEnt 
 		{
+			_history.head = {
+				key:data.title
+				, min_cost: data.min_cost
+				, max_cost: data.min_cost
+				, entity_id:data.entity_id
+				
+				
+			};
+			
+			_history.timeline = new Array();
+			
 			_key = data.title;
 			setJson( data );
 			return this;
@@ -142,7 +153,7 @@ package su.fishr.market.service.model
 			_type = data.type;
 			
 			const time:Array = dateFormat();
-			_history.push({
+			_history.timeline.push({
 				time:{
 					day:time[ 0 ]
 					,month:time[ 1 ]
@@ -151,14 +162,26 @@ package su.fishr.market.service.model
 					,minutes:time[ 4 ]
 					,seconds:time[ 5 ]
 				}
-				,key:_key
-				, entity_id:_entity_id
 				, cost:_cost
 				, liquidity:_liquidity
 				, count: data.count
 				
 			});
 			
+			
+			/**
+			 * _history[ 0 ]{
+				key:data.title
+				, min_cost: data.min_cost
+				, max_cost: data.min_cost
+				
+				};
+			 */
+				
+			 if ( _history.head.min_cost > _cost )
+							_history.head.min_cost = _cost;
+			if ( _history.head.max_cost < _cost )
+							_history.head.max_cost = _cost;
 			
 		}
 		

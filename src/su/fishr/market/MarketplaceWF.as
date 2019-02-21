@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 3, 3 ];
+		public static const VERSION:Array = [ 1, 4, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -202,23 +202,24 @@ package su.fishr.market
 		{
 			const data:Array = _servant.getHistory();
 			
+			
 			const jsn:String = JSON.stringify( data );
 			const fileRef:FileReference = new FileReference;
 			const dt:Array = dateFormat();
 			const name:String = "hist_" 
-								+ data[ 0 ].time.day 
-								+ data[ 0 ].time.month 
-								+ data[ 0 ].time.year 
+								+  data[ 0 ].timeline[ 0 ].time.day 
+								+  data[ 0 ].timeline[ 0 ].time.month 
+								+  data[ 0 ].timeline[ 0 ].time.year 
 								+ "_" 
-								+ data[ 0 ].time.hourse
-								+ data[ 0 ].time.minutes
+								+  data[ 0 ].timeline[ 0 ].time.hourse
+								+  data[ 0 ].timeline[ 0 ].time.minutes
 								+ "-"
-								+ dt[ 0 ] 
-								+ dt[ 1 ] 
-								+ dt[ 2 ] 
-								+ "_"
-								+ dt[ 3 ] 
-								+ dt[ 4 ];
+								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.day 
+								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.month 
+								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.year 
+								+ "_" 
+								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.hourse
+								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.minutes;
 								
 								
 
