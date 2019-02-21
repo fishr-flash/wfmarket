@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 3, 2 ];
+		public static const VERSION:Array = [ 1, 3, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -290,26 +290,21 @@ package su.fishr.market
 		
 		private function buyResult( d:Object ):void
 		{
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "MarketplaceWF.as" + ". " +  "bayResult ")
-				//+ ( "\r d: " + d )
-				+ ( "\r : " + Dumper.dump( d ) )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
+			/**
+			 * Object (2): 
+				detals:Object (2): 
+					state:(str,7) Success
+					data:Object (2): 
+						cost:(int,3) 124
+						inv_id:(int,9) 137663284
+				status:(str,47) The operation was cancelled. Price has changed.&parse_mode=HTML
+			 */
 			
 			
+			const res:String = "cost: " + d.detals.data.cost + ", status: " + d.status;
 			
 			if ( _btnOnAlert.selected )
-					TelegramBot.inst.onBuyResult( Dumper.dump( d ) );
+					TelegramBot.inst.onBuyResult( res );
 					
 			if ( _onPausePlay )
 					onPlay( null );

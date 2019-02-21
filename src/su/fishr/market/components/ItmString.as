@@ -132,7 +132,7 @@ package su.fishr.market.components
 			else
 			{
 				str = str.slice( 0, strLen - 2 );
-				str += "  ";
+				str += "+ ";
 			}
 			
 			return str
