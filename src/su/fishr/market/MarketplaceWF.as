@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 2, 2 ];
+		public static const VERSION:Array = [ 1, 3, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -168,6 +168,7 @@ package su.fishr.market
 			//TelegramBot.inst.setMessage( "<font color=0xFF0000><i>hello</i></font>" );
 			
 			_servant.addEventListener( WFMEvent.ON_LOW_COST, onLowCost );
+			_servant.addEventListener( WFMEvent.ON_HEIGHT_COST, onHeightCost );
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 			_botReqest = new BotRequest;
@@ -178,6 +179,8 @@ package su.fishr.market
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 		}
+		
+		
 		
 		/**
 		 * [158] => Object (6): 
@@ -328,6 +331,12 @@ package su.fishr.market
 			if ( _btnOnAlert.selected ) 
 								TelegramBot.inst.setMessageOnPositiveCost( e.data as WeaponGroup );
 
+		}
+		
+		private function onHeightCost(e:WFMEvent):void 
+		{
+			if ( _btnOnAlert.selected ) 
+								TelegramBot.inst.setMessageOnNegativeCost( e.data as WeaponGroup );
 		}
 		
 		private function onPlay(e:MouseEvent):void 

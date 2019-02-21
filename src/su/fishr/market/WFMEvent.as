@@ -10,11 +10,13 @@ package su.fishr.market
 	{
 		public static const ON_LOW_COST:String = "onLowCost";
 		static public const ON_AUTOBUY:String = "onAutobuy";
+		static public const ON_HEIGHT_COST:String = "onHeightCost";
 		
 		private var _data:Object;
 		public function get data():Object 
 		{
 			return _data;
+			
 		}
 		
 		public function WFMEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false, data:Object = null ) 

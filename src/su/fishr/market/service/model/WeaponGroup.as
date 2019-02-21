@@ -11,11 +11,12 @@ package su.fishr.market.service.model
 	public class WeaponGroup extends WeaponEnt 
 	{
 		private var _went:Vector.<WeaponEnt>;
-		private var _alertData:Object;
+		//private var _alertData:Object;
 		private var _session_cost:int;
 		private var _autocost:int;
 		private var _lowcost:int;
 		private var _owner:int;
+		private var _heightcost:int;
 		public var groupKey:String;
 		
 		public function get went():Vector.<WeaponEnt> 
@@ -28,13 +29,13 @@ package su.fishr.market.service.model
 			return _session_cost;
 		}
 		
-		public function get alertData():Object 
+		/*public function get alertData():Object 
 		{
 			const ad:Object = _alertData;
 			_alertData = null;
 			
 			return ad;
-		}
+		}*/
 		
 		public function get autocost():int 
 		{
@@ -44,6 +45,11 @@ package su.fishr.market.service.model
 		public function get lowcost():int 
 		{
 			return _lowcost;
+		}
+		
+		public function get heightcost():int 
+		{
+			return _heightcost;
 		}
 		
 		public function get owner():int 
@@ -106,7 +112,7 @@ package su.fishr.market.service.model
 			groupKey = _key = data["0"].config.key_word;
 			_lowcost = data["0"].config.low_cost;
 			_autocost  = data["0"].config.auto_cost;
-			
+			_heightcost = data["0"].config.higth_cost;
 			
 			
 			setJsonGroup( data );
@@ -143,7 +149,7 @@ package su.fishr.market.service.model
 				
 			
 			
-			if ( _lowcost )
+			/*if ( _lowcost )
 			{
 				if( _cost <= _lowcost )
 				{
@@ -155,7 +161,13 @@ package su.fishr.market.service.model
 				_alertData = went[ _owner ];
 			}
 			
-			
+			if ( _heightcost )
+			{
+				if( _cost >= _heightcost )
+				{
+					_alertData = went[ _owner ];
+				}
+			}*/
 			
 			_mincost = getMinCost();
 			_maxcost = getMaxCost();

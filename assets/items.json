@@ -4,6 +4,7 @@
 		, "key_word":"CZ 75-Auto"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -14,6 +15,7 @@
 		, "key_word":"ПКП Печенег"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -23,6 +25,7 @@
 		, "key_word":"M249 Para"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -32,6 +35,7 @@
 		, "key_word":"M16A3 Custom"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -41,6 +45,7 @@
 		, "key_word":"Beretta ARX"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":7000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -50,6 +55,7 @@
 		, "key_word":"РПД Custom"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":750
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -59,6 +65,7 @@
 		, "key_word":"Enfield L85A2 Custom"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -68,6 +75,7 @@
 		, "key_word":"АК \"Альфа\""
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":7000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -77,6 +85,7 @@
 		, "key_word":"FN FAL DSA"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":5500
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -86,6 +95,7 @@
 		, "key_word":"VHS-2"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":420
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -95,6 +105,7 @@
 		, "key_word":"Micro-Roni"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":7000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -104,6 +115,7 @@
 		, "key_word":"Remington MSR"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":5000
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -113,6 +125,7 @@
 		, "key_word":"Fabarm XLR5"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":3150
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -122,6 +135,7 @@
 		, "key_word":"H&K MP5A5 Custom Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -131,6 +145,7 @@
 		, "key_word":"Сайга H.G."
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
@@ -140,6 +155,7 @@
 		, "key_word":"AT308 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":200
 		, "exclude":[ "Золот" ]
@@ -149,6 +165,7 @@
 		, "key_word":"SAI GRY AR-15 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":300
 		, "exclude":[ "Золот" ]
@@ -158,6 +175,7 @@
 		, "key_word":"Золот"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
 	}
@@ -166,6 +184,7 @@
 		, "key_word":"Ботинки \"Атлас\""
 		, "id_market":""
 		, "kind":"equipment"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
 	}
@@ -174,6 +193,7 @@
 		, "key_word":"Ботинки \"Абсолют\""
 		, "id_market":""
 		, "kind":"equipment"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
 	}
@@ -182,6 +202,7 @@
 		, "key_word":"ACR CQB"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
@@ -191,6 +212,7 @@
 		, "key_word":"Fabarm P.S.S.10"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
@@ -200,6 +222,7 @@
 		, "key_word":"ОРСИС Т-5000 Карбон"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":1008
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
@@ -209,6 +232,7 @@
 		, "key_word":"MSBS Radon Карбон"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":60
 		, "exclude":[  ]
@@ -218,8 +242,9 @@
 		, "key_word":"ПП-2000 Карбон"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
-		, "auto_cost":60
+		, "auto_cost":42
 		, "exclude":[ ]
 	}
 	,{
@@ -227,6 +252,7 @@
 		, "key_word":"Fostech Origin"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":2700
 		, "auto_cost":60
 		, "exclude":[ ]
@@ -236,8 +262,9 @@
 		, "key_word":"AWM"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
-		, "auto_cost":60
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -245,6 +272,7 @@
 		, "key_word":"Magpul FMG-9"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
@@ -254,8 +282,29 @@
 		, "key_word":"Sidewinder Venom Карбон"
 		, "id_market":""
 		, "kind":"weapon"
+		, "higth_cost":0
 		, "low_cost":42
-		, "auto_cost":60
+		, "auto_cost":42
+		, "exclude":[ "Золот" ]
+	}
+	,{
+		"name":"Кукри"
+		, "key_word":"Кукри"
+		, "id_market":""
+		, "kind":"weapon"
+		, "higth_cost":0
+		, "low_cost":42
+		, "auto_cost":0
+		, "exclude":[ "Золот" ]
+	}
+	,{
+		"name":"Rhino 60"
+		, "key_word":"Rhino 60"
+		, "id_market":""
+		, "kind":"weapon"
+		, "higth_cost":40
+		, "low_cost":42
+		, "auto_cost":0
 		, "exclude":[ "Золот" ]
 	}
 	

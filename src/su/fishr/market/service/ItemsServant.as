@@ -266,6 +266,13 @@ package su.fishr.market.service
 								&& _weaponGroups[ i ].session_cost >  0 
 								&& _weaponGroups[ i ].diff < 0  )
 						this.dispatchEvent( new WFMEvent( WFMEvent.ON_LOW_COST, false, false, _weaponGroups[ i ] ) );
+						
+						
+					if (  _weaponGroups[ i ].heightcost > 0 
+						&& _weaponGroups[ i ].diff > 0
+						&& _weaponGroups[ i ].session_cost >  0 
+						&& _weaponGroups[ i ].cost >= _weaponGroups[ i ].heightcost )
+						this.dispatchEvent( new WFMEvent( WFMEvent.ON_HEIGHT_COST, false, false, _weaponGroups[ i ] ) );
 			}
 		}
 		

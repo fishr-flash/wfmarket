@@ -70,17 +70,40 @@ package su.fishr.market.service.connections
 		 */
 		public function setMessageOnPositiveCost( weaponGroup:WeaponGroup ):void
 		{
-			
-			
-			
-			
 			const alertMess:String = weaponGroup.groupKey 
 											+  ": cost: " + weaponGroup.cost 
 											+ ",  lastcost: " + ( weaponGroup.cost - weaponGroup.diff )
 											+ ",  diff: " +  weaponGroup.diff
 											+ ",  session:  " + weaponGroup.session_cost
 											+ ",  lowcost: " + weaponGroup.lowcost;
-			
+			loader = new URLLoader();
+            configureListeners(loader);
+
+			const url:String = _URL 
+								+ _BOT_WORD 
+								+ _TOKEN 
+								+ _METHOD_SENDMESSAGE 
+								+ "?chat_id=" + _CHAT_ID 
+								+ "&text=" + _AHREF + "  " + alertMess 
+								+ "&parse_mode=" + _PARSE_MOD;
+								
+			var request:URLRequest = new URLRequest( url );
+            try {
+				loader.load(request);
+            } catch (error:Error) {
+                trace("Unable to load requested document. Error: " + error );
+            }
+		}
+		
+		public function setMessageOnNegativeCost( weaponGroup:WeaponGroup ):void
+		{
+			const alertMess:String = weaponGroup.groupKey 
+											+  ": cost: " + weaponGroup.cost 
+											+ ",  lastcost: " + ( weaponGroup.cost + weaponGroup.diff )
+											+ ",  diff: " +  weaponGroup.diff
+											+ ",  session:  " + weaponGroup.session_cost
+											+ ",  heightcost: " + weaponGroup.heightcost;
+											
 			
 			loader = new URLLoader();
             configureListeners(loader);
@@ -92,17 +115,35 @@ package su.fishr.market.service.connections
 								+ "?chat_id=" + _CHAT_ID 
 								+ "&text=" + _AHREF + "  " + alertMess 
 								+ "&parse_mode=" + _PARSE_MOD;
-			
-
-			
-			
-            var request:URLRequest = new URLRequest( url );
+								
+			var request:URLRequest = new URLRequest( url );
             try {
 				loader.load(request);
             } catch (error:Error) {
                 trace("Unable to load requested document. Error: " + error );
             }
-			
+		}
+		
+		
+		private function onRequest( alertMess:String ):void
+		{
+			loader = new URLLoader();
+            configureListeners(loader);
+
+			const url:String = _URL 
+								+ _BOT_WORD 
+								+ _TOKEN 
+								+ _METHOD_SENDMESSAGE 
+								+ "?chat_id=" + _CHAT_ID 
+								+ "&text=" + _AHREF + "  " + alertMess 
+								+ "&parse_mode=" + _PARSE_MOD;
+								
+			var request:URLRequest = new URLRequest( url );
+            try {
+				loader.load(request);
+            } catch (error:Error) {
+                trace("Unable to load requested document. Error: " + error );
+            }
 		}
 		
 		public function onBuyResult( msg:String ):void
