@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 4, 1 ];
+		public static const VERSION:Array = [ 1, 4, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 35000;
 		public static const MIN_REQUEST_DELAY:int = 35000;

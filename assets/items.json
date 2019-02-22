@@ -308,16 +308,6 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"Камуфляж Картель для CZ Scorpion"
-		, "key_word":"Камуфляж Картель для CZ Scorpion"
-		, "id_market":""
-		, "kind":"camouflage"
-		, "higth_cost":0
-		, "low_cost":42
-		, "auto_cost":0
-		, "exclude":[ "Золот" ]
-	}
-	,{
 		"name":"Desert Tech MDR-C"
 		, "key_word":"Desert Tech MDR-C"
 		, "id_market":""
