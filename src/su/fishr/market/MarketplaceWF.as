@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 5, 1 ];
+		public static const VERSION:Array = [ 1, 5, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 15000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -251,6 +251,11 @@ package su.fishr.market
 				_buy_counter--;
 				const went:WeaponEnt = e.data as WeaponEnt;
 			
+				if ( !_btnPlay.enabled )
+						_onPausePlay = true;
+						
+				onStop( null );
+						
 				new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
 			}
 			else if ( _btnOnBuy.selected == true )
@@ -259,12 +264,12 @@ package su.fishr.market
 				
 				buyResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
 				
+				
 			}
 			
-			if ( !_btnPlay.enabled )
-						_onPausePlay = true;
+			
 						
-			onStop( null );
+			
 			
 		}
 		
@@ -303,6 +308,20 @@ package su.fishr.market
 			
 			
 			const res:String = "cost: " + d.detals.data.cost + ", status: " + d.status;
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "buyResult ")
+				+ ( "\r res: " +  res)
+				//+ ( "\r : " + Dumper.dump( "" ) )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
 			
 			if ( _btnOnAlert.selected )
 					TelegramBot.inst.onBuyResult( res );
@@ -347,7 +366,7 @@ package su.fishr.market
 			_botReqest.stop();
 			_btnPlay.enabled = true;
 			_btnStop.enabled = false;
-			_btnOnBuy.selected = false;
+			
 		}
 		
 		private function onRequest(e:MouseEvent):void 

@@ -26,7 +26,7 @@ package su.fishr.market.service.bayer
 			
 			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * 2, entity_id, cost, type, callback );
 			
-			//init( entity_id, cost, type, callback );
+			
 			
 		}
 		
@@ -78,6 +78,7 @@ package su.fishr.market.service.bayer
 		
 		private function onBay( bayData:Object ):void 
 		{
+			
 			const bayreq:BuyRequest = new BuyRequest( _entity_id, bayData.data.cost, _type, resBay );
 			
 		}
