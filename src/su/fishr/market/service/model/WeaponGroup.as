@@ -12,7 +12,6 @@ package su.fishr.market.service.model
 	{
 		private var _went:Vector.<WeaponEnt>;
 		//private var _alertData:Object;
-		private var _session_cost:int;
 		private var _autocost:int;
 		private var _lowcost:int;
 		private var _owner:int;

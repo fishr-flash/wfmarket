@@ -21,7 +21,7 @@ package su.fishr.market.service.model
 		protected var _liquidity:int;
 		protected var _diff:int;
 		protected var _history:Object = {};
-		
+		protected var _session_cost:int;
 		
 		
 		
@@ -98,16 +98,18 @@ package su.fishr.market.service.model
 		
 		public function init(data:Object):WeaponEnt 
 		{
+			
+					
 			_history.head = {
 				key:data.title
-				, min_cost: data.min_cost
-				, max_cost: data.min_cost
-				, entity_id:data.entity_id
+				, minc: data.min_cost
+				, maxc: data.min_cost
+				, id:data.entity_id
 				
 				
 			};
 			
-			_history.timeline = new Array();
+			_history.tl = new Array();
 			
 			_key = data.title;
 			setJson( data );
@@ -142,7 +144,8 @@ package su.fishr.market.service.model
 			_diff =  truecost - _cost;
 			if( _cost && _diff ) _liquidity++;
 			_cost = truecost;
-			
+			if ( !_session_cost ) _session_cost = _cost;
+			else _session_cost = ( _session_cost + _cost ) / 2;
 			
 			if ( !_mincost || _mincost > _cost )
 					_mincost = _cost;
@@ -153,19 +156,19 @@ package su.fishr.market.service.model
 			_type = data.type;
 			
 			const time:Array = dateFormat();
-			_history.timeline.push({
-				time:{
-					day:time[ 0 ]
-					,month:time[ 1 ]
-					,year:time[ 2 ]
-					,hourse:time[ 3 ]
-					,minutes:time[ 4 ]
-					,seconds:time[ 5 ]
+			_history.tl.push({
+				t:{
+					d:time[ 0 ]
+					,mn:time[ 1 ]
+					,yr:time[ 2 ]
+					,hrs:time[ 3 ]
+					,min:time[ 4 ]
+					,sec:time[ 5 ]
 				}
-				, cost:_cost
-				, liquidity:_liquidity
-				, count: data.count
-				
+				, c:_cost
+				, lq:_liquidity
+				, cnt: data.count
+				, sess: _session_cost
 			});
 			
 			

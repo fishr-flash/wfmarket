@@ -57,7 +57,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":750
-		, "auto_cost":42
+		, "auto_cost":700
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -285,26 +285,6 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "auto_cost":42
-		, "exclude":[ "Золот" ]
-	}
-	,{
-		"name":"Кукри"
-		, "key_word":"Кукри"
-		, "id_market":""
-		, "kind":"weapon"
-		, "higth_cost":0
-		, "low_cost":42
-		, "auto_cost":0
-		, "exclude":[ "Золот" ]
-	}
-	,{
-		"name":"Rhino 60"
-		, "key_word":"Rhino 60"
-		, "id_market":""
-		, "kind":"weapon"
-		, "higth_cost":40
-		, "low_cost":42
-		, "auto_cost":0
 		, "exclude":[ "Золот" ]
 	}
 	,{

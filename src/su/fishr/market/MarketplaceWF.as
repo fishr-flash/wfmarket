@@ -26,9 +26,9 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 4, 2 ];
+		public static const VERSION:Array = [ 1, 5, 1 ];
 		
-		public static const MAX_REQUEST_DELAY:int = 35000;
+		public static const MAX_REQUEST_DELAY:int = 15000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
 		public static const CHARGE_RATIO:Number = 1.05;
 		public static const DELAY_ON_BUYER:int = 2000;
@@ -185,7 +185,7 @@ package su.fishr.market
 		/**
 		 * [158] => Object (6): 
 					key:(str,29) Fabarm XLR5 Prestige Синдикат
-					time:Object (6): 
+					t:Object (6): 
 						minutes:(str,2) 29
 						month:(str,2) 02
 						seconds:(str,2) 14
@@ -207,19 +207,19 @@ package su.fishr.market
 			const fileRef:FileReference = new FileReference;
 			const dt:Array = dateFormat();
 			const name:String = "hist_" 
-								+  data[ 0 ].timeline[ 0 ].time.day 
-								+  data[ 0 ].timeline[ 0 ].time.month 
-								+  data[ 0 ].timeline[ 0 ].time.year 
+								+  data[ 0 ].tl[ 0 ].t.d 
+								+  data[ 0 ].tl[ 0 ].t.mn 
+								+  data[ 0 ].tl[ 0 ].t.yr 
 								+ "_" 
-								+  data[ 0 ].timeline[ 0 ].time.hourse
-								+  data[ 0 ].timeline[ 0 ].time.minutes
+								+  data[ 0 ].tl[ 0 ].t.hrs
+								+  data[ 0 ].tl[ 0 ].t.min
 								+ "-"
-								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.day 
-								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.month 
-								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.year 
+								+  data[ 0 ].tl[  data[ 0 ].tl.length - 1 ].t.d 
+								+  data[ 0 ].tl[  data[ 0 ].tl.length - 1 ].t.mn 
+								+  data[ 0 ].tl[  data[ 0 ].tl.length - 1 ].t.yr 
 								+ "_" 
-								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.hourse
-								+  data[ 0 ].timeline[  data[ 0 ].timeline.length - 1 ].time.minutes;
+								+  data[ 0 ].tl[  data[ 0 ].tl.length - 1 ].t.hrs
+								+  data[ 0 ].tl[  data[ 0 ].tl.length - 1 ].t.min;
 								
 								
 
@@ -347,6 +347,7 @@ package su.fishr.market
 			_botReqest.stop();
 			_btnPlay.enabled = true;
 			_btnStop.enabled = false;
+			_btnOnBuy.selected = false;
 		}
 		
 		private function onRequest(e:MouseEvent):void 
