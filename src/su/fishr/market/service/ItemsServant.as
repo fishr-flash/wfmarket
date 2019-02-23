@@ -2,6 +2,7 @@ package su.fishr.market.service
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
+	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.WFMEvent;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.utils.Dumper;
@@ -15,7 +16,7 @@ package su.fishr.market.service
 		private const Items:Class;
 		
 		private var _self:ItemsServant;
-		private var _configItems:Object;
+		private var _configItems:Array;
 		private var _weaponGroups:Vector.<WeaponGroup>;
 		public function get inst():ItemsServant
 		{
@@ -36,6 +37,9 @@ package su.fishr.market.service
 			const len:int = _configItems.length;
 			for ( var i:int = 0; i < len; i++ )
 			{
+				
+				
+				
 				
 				itms = parseJson( objson, _configItems[ i ]);
 				
@@ -72,12 +76,9 @@ package su.fishr.market.service
 				}
 				
 				
-				_weaponGroups.sort( onsortGroup );
-				
-				
-				
-				
 			}
+			
+			_weaponGroups.sort( onsortGroup );
 			
 			selectLowCost();
 			selectAutoBuy();
@@ -149,9 +150,21 @@ package su.fishr.market.service
 		private function init():void 
 		{
 			const itemsStr:String = new Items;
-			trace(  itemsStr );
-			_configItems = JSON.parse( itemsStr );
 			
+			var arr:Array = JSON.parse( itemsStr ) as Array; 
+			_configItems = [];
+			
+			const len:int = arr.length;
+			for (var i:int = 0; i < len; i++) 
+			{
+				
+					if ( MarketplaceWF.IGNORE_HIDDEN == true || arr[ i ].hidden == 0 ) 
+																				_configItems.push( arr[ i ] );
+													
+			}
+			
+			
+				
 		}
 		
 		private function parseJson(objson:Object, confItem:Object ):Array

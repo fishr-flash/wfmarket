@@ -26,14 +26,15 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 5, 2 ];
+		public static const VERSION:Array = [ 1, 5, 3 ];
 		
-		public static const MAX_REQUEST_DELAY:int = 15000;
+		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
 		public static const CHARGE_RATIO:Number = 1.05;
 		public static const DELAY_ON_BUYER:int = 2000;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
+		public static const IGNORE_HIDDEN:Boolean = false;
 		
 		private var _btnRequest:Button;
 		private var _botReqest:BotRequest;
@@ -137,6 +138,7 @@ package su.fishr.market
 			_btnOnBuy.toggle = true;
 			_btnOnBuy.selected = false;
 			this.addChild( _btnOnBuy );
+			_btnOnBuy.addEventListener( MouseEvent.CLICK, btnBuyHandler );
 			
 			const href:TFItem = new TFItem;
 			href.htmlText = '<a href="https://wf.mail.ru/inventory" target="_blank" > market</a>';
@@ -178,6 +180,12 @@ package su.fishr.market
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
+		}
+		
+		private function btnBuyHandler(e:MouseEvent):void 
+		{
+			if ( _btnOnBuy.selected )
+						_buy_counter = 10;
 		}
 		
 		
@@ -305,9 +313,6 @@ package su.fishr.market
 						inv_id:(int,9) 137663284
 				status:(str,47) The operation was cancelled. Price has changed.&parse_mode=HTML
 			 */
-			
-			
-			const res:String = "cost: " + d.detals.data.cost + ", status: " + d.status;
 			//////////////////////TRACE/////////////////////////////////
 			
 			import su.fishr.market.service.Logw;
@@ -316,12 +321,16 @@ package su.fishr.market
 			{
 				const i:String = 
 				( "MarketplaceWF.as" + ". " +  "buyResult ")
-				+ ( "\r res: " +  res)
+				//+ ( "\r res: " +  res)
+				+ ( "\r d: " + Dumper.dump( d ) )
 				//+ ( "\r : " + Dumper.dump( "" ) )
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
 			/////////////////////END TRACE//////////////////////////////
+			
+			const res:String = "cost: " + d.detals.data.cost + ", status: " + d.status;
+			
 			
 			if ( _btnOnAlert.selected )
 					TelegramBot.inst.onBuyResult( res );

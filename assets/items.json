@@ -6,6 +6,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":0
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 		
@@ -17,6 +18,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":0
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -27,6 +29,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":0
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -37,6 +40,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":0
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -47,6 +51,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":7000
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -57,6 +62,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":750
+		, "hidden": 0
 		, "auto_cost":700
 		, "exclude":[ "Золот" ]
 	}
@@ -67,6 +73,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":0
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -77,6 +84,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":7000
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -87,6 +95,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":5500
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -97,6 +106,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":420
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -107,6 +117,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":7000
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -117,6 +128,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":5000
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -127,6 +139,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":3150
+		, "hidden": 1
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -137,16 +150,18 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"Сайга H.G."
-		, "key_word":"Сайга H.G."
+		"name":"Сайга H.G.C. Custom Синдик"
+		, "key_word":"Сайга H.G.C. Custom Синдик"
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -157,6 +172,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":200
 		, "exclude":[ "Золот" ]
 	}
@@ -167,6 +183,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":300
 		, "exclude":[ "Золот" ]
 	}
@@ -177,6 +194,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
 		, "auto_cost":42
 	}
 	,{
@@ -186,6 +204,7 @@
 		, "kind":"equipment"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
 		, "auto_cost":42
 	}
 	,{
@@ -195,6 +214,7 @@
 		, "kind":"equipment"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 	}
 	,{
@@ -204,6 +224,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
 	}
@@ -214,6 +235,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
 	}
@@ -224,6 +246,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":1008
+		, "hidden": 1
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
 	}
@@ -234,6 +257,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":60
 		, "exclude":[  ]
 	}
@@ -244,6 +268,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ ]
 	}
@@ -254,6 +279,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":2700
+		, "hidden": 1
 		, "auto_cost":60
 		, "exclude":[ ]
 	}
@@ -264,6 +290,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -274,6 +301,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
 		, "auto_cost":60
 		, "exclude":[ "Золот" ]
 	}
@@ -284,6 +312,7 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -294,6 +323,18 @@
 		, "kind":"weapon"
 		, "higth_cost":0
 		, "low_cost":42
+		, "hidden": 1
+		, "auto_cost":42
+		, "exclude":[ "Золот" ]
+	}
+	,{
+		"name":"Синдикат"
+		, "key_word":"Синдикат"
+		, "id_market":""
+		, "kind":"equipment"
+		, "higth_cost":0
+		, "low_cost":42
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
