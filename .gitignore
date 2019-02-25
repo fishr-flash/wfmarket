@@ -2,3 +2,4 @@
 src/desktop.ini
 ./.gitignore
 ./bin/mwf.swf
+./obj/MarketplaceWFConfig.xml
