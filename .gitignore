@@ -1,2 +1,4 @@
 /hello.ignore.txt
 src/desktop.ini
+./.gitignore
+./bin/mwf.swf

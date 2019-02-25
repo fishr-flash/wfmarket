@@ -32,15 +32,15 @@
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\yd\YandexDisk\apps\MarketplaceWF\src</path-element>
+      <path-element>D:\garbage\MarketplaceWF\src</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>D:\yd\YandexDisk\apps\MarketplaceWF\assets\ta.swc</path-element>
+      <path-element>D:\garbage\MarketplaceWF\assets\ta.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\yd\YandexDisk\apps\MarketplaceWF\src\Main.as</path-element>
+    <path-element>D:\garbage\MarketplaceWF\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#343343</default-background-color>
   <default-frame-rate>30</default-frame-rate>
