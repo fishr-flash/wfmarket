@@ -5,6 +5,7 @@ package su.fishr.market.service.bayer
 	import flash.external.ExternalInterface;
 	import flash.utils.setTimeout;
 	import su.fishr.market.MarketplaceWF;
+	import su.fishr.utils.Dumper;
 	
 	/**
 	 * ...
@@ -86,7 +87,7 @@ package su.fishr.market.service.bayer
 		private function resBay( data:Object ):void 
 		{
 			_callback({state:"***************Operation successfull***************************"
-						, detals: data
+						, detals: data.data?data.data:Dumper.dump( data )
 						, entity_id: _entity_id
 						, cost: _cost
 			});

@@ -61,9 +61,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":750
+		, "low_cost":1050
 		, "hidden": 0
-		, "auto_cost":700
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -149,9 +149,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":42
+		, "low_cost":160
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":159
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -162,7 +162,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":105
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -171,9 +171,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":42
+		, "low_cost":264
 		, "hidden": 0
-		, "auto_cost":200
+		, "auto_cost":0
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -181,10 +181,10 @@
 		, "key_word":"SAI GRY AR-15 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
-		, "higth_cost":0
-		, "low_cost":42
+		, "higth_cost":700
+		, "low_cost":550
 		, "hidden": 0
-		, "auto_cost":300
+		, "auto_cost":0
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -258,7 +258,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":60
+		, "auto_cost":105
 		, "exclude":[  ]
 	}
 	,{
@@ -269,7 +269,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":105
 		, "exclude":[ ]
 	}
 	,{
@@ -311,9 +311,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":42
+		, "low_cost":105
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":105
 		, "exclude":[ "Золот" ]
 	}
 	,{

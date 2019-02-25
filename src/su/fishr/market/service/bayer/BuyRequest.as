@@ -42,9 +42,12 @@ package su.fishr.market.service.bayer
 				const i:String = 
 				( "BayRequest.as" + ". " +  "BayRequest ")
 				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r request: " + Dumper.dump( request, 6, true, true ) )
-				+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
-				+ ( "\r : " + "" )
+				//+ ( "\r request: " + Dumper.dump( request, 6, true, true ) )
+				//+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
+				+ ( "\r variables: " + variables.type )
+				+ ( "\r entity_id: " +entity_id )
+				+ ( "\r cost: " +cost )
+				+ ( "\r type: " +type )
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
