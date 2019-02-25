@@ -63,7 +63,7 @@
 		, "higth_cost":0
 		, "low_cost":1050
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":950
 		, "exclude":[ "Золот" ]
 	}
 	,{
