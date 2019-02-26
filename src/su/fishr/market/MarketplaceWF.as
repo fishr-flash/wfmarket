@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 5, 4 ];
+		public static const VERSION:Array = [ 1, 5, 5 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -44,7 +44,7 @@ package su.fishr.market
 		private var _infoField:Sprite;
 		private var _price:PriceOfWeapons;
 		private var _btnOnAlert:Button;
-		private var _buy_counter:int = 10;
+		private var _buy_counter:int = 100;
 		private var _btnOnBuy:Button;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
@@ -185,7 +185,7 @@ package su.fishr.market
 		private function btnBuyHandler(e:MouseEvent):void 
 		{
 			if ( _btnOnBuy.selected )
-						_buy_counter = 10;
+						_buy_counter = 100;
 		}
 		
 		

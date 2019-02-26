@@ -50,8 +50,8 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":7000
-		, "hidden": 1
+		, "low_cost":3000
+		, "hidden": 0
 		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
@@ -61,9 +61,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":1050
+		, "low_cost":900
 		, "hidden": 0
-		, "auto_cost":950
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -151,7 +151,7 @@
 		, "higth_cost":0
 		, "low_cost":160
 		, "hidden": 0
-		, "auto_cost":159
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -162,7 +162,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":105
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -173,7 +173,7 @@
 		, "higth_cost":0
 		, "low_cost":264
 		, "hidden": 0
-		, "auto_cost":42
+		, "auto_cost":158
 		, "exclude":[ "Золот" ]
 	}
 	,{
@@ -258,7 +258,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":105
+		, "auto_cost":42
 		, "exclude":[  ]
 	}
 	,{
@@ -269,7 +269,7 @@
 		, "higth_cost":0
 		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":105
+		, "auto_cost":42
 		, "exclude":[ ]
 	}
 	,{
@@ -311,9 +311,9 @@
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
-		, "low_cost":105
+		, "low_cost":42
 		, "hidden": 0
-		, "auto_cost":105
+		, "auto_cost":42
 		, "exclude":[ "Золот" ]
 	}
 	,{

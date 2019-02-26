@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'25.02.2019'</value>
+      <value>'26.02.2019'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -32,7 +32,6 @@
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-<<<<<<< HEAD
       <path-element>D:\garbage\MarketplaceWF\src</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
@@ -42,17 +41,6 @@
   </compiler>
   <file-specs>
     <path-element>D:\garbage\MarketplaceWF\src\Main.as</path-element>
-=======
-      <path-element>D:\projects\flash\WFMarketplace\src</path-element>
-      <path-element>D:\Program Files (x86)\FlashDevelop-5.3.3\Library\AS3\classes</path-element>
-    </source-path>
-    <library-path append="true">
-      <path-element>D:\projects\flash\WFMarketplace\assets\ta.swc</path-element>
-    </library-path>
-  </compiler>
-  <file-specs>
-    <path-element>D:\projects\flash\WFMarketplace\src\Main.as</path-element>
->>>>>>> 573a6e62e074f3aeff677fcfdc685f7e1c3be4b1
   </file-specs>
   <default-background-color>#343343</default-background-color>
   <default-frame-rate>30</default-frame-rate>
