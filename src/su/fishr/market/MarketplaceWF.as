@@ -26,7 +26,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 5, 5 ];
+		public static const VERSION:Array = [ 1, 5, 6 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -305,19 +305,28 @@ package su.fishr.market
 		private function buyResult( d:Object ):void
 		{
 			/**
-			 * Object (2): 
-				detals:Object (2): 
-					state:(str,7) Success
-					data:Object (2): 
-						cost:(int,3) 124
-						inv_id:(int,9) 137663284
-				status:(str,47) The operation was cancelled. Price has changed.&parse_mode=HTML
-				
-				d: Object (4): 
-				count:(int,1) 0
-				status:(str,51) You have reached the limit of purchase transactions
-				went:(int,3) 525
-				data:(str,22) SAI GRY AR-15 Синдикат
+			 * 15:22:19:845                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+				 MarketplaceWF.as. buyResult 
+				 d: Object (3): 
+					cost:(int,2) 42
+					entity_id:(int,4) 3900
+					state:(str,63) ***************Operation successfull***************************
+				 end
+
+				 15:22:19:983                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+				 BotRequest.as. callLoader 
+				 onload: 
+
+				 15:22:24:372                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+				 MarketplaceWF.as. buyResult 
+				 d: Object (2): 
+					detals:Object (2): 
+						state:(str,7) Success
+						data:Object (2): 
+							inv_id:(int,9) 140557407
+							cost:(int,3) 120
+					status:(str,47) The operation was cancelled. Price has changed.
+				 end
 			 */
 			
 			//////////////////////TRACE/////////////////////////////////
