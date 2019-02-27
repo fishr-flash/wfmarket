@@ -246,46 +246,34 @@ package su.fishr.market
 		private function onCompleteFile(e:Event):void 
 		{
 			_file.removeEventListener(Event.COMPLETE, onCompleteFile );
-			
+			/**
+			 * -{
+				"c" : 105,
+				"lq" : 5,
+					"t" : -{
+							"mn" : 02,
+							"min" : 04,
+							"sec" : 18,
+							"yr" : 2019,
+							"d" : 27,
+							"hrs" : 19
+							},
+				"sess" : 104,
+				"cnt" : 1323
+				}
+				],
+				"head" : -{
+							"key" : AWM Карбон,
+							"maxc" : 100,
+							"minc" : 100,
+							"id" : 3863
+						}
+				},
+			 */
 			
 			const b:ByteArray = e.target.data;
 			b.position = 0;
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const j:String = 
-				( "MarketplaceWF.as" + ". " +  "onCompleteFile ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r b.readUTF() : " +  b.readUTFBytes( b.bytesAvailable ) )
-				+ ( "\r end" );
-				Logw.inst.up( j );
-			}
-			b.position = 0;
-			/////////////////////END TRACE//////////////////////////////
-			
-			//const story:Object = JSON.parse(  b.readUTF() );
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "MarketplaceWF.as" + ". " +  "onCompleteFile ")
-				+ ( "\r : " + Dumper.dump( e.target.data ) )
-				//+ ( "\r story: " + Dumper.dump( story ) )
-				+ ( "\r : " + "" )
-				//+ ( "\r str: " + str )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
-			
+			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array)
 		}
 		
 		private function btnBuyHandler(e:MouseEvent):void 

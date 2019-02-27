@@ -1,6 +1,0 @@
-/hello.ignore.txt
-src/desktop.ini
-./.gitignore
-./bin/mwf.swf
-./obj/MarketplaceWFConfig.xml
-./obj/*

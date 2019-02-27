@@ -18,6 +18,7 @@ package su.fishr.market.service
 		private var _self:ItemsServant;
 		private var _configItems:Array;
 		private var _weaponGroups:Vector.<WeaponGroup>;
+		private var _bufferStory:Array = new Array;
 		public function get inst():ItemsServant
 		{
 			if ( !_self ) _self = new ItemsServant;
@@ -85,13 +86,7 @@ package su.fishr.market.service
 			
 		}
 		
-		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
-		{
-			
-			if ( x.cost < y.cost ) return -1;
-			else if ( x.cost > y.cost ) return 1;
-			else return 0;
-		}
+		
 		
 		public function getWeaponData():Array 
 		{
@@ -143,8 +138,66 @@ package su.fishr.market.service
 				}
 			}
 			
+			if ( _bufferStory.length )
+					data = joinStory( data );
+					
 			return data;
 		}
+		
+		public function setStory( loadedStory:Array ):void
+		{
+			_bufferStory.push( loadedStory );
+		}
+		
+		
+		private function joinStory(data:Array):Array 
+		{
+			_bufferStory.push( data );
+			/**
+			 * [19] => Object (2): 
+						head:Object (4): 
+							key:(str,17) РПД Custom Карбон
+							maxc:(int,3) 799
+							id:(int,4) 3935
+							minc:(int,3) 799
+						tl:Array(44):
+							[0] => Object (5): 
+								c:(int,3) 839
+								cnt:(int,4) 1005
+								lq:(int,1) 0
+								t:Object (6): 
+									mn:(str,2) 02
+									sec:(str,2) 03
+									yr:(str,4) 2019
+									min:(str,2) 10
+									hrs:(str,2) 01
+									d:(str,2) 26
+								sess:(int,3) 839
+			 */
+			const ilog:int = _bufferStory.length;
+			
+			for (var i:int = 0; i < ilog; i++) 
+			{
+				//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const j:String = 
+					( "ItemsServant.as" + ". " +  "joinStory ")
+					//+ ( "\r _bufferStory[ 0 ].tl[ 0 ].t.ry: " + _bufferStory[ i ][ 0 ].tl[ 0 ].t.ry )
+					//+ ( "\r : " + Dumper.dump( "" ) )
+					+ ( "\r _bufferStory[ i ][ 0 ]: " + Dumper.dump( _bufferStory[ i ][ 0 ].tl[ 0 ].t.yr ) )
+					+ ( "\r end" );
+					Logw.inst.up( j );
+				}
+				/////////////////////END TRACE//////////////////////////////
+			}
+			
+			return data;
+		}
+		
 		
 		
 		private function init():void 
@@ -160,7 +213,6 @@ package su.fishr.market.service
 				
 					if ( MarketplaceWF.IGNORE_HIDDEN == true || arr[ i ].hidden == 0 ) 
 																				_configItems.push( arr[ i ] );
-													
 			}
 			
 			
@@ -287,6 +339,14 @@ package su.fishr.market.service
 						&& _weaponGroups[ i ].cost >= _weaponGroups[ i ].heightcost )
 						this.dispatchEvent( new WFMEvent( WFMEvent.ON_HEIGHT_COST, false, false, _weaponGroups[ i ] ) );
 			}
+		}
+		
+		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
+		{
+			
+			if ( x.cost < y.cost ) return -1;
+			else if ( x.cost > y.cost ) return 1;
+			else return 0;
 		}
 		
 	}
