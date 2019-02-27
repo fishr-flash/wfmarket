@@ -5,6 +5,7 @@ package su.fishr.market
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.net.FileReference;
+	import flash.utils.ByteArray;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
 	import su.fishr.market.components.PriceOfWeapons;
@@ -26,7 +27,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 5, 6 ];
+		public static const VERSION:Array = [ 1, 6, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -49,6 +50,8 @@ package su.fishr.market
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
 		private var _btnUnload:Button;
+		private var _btnLoad:Button;
+		private var _file:FileReference;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -120,10 +123,20 @@ package su.fishr.market
 			this.addChild( _btnUnload );
 			_btnUnload.enabled = false;
 			
+			_btnLoad = new Button;
+			_btnLoad.label = "dwn";
+			_btnLoad.x = _btnUnload.x + _btnUnload.width + 5;
+			_btnLoad.y = _btnUnload.y;
+			_btnLoad.setSize( wdthBtns + 5, _btnLoad.height );
+			this.addChild( _btnLoad );
+			_btnLoad.addEventListener( MouseEvent.CLICK, btnOnLoad );
+			
+			
+			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _btnUnload.x + _btnUnload.width + 25;
-			_btnOnAlert.y = _btnUnload.y;
+			_btnOnAlert.x = _btnLoad.x + _btnLoad.width + 25;
+			_btnOnAlert.y = _btnLoad.y;
 			_btnOnAlert.setSize( wdthBtns, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
@@ -140,10 +153,13 @@ package su.fishr.market
 			this.addChild( _btnOnBuy );
 			_btnOnBuy.addEventListener( MouseEvent.CLICK, btnBuyHandler );
 			
+			
+			
+			
 			const href:TFItem = new TFItem;
 			href.htmlText = '<a href="https://wf.mail.ru/inventory" target="_blank" > market</a>';
 			href.y = _btnOnBuy.y - 5;
-			href.x = _btnOnBuy.x + _btnOnBuy.width + 5;
+			href.x = _btnOnBuy.x + _btnOnBuy.width + 5;					
 			this.addChild( href );
 			
 			
@@ -179,6 +195,96 @@ package su.fishr.market
 			
 			
 			//const breq:BayRequester = new BayRequester( onResult );
+			
+		}
+		
+		private function btnOnLoad(e:MouseEvent):void 
+		{
+			//_btnLoad.enabled = false;
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "btnOnLoad ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
+			_file = new FileReference;
+			_file.addEventListener( Event.SELECT, onSelectFile );
+			_file.browse();
+			
+		}
+		
+		private function onSelectFile(e:Event):void 
+		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "onSelectFile ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			_file.removeEventListener( Event.SELECT, onSelectFile );
+			_file.addEventListener(Event.COMPLETE, onCompleteFile );
+			_file.load();
+		}
+		
+		private function onCompleteFile(e:Event):void 
+		{
+			_file.removeEventListener(Event.COMPLETE, onCompleteFile );
+			
+			
+			const b:ByteArray = e.target.data;
+			b.position = 0;
+			
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const j:String = 
+				( "MarketplaceWF.as" + ". " +  "onCompleteFile ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r b.readUTF() : " +  b.readUTFBytes( b.bytesAvailable ) )
+				+ ( "\r end" );
+				Logw.inst.up( j );
+			}
+			b.position = 0;
+			/////////////////////END TRACE//////////////////////////////
+			
+			//const story:Object = JSON.parse(  b.readUTF() );
+			
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "onCompleteFile ")
+				+ ( "\r : " + Dumper.dump( e.target.data ) )
+				//+ ( "\r story: " + Dumper.dump( story ) )
+				+ ( "\r : " + "" )
+				//+ ( "\r str: " + str )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
 			
 		}
 		
