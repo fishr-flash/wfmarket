@@ -45,8 +45,8 @@ package su.fishr.market.service
 									+ ":" + date[ 4 ]
 									+ ":" + date[ 5 ]
 									+ ":" + date[ 6 ];
-			if ( _area.text.length > 30000 ) 
-					_area.text = _area.text.slice( 0, 2000);
+			/*if ( _area.text.length > 30000 ) 
+					_area.text = _area.text.slice( 0, 2000);*/
 			
 			_area.text = _area.text + "\r\r " + strDate + "                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> \r " + str;
 			_area.setSelection( _area.length, _area.length );
