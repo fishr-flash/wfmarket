@@ -79,10 +79,19 @@ package su.fishr.market.service
 				
 			}
 			
-			_weaponGroups.sort( onsortGroup );
 			
-			selectLowCost();
-			selectAutoBuy();
+			try 
+			{
+				_weaponGroups.sort( onsortGroup );
+			
+				selectLowCost();
+				selectAutoBuy();
+				
+			}
+			catch ( e:Error )
+			{
+				Logw.inst.up( "not once group configure, error: " + e );
+			}
 			
 		}
 		
@@ -153,6 +162,69 @@ package su.fishr.market.service
 		private function joinStory(data:Array):Array 
 		{
 			_bufferStory.push( data );
+			
+			_bufferStory.sort( sortBuffer );
+			
+			/**
+			 * var arrsort:Array = [ 512, 1, 3 , 2, 7 ];
+					arrsort.sort( sortBuffer );
+					trace( Dumper.dump( arrsort ) );
+					
+					function sortBuffer( a:int, b:int ):int
+					{
+						if ( a > b ) return 1;
+						else if ( a < b ) return -1;
+						
+						trace( " a: ", a )
+						trace( " b: ", b )
+						
+						return 0;
+					}
+			 * @return
+			 */
+			
+			function sortBuffer( b:Array, a:Array ):int
+			{
+				
+				// года
+				if ( b[ 0 ].tl[ 0 ].t.yr > a[ 0 ].tl[ 0 ].t.yr ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.yr < a[ 0 ].tl[ 0 ].t.yr )
+															return -1;
+						
+				/// месяцы
+				if ( b[ 0 ].tl[ 0 ].t.mn > a[ 0 ].tl[ 0 ].t.mn ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.mn < a[ 0 ].tl[ 0 ].t.mn )
+															return -1;
+							
+				/// дни
+				if ( b[ 0 ].tl[ 0 ].t.d > a[ 0 ].tl[ 0 ].t.d ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.d < a[ 0 ].tl[ 0 ].t.d )
+															return -1;
+				/// часы
+				if ( b[ 0 ].tl[ 0 ].t.hrs > a[ 0 ].tl[ 0 ].t.hrs ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.hrs < a[ 0 ].tl[ 0 ].t.hrs )
+															return -1;
+															
+				/// минуты
+				if ( b[ 0 ].tl[ 0 ].t.min > a[ 0 ].tl[ 0 ].t.min ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.min < a[ 0 ].tl[ 0 ].t.min )
+															return -1;
+															
+				/// секунды
+				if ( b[ 0 ].tl[ 0 ].t.sec > a[ 0 ].tl[ 0 ].t.sec ) 
+															return  1;
+				else if ( b[ 0 ].tl[ 0 ].t.sec < a[ 0 ].tl[ 0 ].t.sec )
+															return -1;
+															
+															
+				
+				return 0;
+			}
 			/**
 			 * [19] => Object (2): 
 						head:Object (4): 
@@ -174,29 +246,143 @@ package su.fishr.market.service
 									d:(str,2) 26
 								sess:(int,3) 839
 			 */
-			const ilog:int = _bufferStory.length;
+			var ilog:int = _bufferStory.length - 1;
+			const llog:int = _bufferStory[ 0 ].length;
 			
-			for (var i:int = 0; i < ilog; i++) 
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( false )
 			{
-				//////////////////////TRACE/////////////////////////////////
+				const m:String = 
+				( "ItemsServant.as" + ". " +  "joinStory ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r _bufferStory[ 0 ][ 0 ]: " + Dumper.dump( _bufferStory[ 0 ][ 0 ] ) )
+				+ ( "\r : " + "" )
+				+ ( "\r llog: " + llog )
+				+ ( "\r ilog: " + ilog )
+				+ ( "\r end" );
+				Logw.inst.up( m );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
+			for (var l:int = 0; l < llog; l++) 
+			{
+					
+				
+					for (var i:int = 1; i < ilog; i++) 
+					{
+				
+				
+					//////////////////////TRACE/////////////////////////////////
+				
+					import su.fishr.market.service.Logw;
+					import su.fishr.utils.Dumper;
+					if( false )
+					{
+						const k:String = 
+						( "ItemsServant.as" + ". " +  "joinStory ")
+						//+ ( "\r : " + Dumper.dump( true ) )
+						+ ( "\r _bufferStory[ 0 ][ l ]: " + Dumper.dump( _bufferStory[ 0 ][ l ] ) )
+						+ ( "\r _bufferStory[ i ]: " + Dumper.dump( _bufferStory[ i ] ) )
+						+ ( "\r l: " + l )
+						//+ ( "\r : " + _bufferStory[ 0 ][ l ].head.key )
+						
+						+ ( "\r end" );
+						Logw.inst.up( k );
+					}
+					/////////////////////END TRACE//////////////////////////////
+					const tl:Array = searchTimeLine( _bufferStory[ 0 ][ l ].head.key, _bufferStory[ i ] );
+					if ( tl )
+					{
+						--i;
+						--ilog;
+						_bufferStory[ 0 ][ l ].tl = _bufferStory[ 0 ][ l ].tl.join( tl );
+						
+						//////////////////////TRACE/////////////////////////////////
+						
+						import su.fishr.market.service.Logw;
+						import su.fishr.utils.Dumper;
+						if( true )
+						{
+							const p:String = 
+							( "ItemsServant.as" + ". " +  "joinStory ")
+							+ ( "\r _bufferStory[ 0 ]: " + Dumper.dump( _bufferStory[ 0 ] ) )
+							//+ ( "\r : " + Dumper.dump( true ) )
+							+ ( "\r : " + "" )
+							+ ( "\r end" );
+							Logw.inst.up( p );
+						}
+						/////////////////////END TRACE//////////////////////////////
+					}
+					
+					
+					
+							
+				}
+				
+				
+			}
+			
+			//////////////////////TRACE/////////////////////////////////
 				
 				import su.fishr.market.service.Logw;
 				import su.fishr.utils.Dumper;
-				if( true )
+				if( false )
 				{
 					const j:String = 
 					( "ItemsServant.as" + ". " +  "joinStory ")
 					//+ ( "\r _bufferStory[ 0 ].tl[ 0 ].t.ry: " + _bufferStory[ i ][ 0 ].tl[ 0 ].t.ry )
 					//+ ( "\r : " + Dumper.dump( "" ) )
-					+ ( "\r _bufferStory[ i ][ 0 ]: " + Dumper.dump( _bufferStory[ i ][ 0 ].tl[ 0 ].t.yr ) )
+					+ ( "\r _bufferStory: " + Dumper.dump( _bufferStory ) )
+					//+ ( "\r _bufferStory[ i ][ 0 ]: " + Dumper.dump( _bufferStory[ i ][ 0 ].tl[ 0 ].t.yr ) )
 					+ ( "\r end" );
 					Logw.inst.up( j );
 				}
 				/////////////////////END TRACE//////////////////////////////
-			}
+				
+				function searchTimeLine( headKey:String, giver:Array  ):Array 
+				{
+					var result:Array;
+					const len:int = giver.length;
+					for (var n:int = 0; n < len; n++) 
+					{
+						if ( giver[ n ].head.key == headKey )
+						{
+							result = giver.splice( n, 1 )[ 0 ].tl;
+							
+							//////////////////////TRACE/////////////////////////////////
+							
+							import su.fishr.market.service.Logw;
+							import su.fishr.utils.Dumper;
+							if( true )
+							{
+								const o:String = 
+								( "ItemsServant.as" + ". " +  "joinStory ")
+								+ ( "\r n: " + n )
+								//+ ( "\r ( giver[ i ]: " + Dumper.dump( giver[ n ]) )
+								//+ ( "\r ( giver[ i ].head: " + Dumper.dump( giver[ n ].head ) )
+								+ ( "\r : " + "" )
+								+ ( "\r result: " + result )
+								//+ ( "\r giver[ n ].head.key: " + giver[ n ].head.key )
+								
+								+ ( "\r headKey: " + headKey )
+								+ ( "\r end" );
+								Logw.inst.up( o );
+							}
+							/////////////////////END TRACE//////////////////////////////
+						}
+						
+					}
+					
+					return result as Array;
+				}
 			
-			return data;
+			return _bufferStory[ 0 ];
 		}
+		
+		
 		
 		
 		

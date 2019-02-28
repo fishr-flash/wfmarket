@@ -45,8 +45,8 @@
 		, "exclude":[ "Золот" ]
 	}
 	,{
-		"name":"Beretta ARX"
-		, "key_word":"Beretta ARX"
+		"name":"Beretta ARX160 Синдикат"
+		, "key_word":"Beretta ARX160 Синдикат"
 		, "id_market":""
 		, "kind":"weapon"
 		, "higth_cost":0
