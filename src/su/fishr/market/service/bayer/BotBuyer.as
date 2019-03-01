@@ -62,7 +62,7 @@ package su.fishr.market.service.bayer
 			{
 				if ( MarketplaceWF.getCostOnCharge( bayData.data.cost ) <= _cost )
 				{
-					setTimeout( onBay, MarketplaceWF.DELAY_ON_BUYER, bayData );
+					setTimeout( onBay, MarketplaceWF.DELAY_ON_BUYER * .5, bayData );
 					
 				}
 				else
