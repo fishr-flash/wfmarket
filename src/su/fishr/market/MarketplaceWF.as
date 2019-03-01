@@ -27,7 +27,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 6, 2 ];
+		public static const VERSION:Array = [ 1, 6, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
@@ -273,7 +273,8 @@ package su.fishr.market
 			
 			const b:ByteArray = e.target.data;
 			b.position = 0;
-			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array)
+			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
+			_btnUnload.enabled = true;
 		}
 		
 		private function btnBuyHandler(e:MouseEvent):void 
