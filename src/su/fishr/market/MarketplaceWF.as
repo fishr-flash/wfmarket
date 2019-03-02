@@ -27,12 +27,12 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 6, 3 ];
+		public static const VERSION:Array = [ 1, 6, 4 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 35000;
 		public static const CHARGE_RATIO:Number = 1.05;
-		public static const DELAY_ON_BUYER:int = 2000;
+		public static const DELAY_ON_BUYER:int = 1500;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
