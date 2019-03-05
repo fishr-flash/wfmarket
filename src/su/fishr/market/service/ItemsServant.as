@@ -33,6 +33,65 @@ package su.fishr.market.service
 		public function setData( objson:Object  ):void
 		{
 			
+			if ( MarketplaceWF.IGNORE_CONFIG && !_weaponGroups )
+			{
+			
+				_configItems = [];
+				
+				const jlen:int = objson.data.length;
+				
+				
+				
+				for (var j:int = 0; j < jlen ; j++) 
+				{
+					/**
+					 * objson.data[ j ]: Object (9): 
+						min_cost:(int,2) 75
+						title:(str,30) Камуфляж Город для Steyr M9-A1
+						entity_id:(int,3) 555
+						item:Object (4): 
+							id:(str,16) pt06_camo04_shop
+							title:(str,30) Камуфляж Город для Steyr M9-A1
+							count:(int,1) 1
+							regular:(int,1) 1
+						type:(str,9) inventory
+						class:(str,9) universal
+						count:(int,4) 1030
+						item_id:(str,16) pt06_camo04_shop
+						kind:(str,10) camouflage
+					 */
+					if ( objson.data[ j ].min_cost < 100
+						|| objson.data[ j ].title == ""
+						|| objson.data[ j ].item == null 
+						) continue;
+						
+						/*,{
+						"name":"ОРСИС Т-5000 Карбон"
+						, "key_word":"ОРСИС Т-5000 Карбон"
+						, "id_market":""
+						, "kind":"weapon"
+						, "higth_cost":0
+						, "low_cost":1008
+						, "hidden": 1
+						, "auto_cost":60
+						, "exclude":[ "Золот" ]*/
+	
+						_configItems.push( {
+							name: objson.data[ j ].title
+							,key_word:objson.data[ j ].title
+							, id_market:""
+							, kind:objson.data[ j ].kind
+							, heigth_cost: 0
+							, low_cost: 42
+							, hidden: 0
+							, auto_cost: 42
+							, exclude: [ "Камуфляж Абсолют" ]
+						} );
+					
+				}
+			}
+				
+				
 			
 			var itms:Array;
 			const len:int = _configItems.length;
@@ -42,7 +101,7 @@ package su.fishr.market.service
 				
 				
 				
-				itms = parseJson( objson, _configItems[ i ]);
+				itms = findMatch( objson, _configItems[ i ]);
 				
 				if ( itms[ 0 ] )
 				{
@@ -82,7 +141,7 @@ package su.fishr.market.service
 			
 			try 
 			{
-				_weaponGroups.sort( onsortGroup );
+				
 			
 				selectLowCost();
 				selectAutoBuy();
@@ -326,7 +385,7 @@ package su.fishr.market.service
 				
 		}
 		
-		private function parseJson(objson:Object, confItem:Object ):Array
+		private function findMatch(objson:Object, confItem:Object ):Array
 		{
 			
 			
@@ -450,10 +509,14 @@ package su.fishr.market.service
 		
 		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
 		{
-			
-			if ( x.cost < y.cost ) return -1;
-			else if ( x.cost > y.cost ) return 1;
+			if ( x.liquidity < y.liquidity ) return 1
+			else if ( x.liquidity > y.liquidity ) return -1;
 			else return 0;
+			
+			
+			/*if ( x.cost < y.cost ) return -1;
+			else if ( x.cost > y.cost ) return 1;
+			else return 0;*/
 		}
 		
 	}

@@ -16,6 +16,9 @@ package su.fishr.market.components
 		private var _list:Vector.<ItmString>;
 		private var _btnOpn:Button;
 		
+		public var cost:int;
+		public var liquidity:int;
+		
 		public function get keyWord():String 
 		{
 			return _keyWord;
@@ -35,6 +38,11 @@ package su.fishr.market.components
 			const len:int = wi.length;
 			
 			
+			liquidity = wi[ 0 ][ 6 ];
+			cost = wi[ 0 ][ 0 ];
+				
+			
+				
 			_list[ 0 ].setData( wi[ 0 ] );
 			yy += _list[ inx ].height;
 			
@@ -43,6 +51,7 @@ package su.fishr.market.components
 				
 				
 				const inx:int = searchTf( wi[ i ][ 4 ] );
+				
 				
 				
 				

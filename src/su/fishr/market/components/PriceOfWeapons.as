@@ -6,6 +6,7 @@ package su.fishr.market.components
 	import flash.events.Event;
 	import flash.geom.Rectangle;
 	import su.fishr.display.components.scroller.VScroller;
+	import su.fishr.market.MarketplaceWF;
 	
 	
 	/**
@@ -28,22 +29,6 @@ package su.fishr.market.components
 			
 			this.addEventListener(Event.ADDED_TO_STAGE, init );
 			
-		}
-		
-		private function init( e:Event ):void 
-		{
-			this.removeEventListener(Event.ADDED_TO_STAGE, init );
-			
-			
-			
-			this.scrollRect = new Rectangle( 0, 0, _back.width, _back.height);
-			_vscroll = new VScroller;
-			
-			_vscroll.x = this.scrollRect.width + 25;
-			_vscroll.y = this.y;
-			this.parent.addChild( _vscroll );
-			
-			_vscroll.setClient( this );
 		}
 		
 		/**
@@ -99,7 +84,7 @@ package su.fishr.market.components
 				if ( inx > -1 )
 				{
 					_itms[ inx ].setNewWInf( arrw[ i ] );
-					yy += _itms[ inx ].height;
+					//yy += _itms[ inx ].height;
 					
 				}
 				else
@@ -123,6 +108,24 @@ package su.fishr.market.components
 			
 		}
 		
+		private function init( e:Event ):void 
+		{
+			this.removeEventListener(Event.ADDED_TO_STAGE, init );
+			
+			
+			
+			this.scrollRect = new Rectangle( 0, 0, _back.width, _back.height);
+			_vscroll = new VScroller;
+			
+			_vscroll.x = this.scrollRect.width + 25;
+			_vscroll.y = this.y;
+			this.parent.addChild( _vscroll );
+			
+			_vscroll.setClient( this );
+		}
+		
+		
+		
 		private function onEmnterFrame(e:Event):void 
 		{
 			this.removeEventListener(Event.ENTER_FRAME, onEmnterFrame );
@@ -131,6 +134,7 @@ package su.fishr.market.components
 		
 		private function onResize(e:Event):void 
 		{
+			_itms.sort( onsortGroup );
 			const len:int = _itms.length;
 			var yy:int = 0;
 			var xx:int = 0;
@@ -140,7 +144,8 @@ package su.fishr.market.components
 				yy += _itms[ i ].height + 5;
 				
 				_itms[ i ].x = xx;
-				if ( yy >= this.scrollRect.height && xx < _itms[ i ].width )
+				
+				if ( i == int( len / 2 ) )
 				{
 					yy = 0;
 					xx += _itms[ i ].width + 20;
@@ -166,6 +171,19 @@ package su.fishr.market.components
 			}
 			
 			return -1;
+		}
+		
+		private function onsortGroup( x:GrField, y:GrField ):Number
+		{
+			
+			if ( x[ MarketplaceWF.SORT_PROP ] < y[ MarketplaceWF.SORT_PROP ] ) return 1
+			else if ( x[ MarketplaceWF.SORT_PROP ] > y[ MarketplaceWF.SORT_PROP ] ) return -1;
+			else return 0;
+			
+			
+			/*if ( x.cost < y.cost ) return -1;
+			else if ( x.cost > y.cost ) return 1;
+			else return 0;*/
 		}
 		
 	}
