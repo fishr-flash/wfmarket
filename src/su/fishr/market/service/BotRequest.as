@@ -44,8 +44,8 @@ package su.fishr.market.service
 		{
 			if ( _interval ) clearInterval( _interval );
 			_onplay = true;
-			
-			onRequest();
+			_interval = setInterval( onRequest, MarketplaceWF.MIN_REQUEST_DELAY + ( Math.random() * MarketplaceWF.MAX_REQUEST_DELAY) );
+			//onRequest();
 		}
 		
 		public function stop():void
