@@ -27,10 +27,10 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 7, 1 ];
+		public static const VERSION:Array = [ 1, 7, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
-		public static const MIN_REQUEST_DELAY:int = 35000;
+		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.05;
 		public static const DELAY_ON_BUYER:int = 1500;
 		public static const TEME_COLOR:uint = 0x343343;
@@ -313,7 +313,7 @@ package su.fishr.market
 			const jsn:String = JSON.stringify( data );
 			const fileRef:FileReference = new FileReference;
 			const dt:Array = dateFormat();
-			const name:String = "hist_" 
+			var name:String = "hist_" 
 								+  data[ 0 ].tl[ 0 ].t.d 
 								+  data[ 0 ].tl[ 0 ].t.mn 
 								+  data[ 0 ].tl[ 0 ].t.yr 
@@ -330,6 +330,7 @@ package su.fishr.market
 								
 								
 
+		    if ( IGNORE_CONFIG ) name += "_a";
 			fileRef.save( jsn, name );
 			
 			
