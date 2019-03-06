@@ -27,7 +27,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 7, 3 ];
+		public static const VERSION:Array = [ 1, 7, 4 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 40000;
@@ -38,7 +38,12 @@ package su.fishr.market
 		public static const IGNORE_HIDDEN:Boolean = false;
 		/// загужать все данные игнорируя джейсон файл перечня
 		public static const IGNORE_CONFIG:Boolean = true;
-		public static const SORT_PROP:String = "liquidity";
+		
+		static public const PROP_LIQUIBITY:String = "liquidity";
+		static public const PROP_COST:String = "cost";
+		
+		/// может переопределяться ниже
+		public static var SORT_PROP:String = "cost";
 		
 		
 		private var _btnRequest:Button;
@@ -66,6 +71,9 @@ package su.fishr.market
 		{
 			super();
 			init();
+			
+			// задаем свойство сортировки
+			SORT_PROP = PROP_LIQUIBITY;
 			
 		}
 		
