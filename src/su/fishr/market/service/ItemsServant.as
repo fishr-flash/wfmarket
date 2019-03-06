@@ -473,6 +473,8 @@ package su.fishr.market.service
 			{
 				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autocost )
 				{
+					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
+					break;
 					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ] ) );
 					break;
 				}
