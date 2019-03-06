@@ -89,6 +89,8 @@ package su.fishr.market.service
 						} );
 					
 				}
+				
+				constructConfig( _configItems.slice() );
 			}
 				
 				
@@ -153,6 +155,8 @@ package su.fishr.market.service
 			}
 			
 		}
+		
+		
 		
 		
 		
@@ -519,6 +523,52 @@ package su.fishr.market.service
 			/*if ( x.cost < y.cost ) return -1;
 			else if ( x.cost > y.cost ) return 1;
 			else return 0;*/
+		}
+		
+		
+		private function constructConfig(items:Array):void 
+		{
+			var result:String = "[";
+			
+			/**
+			 * items[ 0 ] : Object (9): 
+				auto_cost:(int,2) 42
+				id_market:(str,0) 
+				exclude:Array(1):
+					[0] => (str,16) Камуфляж Абсолют
+				name:(str,16) Steyr M9A1 Вьюга
+				low_cost:(int,2) 42
+				heigth_cost:(int,1) 0
+				kind:(str,6) weapon
+				key_word:(str,16) Steyr M9A1 Вьюга
+				hidden:(int,1) 0
+			 */
+				
+			var obStr:String;
+			
+			const len:int = items.length;
+			for (var i:int = 0; i < len; i++) 
+			{
+			
+				obStr = i == 0?'':',';
+				obStr +='{ \r';
+				obStr += '\t "name": "' + String( items[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
+				obStr += '\t ,"key_word": "' + String( items[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
+				obStr += '\t ,"id_market": "' + '" \r';
+				obStr += '\t ,"kind": "' + items[ i ].kind +'" \r';
+				obStr += '\t ,"higth_cost": 0 \r';
+				obStr += '\t ,"low_cost": 42 \r';
+				obStr += '\t ,"hidden": 0 \r';
+				obStr += '\t ,"auto_cost": 42 \r';
+				obStr += '\t ,"exclude": [] \r';
+				obStr += '} \r';
+				result += obStr;
+			}
+			
+			result += ']';
+			
+				Logw.inst.up( result );
+			
 		}
 		
 	}
