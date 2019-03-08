@@ -90,7 +90,7 @@ package su.fishr.market.service
 					
 				}
 				
-				constructConfig( _configItems.slice() );
+				
 			}
 				
 				
@@ -221,6 +221,10 @@ package su.fishr.market.service
 			_bufferStory.push( loadedStory );
 		}
 		
+		public function generateCofig():String
+		{
+			return constructConfig( _configItems.slice() );
+		}
 		
 		private function joinStory(data:Array):Array 
 		{
@@ -513,21 +517,14 @@ package su.fishr.market.service
 			}
 		}
 		
-		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
+		
+		private function constructConfig(items:Array):String 
 		{
-			if ( x.liquidity < y.liquidity ) return 1
-			else if ( x.liquidity > y.liquidity ) return -1;
-			else return 0;
 			
 			
-			/*if ( x.cost < y.cost ) return -1;
-			else if ( x.cost > y.cost ) return 1;
-			else return 0;*/
-		}
-		
-		
-		private function constructConfig(items:Array):void 
-		{
+			
+			items.sort( onsortItms );
+			
 			var result:String = "[";
 			
 			/**
@@ -558,7 +555,7 @@ package su.fishr.market.service
 				obStr += '\t ,"kind": "' + items[ i ].kind +'" \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
-				obStr += '\t ,"hidden": 0 \r';
+				obStr += '\t ,"hidden": 1 \r';
 				obStr += '\t ,"auto_cost": 42 \r';
 				obStr += '\t ,"exclude": [] \r';
 				obStr += '} \r';
@@ -567,7 +564,18 @@ package su.fishr.market.service
 			
 			result += ']';
 			
-				Logw.inst.up( result );
+			return result;
+				
+			function onsortItms( x:Object, y:Object ):Number
+			{
+				
+				if ( String( x[ "name" ]).charCodeAt() > String( y[ "name" ]).charCodeAt() ) return 1
+				else if ( String( x[ "name" ]).charCodeAt() < String( y[ "name" ]).charCodeAt()) return -1;
+				else return 0;
+				
+				
+				
+			}
 			
 		}
 		

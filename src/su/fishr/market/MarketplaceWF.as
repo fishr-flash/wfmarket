@@ -27,7 +27,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 7, 5 ];
+		public static const VERSION:Array = [ 1, 8, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const MIN_REQUEST_DELAY:int = 40000;
@@ -61,6 +61,7 @@ package su.fishr.market
 		private var _btnUnload:Button;
 		private var _btnLoad:Button;
 		private var _file:FileReference;
+		private var _btnCfg:Button;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -143,12 +144,20 @@ package su.fishr.market
 			this.addChild( _btnLoad );
 			_btnLoad.addEventListener( MouseEvent.CLICK, btnOnLoad );
 			
+			_btnCfg = new Button;
+			_btnCfg.label = "cfg";
+			_btnCfg.x = _btnLoad.x + _btnLoad.width + 5;
+			_btnCfg.y = _btnLoad.y;
+			_btnCfg.setSize( wdthBtns + 5, _btnCfg.height );
+			this.addChild( _btnCfg );
+			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
+			_btnCfg.enabled = false;
 			
 			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _btnLoad.x + _btnLoad.width + 25;
-			_btnOnAlert.y = _btnLoad.y;
+			_btnOnAlert.x = _btnCfg.x + _btnCfg.width + 25;
+			_btnOnAlert.y = _btnCfg.y;
 			_btnOnAlert.setSize( wdthBtns, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
@@ -471,6 +480,26 @@ package su.fishr.market
 			_btnOnAlert.selected = _btnOnAlert.selected == true;
 		}
 		
+		private function onBtnCfg(e:MouseEvent):void 
+		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "onBtnCfg ")
+				+ ( "\r _servant.generateCofig(): " + _servant.generateCofig() )
+				+ ( "\r : " + "" )
+				//+ ( "\r : " + Dumper.dump( "" ) )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
+		}
+		
 		private function onLowCost(e:WFMEvent):void 
 		{
 			
@@ -534,6 +563,7 @@ package su.fishr.market
 			_price.setWeaponData( _servant.getWeaponData() );
 			
 			_btnUnload.enabled = true;
+			_btnCfg.enabled = true;
 		}
 		
 		
