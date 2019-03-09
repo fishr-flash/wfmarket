@@ -5,29 +5,7 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "SAI GRY AR-15" 
-	 ,"key_word": "SAI GRY AR-15" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "SAI GRY AR-15 Синдикат" 
-	 ,"key_word": "SAI GRY AR-15 Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -38,7 +16,7 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -49,18 +27,7 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "AT308" 
-	 ,"key_word": "AT308" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -71,18 +38,18 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "H&K MP5A5 Custom" 
-	 ,"key_word": "H&K MP5A5 Custom" 
+	 "name": "AT308" 
+	 ,"key_word": "AT308" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -93,29 +60,40 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Сайга H.G.C. Custom" 
-	 ,"key_word": "Сайга H.G.C. Custom" 
+	 "name": "H&K MP5A5 Custom" 
+	 ,"key_word": "H&K MP5A5 Custom" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Сайга H.G.C. Custom Синдикат" 
-	 ,"key_word": "Сайга H.G.C. Custom Синдикат" 
+	 "name": "SAI GRY AR-15 Синдикат" 
+	 ,"key_word": "SAI GRY AR-15 Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "SAI GRY AR-15" 
+	 ,"key_word": "SAI GRY AR-15" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -126,7 +104,7 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -137,7 +115,40 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Сайга H.G.C. Custom" 
+	 ,"key_word": "Сайга H.G.C. Custom" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Сайга H.G.C. Custom Синдикат" 
+	 ,"key_word": "Сайга H.G.C. Custom Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Ботинки Синдикат" 
+	 ,"key_word": "Ботинки Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -149,7 +160,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 130 
+	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -160,149 +171,6 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 130 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем снайпера Синдикат" 
-	 ,"key_word": "Шлем снайпера Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Синдикат для Kriss Super V Custom" 
-	 ,"key_word": "Камуфляж Синдикат для Kriss Super V Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем инженера Синдикат" 
-	 ,"key_word": "Шлем инженера Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Жилет штурмовика Синдикат" 
-	 ,"key_word": "Жилет штурмовика Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Перчатки Синдикат" 
-	 ,"key_word": "Перчатки Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Жилет инженера Синдикат" 
-	 ,"key_word": "Жилет инженера Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "РПД Custom Карбон" 
-	 ,"key_word": "РПД Custom Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Ботинки Синдикат" 
-	 ,"key_word": "Ботинки Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем штурмовика Синдикат" 
-	 ,"key_word": "Шлем штурмовика Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Сайга Spike Синдикат" 
-	 ,"key_word": "Сайга Spike Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "ПП-2000" 
-	 ,"key_word": "ПП-2000" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем медика Синдикат" 
-	 ,"key_word": "Шлем медика Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Жилет медика Синдикат" 
-	 ,"key_word": "Жилет медика Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -314,28 +182,127 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 130 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Magpul FMG-9 Карбон" 
-	 ,"key_word": "Magpul FMG-9 Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "K.I.W.I. UZI PRO" 
-	 ,"key_word": "K.I.W.I. UZI PRO" 
+	 "name": "Жилет медика Синдикат" 
+	 ,"key_word": "Жилет медика Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Перчатки Синдикат" 
+	 ,"key_word": "Перчатки Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Жилет инженера Синдикат" 
+	 ,"key_word": "Жилет инженера Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Шлем снайпера Синдикат" 
+	 ,"key_word": "Шлем снайпера Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж Синдикат для Kriss Super V Custom" 
+	 ,"key_word": "Камуфляж Синдикат для Kriss Super V Custom" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Сайга Spike Синдикат" 
+	 ,"key_word": "Сайга Spike Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "РПД Custom Карбон" 
+	 ,"key_word": "РПД Custom Карбон" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Шлем медика Синдикат" 
+	 ,"key_word": "Шлем медика Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Шлем инженера Синдикат" 
+	 ,"key_word": "Шлем инженера Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Жилет штурмовика Синдикат" 
+	 ,"key_word": "Жилет штурмовика Синдикат" 
+	 ,"id_market": "" 
+	 ,"kind": "equipment" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "ПП-2000" 
+	 ,"key_word": "ПП-2000" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -346,18 +313,40 @@
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Ботинки K.I.W.I." 
-	 ,"key_word": "Ботинки K.I.W.I." 
+	 "name": "Magpul FMG-9 Карбон" 
+	 ,"key_word": "Magpul FMG-9 Карбон" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Шлем штурмовика Синдикат" 
+	 ,"key_word": "Шлем штурмовика Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж Картель для AX308" 
+	 ,"key_word": "Камуфляж Картель для AX308" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -368,29 +357,7 @@
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": " Снайперский прицел(Kraken CDX MC)" 
-	 ,"key_word": " Снайперский прицел(Kraken CDX MC)" 
-	 ,"id_market": "" 
-	 ,"kind": "other" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "KRISS Super V Custom" 
-	 ,"key_word": "KRISS Super V Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -402,17 +369,28 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 105 
+	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "АК \"Альфа\"" 
-	 ,"key_word": "АК \"Альфа\"" 
+	 "name": "Ботинки K.I.W.I." 
+	 ,"key_word": "Ботинки K.I.W.I." 
 	 ,"id_market": "" 
-	 ,"kind": "weapon" 
+	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": " Снайперский прицел(Kraken CDX MC)" 
+	 ,"key_word": " Снайперский прицел(Kraken CDX MC)" 
+	 ,"id_market": "" 
+	 ,"kind": "other" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -423,18 +401,7 @@
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Картель для AX308" 
-	 ,"key_word": "Камуфляж Картель для AX308" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -446,72 +413,17 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 126 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Картель для ПКП Печенег" 
-	 ,"key_word": "Камуфляж Картель для ПКП Печенег" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "CDX-MC Kraken" 
-	 ,"key_word": "CDX-MC Kraken" 
+	 "name": "K.I.W.I. UZI PRO" 
+	 ,"key_word": "K.I.W.I. UZI PRO" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "K.I.W.I. Нож M48 Bowie" 
-	 ,"key_word": "K.I.W.I. Нож M48 Bowie" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Картель для CZ Scorpion EVO 3 A1" 
-	 ,"key_word": "Камуфляж Картель для CZ Scorpion EVO 3 A1" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж \"Абсолют\" для АК \"Альфа\"" 
-	 ,"key_word": "Камуфляж \"Абсолют\" для АК \"Альфа\"" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Fabarm XLR5 Prestige Синдикат" 
-	 ,"key_word": "Fabarm XLR5 Prestige Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -522,7 +434,51 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "KRISS Super V Custom" 
+	 ,"key_word": "KRISS Super V Custom" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж Картель для CZ Scorpion EVO 3 A1" 
+	 ,"key_word": "Камуфляж Картель для CZ Scorpion EVO 3 A1" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж K.I.W.I. для AX308" 
+	 ,"key_word": "Камуфляж K.I.W.I. для AX308" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж Картель для ПКП Печенег" 
+	 ,"key_word": "Камуфляж Картель для ПКП Печенег" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -533,18 +489,40 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "ОРСИС Т-5000" 
-	 ,"key_word": "ОРСИС Т-5000" 
+	 "name": "АК \"Альфа\"" 
+	 ,"key_word": "АК \"Альфа\"" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "CDX-MC Kraken" 
+	 ,"key_word": "CDX-MC Kraken" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Камуфляж \"Абсолют\" для АК \"Альфа\"" 
+	 ,"key_word": "Камуфляж \"Абсолют\" для АК \"Альфа\"" 
+	 ,"id_market": "" 
+	 ,"kind": "camouflage" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -555,227 +533,29 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "K.I.W.I. Gepard GM6 Lynx" 
-	 ,"key_word": "K.I.W.I. Gepard GM6 Lynx" 
+	 "name": "ОРСИС Т-5000" 
+	 ,"key_word": "ОРСИС Т-5000" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "K.I.W.I. S&W M&P R8" 
-	 ,"key_word": "K.I.W.I. S&W M&P R8" 
+	 "name": "Fabarm XLR5 Prestige Синдикат" 
+	 ,"key_word": "Fabarm XLR5 Prestige Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж K.I.W.I. для S&W M&P R8" 
-	 ,"key_word": "Камуфляж K.I.W.I. для S&W M&P R8" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "K.I.W.I. Тактический топор" 
-	 ,"key_word": "K.I.W.I. Тактический топор" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Полярная униформа снайпера" 
-	 ,"key_word": "Полярная униформа снайпера" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж \"Пустыня\" для АК \"Альфа\"" 
-	 ,"key_word": "Камуфляж \"Пустыня\" для АК \"Альфа\"" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж \"Стужа\" для Beretta ARX160" 
-	 ,"key_word": "Камуфляж \"Стужа\" для Beretta ARX160" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Fabarm P.S.S.10 Карбон" 
-	 ,"key_word": "Fabarm P.S.S.10 Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем инженера K.I.W.I." 
-	 ,"key_word": "Шлем инженера K.I.W.I." 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Полярная униформа медика" 
-	 ,"key_word": "Полярная униформа медика" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "K.I.W.I. Сайга H.G.C. Custom" 
-	 ,"key_word": "K.I.W.I. Сайга H.G.C. Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Инженер отряда Абсолют" 
-	 ,"key_word": "Инженер отряда Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Kriss Super V Custom K.I.W.I." 
-	 ,"key_word": "Kriss Super V Custom K.I.W.I." 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Micro-Roni CAA Синдикат" 
-	 ,"key_word": "Micro-Roni CAA Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "K.I.W.I. Desert Tech MDR-C" 
-	 ,"key_word": "K.I.W.I. Desert Tech MDR-C" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Benelli M4 Super 90 Злой Санта" 
-	 ,"key_word": "Benelli M4 Super 90 Злой Санта" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Медик отряда Абсолют" 
-	 ,"key_word": "Медик отряда Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Акула" 
-	 ,"key_word": "Акула" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Картель для Fabarm S.A.T. 8 Pro" 
-	 ,"key_word": "Камуфляж Картель для Fabarm S.A.T. 8 Pro" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Полярная униформа штурмовика" 
-	 ,"key_word": "Полярная униформа штурмовика" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -786,117 +566,18 @@
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Горный камуфляж для Универсальный нож KA-BAR" 
-	 ,"key_word": "Горный камуфляж для Универсальный нож KA-BAR" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж K.I.W.I. для UZI PRO" 
-	 ,"key_word": "Камуфляж K.I.W.I. для UZI PRO" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем снайпера \"Абсолют\"" 
-	 ,"key_word": "Шлем снайпера \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Штурмовик отряда Абсолют" 
-	 ,"key_word": "Штурмовик отряда Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Снайпер отряда Абсолют" 
-	 ,"key_word": "Снайпер отряда Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "M249 Para Атлас" 
-	 ,"key_word": "M249 Para Атлас" 
+	 "name": "Benelli M4 Super 90 Злой Санта" 
+	 ,"key_word": "Benelli M4 Super 90 Злой Санта" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем медика \"Абсолют\"" 
-	 ,"key_word": "Шлем медика \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Полярная униформа инженера" 
-	 ,"key_word": "Полярная униформа инженера" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Снайпер отряда SAS" 
-	 ,"key_word": "Снайпер отряда SAS" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Жилет \"Абсолют\"" 
-	 ,"key_word": "Жилет \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -907,458 +588,40 @@
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Шлем медика K.I.W.I." 
-	 ,"key_word": "Шлем медика K.I.W.I." 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Перчатки \"Абсолют\"" 
-	 ,"key_word": "Перчатки \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Штурмовик отряда SAS" 
-	 ,"key_word": "Штурмовик отряда SAS" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем штурмовика \"Абсолют\"" 
-	 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем инженера \"Абсолют\"" 
-	 ,"key_word": "Шлем инженера \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Desert Eagle Абсолют" 
-	 ,"key_word": "Desert Eagle Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Ботинки \"Абсолют\"" 
-	 ,"key_word": "Ботинки \"Абсолют\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Remington MSR Карбон" 
-	 ,"key_word": "Remington MSR Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "SAI GRY AR-15 Абсолют" 
-	 ,"key_word": "SAI GRY AR-15 Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем снайпера K.I.W.I." 
-	 ,"key_word": "Шлем снайпера K.I.W.I." 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Remington MSR Синдикат" 
-	 ,"key_word": "Remington MSR Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "M14 Crazy Horse Абсолют" 
-	 ,"key_word": "M14 Crazy Horse Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Перчатки \"Атлас\"" 
-	 ,"key_word": "Перчатки \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Удильщик" 
-	 ,"key_word": "Удильщик" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем штурмовика \"Атлас\"" 
-	 ,"key_word": "Шлем штурмовика \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Тигр" 
-	 ,"key_word": "Тигр" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Город для Famas F1" 
-	 ,"key_word": "Камуфляж Город для Famas F1" 
+	 "name": "Камуфляж K.I.W.I. для S&W M&P R8" 
+	 ,"key_word": "Камуфляж K.I.W.I. для S&W M&P R8" 
 	 ,"id_market": "" 
 	 ,"kind": "camouflage" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "ПП-19 Бизон Злой Санта" 
-	 ,"key_word": "ПП-19 Бизон Злой Санта" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Джунгли для SCAR-L PDW" 
-	 ,"key_word": "Камуфляж Джунгли для SCAR-L PDW" 
+	 "name": "Камуфляж \"Стужа\" для Beretta ARX160" 
+	 ,"key_word": "Камуфляж \"Стужа\" для Beretta ARX160" 
 	 ,"id_market": "" 
 	 ,"kind": "camouflage" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Большой комплект патронов" 
-	 ,"key_word": "Большой комплект патронов" 
-	 ,"id_market": "" 
-	 ,"kind": "device" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Famas F1" 
-	 ,"key_word": "Famas F1" 
+	 "name": "K.I.W.I. Тактический топор" 
+	 ,"key_word": "K.I.W.I. Тактический топор" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "AK-103 Злой Санта" 
-	 ,"key_word": "AK-103 Злой Санта" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Barrett M107" 
-	 ,"key_word": "Barrett M107" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Картель для Beretta MX4 Storm" 
-	 ,"key_word": "Камуфляж Картель для Beretta MX4 Storm" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Место для трофея" 
-	 ,"key_word": "Место для трофея" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "FN FAL DSA-58" 
-	 ,"key_word": "FN FAL DSA-58" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Fostech Origin-12" 
-	 ,"key_word": "Fostech Origin-12" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "ACR CQB Карбон" 
-	 ,"key_word": "ACR CQB Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "FN FAL DSA-58 Карбон" 
-	 ,"key_word": "FN FAL DSA-58 Карбон" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Леопард" 
-	 ,"key_word": "Леопард" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Джунгли для H&K USP" 
-	 ,"key_word": "Камуфляж Джунгли для H&K USP" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Джунгли для Tavor TAR-21" 
-	 ,"key_word": "Камуфляж Джунгли для Tavor TAR-21" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "MAG-7 Атлас" 
-	 ,"key_word": "MAG-7 Атлас" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "MPA 930DMG Абсолют" 
-	 ,"key_word": "MPA 930DMG Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "PM-84 Glauberyt Custom" 
-	 ,"key_word": "PM-84 Glauberyt Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Медик отряда SAS" 
-	 ,"key_word": "Медик отряда SAS" 
-	 ,"id_market": "" 
-	 ,"kind": "appearance" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Лев" 
-	 ,"key_word": "Лев" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Anakon" 
-	 ,"key_word": "Anakon" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "DP-12 Абсолют" 
-	 ,"key_word": "DP-12 Абсолют" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Жилет \"Атлас\"" 
-	 ,"key_word": "Жилет \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Ботинки \"Атлас\"" 
-	 ,"key_word": "Ботинки \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -1369,469 +632,84 @@
 	 ,"kind": "appearance" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "K.I.W.I. Fostech Origin-12" 
-	 ,"key_word": "K.I.W.I. Fostech Origin-12" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Desert Tech MDR-C" 
-	 ,"key_word": "Desert Tech MDR-C" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для M249 Para" 
-	 ,"key_word": "Камуфляж Атлас для M249 Para" 
+	 "name": "Камуфляж \"Пустыня\" для АК \"Альфа\"" 
+	 ,"key_word": "Камуфляж \"Пустыня\" для АК \"Альфа\"" 
 	 ,"id_market": "" 
 	 ,"kind": "camouflage" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Камуфляж Атлас для Jagdkommando" 
-	 ,"key_word": "Камуфляж Атлас для Jagdkommando" 
+	 "name": "Полярная униформа штурмовика" 
+	 ,"key_word": "Полярная униформа штурмовика" 
 	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
+	 ,"kind": "appearance" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "JagdKommando \"Атлас\"" 
-	 ,"key_word": "JagdKommando \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "H&K MG4" 
-	 ,"key_word": "H&K MG4" 
+	 "name": "FN Five-seveN Злой Санта" 
+	 ,"key_word": "FN Five-seveN Злой Санта" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Шлем инженера \"Атлас\"" 
-	 ,"key_word": "Шлем инженера \"Атлас\"" 
+	 "name": "K.I.W.I. Gepard GM6 Lynx" 
+	 ,"key_word": "K.I.W.I. Gepard GM6 Lynx" 
+	 ,"id_market": "" 
+	 ,"kind": "weapon" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "Шлем снайпера K.I.W.I." 
+	 ,"key_word": "Шлем снайпера K.I.W.I." 
 	 ,"id_market": "" 
 	 ,"kind": "equipment" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "Beretta MX4 Storm" 
-	 ,"key_word": "Beretta MX4 Storm" 
+	 "name": "Снайпер отряда SAS" 
+	 ,"key_word": "Снайпер отряда SAS" 
+	 ,"id_market": "" 
+	 ,"kind": "appearance" 
+	 ,"higth_cost": 0 
+	 ,"low_cost": 42 
+	 ,"hidden": 0 
+	 ,"auto_cost": 42 
+	 ,"exclude": [] 
+} 
+,{ 
+	 "name": "K.I.W.I. S&W M&P R8" 
+	 ,"key_word": "K.I.W.I. S&W M&P R8" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "ВСС Винторез" 
-	 ,"key_word": "ВСС Винторез" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Magpul FMG-9 Атлас" 
-	 ,"key_word": "Magpul FMG-9 Атлас" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для Magpul FMG-9" 
-	 ,"key_word": "Камуфляж Атлас для Magpul FMG-9" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем снайпера \"Атлас\"" 
-	 ,"key_word": "Шлем снайпера \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для Тактический топор" 
-	 ,"key_word": "Камуфляж Атлас для Тактический топор" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "UTAS UTS-15" 
-	 ,"key_word": "UTAS UTS-15" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Пиранья-убийца" 
-	 ,"key_word": "Пиранья-убийца" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "FN P90" 
-	 ,"key_word": "FN P90" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Горилла" 
-	 ,"key_word": "Горилла" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Композитный ремкомплект" 
-	 ,"key_word": "Композитный ремкомплект" 
-	 ,"id_market": "" 
-	 ,"kind": "device" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Тактический топор \"Атлас\"" 
-	 ,"key_word": "Тактический топор \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для CZ 75-Auto" 
-	 ,"key_word": "Камуфляж Атлас для CZ 75-Auto" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Шлем медика \"Атлас\"" 
-	 ,"key_word": "Шлем медика \"Атлас\"" 
-	 ,"id_market": "" 
-	 ,"kind": "equipment" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для MAG-7" 
-	 ,"key_word": "Камуфляж Атлас для MAG-7" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для M1911A1" 
-	 ,"key_word": "Камуфляж Атлас для M1911A1" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "СВУ-АС Атлас" 
-	 ,"key_word": "СВУ-АС Атлас" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Фортуна для M16A3 Custom" 
-	 ,"key_word": "Камуфляж Фортуна для M16A3 Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Трофейная доска" 
-	 ,"key_word": "Трофейная доска" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "CheyTac M200" 
-	 ,"key_word": "CheyTac M200" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "ПЯ Грач" 
-	 ,"key_word": "ПЯ Грач" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для MSBS Radon" 
-	 ,"key_word": "Камуфляж Атлас для MSBS Radon" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Атлас для СВУ-АС" 
-	 ,"key_word": "Камуфляж Атлас для СВУ-АС" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Черная пантера" 
-	 ,"key_word": "Черная пантера" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Полигон для AWM" 
-	 ,"key_word": "Камуфляж Полигон для AWM" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Полигон для Kriss super V" 
-	 ,"key_word": "Камуфляж Полигон для Kriss super V" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Полигон для АК-103" 
-	 ,"key_word": "Камуфляж Полигон для АК-103" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Полигон для ВСС Винторез" 
-	 ,"key_word": "Камуфляж Полигон для ВСС Винторез" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Дикий кабан" 
-	 ,"key_word": "Дикий кабан" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Гризли" 
-	 ,"key_word": "Гризли" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Орел" 
-	 ,"key_word": "Орел" 
-	 ,"id_market": "" 
-	 ,"kind": "achievement" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "CZ 75-Auto Атлас" 
-	 ,"key_word": "CZ 75-Auto Атлас" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Фортуна для АК-103" 
-	 ,"key_word": "Камуфляж Фортуна для АК-103" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Фортуна для Сайга-12С" 
-	 ,"key_word": "Камуфляж Фортуна для Сайга-12С" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Камуфляж Фортуна для Tavor CTAR-21" 
-	 ,"key_word": "Камуфляж Фортуна для Tavor CTAR-21" 
-	 ,"id_market": "" 
-	 ,"kind": "camouflage" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 1 
+	 ,"hidden": 0 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 

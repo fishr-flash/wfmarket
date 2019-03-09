@@ -28,7 +28,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 9, 1 ];
+		public static const VERSION:Array = [ 1, 9, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -39,7 +39,7 @@ package su.fishr.market
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
 		/// загужать все данные игнорируя джейсон файл перечня
-		public static const IGNORE_CONFIG:Boolean = true;
+		public static const IGNORE_CONFIG:Boolean = false;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
