@@ -521,9 +521,24 @@ package su.fishr.market.service
 		private function constructConfig(items:Array):String 
 		{
 			
+			const groups:Vector.<WeaponGroup> = _weaponGroups.slice().sort( onsortGroup );
+			
+
+			var sortedItms:Array = [];
+			
+			const klen:int = groups.length;
+			for (var k:int = 0; k < klen; k++) 
+			{
+				sortedItms.push( items[ searchKeyCfg( groups[ k ].groupKey ) ] );
+			}
 			
 			
-			items.sort( onsortItms );
+			
+			
+			
+			
+			
+			
 			
 			var result:String = "[";
 			
@@ -543,16 +558,16 @@ package su.fishr.market.service
 				
 			var obStr:String;
 			
-			const len:int = items.length;
+			const len:int = sortedItms.length;
 			for (var i:int = 0; i < len; i++) 
 			{
 			
 				obStr = i == 0?'':',';
 				obStr +='{ \r';
-				obStr += '\t "name": "' + String( items[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
-				obStr += '\t ,"key_word": "' + String( items[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
+				obStr += '\t "name": "' + String( sortedItms[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
+				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
 				obStr += '\t ,"id_market": "' + '" \r';
-				obStr += '\t ,"kind": "' + items[ i ].kind +'" \r';
+				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 1 \r';
@@ -565,18 +580,32 @@ package su.fishr.market.service
 			result += ']';
 			
 			return result;
-				
-			function onsortItms( x:Object, y:Object ):Number
+			
+			
+			function searchKeyCfg( skey:String ):int
 			{
+				const len:int = items.length;
+				for ( var i:int = 0; i < len; i++ )
+				{
+					if ( items[ i ].name == skey ) 
+							return i;
+				}
 				
-				if ( String( x[ "name" ]).charCodeAt() > String( y[ "name" ]).charCodeAt() ) return 1
-				else if ( String( x[ "name" ]).charCodeAt() < String( y[ "name" ]).charCodeAt()) return -1;
-				else return 0;
-				
-				
-				
+				return -1;
 			}
 			
+		}
+		
+		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
+		{
+			if ( x.liquidity < y.liquidity ) return 1
+			else if ( x.liquidity > y.liquidity ) return -1;
+			else return 0;
+			
+			
+			/*if ( x.cost < y.cost ) return -1;
+			else if ( x.cost > y.cost ) return 1;
+			else return 0;*/
 		}
 		
 	}
