@@ -1,7 +1,8 @@
-package su.fishr.market.service.bayer 
+package su.fishr.market.seller.nets 
 {
-	import flash.events.*;
-	import flash.net.*;
+	import flash.display.Sprite;
+    import flash.events.*;
+    import flash.net.*;
 	import su.fishr.market.service.Logw;
 	import su.fishr.utils.Dumper;
 	
@@ -9,7 +10,7 @@ package su.fishr.market.service.bayer
 	 * ...
 	 * @author  
 	 */
-	public class BuyRequest 
+	public class ListSellsRequest 
 	{
 		
 		
@@ -17,44 +18,19 @@ package su.fishr.market.service.bayer
 		private var loader:URLLoader;
 		private var _call:Function;
         
-        public function BuyRequest(entity_id:int, cost:int, type:String,  callback:Function ) {
+        public function ListSellsRequest( callback:Function  ) {
 			
 			_call = callback;
             loader = new URLLoader();
             configureListeners(loader);
 
+            var request:URLRequest = new URLRequest("https://wf.mail.ru/minigames/inventory/api/list" );
             
-            var request:URLRequest = new URLRequest("https://wf.mail.ru/minigames/marketplace/api/buy");
-			request.method = URLRequestMethod.POST;
-			var variables:URLVariables = new URLVariables;
-			variables.entity_id = entity_id + "";
-			variables.cost = cost + "";
-			variables.type = type;
-			request.data = variables;
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "BayRequest.as" + ". " +  "BayRequest ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				//+ ( "\r request: " + Dumper.dump( request, 6, true, true ) )
-				//+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
-				+ ( "\r variables: " + variables.type )
-				+ ( "\r entity_id: " +entity_id )
-				+ ( "\r cost: " +cost )
-				+ ( "\r type: " +type )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
-            try {
+			try {
                 loader.load(request);
             } catch (error:Error) {
-                trace("Unable to load requested document.");
+                trace("Unable to load requested document." + error);
+				_call( error );
             }
         }
 
@@ -70,6 +46,9 @@ package su.fishr.market.service.bayer
         private function completeHandler(event:Event):void {
             var loader:URLLoader = URLLoader(event.target);
             trace("completeHandler: " + loader.data);
+			/**
+			 * d:  value = ( str,57 ) {"state":"Success","data":{"inv_id":134491111,"cost":42}}
+			 */
 			_call( loader.data );
         }
 
@@ -89,11 +68,12 @@ package su.fishr.market.service.bayer
 			if( true )
 			{
 				const i:String = 
-				( "BayRequest.as" + ". " +  "securityErrorHandler ")
+				( "PrebayRequest.as" + ". " +  "securityErrorHandler ")
 				+ ( "\r event.toString(): " +  event.toString())
 				//+ ( "\r : " + Dumper.dump( "" ) )
 				+ ( "\r end" );
 				Logw.inst.up( i );
+				_call( null );
 			}
 			
         }
@@ -110,10 +90,14 @@ package su.fishr.market.service.bayer
 			if( true )
 			{
 				const i:String = 
-				( "BayRequest.as" + ". " +  "ioErrorHandler ")
+				( "PrebayRequest.as" + ". " +  "ioErrorHandler ")
 				+ ( "\r event.toString(): " +  event.toString())
 				+ ( "\r end" );
 				Logw.inst.up( i );
+				
+				//не будет вызывана (??)
+				_call( event.errorID );
+				
 			}
 			
         }

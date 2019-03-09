@@ -1,5 +1,7 @@
-package su.fishr.market.service.bayer 
+package su.fishr.market.seller.nets 
 {
+	import flash.events.EventDispatcher;
+	import flash.events.IEventDispatcher;
 	import flash.events.*;
 	import flash.net.*;
 	import su.fishr.market.service.Logw;
@@ -7,9 +9,9 @@ package su.fishr.market.service.bayer
 	
 	/**
 	 * ...
-	 * @author  
+	 * @author fishr
 	 */
-	public class BuyRequest 
+	public class SellRequest extends EventDispatcher 
 	{
 		
 		
@@ -17,19 +19,20 @@ package su.fishr.market.service.bayer
 		private var loader:URLLoader;
 		private var _call:Function;
         
-        public function BuyRequest(entity_id:int, cost:int, type:String,  callback:Function ) {
+        public function SellRequest(entity_id:int, cost:int, callback:Function, target:IEventDispatcher = null  ) {
+			
+			super(target);
 			
 			_call = callback;
             loader = new URLLoader();
             configureListeners(loader);
 
             
-            var request:URLRequest = new URLRequest("https://wf.mail.ru/minigames/marketplace/api/buy");
+            var request:URLRequest = new URLRequest("https://wf.mail.ru/minigames/inventory/api/sale");
 			request.method = URLRequestMethod.POST;
 			var variables:URLVariables = new URLVariables;
-			variables.entity_id = entity_id + "";
+			variables.item_id = entity_id + "";
 			variables.cost = cost + "";
-			variables.type = type;
 			request.data = variables;
 			
 			//////////////////////TRACE/////////////////////////////////
@@ -42,11 +45,11 @@ package su.fishr.market.service.bayer
 				( "BayRequest.as" + ". " +  "BayRequest ")
 				//+ ( "\r : " + Dumper.dump( true ) )
 				//+ ( "\r request: " + Dumper.dump( request, 6, true, true ) )
-				//+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
-				+ ( "\r variables: " + variables.type )
-				+ ( "\r entity_id: " +entity_id )
-				+ ( "\r cost: " +cost )
-				+ ( "\r type: " +type )
+				+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
+				//+ ( "\r variables: " + variables.type )
+				//+ ( "\r entity_id: " +entity_id )
+				//+ ( "\r cost: " +cost )
+				
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
@@ -118,5 +121,7 @@ package su.fishr.market.service.bayer
 			
         }
     }
+		
+	
 
 }

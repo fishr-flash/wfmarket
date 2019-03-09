@@ -10,6 +10,7 @@ package su.fishr.market
 	import su.fishr.market.components.BackgroundShape;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
+	import su.fishr.market.seller.Sellerq;
 	import su.fishr.market.service.BotRequest;
 	import su.fishr.market.service.ItemsServant;
 	import su.fishr.market.service.Logw;
@@ -27,9 +28,10 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 8, 4 ];
+		public static const VERSION:Array = [ 1, 9, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
+		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.05;
 		public static const DELAY_ON_BUYER:int = 1500;
@@ -100,13 +102,13 @@ package su.fishr.market
 			
 			_servant = new ItemsServant;
 			
-			const wdthBtns:int = 35;
+			
 			
 			_btnPlay = new Button;
 			_btnPlay.label = "run";
 			_btnPlay.x = 0;
 			_btnPlay.y = 0;
-			_btnPlay.setSize( wdthBtns, _btnPlay.height );
+			_btnPlay.setSize( WIDTH_BUTTONS, _btnPlay.height );
 			_btnPlay.addEventListener( MouseEvent.CLICK, onPlay );
 			this.addChild( _btnPlay );
 			
@@ -115,7 +117,7 @@ package su.fishr.market
 			_btnStop.x = _btnPlay.x + _btnPlay.width + 5;
 			_btnStop.y = _btnPlay.y;
 			_btnStop.enabled = false;
-			_btnStop.setSize( wdthBtns, _btnStop.height );
+			_btnStop.setSize( WIDTH_BUTTONS, _btnStop.height );
 			_btnStop.addEventListener( MouseEvent.CLICK, onStop );
 			this.addChild( _btnStop );
 			
@@ -123,7 +125,7 @@ package su.fishr.market
 			_btnRequest.label = "req";
 			_btnRequest.x = _btnStop.x + _btnStop.width + 5;
 			_btnRequest.y = _btnStop.y;
-			_btnRequest.setSize( wdthBtns, _btnRequest.height );
+			_btnRequest.setSize( WIDTH_BUTTONS, _btnRequest.height );
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
@@ -131,7 +133,7 @@ package su.fishr.market
 			_btnUnload.label = "unl";
 			_btnUnload.x = _btnRequest.x + _btnRequest.width + 25;
 			_btnUnload.y = _btnRequest.y;
-			_btnUnload.setSize( wdthBtns, _btnRequest.height );
+			_btnUnload.setSize( WIDTH_BUTTONS, _btnRequest.height );
 			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
 			this.addChild( _btnUnload );
 			_btnUnload.enabled = false;
@@ -140,7 +142,7 @@ package su.fishr.market
 			_btnLoad.label = "dwn";
 			_btnLoad.x = _btnUnload.x + _btnUnload.width + 5;
 			_btnLoad.y = _btnUnload.y;
-			_btnLoad.setSize( wdthBtns + 5, _btnLoad.height );
+			_btnLoad.setSize( WIDTH_BUTTONS + 5, _btnLoad.height );
 			this.addChild( _btnLoad );
 			_btnLoad.addEventListener( MouseEvent.CLICK, btnOnLoad );
 			
@@ -148,7 +150,7 @@ package su.fishr.market
 			_btnCfg.label = "cfg";
 			_btnCfg.x = _btnLoad.x + _btnLoad.width + 5;
 			_btnCfg.y = _btnLoad.y;
-			_btnCfg.setSize( wdthBtns + 5, _btnCfg.height );
+			_btnCfg.setSize( WIDTH_BUTTONS + 5, _btnCfg.height );
 			this.addChild( _btnCfg );
 			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
 			_btnCfg.enabled = false;
@@ -158,7 +160,7 @@ package su.fishr.market
 			_btnOnAlert.label = "alrt";
 			_btnOnAlert.x = _btnCfg.x + _btnCfg.width + 25;
 			_btnOnAlert.y = _btnCfg.y;
-			_btnOnAlert.setSize( wdthBtns, _btnOnAlert.height );
+			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
 			_btnOnAlert.toggle = true;
@@ -168,7 +170,7 @@ package su.fishr.market
 			_btnOnBuy.label = "abuy";
 			_btnOnBuy.x = _btnOnAlert.x + _btnOnAlert.width + 5;
 			_btnOnBuy.y = _btnOnAlert.y;
-			_btnOnBuy.setSize( wdthBtns + 5, _btnOnBuy.height );
+			_btnOnBuy.setSize( WIDTH_BUTTONS + 5, _btnOnBuy.height );
 			_btnOnBuy.toggle = true;
 			_btnOnBuy.selected = false;
 			this.addChild( _btnOnBuy );
@@ -199,6 +201,11 @@ package su.fishr.market
 				+ AddZerroDate( VERSION[ 2 ], 3 );
 			}
 			
+			
+			const seller:Sellerq = new Sellerq;
+			seller.x = href.x + href.width + 100;
+			seller.y = _btnOnBuy.y;
+			this.addChild( seller );
 			
 			
 			
@@ -523,6 +530,8 @@ package su.fishr.market
 		
 		private function onStop(e:MouseEvent):void 
 		{
+			
+			
 			_botReqest.stop();
 			_btnPlay.enabled = true;
 			_btnStop.enabled = false;
