@@ -521,9 +521,10 @@ package su.fishr.market.service
 		private function constructConfig(items:Array):String 
 		{
 			
-			const groups:Vector.<WeaponGroup> = _weaponGroups.slice().sort( onsortGroup );
+			var groups:Vector.<WeaponGroup> = _weaponGroups.slice().sort( onsortGroup );
 			
-
+			groups = groups.filter( exludesFilter );
+			
 			var sortedItms:Array = [];
 			
 			const klen:int = groups.length;
@@ -594,7 +595,16 @@ package su.fishr.market.service
 				return -1;
 			}
 			
+			
+			function exludesFilter( current:WeaponGroup ):Boolean
+			{
+				if ( current.cost > 2000 ) return false;
+				if ( current.liquidity < 1 ) return false;
+				return true;
+			}
 		}
+		
+		
 		
 		private function onsortGroup( x:WeaponGroup, y:WeaponGroup ):Number
 		{
