@@ -18,7 +18,7 @@ package su.fishr.market
 	import su.fishr.market.service.Logw;
 	import su.fishr.market.service.bayer.BotBuyer;
 	import su.fishr.market.service.connections.TelegramBot;
-	import su.fishr.market.service.functions.createCustomTextField;
+	import su.fishr.utils.createCustomTextField;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.market.service.utils.dateFormat;
@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 1 ];
+		public static const VERSION:Array = [ 1, 10, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
