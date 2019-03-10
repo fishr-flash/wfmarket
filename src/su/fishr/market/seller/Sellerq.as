@@ -8,6 +8,7 @@ package su.fishr.market.seller
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFieldType;
+	import flash.utils.setTimeout;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.components.TFItem;
 	import su.fishr.market.seller.nets.ListSellsRequest;
@@ -32,6 +33,13 @@ package su.fishr.market.seller
 			
 			
 		}
+		
+		public function sell(entity_id:int,  cost:int ):void 
+		{
+			setTimeout( autoSell, int( ( Math.random() * 360000 ) + 5000 ), entity_id, cost );
+		}
+		
+		
 		
 		private function init():void 
 		{
@@ -145,6 +153,27 @@ package su.fishr.market.seller
 			/////////////////////END TRACE//////////////////////////////
 			
 			_btnOnList.enabled = true;
+		}
+		
+		private function autoSell(entity_id:int,  cost:int ):void 
+		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "Sellerq.as" + ". " +  "autoSell ")
+				+ ( "\rentity_id : " + entity_id )
+				+ ( "\r cost: " + cost )
+				+ ( "\r : " + "" )
+				//+ ( "\r : " + Dumper.dump( "" ) )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			new SellRequest( entity_id, cost, onResultRequest );
 		}
 		
 		private function createCustomTextField(x:Number, y:Number, width:Number, height:Number):TextField {

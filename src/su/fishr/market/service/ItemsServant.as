@@ -569,6 +569,7 @@ package su.fishr.market.service
 				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
 				obStr += '\t ,"id_market": "' + '" \r';
 				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
+				obStr += '\t ,"auto_sell": 0 \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 1 \r';

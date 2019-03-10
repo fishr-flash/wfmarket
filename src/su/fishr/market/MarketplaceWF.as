@@ -4,7 +4,9 @@ package su.fishr.market
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.events.TextEvent;
 	import flash.net.FileReference;
+	import flash.text.TextField;
 	import flash.utils.ByteArray;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
@@ -16,6 +18,7 @@ package su.fishr.market
 	import su.fishr.market.service.Logw;
 	import su.fishr.market.service.bayer.BotBuyer;
 	import su.fishr.market.service.connections.TelegramBot;
+	import su.fishr.market.service.functions.createCustomTextField;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.market.service.utils.dateFormat;
@@ -28,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 9, 6 ];
+		public static const VERSION:Array = [ 1, 10, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -46,6 +49,7 @@ package su.fishr.market
 		
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "cost";
+		public static var _CASH:int = 0;
 		
 		
 		private var _btnRequest:Button;
@@ -57,13 +61,14 @@ package su.fishr.market
 		private var _price:PriceOfWeapons;
 		private var _btnOnAlert:Button;
 		private var _buy_counter:int = 100;
-		private var _btnOnBuy:Button;
+		private var _btnAutoBuy:Button;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
 		private var _btnUnload:Button;
 		private var _btnLoad:Button;
 		private var _file:FileReference;
 		private var _btnCfg:Button;
+		private var _seller:Sellerq;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -166,23 +171,31 @@ package su.fishr.market
 			_btnOnAlert.toggle = true;
 			_btnOnAlert.selected = true;
 			
-			_btnOnBuy = new Button;
-			_btnOnBuy.label = "abuy";
-			_btnOnBuy.x = _btnOnAlert.x + _btnOnAlert.width + 5;
-			_btnOnBuy.y = _btnOnAlert.y;
-			_btnOnBuy.setSize( WIDTH_BUTTONS + 5, _btnOnBuy.height );
-			_btnOnBuy.toggle = true;
-			_btnOnBuy.selected = false;
-			this.addChild( _btnOnBuy );
-			_btnOnBuy.addEventListener( MouseEvent.CLICK, btnBuyHandler );
+			
+			const tfCash:TextField = createCustomTextField( 0, 0, 40, 20 );
+			tfCash.x = _btnOnAlert.x + _btnOnAlert.width + 5;
+			tfCash.y = _btnOnAlert.y;
+			this.addChild( tfCash );
+			tfCash.addEventListener( Event.CHANGE, inputCash );
+			
+			_btnAutoBuy = new Button;
+			_btnAutoBuy.label = "abuy";
+			_btnAutoBuy.x = tfCash.x + tfCash.width + 5;
+			_btnAutoBuy.y = tfCash.y;
+			_btnAutoBuy.setSize( WIDTH_BUTTONS + 5, _btnAutoBuy.height );
+			_btnAutoBuy.toggle = true;
+			_btnAutoBuy.selected = false;
+			_btnAutoBuy.enabled = false;
+			this.addChild( _btnAutoBuy );
+			_btnAutoBuy.addEventListener( MouseEvent.CLICK, btnBuyHandler );
 			
 			
 			
 			
 			const href:TFItem = new TFItem;
 			href.htmlText = '<a href="https://wf.mail.ru/inventory" target="_blank" > market</a>';
-			href.y = _btnOnBuy.y - 5;
-			href.x = _btnOnBuy.x + _btnOnBuy.width + 5;					
+			href.y = _btnAutoBuy.y - 5;
+			href.x = _btnAutoBuy.x + _btnAutoBuy.width + 5;					
 			this.addChild( href );
 			
 			
@@ -202,10 +215,10 @@ package su.fishr.market
 			}
 			
 			
-			const seller:Sellerq = new Sellerq;
-			seller.x = href.x + href.width + 100;
-			seller.y = _btnOnBuy.y;
-			this.addChild( seller );
+			_seller = new Sellerq;
+			_seller.x = href.x + href.width + 100;
+			_seller.y = _btnAutoBuy.y;
+			this.addChild( _seller );
 			
 			
 			
@@ -224,6 +237,15 @@ package su.fishr.market
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
+		}
+		
+		private function inputCash(e:Event):void 
+		{
+			
+			_CASH = int( e.target.text );
+			if ( _CASH ) _btnAutoBuy.enabled = true;
+			else _btnAutoBuy.enabled = false;
+		   
 		}
 		
 		private function btnOnLoad(e:MouseEvent):void 
@@ -307,7 +329,7 @@ package su.fishr.market
 		
 		private function btnBuyHandler(e:MouseEvent):void 
 		{
-			if ( _btnOnBuy.selected )
+			if ( _btnAutoBuy.selected )
 						_buy_counter = 100;
 		}
 		
@@ -377,22 +399,45 @@ package su.fishr.market
 		 */
 		private function onBayOperation(e:WFMEvent):void 
 		{
-			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
-			if ( _buy_counter > 0 && _btnOnBuy.selected == true )
-			{
-				_buy_counter--;
-				const went:WeaponEnt = e.data as WeaponEnt;
+			const went:WeaponEnt = e.data as WeaponEnt;
 			
-				if ( !_btnPlay.enabled )
-						_onPausePlay = true;
-						
-				onStop( null );
-						
-				new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
-			}
-			else if ( _btnOnBuy.selected == true )
+			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
-				_btnOnBuy.selected = false;
+				if ( _CASH - int( went.cost ) >= 0 )
+				{
+					_buy_counter--;
+				
+			
+					if ( !_btnPlay.enabled )
+							_onPausePlay = true;
+							
+					onStop( null );
+							
+					new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
+				}
+				else
+				{
+					//////////////////////TRACE/////////////////////////////////
+					
+					import su.fishr.market.service.Logw;
+					import su.fishr.utils.Dumper;
+					if( true )
+					{
+						const i:String = 
+						( "MarketplaceWF.as" + ". " +  "onBayOperation ")
+						+ ( "\r : " + "not enough money to buy, need: " + went.cost )
+						//+ ( "\r : " + Dumper.dump( "" ) )
+						+ ( "\r end" );
+						Logw.inst.up( i );
+					}
+					/////////////////////END TRACE//////////////////////////////
+				}
+				
+			}
+			else if ( _btnAutoBuy.selected == true )
+			{
+				_btnAutoBuy.selected = false;
 				
 				buyResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
 				
@@ -453,23 +498,8 @@ package su.fishr.market
 				 end
 			 */
 			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "MarketplaceWF.as" + ". " +  "buyResult ")
-				//+ ( "\r : " +  )
-				+ ( "\r d: " + Dumper.dump( d ) )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
-			const res:String = " status: " + d.status;
-			
-			
+			 const res:String = " status: " + d.state;
+			 
 			if ( _btnOnAlert.selected )
 					TelegramBot.inst.onBuyResult( res );
 					
@@ -478,6 +508,10 @@ package su.fishr.market
 					
 			_onPausePlay = false;
 					
+			if ( res.indexOf( "Operation successfull" ) > -1 )
+			{
+				_seller.sell( int( d.entity_id ), int( ( Math.random() * 2000 ) + 1000 ) );
+			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
