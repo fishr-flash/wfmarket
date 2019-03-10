@@ -83,7 +83,7 @@ package su.fishr.market.seller
 			
 			const request:SellRequest = new SellRequest( int( _tfItemId.text ), int( _tfCost.text ), onResultRequest );
 			
-			_tfItemId.text = _tfCost.text = "";
+			//_tfItemId.text = _tfCost.text = "";
 			
 		}
 		
