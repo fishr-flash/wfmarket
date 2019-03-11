@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 4 ];
+		public static const VERSION:Array = [ 1, 10, 6 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -69,6 +69,7 @@ package su.fishr.market
 		private var _file:FileReference;
 		private var _btnCfg:Button;
 		private var _seller:Sellerq;
+		private var _tfCash:TextField;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -172,16 +173,16 @@ package su.fishr.market
 			_btnOnAlert.selected = true;
 			
 			
-			const tfCash:TextField = createCustomTextField( 0, 0, 40, 20 );
-			tfCash.x = _btnOnAlert.x + _btnOnAlert.width + 5;
-			tfCash.y = _btnOnAlert.y;
-			this.addChild( tfCash );
-			tfCash.addEventListener( Event.CHANGE, inputCash );
+			_tfCash = createCustomTextField( 0, 0, 40, 20 );
+			_tfCash.x = _btnOnAlert.x + _btnOnAlert.width + 5;
+			_tfCash.y = _btnOnAlert.y;
+			this.addChild( _tfCash );
+			_tfCash.addEventListener( Event.CHANGE, inputCash );
 			
 			_btnAutoBuy = new Button;
 			_btnAutoBuy.label = "abuy";
-			_btnAutoBuy.x = tfCash.x + tfCash.width + 5;
-			_btnAutoBuy.y = tfCash.y;
+			_btnAutoBuy.x = _tfCash.x + _tfCash.width + 5;
+			_btnAutoBuy.y = _tfCash.y;
 			_btnAutoBuy.setSize( WIDTH_BUTTONS + 5, _btnAutoBuy.height );
 			_btnAutoBuy.toggle = true;
 			_btnAutoBuy.selected = false;
@@ -402,7 +403,8 @@ package su.fishr.market
 			const went:WeaponEnt = e.data as WeaponEnt;
 			
 			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
-			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
+			
+			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  && went.cost <= _CASH )
 			{
 				if ( _CASH - int( went.cost ) >= 0 )
 				{
@@ -440,6 +442,20 @@ package su.fishr.market
 				_btnAutoBuy.selected = false;
 				
 				buyResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
+				//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const j:String = 
+					( "MarketplaceWF.as" + ". " +  "onBayOperation ")
+					+ ( "\r_CASH : " + _CASH )
+					//+ ( "\r : " + Dumper.dump( "" ) )
+					+ ( "\r end" );
+					Logw.inst.up( j );
+				}
+				/////////////////////END TRACE//////////////////////////////
 				
 				
 			}
@@ -526,7 +542,10 @@ package su.fishr.market
 			if ( res.indexOf( "Operation successfull" ) > -1 )
 			{
 				const onBuyCost:int = _servant.getBuyCost( int( d.entity_id ) );
-				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 20 ) ) );
+				_CASH -= onBuyCost;
+				_tfCash.text = _CASH + "";
+				
+				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 200 ) ) );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
