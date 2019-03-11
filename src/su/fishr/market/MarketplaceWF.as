@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 7 ];
+		public static const VERSION:Array = [ 1, 10, 8 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -406,9 +406,9 @@ package su.fishr.market
 			
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
-				if ( _CASH <= int( went.cost ) )
+				if ( _CASH >= int( went.cost ) )
 				{
-					_buy_counter--;
+					
 				
 			
 					if ( !_btnPlay.enabled )
@@ -531,6 +531,7 @@ package su.fishr.market
 					
 			if ( res.indexOf( "Operation successfull" ) > -1 )
 			{
+				_buy_counter--;
 				const onBuyCost:int = _servant.getBuyCost( int( d.entity_id ) );
 				_CASH -= onBuyCost;
 				_tfCash.text = _CASH + "";
