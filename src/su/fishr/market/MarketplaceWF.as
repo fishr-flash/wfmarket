@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 6 ];
+		public static const VERSION:Array = [ 1, 10, 7 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -404,9 +404,9 @@ package su.fishr.market
 			
 			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
-			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  && went.cost <= _CASH )
+			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
-				if ( _CASH - int( went.cost ) >= 0 )
+				if ( _CASH <= int( went.cost ) )
 				{
 					_buy_counter--;
 				
@@ -420,6 +420,8 @@ package su.fishr.market
 				}
 				else
 				{
+					
+					
 					//////////////////////TRACE/////////////////////////////////
 					
 					import su.fishr.market.service.Logw;
@@ -429,6 +431,7 @@ package su.fishr.market
 						const i:String = 
 						( "MarketplaceWF.as" + ". " +  "onBayOperation ")
 						+ ( "\r : " + "not enough money to buy, need: " + went.cost )
+						+ ( "\r : " + "_CASH: " + _CASH )
 						//+ ( "\r : " + Dumper.dump( "" ) )
 						+ ( "\r end" );
 						Logw.inst.up( i );
@@ -442,20 +445,7 @@ package su.fishr.market
 				_btnAutoBuy.selected = false;
 				
 				buyResult( { status:"You have reached the limit of purchase transactions", data:e.data.key, went:e.data.cost, count: _buy_counter } );
-				//////////////////////TRACE/////////////////////////////////
 				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const j:String = 
-					( "MarketplaceWF.as" + ". " +  "onBayOperation ")
-					+ ( "\r_CASH : " + _CASH )
-					//+ ( "\r : " + Dumper.dump( "" ) )
-					+ ( "\r end" );
-					Logw.inst.up( j );
-				}
-				/////////////////////END TRACE//////////////////////////////
 				
 				
 			}
@@ -545,7 +535,7 @@ package su.fishr.market
 				_CASH -= onBuyCost;
 				_tfCash.text = _CASH + "";
 				
-				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 200 ) ) );
+				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 2000 ) ) );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
