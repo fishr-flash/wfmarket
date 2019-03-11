@@ -176,6 +176,20 @@ package su.fishr.market.service.model
 			
 		}
 		
+		public function getBuyCost(entity_id:int):int 
+		{
+			const ilen:int = _went.length;
+			var cost:int = 0;
+			
+			for (var i:int = 0; i < ilen; i++) 
+			{
+				if ( _went[ i ].entity_id == entity_id )
+											return _autocost;
+			}
+			
+			return cost;
+		}
+		
 		private function searchKey( skey:String ):int
 		{
 			const len:int = _went.length;

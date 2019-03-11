@@ -226,6 +226,20 @@ package su.fishr.market.service
 			return constructConfig( _configItems.slice() );
 		}
 		
+		public function getBuyCost( entity_id:int ):int 
+		{
+			const ilen:int = _weaponGroups.length;
+			var autocost:int = 0;
+			for (var i:int = 0; i < ilen; i++) 
+			{
+				autocost = _weaponGroups[ i ].getBuyCost( entity_id );
+				if ( autocost )
+						return autocost;
+			}
+			
+			return 1000;
+		}
+		
 		private function joinStory(data:Array):Array 
 		{
 			if( data.length ) _bufferStory.push( data );

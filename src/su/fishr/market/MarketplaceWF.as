@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 2 ];
+		public static const VERSION:Array = [ 1, 10, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -525,7 +525,8 @@ package su.fishr.market
 					
 			if ( res.indexOf( "Operation successfull" ) > -1 )
 			{
-				_seller.sell( int( d.entity_id ), int( ( Math.random() * 2000 ) + 1000 ) );
+				const onBuyCost:int = _servant.getBuyCost( int( d.entity_id ) );
+				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 20 ) ) );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
@@ -534,6 +535,8 @@ package su.fishr.market
 		private function onBtnAlert(e:MouseEvent):void 
 		{
 			_btnOnAlert.selected = _btnOnAlert.selected == true;
+			
+			
 		}
 		
 		private function onBtnCfg(e:MouseEvent):void 
