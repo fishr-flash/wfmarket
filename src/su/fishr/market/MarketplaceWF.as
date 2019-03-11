@@ -498,6 +498,21 @@ package su.fishr.market
 				 end
 			 */
 			
+			 //////////////////////TRACE/////////////////////////////////
+			 
+			 import su.fishr.market.service.Logw;
+			 import su.fishr.utils.Dumper;
+			 if( true )
+			 {
+				 const i:String = 
+				 ( "MarketplaceWF.as" + ". " +  "buyResult ")
+				 + ( "\r : " + "" )
+				 + ( "\r d: " + Dumper.dump( d ) )
+				 //+ ( "\r : " + Dumper.dump( "" ) )
+				 + ( "\r end" );
+				 Logw.inst.up( i );
+			 }
+			 /////////////////////END TRACE//////////////////////////////
 			 const res:String = " status: " + d.state;
 			 
 			if ( _btnOnAlert.selected )
