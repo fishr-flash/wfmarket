@@ -10,17 +10,6 @@
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "MSBS Radon" 
-	 ,"key_word": "MSBS Radon" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
 	 "name": "MSBS Radon Карбон" 
 	 ,"key_word": "MSBS Radon Карбон" 
 	 ,"id_market": "" 
@@ -43,17 +32,6 @@
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "AT308" 
-	 ,"key_word": "AT308" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
 	 "name": "H&K MP5A5 Custom Синдикат" 
 	 ,"key_word": "H&K MP5A5 Custom Синдикат" 
 	 ,"id_market": "" 
@@ -62,17 +40,6 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"auto_cost": 170 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "H&K MP5A5 Custom" 
-	 ,"key_word": "H&K MP5A5 Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -87,28 +54,6 @@
 	 ,"exclude": [] 
 } 
 ,{ 
-	 "name": "SAI GRY AR-15" 
-	 ,"key_word": "SAI GRY AR-15" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Sidewinder Venom" 
-	 ,"key_word": "Sidewinder Venom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
 	 "name": "Sidewinder Venom Карбон" 
 	 ,"key_word": "Sidewinder Venom Карбон" 
 	 ,"id_market": "" 
@@ -117,17 +62,6 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"auto_cost": 105 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Сайга H.G.C. Custom" 
-	 ,"key_word": "Сайга H.G.C. Custom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
