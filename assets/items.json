@@ -28,7 +28,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 90 
+	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -237,7 +237,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 100 
 	 ,"exclude": [] 
 } 
 ,{ 
