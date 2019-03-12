@@ -537,7 +537,7 @@ package su.fishr.market.service
 			
 			var groups:Vector.<WeaponGroup> = _weaponGroups.slice().sort( onsortGroup );
 			
-			groups = groups.filter( exludesFilter );
+			if( MarketplaceWF.IGNORE_CONFIG ) groups = groups.filter( exludesFilter );
 			
 			var sortedItms:Array = [];
 			
@@ -611,7 +611,7 @@ package su.fishr.market.service
 			}
 			
 			
-			function exludesFilter( current:WeaponGroup ):Boolean
+			function exludesFilter( current:WeaponGroup, index:int, array:Vector.<WeaponGroup> ):Boolean
 			{
 				if ( current.cost > 2000 ) return false;
 				if ( current.liquidity < 1 ) return false;
