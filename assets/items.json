@@ -6,7 +6,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 2310 
+	 ,"auto_cost": 2100 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -39,7 +39,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 170 
+	 ,"auto_cost": 126 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -50,7 +50,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 400 
+	 ,"auto_cost": 315 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -72,7 +72,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 100 
+	 ,"auto_cost": 84 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -83,7 +83,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 450 
+	 ,"auto_cost": 525 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -149,7 +149,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 350 
+	 ,"auto_cost": 368 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -160,7 +160,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 265 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -171,7 +171,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 100 
+	 ,"auto_cost": 137 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -182,7 +182,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 210 
+	 ,"auto_cost": 189 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -193,7 +193,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 550 
+	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -226,7 +226,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 525 
+	 ,"auto_cost": 500 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -270,7 +270,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 525 
+	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -358,7 +358,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -391,7 +391,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 210 
 	 ,"exclude": [] 
 } 
 ,{ 
