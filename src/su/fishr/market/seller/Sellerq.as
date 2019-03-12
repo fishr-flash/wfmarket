@@ -36,7 +36,7 @@ package su.fishr.market.seller
 		
 		public function sell(entity_id:int,  cost:int ):void 
 		{
-			setTimeout( autoSell, int( ( Math.random() * 360000 ) + 5000 ), entity_id, cost );
+			setTimeout( autoSell, int( ( Math.random() * 60000 ) + 5000 ), entity_id, cost );
 		}
 		
 		
