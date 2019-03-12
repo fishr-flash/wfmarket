@@ -420,8 +420,13 @@ package su.fishr.market
 				}
 				else
 				{
+<<<<<<< HEAD
 					
 					_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+=======
+					_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+					
+>>>>>>> 1d007fc4b1c9603221f97631d6180771d9ac8c24
 					//////////////////////TRACE/////////////////////////////////
 					
 					import su.fishr.market.service.Logw;
