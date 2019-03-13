@@ -103,7 +103,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0
-	 ,"auto_cost": 525 
+	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -163,7 +163,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0
-	 ,"auto_cost": 370 
+	 ,"auto_cost": 420 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -535,7 +535,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0
-	 ,"auto_cost": 525 
+	 ,"auto_cost": 473 
 	 ,"exclude": [] 
 } 
 ,{ 
