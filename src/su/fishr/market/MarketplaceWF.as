@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 10, 15 ];
+		public static const VERSION:Array = [ 1, 10, 16 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -321,6 +321,20 @@ package su.fishr.market
 						}
 				},
 			 */
+				//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const i:String = 
+					( "MarketplaceWF.as" + ". " +  "onCompleteFile ")
+					//+ ( "\r : " + Dumper.dump( true ) )
+					+ ( "\r load file name: " + e.target.name )
+					+ ( "\r end" );
+					Logw.inst.up( i );
+				}
+				/////////////////////END TRACE//////////////////////////////
 			
 			const b:ByteArray = e.target.data;
 			b.position = 0;
