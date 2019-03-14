@@ -235,7 +235,29 @@ package su.fishr.market.service
 			{
 				autocost = _weaponGroups[ i ].getBuyCost( entity_id );
 				if ( autocost )
+				{
+						_weaponGroups[ i ].maxBuyCount--;
+						
+						//////////////////////TRACE/////////////////////////////////
+						
+						import su.fishr.market.service.Logw;
+						import su.fishr.utils.Dumper;
+						if( true )
+						{
+							const j:String = 
+							( "ItemsServant.as" + ". " +  "getBuyCost ")
+							//+ ( "\r : " + Dumper.dump( true ) )
+							+ ( "\r i: " + i )
+							+ ( "\r  _weaponGroups[ i ].groupKey: " + _weaponGroups[ i ].groupKey )
+							+ ( "\r _weaponGroups[ i ].maxBuyCount: " + _weaponGroups[ i ].maxBuyCount )
+							+ ( "\r autocost: " + autocost )
+							+ ( "\r : " + "" )
+							+ ( "\r end" );
+							Logw.inst.up( j );
+						}
+						/////////////////////END TRACE//////////////////////////////
 						return autocost;
+				}
 			}
 			
 			return 1000;
@@ -588,6 +610,7 @@ package su.fishr.market.service
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 1 \r';
+				obStr += '\t ,"mxbuy": 3 \r';
 				obStr += '\t ,"auto_cost": 42 \r';
 				obStr += '\t ,"exclude": [] \r';
 				obStr += '} \r';

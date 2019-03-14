@@ -10,13 +10,16 @@ package su.fishr.market.service.model
 	 */
 	public class WeaponGroup extends WeaponEnt 
 	{
+		public var maxBuyCount:int;
+		public var groupKey:String;
+		
 		private var _went:Vector.<WeaponEnt>;
 		//private var _alertData:Object;
 		private var _autocost:int;
 		private var _lowcost:int;
 		private var _owner:int;
 		private var _heightcost:int;
-		public var groupKey:String;
+		
 		
 		public function get went():Vector.<WeaponEnt> 
 		{
@@ -112,7 +115,7 @@ package su.fishr.market.service.model
 			_lowcost = data["0"].config.low_cost;
 			_autocost  = data["0"].config.auto_cost;
 			_heightcost = data["0"].config.higth_cost;
-			
+			maxBuyCount = data["0"].config.mxbuy;
 			
 			setJsonGroup( data );
 			
@@ -121,12 +124,17 @@ package su.fishr.market.service.model
 		
 		public function setJsonGroup( data:Object ):void
 		{
+			
+			
 			if ( !_went ) 
 			{
 				_went = new Vector.<su.fishr.market.service.model.WeaponEnt>;
 				for ( var inx:Object in data )
 				{
-					_went.push( new WeaponEnt().init( data[ inx ] ) );
+					const went:WeaponEnt =  new WeaponEnt().init( data[ inx ] );
+					went.parent = this;
+					_went.push( went );
+					
 				}
 			}
 			else

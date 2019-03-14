@@ -12,6 +12,8 @@ package su.fishr.market.service.model
 	 */
 	public class WeaponEnt extends EventDispatcher
 	{
+		public var parent:WeaponGroup;
+		
 		protected var _type:String;
 		protected var _key:String;
 		protected var _mincost:int;

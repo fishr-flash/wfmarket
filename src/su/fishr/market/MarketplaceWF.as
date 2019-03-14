@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 11, 2 ];
+		public static const VERSION:Array = [ 1, 12, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -420,17 +420,40 @@ package su.fishr.market
 			
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
+				
 				if ( _CASH >= int( went.cost ) )
 				{
-					
-				
-			
-					if ( !_btnPlay.enabled )
+
+					if ( went.parent.maxBuyCount > 0 )
+					{
+						if ( !_btnPlay.enabled )
 							_onPausePlay = true;
 							
-					onStop( null );
+						onStop( null );
 							
-					new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
+						new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
+					}
+					else
+					{
+						//////////////////////TRACE/////////////////////////////////
+						
+						import su.fishr.market.service.Logw;
+						import su.fishr.utils.Dumper;
+						if( true )
+						{
+							const j:String = 
+							( "MarketplaceWF.as" + ". " +  "onBayOperation ")
+							//+ ( "\r : " + Dumper.dump( true ) )
+							+ ( "\r : " + "the purchase limit for this product has been reached" )
+							+ ( "\rwent.key : " + went.key )
+							+ ( "\r went.parent.groupKey: " + went.parent.groupKey )
+							+ ( "\r : " + "" )
+							+ ( "\r end" );
+							Logw.inst.up( j );
+						}
+						/////////////////////END TRACE//////////////////////////////
+					}
+					
 				}
 				else
 				{
