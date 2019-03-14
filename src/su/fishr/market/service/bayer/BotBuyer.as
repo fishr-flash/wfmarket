@@ -86,7 +86,7 @@ package su.fishr.market.service.bayer
 		
 		private function resBay( data:Object ):void 
 		{
-			//////////////////////TRACE/////////////////////////////////
+			
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
@@ -100,7 +100,7 @@ package su.fishr.market.service.bayer
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
-			/////////////////////END TRACE//////////////////////////////
+			
 			_callback({state:"***************Operation successfull***************************"
 						//, detals: data.data?data.data:Dumper.dump( data )
 						, entity_id: _entity_id

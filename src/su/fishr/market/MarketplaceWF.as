@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 12, 1 ];
+		public static const VERSION:Array = [ 1, 12, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -252,7 +252,7 @@ package su.fishr.market
 		private function btnOnLoad(e:MouseEvent):void 
 		{
 			//_btnLoad.enabled = false;
-			//////////////////////TRACE/////////////////////////////////
+			
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
@@ -265,7 +265,7 @@ package su.fishr.market
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
-			/////////////////////END TRACE//////////////////////////////
+			
 			
 			_file = new FileReference;
 			_file.addEventListener( Event.SELECT, onSelectFile );
@@ -275,7 +275,7 @@ package su.fishr.market
 		
 		private function onSelectFile(e:Event):void 
 		{
-			//////////////////////TRACE/////////////////////////////////
+			
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
@@ -288,7 +288,7 @@ package su.fishr.market
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
-			/////////////////////END TRACE//////////////////////////////
+			
 			_file.removeEventListener( Event.SELECT, onSelectFile );
 			_file.addEventListener(Event.COMPLETE, onCompleteFile );
 			_file.load();
@@ -321,7 +321,6 @@ package su.fishr.market
 						}
 				},
 			 */
-				//////////////////////TRACE/////////////////////////////////
 				
 				import su.fishr.market.service.Logw;
 				import su.fishr.utils.Dumper;
@@ -334,8 +333,7 @@ package su.fishr.market
 					+ ( "\r end" );
 					Logw.inst.up( i );
 				}
-				/////////////////////END TRACE//////////////////////////////
-			
+				
 			const b:ByteArray = e.target.data;
 			b.position = 0;
 			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
@@ -447,6 +445,7 @@ package su.fishr.market
 							+ ( "\r : " + "the purchase limit for this product has been reached" )
 							+ ( "\rwent.key : " + went.key )
 							+ ( "\r went.parent.groupKey: " + went.parent.groupKey )
+							+ ( "\rwent.parent.maxBuyCount : " + went.parent.maxBuyCount )
 							+ ( "\r : " + "" )
 							+ ( "\r end" );
 							Logw.inst.up( j );
@@ -541,8 +540,7 @@ package su.fishr.market
 				 end
 			 */
 			
-			 //////////////////////TRACE/////////////////////////////////
-			 
+			
 			 import su.fishr.market.service.Logw;
 			 import su.fishr.utils.Dumper;
 			 if( true )
@@ -555,7 +553,7 @@ package su.fishr.market
 				 + ( "\r end" );
 				 Logw.inst.up( i );
 			 }
-			 /////////////////////END TRACE//////////////////////////////
+			 
 			 const res:String = " status: " + d.state;
 			 
 			if ( _btnOnAlert.selected )
@@ -588,7 +586,7 @@ package su.fishr.market
 		
 		private function onBtnCfg(e:MouseEvent):void 
 		{
-			//////////////////////TRACE/////////////////////////////////
+			
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
@@ -602,7 +600,7 @@ package su.fishr.market
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
-			/////////////////////END TRACE//////////////////////////////
+			
 			
 		}
 		

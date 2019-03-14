@@ -13,7 +13,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/items_II.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/items_III.json", mimeType = "application/octet-stream")]
 		private const Items:Class;
 		
 		private var _self:ItemsServant;
@@ -77,14 +77,16 @@ package su.fishr.market.service
 						, "auto_cost":60
 						, "exclude":[ "Золот" ]*/
 	
+						
 						_configItems.push( {
 							name: objson.data[ j ].title
 							,key_word:objson.data[ j ].title
-							, id_market:""
+							, id_market: objson.data[ j ].entity_id
 							, kind:objson.data[ j ].kind
 							, heigth_cost: 0
 							, low_cost: 42
 							, hidden: 0
+							, mxbuy: 3
 							, auto_cost: 42
 							, exclude: [ "Камуфляж Абсолют" ]
 						} );
@@ -238,24 +240,7 @@ package su.fishr.market.service
 				{
 						_weaponGroups[ i ].maxBuyCount--;
 						
-						//////////////////////TRACE/////////////////////////////////
 						
-						import su.fishr.market.service.Logw;
-						import su.fishr.utils.Dumper;
-						if( true )
-						{
-							const j:String = 
-							( "ItemsServant.as" + ". " +  "getBuyCost ")
-							//+ ( "\r : " + Dumper.dump( true ) )
-							+ ( "\r i: " + i )
-							+ ( "\r  _weaponGroups[ i ].groupKey: " + _weaponGroups[ i ].groupKey )
-							+ ( "\r _weaponGroups[ i ].maxBuyCount: " + _weaponGroups[ i ].maxBuyCount )
-							+ ( "\r autocost: " + autocost )
-							+ ( "\r : " + "" )
-							+ ( "\r end" );
-							Logw.inst.up( j );
-						}
-						/////////////////////END TRACE//////////////////////////////
 						return autocost;
 				}
 			}
