@@ -609,7 +609,7 @@ package su.fishr.market.service
 				obStr += '\t ,"auto_sell": 0 \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
-				obStr += '\t ,"hidden": 1 \r';
+				obStr += '\t ,"hidden": 0 \r';
 				obStr += '\t ,"mxbuy": 3 \r';
 				obStr += '\t ,"auto_cost": 42 \r';
 				obStr += '\t ,"exclude": [] \r';
