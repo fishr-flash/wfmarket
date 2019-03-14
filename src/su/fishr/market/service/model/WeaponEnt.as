@@ -24,7 +24,7 @@ package su.fishr.market.service.model
 		protected var _diff:int;
 		protected var _history:Object = {};
 		protected var _session_cost:int;
-		
+		private var _takt:int = 0;
 		
 		
 		public function get key():String 
@@ -140,6 +140,7 @@ package su.fishr.market.service.model
 		public function setJson( data:Object ):void
 		{
 			_diff = 0;
+			_takt++;
 			///FIXME: Место установки случайной цены
 			//data.min_cost *=  Math.random();
 			const truecost:int = MarketplaceWF.getCostOnCharge( data.min_cost );
@@ -170,7 +171,7 @@ package su.fishr.market.service.model
 				, c:_cost
 				, lq:_liquidity
 				, cnt: data.count
-				, sess: _session_cost / _liquidity
+				, sess: _session_cost / _takt
 			});
 			
 			
