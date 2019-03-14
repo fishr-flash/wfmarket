@@ -145,7 +145,7 @@ package su.fishr.market.service.model
 			if( _cost && _diff ) _liquidity++;
 			_cost = truecost;
 			if ( !_session_cost ) _session_cost = _cost;
-			else _session_cost = ( _session_cost + _cost ) / _liquidity;
+			else _session_cost = ( _session_cost + _cost );
 			
 			if ( !_mincost || _mincost > _cost )
 					_mincost = _cost;
@@ -168,7 +168,7 @@ package su.fishr.market.service.model
 				, c:_cost
 				, lq:_liquidity
 				, cnt: data.count
-				, sess: _session_cost
+				, sess: _session_cost / _liquidity
 			});
 			
 			

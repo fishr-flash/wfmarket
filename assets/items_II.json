@@ -295,7 +295,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0
-	 ,"auto_cost": 158 
+	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -305,7 +305,7 @@
 	 ,"kind": "equipment" 
 	 ,"auto_sell": 0 
 	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
+	 ,"low_cost": 42
 	 ,"hidden": 0
 	 ,"auto_cost": 210 
 	 ,"exclude": [] 
