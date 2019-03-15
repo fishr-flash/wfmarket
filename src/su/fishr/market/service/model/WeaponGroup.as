@@ -122,6 +122,46 @@ package su.fishr.market.service.model
 			return this;
 		}
 		
+		/**
+		 * data: Object (9): 
+			hidden:(int,1) 0
+			kind:(str,6) weapon
+			exclude:Array(0):
+			id_market:(str,0) 
+			low_cost:(int,2) 42
+			key_word:(str,23) Beretta ARX160 Синдикат
+			auto_cost:(int,4) 2100
+			higth_cost:(int,1) 0
+			name:(str,23) Beretta ARX160 Синдикат
+		 * @param	data
+		 */
+		public function reinit( data:Object):void 
+		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "WeaponGroup.as" + ". " +  "reinit ")
+				+ ( "\r data: " + Dumper.dump( data ) )
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
+			_lowcost = data.low_cost;
+			_autocost  = data.auto_cost;
+			_heightcost = data.higth_cost;
+			maxBuyCount = data.mxbuy;
+			
+			
+		}
+		
+		
 		public function setJsonGroup( data:Object ):void
 		{
 			
@@ -197,6 +237,8 @@ package su.fishr.market.service.model
 			
 			return cost;
 		}
+		
+		
 		
 		private function searchKey( skey:String ):int
 		{

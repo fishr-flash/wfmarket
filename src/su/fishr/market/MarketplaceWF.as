@@ -10,6 +10,7 @@ package su.fishr.market
 	import flash.utils.ByteArray;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
+	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
 	import su.fishr.market.seller.Sellerq;
@@ -47,10 +48,11 @@ package su.fishr.market
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
 		
+		
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "cost";
 		public static var _CASH:int = 0;
-		
+		static public var NEED_UPDATE_CONFIG:Boolean;
 		
 		private var _btnRequest:Button;
 		private var _botReqest:BotRequest;
@@ -162,20 +164,26 @@ package su.fishr.market
 			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
 			_btnCfg.enabled = false;
 			
-			_hotUpItems = new Button;
-			_hotUpItems.label = "upi";
-			_hotUpItems.x = _btnCfg.x + _btnCfg.width + 5;
-			_hotUpItems.y = _btnCfg.y;
-			_hotUpItems.setSize( WIDTH_BUTTONS + 5, _hotUpItems.height );
-			this.addChild( _hotUpItems );
-			_hotUpItems.addEventListener( MouseEvent.CLICK, onBtnCfg );
-			_hotUpItems.enabled = false;
+			//_hotUpItems = new Button;
+			//_hotUpItems.label = "upi";
+			//_hotUpItems.x = _btnCfg.x + _btnCfg.width + 5;
+			//_hotUpItems.y = _btnCfg.y;
+			//_hotUpItems.setSize( WIDTH_BUTTONS + 5, _hotUpItems.height );
+			//this.addChild( _hotUpItems );
+			//_hotUpItems.addEventListener( MouseEvent.CLICK, onBtnUpItems );
+			//_hotUpItems.enabled = false;
+			
+			var _hotItemsUpdater:HotItemsUpdater = new HotItemsUpdater( _servant.setHotDate );
+			_hotItemsUpdater.x = _btnCfg.x + _btnCfg.width + 5;
+			_hotItemsUpdater.y = _btnCfg.y;
+			this.addChild( _hotItemsUpdater );
+			
 			
 			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _hotUpItems.x + _hotUpItems.width + 25;
-			_btnOnAlert.y = _hotUpItems.y;
+			_btnOnAlert.x = _hotItemsUpdater.x + _hotItemsUpdater.width + 25;
+			_btnOnAlert.y = _hotItemsUpdater.y;
 			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
@@ -250,6 +258,8 @@ package su.fishr.market
 			
 		}
 		
+		
+		
 		private function inputCash(e:Event):void 
 		{
 			
@@ -258,6 +268,8 @@ package su.fishr.market
 			else _btnAutoBuy.enabled = false;
 		   
 		}
+		
+		
 		
 		private function btnOnLoad(e:MouseEvent):void 
 		{
@@ -349,6 +361,23 @@ package su.fishr.market
 			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
 			_btnUnload.enabled = true;
 		}
+		
+		//private function onBtnUpItems(e:MouseEvent):void 
+		//{
+				//const file:FileReference = new FileReference;
+				//file.addEventListener( Event.SELECT, onSelectItemsJSON );
+				//file.browse();
+		//}
+		//
+		//private function onSelectItemsJSON( e:Event ):void
+		//{
+			//e.target.removeEventListener( Event.SELECT, onSelectItemsJSON );
+			//
+			//const b:ByteArray = e.target.data;
+			//b.position = 0;
+			//_servant.setHotDate( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
+			//
+		//}
 		
 		private function btnBuyHandler(e:MouseEvent):void 
 		{

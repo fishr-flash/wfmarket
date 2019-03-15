@@ -110,8 +110,11 @@ package su.fishr.market.service
 				
 				if ( itms[ 0 ] )
 				{
-					itms[ 0 ].config = _configItems[ i ];
 					
+					if( MarketplaceWF.NEED_UPDATE_CONFIG )itms[ 0 ].config = _configItems[ i ];
+					
+					
+					MarketplaceWF.NEED_UPDATE_CONFIG = false;
 					
 					if ( !_weaponGroups )
 					{
@@ -246,6 +249,41 @@ package su.fishr.market.service
 			}
 			
 			return 1000;
+		}
+		
+		public function setHotDate(data:Array):void 
+		{
+			MarketplaceWF.NEED_UPDATE_CONFIG = true;
+			implementItemsConfig(  data  ); 
+			
+			
+			const len:int = _configItems.length;
+			for ( var j:int = 0; j < len; j++ )
+			{
+				const inx:int = searchKey( _configItems[ j ].key_word );
+				
+				
+				if ( inx > -1 )
+				{
+					_weaponGroups[ inx ].reinit( _configItems[ j ] );
+					
+				}
+			}
+			
+			
+			try 
+			{
+				
+			
+				selectLowCost();
+				selectAutoBuy();
+				
+			}
+			catch ( e:Error )
+			{
+				Logw.inst.up( "not once group configure, error: " + e );
+			}
+			
 		}
 		
 		private function joinStory(data:Array):Array 
@@ -400,7 +438,15 @@ package su.fishr.market.service
 		{
 			const itemsStr:String = new Items;
 			
-			var arr:Array = JSON.parse( itemsStr ) as Array; 
+			implementItemsConfig( JSON.parse( itemsStr ) as Array ); 
+			
+			
+			
+				
+		}
+		
+		private function implementItemsConfig( arr:Array ):void
+		{
 			_configItems = [];
 			
 			const len:int = arr.length;
@@ -410,9 +456,6 @@ package su.fishr.market.service
 					if ( MarketplaceWF.IGNORE_HIDDEN == true || arr[ i ].hidden == 0 ) 
 																				_configItems.push( arr[ i ] );
 			}
-			
-			
-				
 		}
 		
 		private function findMatch(objson:Object, confItem:Object ):Array
@@ -624,7 +667,7 @@ package su.fishr.market.service
 			
 			function exludesFilter( current:WeaponGroup, index:int, array:Vector.<WeaponGroup> ):Boolean
 			{
-				if ( current.cost > 2000 ) return false;
+				if ( current.cost > 4000 ) return false;
 				if ( current.liquidity < 1 ) return false;
 				if ( current.groupKey.indexOf( "Камуфляж" ) > -1 ) return false;
 				return true;
