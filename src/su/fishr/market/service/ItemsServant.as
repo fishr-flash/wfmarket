@@ -581,9 +581,11 @@ package su.fishr.market.service
 				
 			var obStr:String;
 			
+			
 			const len:int = sortedItms.length;
 			for (var i:int = 0; i < len; i++) 
 			{
+				const cst:int = MarketplaceWF.IGNORE_CONFIG?42:sortedItms[ i ].auto_cost;
 			
 				obStr = i == 0?'':',';
 				obStr +='{ \r';
@@ -595,8 +597,8 @@ package su.fishr.market.service
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 0 \r';
-				obStr += '\t ,"mxbuy": 3 \r';
-				obStr += '\t ,"auto_cost": 42 \r';
+				obStr += '\t ,"mxbuy": 2 \r';
+				obStr += '\t ,"auto_cost": "' + cst +'" \r';
 				obStr += '\t ,"exclude": [] \r';
 				obStr += '} \r';
 				result += obStr;
@@ -624,6 +626,7 @@ package su.fishr.market.service
 			{
 				if ( current.cost > 2000 ) return false;
 				if ( current.liquidity < 1 ) return false;
+				if ( current.groupKey.indexOf( "Камуфляж" ) > -1 ) return false;
 				return true;
 			}
 		}
