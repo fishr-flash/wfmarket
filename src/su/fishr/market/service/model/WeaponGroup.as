@@ -28,7 +28,7 @@ package su.fishr.market.service.model
 		
 		public function get session_cost():int 
 		{
-			return _session_cost;
+			return _session_cost / _went[ 0 ].takt;
 		}
 		
 		/*public function get alertData():Object 
@@ -264,7 +264,7 @@ package su.fishr.market.service.model
 		private function getSessionCost():int
 		{
 			if ( _session_cost ) 
-				return ( _session_cost + _cost ) / 2;
+				return ( _session_cost + _cost ) ;
 			else 
 				return _cost;
 				

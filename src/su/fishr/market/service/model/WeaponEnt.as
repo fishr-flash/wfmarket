@@ -69,6 +69,11 @@ package su.fishr.market.service.model
 			return _diff;
 		}
 		
+		public function get takt():int 
+		{
+			return _takt;
+		}
+		
 		public function get history():Object 
 		{
 			return _history;

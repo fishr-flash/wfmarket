@@ -7,7 +7,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
@@ -20,7 +20,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -33,7 +33,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 315 
 	 ,"exclude": [] 
 } 
@@ -46,7 +46,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 144 
 	 ,"exclude": [] 
 } 
@@ -59,7 +59,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
@@ -72,7 +72,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
@@ -85,7 +85,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
@@ -98,7 +98,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 620 
 	 ,"exclude": [] 
 } 
@@ -111,7 +111,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 525 
 	 ,"exclude": [] 
 } 
@@ -124,7 +124,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 473 
 	 ,"exclude": [] 
 } 
@@ -137,7 +137,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 368 
 	 ,"exclude": [] 
 } 
@@ -150,7 +150,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
@@ -163,7 +163,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
@@ -176,7 +176,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 367 
 	 ,"exclude": [] 
 } 
@@ -189,7 +189,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
@@ -202,7 +202,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -215,7 +215,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 630 
 	 ,"exclude": [] 
 } 
@@ -228,7 +228,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
@@ -241,7 +241,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 735 
 	 ,"exclude": [] 
 } 
@@ -254,7 +254,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 262 
 	 ,"exclude": [] 
 } 
@@ -267,7 +267,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -280,7 +280,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 238 
 	 ,"exclude": [] 
 } 
@@ -293,7 +293,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
@@ -306,7 +306,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 168 
 	 ,"exclude": [] 
 } 
@@ -319,7 +319,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -332,7 +332,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 210 
 	 ,"exclude": [] 
 } 
@@ -345,7 +345,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -358,7 +358,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -371,7 +371,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -384,7 +384,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 2100 
 	 ,"exclude": [] 
 } 
@@ -397,7 +397,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -410,7 +410,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
@@ -423,7 +423,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -436,7 +436,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 420
 	 ,"exclude": [] 
 } 
@@ -449,7 +449,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -462,7 +462,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -475,7 +475,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -488,7 +488,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -501,7 +501,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -514,7 +514,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -527,7 +527,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -540,7 +540,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -553,7 +553,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -566,7 +566,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -579,7 +579,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 420 
 	 ,"exclude": [] 
 } 
@@ -592,7 +592,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -605,7 +605,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -618,7 +618,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -631,7 +631,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -644,7 +644,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -657,7 +657,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -670,7 +670,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -683,7 +683,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -696,7 +696,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -709,7 +709,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -722,7 +722,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -735,7 +735,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
@@ -748,7 +748,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
@@ -761,7 +761,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 3 
+	 ,"mxbuy": 2 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
