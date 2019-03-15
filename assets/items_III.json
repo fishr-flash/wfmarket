@@ -385,7 +385,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 3 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 2100 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -463,7 +463,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 3 
-	 ,"auto_cost": 357 
+	 ,"auto_cost": 42 
 	 ,"exclude": [] 
 } 
 ,{ 
