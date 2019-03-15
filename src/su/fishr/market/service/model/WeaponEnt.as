@@ -176,7 +176,7 @@ package su.fishr.market.service.model
 				, c:_cost
 				, lq:_liquidity
 				, cnt: data.count
-				, sess: _session_cost / _takt
+				, sess: int( _session_cost / _takt )
 			});
 			
 			

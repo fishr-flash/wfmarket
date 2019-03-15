@@ -31,7 +31,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 12, 7 ];
+		public static const VERSION:Array = [ 1, 12, 8 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -70,6 +70,7 @@ package su.fishr.market
 		private var _btnCfg:Button;
 		private var _seller:Sellerq;
 		private var _tfCash:TextField;
+		private var _hotUpItems:Button;
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -154,18 +155,27 @@ package su.fishr.market
 			
 			_btnCfg = new Button;
 			_btnCfg.label = "cfg";
-			_btnCfg.x = _btnLoad.x + _btnLoad.width + 5;
+			_btnCfg.x = _btnLoad.x + _btnLoad.width + 25;
 			_btnCfg.y = _btnLoad.y;
 			_btnCfg.setSize( WIDTH_BUTTONS + 5, _btnCfg.height );
 			this.addChild( _btnCfg );
 			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
 			_btnCfg.enabled = false;
 			
+			_hotUpItems = new Button;
+			_hotUpItems.label = "upi";
+			_hotUpItems.x = _btnCfg.x + _btnCfg.width + 5;
+			_hotUpItems.y = _btnCfg.y;
+			_hotUpItems.setSize( WIDTH_BUTTONS + 5, _hotUpItems.height );
+			this.addChild( _hotUpItems );
+			_hotUpItems.addEventListener( MouseEvent.CLICK, onBtnCfg );
+			_hotUpItems.enabled = false;
+			
 			
 			_btnOnAlert = new Button;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _btnCfg.x + _btnCfg.width + 25;
-			_btnOnAlert.y = _btnCfg.y;
+			_btnOnAlert.x = _hotUpItems.x + _hotUpItems.width + 25;
+			_btnOnAlert.y = _hotUpItems.y;
 			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
