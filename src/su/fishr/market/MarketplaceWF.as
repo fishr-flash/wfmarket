@@ -52,7 +52,7 @@ package su.fishr.market
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "cost";
 		public static var _CASH:int = 0;
-		static public var NEED_UPDATE_CONFIG:Boolean;
+		static public var NEED_UPDATE_CONFIG:Boolean = true;
 		
 		private var _btnRequest:Button;
 		private var _botReqest:BotRequest;
@@ -72,7 +72,7 @@ package su.fishr.market
 		private var _btnCfg:Button;
 		private var _seller:Sellerq;
 		private var _tfCash:TextField;
-		private var _hotUpItems:Button;
+		
 		
 		public static function getCostOnCharge( cost:int ):int
 		{
@@ -164,14 +164,7 @@ package su.fishr.market
 			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
 			_btnCfg.enabled = false;
 			
-			//_hotUpItems = new Button;
-			//_hotUpItems.label = "upi";
-			//_hotUpItems.x = _btnCfg.x + _btnCfg.width + 5;
-			//_hotUpItems.y = _btnCfg.y;
-			//_hotUpItems.setSize( WIDTH_BUTTONS + 5, _hotUpItems.height );
-			//this.addChild( _hotUpItems );
-			//_hotUpItems.addEventListener( MouseEvent.CLICK, onBtnUpItems );
-			//_hotUpItems.enabled = false;
+			
 			
 			var _hotItemsUpdater:HotItemsUpdater = new HotItemsUpdater( _servant.setHotDate );
 			_hotItemsUpdater.x = _btnCfg.x + _btnCfg.width + 5;
@@ -362,22 +355,7 @@ package su.fishr.market
 			_btnUnload.enabled = true;
 		}
 		
-		//private function onBtnUpItems(e:MouseEvent):void 
-		//{
-				//const file:FileReference = new FileReference;
-				//file.addEventListener( Event.SELECT, onSelectItemsJSON );
-				//file.browse();
-		//}
-		//
-		//private function onSelectItemsJSON( e:Event ):void
-		//{
-			//e.target.removeEventListener( Event.SELECT, onSelectItemsJSON );
-			//
-			//const b:ByteArray = e.target.data;
-			//b.position = 0;
-			//_servant.setHotDate( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
-			//
-		//}
+		
 		
 		private function btnBuyHandler(e:MouseEvent):void 
 		{

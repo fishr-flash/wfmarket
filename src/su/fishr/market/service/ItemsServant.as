@@ -114,7 +114,7 @@ package su.fishr.market.service
 					if( MarketplaceWF.NEED_UPDATE_CONFIG )itms[ 0 ].config = _configItems[ i ];
 					
 					
-					MarketplaceWF.NEED_UPDATE_CONFIG = false;
+					
 					
 					if ( !_weaponGroups )
 					{
@@ -145,6 +145,8 @@ package su.fishr.market.service
 				
 				
 			}
+			
+			MarketplaceWF.NEED_UPDATE_CONFIG = false;
 			
 			
 			try 
@@ -586,6 +588,7 @@ package su.fishr.market.service
 		private function constructConfig(items:Array):String 
 		{
 			
+			
 			var groups:Vector.<WeaponGroup> = _weaponGroups.slice().sort( onsortGroup );
 			
 			if( MarketplaceWF.IGNORE_CONFIG ) groups = groups.filter( exludesFilter );
@@ -602,7 +605,20 @@ package su.fishr.market.service
 			
 			
 			
+			//////////////////////TRACE/////////////////////////////////
 			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const l:String = 
+				( "ItemsServant.as" + ". " +  "constructConfig ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( l );
+			}
+			/////////////////////END TRACE//////////////////////////////
 			
 			
 			
@@ -648,6 +664,23 @@ package su.fishr.market.service
 			}
 			
 			result += ']';
+			
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const j:String = 
+				( "ItemsServant.as" + ". " +  "constructConfig ")
+				//+ ( "\r sortedItms: " + Dumper.dump( sortedItms ) )
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r result: " + result )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( j );
+			}
+			/////////////////////END TRACE//////////////////////////////
 			
 			return result;
 			

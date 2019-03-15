@@ -137,21 +137,6 @@ package su.fishr.market.service.model
 		 */
 		public function reinit( data:Object):void 
 		{
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "WeaponGroup.as" + ". " +  "reinit ")
-				+ ( "\r data: " + Dumper.dump( data ) )
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
 			
 			_lowcost = data.low_cost;
 			_autocost  = data.auto_cost;
