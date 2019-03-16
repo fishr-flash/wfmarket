@@ -12,7 +12,7 @@ package su.fishr.market.service.model
 	 */
 	public class WeaponEnt extends EventDispatcher
 	{
-		public var parent:WeaponGroup;
+		public var host:WeaponGroup;
 		
 		protected var _type:String;
 		protected var _key:String;
@@ -33,6 +33,11 @@ package su.fishr.market.service.model
 		}
 	
 		
+		public function get sell():uint
+		{
+			const s:uint = uint( host.autosell );
+			return s;
+		}
 		
 		public function get maxcost():int 
 		{
@@ -189,6 +194,7 @@ package su.fishr.market.service.model
 				};
 			 */
 				
+			
 			 if ( _history.head.min_cost > _cost )
 							_history.head.min_cost = _cost;
 			if ( _history.head.max_cost < _cost )

@@ -19,6 +19,7 @@ package su.fishr.market.service.model
 		private var _lowcost:int;
 		private var _owner:int;
 		private var _heightcost:int;
+		private var _autosell:uint;
 		
 		
 		public function get went():Vector.<WeaponEnt> 
@@ -31,13 +32,7 @@ package su.fishr.market.service.model
 			return _session_cost / _went[ 0 ].takt;
 		}
 		
-		/*public function get alertData():Object 
-		{
-			const ad:Object = _alertData;
-			_alertData = null;
-			
-			return ad;
-		}*/
+		
 		
 		public function get autocost():int 
 		{
@@ -52,6 +47,11 @@ package su.fishr.market.service.model
 		public function get heightcost():int 
 		{
 			return _heightcost;
+		}
+		
+		public function get autosell():uint 
+		{
+			return _autosell;
 		}
 		
 		public function get owner():int 
@@ -115,6 +115,7 @@ package su.fishr.market.service.model
 			_lowcost = data["0"].config.low_cost;
 			_autocost  = data["0"].config.auto_cost;
 			_heightcost = data["0"].config.higth_cost;
+			_autosell = data["0"].config.auto_sell;
 			maxBuyCount = data["0"].config.mxbuy;
 			
 			setJsonGroup( data );
@@ -140,6 +141,7 @@ package su.fishr.market.service.model
 			
 			_lowcost = data.low_cost;
 			_autocost  = data.auto_cost;
+			_autosell  = data.auto_sell;
 			_heightcost = data.higth_cost;
 			maxBuyCount = data.mxbuy;
 			
@@ -156,9 +158,12 @@ package su.fishr.market.service.model
 				_went = new Vector.<su.fishr.market.service.model.WeaponEnt>;
 				for ( var inx:Object in data )
 				{
-					const went:WeaponEnt =  new WeaponEnt().init( data[ inx ] );
-					went.parent = this;
+					const went:WeaponEnt =  new WeaponEnt();
+					went.host = this;
+					went.init( data[ inx ] );
 					_went.push( went );
+					
+					
 					
 				}
 			}
@@ -168,6 +173,7 @@ package su.fishr.market.service.model
 				{
 					const index:int = searchKey(  data[ inx1 ].title );
 					_went[ index ].setJson( data[ inx1 ] );
+					
 				}
 			}
 			
@@ -209,18 +215,19 @@ package su.fishr.market.service.model
 			
 		}
 		
-		public function getBuyCost(entity_id:int):int 
+		public function getItemOfbuyd(entity_id:int):WeaponEnt 
 		{
 			const ilen:int = _went.length;
 			var cost:int = 0;
 			
 			for (var i:int = 0; i < ilen; i++) 
 			{
+				
 				if ( _went[ i ].entity_id == entity_id )
-											return _autocost;
+											return _went[ i ];
 			}
 			
-			return cost;
+			return null;
 		}
 		
 		

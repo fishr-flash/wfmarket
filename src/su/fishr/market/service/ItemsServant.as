@@ -4,6 +4,7 @@ package su.fishr.market.service
 	import flash.events.EventDispatcher;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.WFMEvent;
+	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.utils.Dumper;
 	/**
@@ -234,29 +235,31 @@ package su.fishr.market.service
 			return constructConfig( _configItems.slice() );
 		}
 		
-		public function getBuyCost( entity_id:int ):int 
+		public function getWent( entity_id:int ):WeaponEnt 
 		{
 			const ilen:int = _weaponGroups.length;
-			var autocost:int = 0;
+			var went:WeaponEnt = null;
+			
 			for (var i:int = 0; i < ilen; i++) 
 			{
-				autocost = _weaponGroups[ i ].getBuyCost( entity_id );
-				if ( autocost )
+				went = _weaponGroups[ i ].getItemOfbuyd( entity_id );
+				if ( went )
 				{
-						_weaponGroups[ i ].maxBuyCount--;
+						went.host.maxBuyCount--;
 						
 						
-						return autocost;
+						return went;
 				}
 			}
 			
-			return 1000;
+			return null;
 		}
 		
 		public function setHotDate(data:Array):void 
 		{
 			MarketplaceWF.NEED_UPDATE_CONFIG = true;
 			implementItemsConfig(  data  ); 
+			
 			
 			
 			const len:int = _configItems.length;
@@ -273,18 +276,7 @@ package su.fishr.market.service
 			}
 			
 			
-			try 
-			{
-				
 			
-				selectLowCost();
-				selectAutoBuy();
-				
-			}
-			catch ( e:Error )
-			{
-				Logw.inst.up( "not once group configure, error: " + e );
-			}
 			
 		}
 		
@@ -630,7 +622,7 @@ package su.fishr.market.service
 				obStr +='{ \r';
 				obStr += '\t "name": "' + String( sortedItms[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
 				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
-				obStr += '\t ,"id_market": "' + '" \r';
+				obStr += '\t ,"id_market": ' + sortedItms[ i ].id_market + ' \r';
 				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';

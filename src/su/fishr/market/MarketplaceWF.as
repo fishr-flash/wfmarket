@@ -33,7 +33,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 1 ];
+		public static const VERSION:Array = [ 1, 13, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -48,6 +48,7 @@ package su.fishr.market
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
+		static public const COUNT_BUY:uint = 10;
 		
 		
 		/// может переопределяться ниже
@@ -63,7 +64,7 @@ package su.fishr.market
 		private var _infoField:Sprite;
 		private var _price:PriceOfWeapons;
 		private var _btnOnAlert:ButtonClr;
-		private var _buy_counter:int = 100;
+		private var _buy_counter:int = 1;
 		private var _btnAutoBuy:ButtonClr;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
@@ -99,7 +100,7 @@ package su.fishr.market
 			const back:BackgroundShape = new BackgroundShape( 1800, 900 );
 			this.addChild( back ) ;
 			
-						
+			_buy_counter = COUNT_BUY;
 			_price = new PriceOfWeapons;
 			_price.x = 50;
 			_price.y = 50;
@@ -367,7 +368,7 @@ package su.fishr.market
 		private function btnBuyHandler(e:MouseEvent):void 
 		{
 			if ( _btnAutoBuy.selected )
-						_buy_counter = 100;
+						_buy_counter = COUNT_BUY;
 		}
 		
 		
@@ -436,6 +437,7 @@ package su.fishr.market
 		 */
 		private function onBayOperation(e:WFMEvent):void 
 		{
+			
 			const went:WeaponEnt = e.data as WeaponEnt;
 			
 			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
@@ -446,13 +448,14 @@ package su.fishr.market
 				if ( _CASH >= int( went.cost ) )
 				{
 
-					if ( went.parent.maxBuyCount > 0 )
+					if ( went.host.maxBuyCount > 0 )
 					{
 						if ( !_btnPlay.enabled )
 							_onPausePlay = true;
 							
 						onStop( null );
 							
+						
 						new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
 					}
 					else
@@ -468,8 +471,8 @@ package su.fishr.market
 							//+ ( "\r : " + Dumper.dump( true ) )
 							+ ( "\r : " + "the purchase limit for this product has been reached" )
 							+ ( "\rwent.key : " + went.key )
-							+ ( "\r went.parent.groupKey: " + went.parent.groupKey )
-							+ ( "\rwent.parent.maxBuyCount : " + went.parent.maxBuyCount )
+							+ ( "\r went.host.groupKey: " + went.host.groupKey )
+							+ ( "\rwent.host.maxBuyCount : " + went.host.maxBuyCount )
 							+ ( "\r : " + "" )
 							+ ( "\r end" );
 							Logw.inst.up( j );
@@ -516,26 +519,7 @@ package su.fishr.market
 			
 		}
 		
-		private function onBuyer(e:MouseEvent):void 
-		{
-			/**
-			 * [323] => Object (9): 
-				entity_id:(int,4) 2995
-				title:(str,28) K.I.W.I. KA-BAR Кукри-мачете
-				count:(int,4) 3495
-				kind:(str,6) weapon
-				item:Object (4): 
-					id:(str,10) kn07_set12
-					title:(str,28) K.I.W.I. KA-BAR Кукри-мачете
-					count:(int,1) 1
-					permanent:(int,1) 1
-				min_cost:(int,2) 42
-				item_id:(str,10) kn07_set12
-				class:(str,9) universal
-				type:(str,9) inventory
-			 */
-			const bot:BotBuyer = new BotBuyer( 2995, 50, "inventory", buyResult )
-		}
+		
 		
 		private function buyResult( d:Object ):void
 		{
@@ -591,11 +575,28 @@ package su.fishr.market
 			if ( res.indexOf( "Operation successfull" ) > -1 )
 			{
 				_buy_counter--;
-				const onBuyCost:int = _servant.getBuyCost( int( d.entity_id ) );
-				_CASH -= onBuyCost;
+				const w:WeaponEnt = _servant.getWent( int( d.entity_id ) );
+				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
+				//////////////////////TRACE/////////////////////////////////
 				
-				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 2000 ) ) );
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const j:String = 
+					( "MarketplaceWF.as" + ". " +  "buyResult ")
+					//+ ( "\r : " + Dumper.dump( true ) )
+					+ ( "\r w: " + w )
+					+ ( "\rw.sell : " + w.sell )
+					+ ( "\r : " + "" )
+					+ ( "\r end" );
+					Logw.inst.up( j );
+				}
+				/////////////////////END TRACE//////////////////////////////
+				
+				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 2000 ) ) );
+				_seller.sell( int( d.entity_id), w.sell );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
