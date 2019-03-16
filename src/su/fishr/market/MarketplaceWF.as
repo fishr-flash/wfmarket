@@ -1,6 +1,6 @@
 package su.fishr.market 
 {
-	import fl.controls.Button;
+
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -10,6 +10,7 @@ package su.fishr.market
 	import flash.utils.ByteArray;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
+	import su.fishr.market.components.ButtonClr;
 	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
@@ -54,22 +55,22 @@ package su.fishr.market
 		public static var _CASH:int = 0;
 		static public var NEED_UPDATE_CONFIG:Boolean = true;
 		
-		private var _btnRequest:Button;
+		private var _btnRequest:ButtonClr;
 		private var _botReqest:BotRequest;
-		private var _btnStop:Button;
-		private var _btnPlay:Button;
+		private var _btnStop:ButtonClr;
+		private var _btnPlay:ButtonClr;
 		private var _servant:ItemsServant;
 		private var _infoField:Sprite;
 		private var _price:PriceOfWeapons;
-		private var _btnOnAlert:Button;
+		private var _btnOnAlert:ButtonClr;
 		private var _buy_counter:int = 100;
-		private var _btnAutoBuy:Button;
+		private var _btnAutoBuy:ButtonClr;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
-		private var _btnUnload:Button;
-		private var _btnLoad:Button;
+		private var _btnUnload:ButtonClr;
+		private var _btnLoad:ButtonClr;
 		private var _file:FileReference;
-		private var _btnCfg:Button;
+		private var _btnCfg:ButtonClr;
 		private var _seller:Sellerq;
 		private var _tfCash:TextField;
 		
@@ -112,54 +113,60 @@ package su.fishr.market
 			_servant = new ItemsServant;
 			
 			
-			
-			_btnPlay = new Button;
+			const colorOne:String = "96e21d";
+			_btnPlay = new ButtonClr;
 			_btnPlay.label = "run";
 			_btnPlay.x = 0;
 			_btnPlay.y = 0;
 			_btnPlay.setSize( WIDTH_BUTTONS, _btnPlay.height );
+			_btnPlay.colorFill( colorOne );
 			_btnPlay.addEventListener( MouseEvent.CLICK, onPlay );
 			this.addChild( _btnPlay );
 			
-			_btnStop = new Button;
+			_btnStop = new ButtonClr;
 			_btnStop.label = "stop";
 			_btnStop.x = _btnPlay.x + _btnPlay.width + 5;
 			_btnStop.y = _btnPlay.y;
 			_btnStop.enabled = false;
 			_btnStop.setSize( WIDTH_BUTTONS, _btnStop.height );
+			_btnStop.colorFill( colorOne );
 			_btnStop.addEventListener( MouseEvent.CLICK, onStop );
 			this.addChild( _btnStop );
 			
-			_btnRequest = new Button;
+			_btnRequest = new ButtonClr;
 			_btnRequest.label = "req";
 			_btnRequest.x = _btnStop.x + _btnStop.width + 5;
 			_btnRequest.y = _btnStop.y;
 			_btnRequest.setSize( WIDTH_BUTTONS, _btnRequest.height );
+			_btnRequest.colorFill( colorOne );
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
-			_btnUnload = new Button;
+			_btnUnload = new ButtonClr;
 			_btnUnload.label = "unl";
 			_btnUnload.x = _btnRequest.x + _btnRequest.width + 25;
 			_btnUnload.y = _btnRequest.y;
 			_btnUnload.setSize( WIDTH_BUTTONS, _btnRequest.height );
+			_btnUnload.colorFill( "e25e1d" );
 			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
 			this.addChild( _btnUnload );
 			_btnUnload.enabled = false;
 			
-			_btnLoad = new Button;
+			_btnLoad = new ButtonClr;
 			_btnLoad.label = "dwn";
 			_btnLoad.x = _btnUnload.x + _btnUnload.width + 5;
 			_btnLoad.y = _btnUnload.y;
 			_btnLoad.setSize( WIDTH_BUTTONS + 5, _btnLoad.height );
+			_btnLoad.colorFill( "e25e1d" );
 			this.addChild( _btnLoad );
 			_btnLoad.addEventListener( MouseEvent.CLICK, btnOnLoad );
 			
-			_btnCfg = new Button;
+			_btnCfg = new ButtonClr;
 			_btnCfg.label = "cfg";
 			_btnCfg.x = _btnLoad.x + _btnLoad.width + 25;
 			_btnCfg.y = _btnLoad.y;
 			_btnCfg.setSize( WIDTH_BUTTONS + 5, _btnCfg.height );
+			_btnCfg.colorFill( "1d5ee2" );
 			this.addChild( _btnCfg );
 			_btnCfg.addEventListener( MouseEvent.CLICK, onBtnCfg );
 			_btnCfg.enabled = false;
@@ -173,7 +180,7 @@ package su.fishr.market
 			
 			
 			
-			_btnOnAlert = new Button;
+			_btnOnAlert = new ButtonClr;
 			_btnOnAlert.label = "alrt";
 			_btnOnAlert.x = _hotItemsUpdater.x + _hotItemsUpdater.width + 25;
 			_btnOnAlert.y = _hotItemsUpdater.y;
@@ -190,7 +197,7 @@ package su.fishr.market
 			this.addChild( _tfCash );
 			_tfCash.addEventListener( Event.CHANGE, inputCash );
 			
-			_btnAutoBuy = new Button;
+			_btnAutoBuy = new ButtonClr;
 			_btnAutoBuy.label = "abuy";
 			_btnAutoBuy.x = _tfCash.x + _tfCash.width + 5;
 			_btnAutoBuy.y = _tfCash.y;

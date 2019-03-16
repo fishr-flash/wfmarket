@@ -13,7 +13,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/items_III.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/items_16032019.json", mimeType = "application/octet-stream")]
 		private const Items:Class;
 		
 		private var _self:ItemsServant;
@@ -602,26 +602,6 @@ package su.fishr.market.service
 			}
 			
 			
-			
-			
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const l:String = 
-				( "ItemsServant.as" + ". " +  "constructConfig ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				Logw.inst.up( l );
-			}
-			/////////////////////END TRACE//////////////////////////////
-			
-			
-			
 			var result:String = "[";
 			
 			/**
@@ -652,12 +632,12 @@ package su.fishr.market.service
 				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
 				obStr += '\t ,"id_market": "' + '" \r';
 				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
-				obStr += '\t ,"auto_sell": 0 \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 0 \r';
 				obStr += '\t ,"mxbuy": 2 \r';
-				obStr += '\t ,"auto_cost": "' + cst +'" \r';
+				obStr += '\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';
+				obStr += '\t ,"auto_cost": ' + cst +' \r';
 				obStr += '\t ,"exclude": [] \r';
 				obStr += '} \r';
 				result += obStr;
@@ -665,22 +645,7 @@ package su.fishr.market.service
 			
 			result += ']';
 			
-			//////////////////////TRACE/////////////////////////////////
 			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const j:String = 
-				( "ItemsServant.as" + ". " +  "constructConfig ")
-				//+ ( "\r sortedItms: " + Dumper.dump( sortedItms ) )
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r result: " + result )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				Logw.inst.up( j );
-			}
-			/////////////////////END TRACE//////////////////////////////
 			
 			return result;
 			
@@ -700,8 +665,8 @@ package su.fishr.market.service
 			
 			function exludesFilter( current:WeaponGroup, index:int, array:Vector.<WeaponGroup> ):Boolean
 			{
-				if ( current.cost > 4000 ) return false;
-				if ( current.liquidity < 1 ) return false;
+				//if ( current.cost > 4000 ) return false;
+				if ( current.liquidity < 10 ) return false;
 				if ( current.groupKey.indexOf( "Камуфляж" ) > -1 ) return false;
 				return true;
 			}

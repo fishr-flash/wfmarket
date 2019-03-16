@@ -14,7 +14,7 @@ package su.fishr.market.components
 	 */
 	public class HotItemsUpdater extends Sprite 
 	{
-		private var _hotUpItems:Button;
+		private var _hotUpItems:ButtonClr;
 		private var _callback:Function;
 		private var _file:FileReference;
 		
@@ -29,9 +29,10 @@ package su.fishr.market.components
 		
 		private function init():void 
 		{
-			_hotUpItems = new Button;
+			_hotUpItems = new ButtonClr;
 			_hotUpItems.label = "upi";
 			_hotUpItems.setSize( MarketplaceWF.WIDTH_BUTTONS + 5, _hotUpItems.height );
+			_hotUpItems.colorFill( "1d5ee2" );
 			this.addChild( _hotUpItems );
 			_hotUpItems.addEventListener( MouseEvent.CLICK, onBtnUpItems );
 			//_hotUpItems.enabled = false;
