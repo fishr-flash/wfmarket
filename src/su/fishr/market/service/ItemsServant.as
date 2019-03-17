@@ -70,7 +70,7 @@ package su.fishr.market.service
 						/*,{
 						"name":"ОРСИС Т-5000 Карбон"
 						, "key_word":"ОРСИС Т-5000 Карбон"
-						, "id_market":""
+						, "entity_id":""
 						, "kind":"weapon"
 						, "higth_cost":0
 						, "low_cost":1008
@@ -82,7 +82,7 @@ package su.fishr.market.service
 						_configItems.push( {
 							name: objson.data[ j ].title
 							,key_word:objson.data[ j ].title
-							, id_market: objson.data[ j ].entity_id
+							, entity_id: objson.data[ j ].entity_id
 							, kind:objson.data[ j ].kind
 							, heigth_cost: 0
 							, low_cost: 42
@@ -599,7 +599,7 @@ package su.fishr.market.service
 			/**
 			 * items[ 0 ] : Object (9): 
 				auto_cost:(int,2) 42
-				id_market:(str,0) 
+				entity_id:(str,0) 
 				exclude:Array(1):
 					[0] => (str,16) Камуфляж Абсолют
 				name:(str,16) Steyr M9A1 Вьюга
@@ -622,7 +622,7 @@ package su.fishr.market.service
 				obStr +='{ \r';
 				obStr += '\t "name": "' + String( sortedItms[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
 				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
-				obStr += '\t ,"id_market": ' + sortedItms[ i ].id_market + ' \r';
+				obStr += '\t ,"entity_id": ' + sortedItms[ i ].entity_id + ' \r';
 				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';

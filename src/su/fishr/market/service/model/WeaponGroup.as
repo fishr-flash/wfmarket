@@ -73,7 +73,7 @@ package su.fishr.market.service.model
 					title:(str,21) SAI GRY AR-15 Абсолют
 					class:(str,8) rifleman
 					config:Object (6): 
-						id_market:(str,0) 
+						entity_id:(str,0) 
 						kind:(str,6) weapon
 						key_word:(str,10) SAI GRY AR
 						auto_cost:(int,2) 42
@@ -128,7 +128,7 @@ package su.fishr.market.service.model
 			hidden:(int,1) 0
 			kind:(str,6) weapon
 			exclude:Array(0):
-			id_market:(str,0) 
+			entity_id:(str,0) 
 			low_cost:(int,2) 42
 			key_word:(str,23) Beretta ARX160 Синдикат
 			auto_cost:(int,4) 2100
