@@ -33,7 +33,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 4 ];
+		public static const VERSION:Array = [ 1, 13, 5 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -578,22 +578,7 @@ package su.fishr.market
 				const w:WeaponEnt = _servant.getWent( int( d.entity_id ) );
 				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
-				//////////////////////TRACE/////////////////////////////////
 				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const j:String = 
-					( "MarketplaceWF.as" + ". " +  "buyResult ")
-					//+ ( "\r : " + Dumper.dump( true ) )
-					+ ( "\r w: " + w )
-					+ ( "\rw.sell : " + w.sell )
-					+ ( "\r : " + "" )
-					+ ( "\r end" );
-					Logw.inst.up( j );
-				}
-				/////////////////////END TRACE//////////////////////////////
 				
 				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) + ( onBuyCost + 2000 ) ) );
 				_seller.sell( int( d.entity_id), w.sell );
