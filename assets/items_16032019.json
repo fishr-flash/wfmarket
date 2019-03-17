@@ -16,38 +16,12 @@
 	 ,"key_word": "SAI GRY AR-15 Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  399
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "SAI GRY AR-15" 
-	 ,"key_word": "SAI GRY AR-15" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Sidewinder Venom" 
-	 ,"key_word": "Sidewinder Venom" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 368 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -55,7 +29,7 @@
 	 ,"key_word": "Sidewinder Venom Карбон" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  117
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
@@ -68,12 +42,12 @@
 	 ,"key_word": "H&K MP5A5 Custom Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  186
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 60 
+	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -81,12 +55,12 @@
 	 ,"key_word": "MSBS Radon" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  119
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 70 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -94,43 +68,17 @@
 	 ,"key_word": "AT308 Синдикат" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  244
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "AT308" 
-	 ,"key_word": "AT308" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
 ,{ 
 	 "name": "Сайга H.G.C. Custom Синдикат" 
 	 ,"key_word": "Сайга H.G.C. Custom Синдикат" 
-	 ,"id_market": "" 
-	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
-	 ,"higth_cost": 0 
-	 ,"low_cost": 42 
-	 ,"hidden": 0 
-	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
-	 ,"exclude": [] 
-} 
-,{ 
-	 "name": "Сайга H.G.C. Custom" 
-	 ,"key_word": "Сайга H.G.C. Custom" 
 	 ,"id_market": "" 
 	 ,"kind": "weapon" 
 	 ,"auto_sell":  3000
