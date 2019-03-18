@@ -125,7 +125,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 150 
+	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -203,7 +203,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 200 
+	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -237,7 +237,7 @@
 	 ,"key_word": "Перчатки Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell": 800 
+	 ,"auto_sell": 799 
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
