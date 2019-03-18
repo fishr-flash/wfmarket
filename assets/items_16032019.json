@@ -21,7 +21,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 315 
+	 ,"auto_cost": 368 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -73,7 +73,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 158 
+	 ,"auto_cost": 200 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -112,7 +112,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 525 
+	 ,"auto_cost": 500 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -125,7 +125,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 158 
+	 ,"auto_cost": 150 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -133,12 +133,12 @@
 	 ,"key_word": "Шлем снайпера Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  239
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 200 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -146,12 +146,12 @@
 	 ,"key_word": "Жилет инженера Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  340
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 300 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -159,12 +159,12 @@
 	 ,"key_word": "Шлем медика Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  334
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 300 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -172,12 +172,12 @@
 	 ,"key_word": "Жилет медика Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  209
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 105 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -185,12 +185,12 @@
 	 ,"key_word": "Жилет штурмовика Синдикат" 
 	 ,"entity_id": "" 
 	 ,"kind": "equipment" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  398
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 368 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -203,7 +203,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 158 
+	 ,"auto_cost": 200 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -224,12 +224,12 @@
 	 ,"key_word": "Magpul FMG-9 Карбон" 
 	 ,"entity_id": "" 
 	 ,"kind": "weapon" 
-	 ,"auto_sell":  3000
+	 ,"auto_sell":  798
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 42 
+	 ,"auto_cost": 735 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -242,7 +242,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 630 
+	 ,"auto_cost": 700 
 	 ,"exclude": [] 
 } 
 ,{ 
