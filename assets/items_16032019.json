@@ -21,7 +21,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 368 
+	 ,"auto_cost": 315 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -47,7 +47,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 158 
+	 ,"auto_cost": 137 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -60,7 +60,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 70 
+	 ,"auto_cost": 60 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -120,12 +120,12 @@
 	 ,"key_word": "Тактический глушитель (KRISS Custom)" 
 	 ,"entity_id": "" 
 	 ,"kind": "other" 
-	 ,"auto_sell":  171
+	 ,"auto_sell":  177
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 105 
+	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
 ,{ 
@@ -203,7 +203,7 @@
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 210 
+	 ,"auto_cost": 158 
 	 ,"exclude": [] 
 } 
 ,{ 
