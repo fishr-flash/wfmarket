@@ -627,7 +627,7 @@ package su.fishr.market.service
 				obStr += '\t ,"higth_cost": 0 \r';
 				obStr += '\t ,"low_cost": 42 \r';
 				obStr += '\t ,"hidden": 0 \r';
-				obStr += '\t ,"mxbuy": 2 \r';
+				obStr += '\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:2 )+ ' \r';
 				obStr += '\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';
 				obStr += '\t ,"auto_cost": ' + cst +' \r';
 				obStr += '\t ,"exclude": [] \r';
