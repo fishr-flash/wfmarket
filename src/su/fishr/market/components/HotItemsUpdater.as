@@ -43,18 +43,18 @@ package su.fishr.market.components
 			//_btnLoad.enabled = false;
 			
 			
+			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
 			if( true )
 			{
 				const i:String = 
-				( "MarketplaceWF.as" + ". " +  "btnOnLoad ")
+				( "HotItemsUpdater.as" + ". " +  "onBtnUpItems ")
 				//+ ( "\r : " + Dumper.dump( true ) )
 				+ ( "\r : " + "" )
 				+ ( "\r end" );
 				Logw.inst.up( i );
 			}
-			
 			
 			_file = new FileReference;
 			_file.addEventListener( Event.SELECT, onSelectFile );

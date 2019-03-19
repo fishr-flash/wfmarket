@@ -120,12 +120,12 @@
 	 ,"key_word": "Тактический глушитель (KRISS Custom)" 
 	 ,"entity_id": "" 
 	 ,"kind": "other" 
-	 ,"auto_sell":  177
+	 ,"auto_sell":  170
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
 	 ,"mxbuy": 2 
-	 ,"auto_cost": 105 
+	 ,"auto_cost": 137 
 	 ,"exclude": [] 
 } 
 ,{ 
