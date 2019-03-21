@@ -126,7 +126,7 @@ package su.fishr.market.seller
 				const i:String = 
 				( "Sellerq.as" + ". " +  "onListResive ")
 				+ ( "\r : " + "" )
-				+ ( "\rdata : " + Dumper.dump( JSON.parse( data ) ) )
+				+ ( "\rdata : " + Dumper.dump( ( JSON.parse( data ) as Array ).reverse()   ) )
 				//+ ( "\r : " + Dumper.dump( "" ) )
 				+ ( "\r end" );
 				Logw.inst.up( i );
