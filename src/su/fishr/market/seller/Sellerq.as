@@ -117,6 +117,8 @@ package su.fishr.market.seller
 		
 		private function onListResive( data:* ):void 
 		{
+			const d:Object = JSON.parse( data );
+			const arr:Array = new Array( d );
 			//////////////////////TRACE/////////////////////////////////
 			
 			import su.fishr.market.service.Logw;
@@ -126,7 +128,7 @@ package su.fishr.market.seller
 				const i:String = 
 				( "Sellerq.as" + ". " +  "onListResive ")
 				+ ( "\r : " + "" )
-				+ ( "\rdata : " + Dumper.dump( ( JSON.parse( data ) as Array ).reverse()   ) )
+				+ ( "\rdata : " + Dumper.dump( arr.reverse()  ) )
 				//+ ( "\r : " + Dumper.dump( "" ) )
 				+ ( "\r end" );
 				Logw.inst.up( i );
