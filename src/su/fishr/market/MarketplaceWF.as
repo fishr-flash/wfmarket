@@ -33,7 +33,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 5 ];
+		public static const VERSION:Array = [ 1, 13, 6 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -478,6 +478,8 @@ package su.fishr.market
 							Logw.inst.up( j );
 						}
 						/////////////////////END TRACE//////////////////////////////
+						
+						_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 					}
 					
 				}
