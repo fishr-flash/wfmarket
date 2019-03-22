@@ -6,7 +6,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 193 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
@@ -19,7 +19,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 186 
 	 ,"auto_cost": 150 
 	 ,"exclude": [] 
@@ -32,7 +32,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 110 
 	 ,"auto_cost": 95 
 	 ,"exclude": [] 
@@ -45,7 +45,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 221 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
@@ -58,7 +58,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 112 
 	 ,"auto_cost": 95 
 	 ,"exclude": [] 
@@ -71,7 +71,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 399 
 	 ,"auto_cost": 340 
 	 ,"exclude": [] 
@@ -84,7 +84,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 2300 
 	 ,"auto_cost": 2100 
 	 ,"exclude": [] 
@@ -97,7 +97,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 161 
 	 ,"auto_cost": 136 
 	 ,"exclude": [] 
@@ -110,7 +110,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 402 
 	 ,"auto_cost": 368 
 	 ,"exclude": [] 
@@ -123,7 +123,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 446 
 	 ,"auto_cost": 400 
 	 ,"exclude": [] 
@@ -136,7 +136,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 750 
 	 ,"auto_cost": 700 
 	 ,"exclude": [] 
@@ -149,7 +149,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 183 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
@@ -162,7 +162,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 173 
 	 ,"auto_cost": 126 
 	 ,"exclude": [] 
@@ -175,7 +175,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 176 
 	 ,"auto_cost": 126 
 	 ,"exclude": [] 
@@ -188,7 +188,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 789 
 	 ,"auto_cost": 683 
 	 ,"exclude": [] 
@@ -201,7 +201,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 3000 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
@@ -214,7 +214,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 369 
 	 ,"auto_cost": 315 
 	 ,"exclude": [] 
@@ -227,7 +227,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 321 
 	 ,"auto_cost": 263 
 	 ,"exclude": [] 
@@ -240,7 +240,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 178 
 	 ,"auto_cost": 126 
 	 ,"exclude": [] 
@@ -253,7 +253,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 118 
 	 ,"auto_cost": 63 
 	 ,"exclude": [] 
@@ -266,7 +266,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 249 
 	 ,"auto_cost": 200 
 	 ,"exclude": [] 
@@ -279,7 +279,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 229 
 	 ,"auto_cost": 158 
 	 ,"exclude": [] 
@@ -292,7 +292,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 889 
 	 ,"auto_cost": 735 
 	 ,"exclude": [] 
@@ -305,7 +305,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 590 
 	 ,"auto_cost": 500 
 	 ,"exclude": [] 
@@ -318,7 +318,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 142 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
@@ -331,7 +331,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 149 
 	 ,"auto_cost": 105 
 	 ,"exclude": [] 
@@ -344,7 +344,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 699 
 	 ,"auto_cost": 600 
 	 ,"exclude": [] 
@@ -357,7 +357,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 6285 
 	 ,"auto_cost": 5250 
 	 ,"exclude": [] 
@@ -370,7 +370,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 5 
+	 ,"mxbuy": 1   
 	 ,"auto_sell": 695 
 	 ,"auto_cost": 600 
 	 ,"exclude": [] 
@@ -383,7 +383,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 150 
 	 ,"auto_cost": 60 
 	 ,"exclude": [] 
@@ -396,7 +396,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 3000 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
@@ -422,7 +422,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 3000 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
@@ -435,7 +435,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 3000 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
@@ -448,7 +448,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 596 
 	 ,"auto_cost": 400 
 	 ,"exclude": [] 
@@ -461,7 +461,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 6300 
 	 ,"auto_cost": 5250 
 	 ,"exclude": [] 
@@ -474,7 +474,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 544 
 	 ,"auto_cost": 420 
 	 ,"exclude": [] 
@@ -487,7 +487,7 @@
 	 ,"higth_cost": 0 
 	 ,"low_cost": 42 
 	 ,"hidden": 0 
-	 ,"mxbuy": 2 
+	 ,"mxbuy": 1  
 	 ,"auto_sell": 3000 
 	 ,"auto_cost": 42 
 	 ,"exclude": [] 
