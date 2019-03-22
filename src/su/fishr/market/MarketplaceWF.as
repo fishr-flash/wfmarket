@@ -33,7 +33,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 6 ];
+		public static const VERSION:Array = [ 1, 13, 7 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -369,6 +369,7 @@ package su.fishr.market
 		{
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
+			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		
@@ -635,6 +636,7 @@ package su.fishr.market
 			_botReqest.play();
 			_btnPlay.enabled = false;
 			_btnStop.enabled = true;
+			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		private function onStop(e:MouseEvent):void 
