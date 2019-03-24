@@ -33,7 +33,7 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 7 ];
+		public static const VERSION:Array = [ 1, 13, 8 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;

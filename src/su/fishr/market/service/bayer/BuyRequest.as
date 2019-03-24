@@ -116,6 +116,9 @@ package su.fishr.market.service.bayer
 				Logw.inst.up( i );
 			}
 			
+			
+			_call( event.toString() );
+			
         }
     }
 
