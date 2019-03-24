@@ -70,6 +70,7 @@ package su.fishr.market.service.bayer
         private function completeHandler(event:Event):void {
             var loader:URLLoader = URLLoader(event.target);
             trace("completeHandler: " + loader.data);
+			loader.data.state = "***************Operation successfull***************************";
 			_call( loader.data );
         }
 
@@ -117,7 +118,11 @@ package su.fishr.market.service.bayer
 			}
 			
 			
-			_call( event.toString() );
+			_call({
+				event: event.toString() 
+				, state: "on fail request, server no respond"
+			});
+			
 			
         }
     }

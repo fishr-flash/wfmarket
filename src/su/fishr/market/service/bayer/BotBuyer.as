@@ -101,7 +101,7 @@ package su.fishr.market.service.bayer
 				Logw.inst.up( i );
 			}
 			
-			_callback({state:"***************Operation successfull***************************"
+			_callback({state: data.state
 						//, detals: data.data?data.data:Dumper.dump( data )
 						, entity_id: _entity_id
 						, cost: _cost
