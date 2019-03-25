@@ -70,8 +70,8 @@ package su.fishr.market.service.bayer
         private function completeHandler(event:Event):void {
             var loader:URLLoader = URLLoader(event.target);
             trace("completeHandler: " + loader.data);
-			loader.data.state = "***************Operation successfull***************************";
-			_call( loader.data );
+			
+			_call( { data:loader.data, state:   "***************Operation successfull***************************" } );
         }
 
         private function openHandler(event:Event):void {
