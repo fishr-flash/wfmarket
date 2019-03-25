@@ -16,3 +16,5 @@
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
 https://habr.com/ru/company/intersystems/blog/155565/
+	
+	
