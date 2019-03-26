@@ -33,7 +33,8 @@ package su.fishr.market
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
-		public static const VERSION:Array = [ 1, 13, 11 ];
+		/// version build
+		public static const VERSION:Array = [ 1, 13, 12 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -584,8 +585,8 @@ package su.fishr.market
 				
 				
 				///TODO: point configure sell cost
-				_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
-				//_seller.sell( int( d.entity_id), w.sell );
+				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
+				_seller.sell( int( d.entity_id), w.sell );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
