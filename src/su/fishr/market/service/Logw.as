@@ -53,6 +53,11 @@ package su.fishr.market.service
 			
 		}
 		
+		public function conf_up(i:String):void 
+		{
+			_area.text = i;
+		}
+		
 		private function init():void 
 		{
 			const back:BackgroundShape = new BackgroundShape( _MY_WIDTH, _MY_HEIGHT );

@@ -34,7 +34,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 13, 12 ];
+		public static const VERSION:Array = [ 1, 14, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -49,13 +49,14 @@ package su.fishr.market
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
-		static public const COUNT_BUY:uint = 100;
+		static public var COUNT_BUY:uint = 100;
 		
 		
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "cost";
 		public static var _CASH:int = 0;
-		static public var NEED_UPDATE_CONFIG:Boolean = true;
+		public static var NEED_UPDATE_CONFIG:Boolean = true;
+		public static var AGENT_ONLINE:int = 2;
 		
 		private var _btnRequest:ButtonClr;
 		private var _botReqest:BotRequest;
@@ -175,17 +176,17 @@ package su.fishr.market
 			
 			
 			
-			var _hotItemsUpdater:HotItemsUpdater = new HotItemsUpdater( _servant.setHotDate );
-			_hotItemsUpdater.x = _btnCfg.x + _btnCfg.width + 5;
-			_hotItemsUpdater.y = _btnCfg.y;
-			this.addChild( _hotItemsUpdater );
+			const hotItemsUpdater:HotItemsUpdater = new HotItemsUpdater( _servant.setHotDate );
+			hotItemsUpdater.x = _btnCfg.x + _btnCfg.width + 5;
+			hotItemsUpdater.y = _btnCfg.y;
+			this.addChild( hotItemsUpdater );
 			
 			
 			
 			_btnOnAlert = new ButtonClr;
 			_btnOnAlert.label = "alrt";
-			_btnOnAlert.x = _hotItemsUpdater.x + _hotItemsUpdater.width + 25;
-			_btnOnAlert.y = _hotItemsUpdater.y;
+			_btnOnAlert.x = hotItemsUpdater.x + hotItemsUpdater.width + 25;
+			_btnOnAlert.y = hotItemsUpdater.y;
 			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
@@ -250,6 +251,8 @@ package su.fishr.market
 			_servant.addEventListener( WFMEvent.ON_LOW_COST, onLowCost );
 			_servant.addEventListener( WFMEvent.ON_HEIGHT_COST, onHeightCost );
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			_servant.addEventListener( WFMEvent.UPDATE_CONF, updateConf );
+			_servant.init();
 			
 			_botReqest = new BotRequest;
 			_botReqest.addEventListener( BotRequest.ON_RESULT_REQUEST, onResult );
@@ -258,6 +261,19 @@ package su.fishr.market
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
+		}
+		
+		/**
+		 *  "config":{
+				 "agent_online": 2
+				 ,"count_buy": 100
+			}
+		 * @param	e
+		 */
+		private function updateConf(e:WFMEvent):void 
+		{
+			COUNT_BUY = int( e.data.count_buy );
+			AGENT_ONLINE = int( e.data.agent_online );
 		}
 		
 		
@@ -607,13 +623,8 @@ package su.fishr.market
 			import su.fishr.utils.Dumper;
 			if( true )
 			{
-				const i:String = 
-				( "MarketplaceWF.as" + ". " +  "onBtnCfg ")
-				+ ( "\r _servant.generateCofig(): " + _servant.generateCofig() )
-				+ ( "\r : " + "" )
-				//+ ( "\r : " + Dumper.dump( "" ) )
-				+ ( "\r end" );
-				Logw.inst.up( i );
+				const i:String = _servant.generateCofig();
+				Logw.inst.conf_up( i );
 			}
 			
 			

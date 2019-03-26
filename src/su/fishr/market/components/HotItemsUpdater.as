@@ -77,7 +77,7 @@ package su.fishr.market.components
 			const b:ByteArray = e.target.data;
 			b.position = 0;
 			
-			_callback( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array );
+			_callback( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) );
 		}
 		
 		

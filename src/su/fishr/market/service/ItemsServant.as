@@ -14,13 +14,14 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/items_16032019.json", mimeType = "application/octet-stream")]
-		private const Items:Class;
+		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
+		private const IniData:Class;
 		
 		private var _self:ItemsServant;
 		private var _configItems:Array;
 		private var _weaponGroups:Vector.<WeaponGroup>;
 		private var _bufferStory:Array = new Array;
+		private var _iniConf:Object;
 		public function get inst():ItemsServant
 		{
 			if ( !_self ) _self = new ItemsServant;
@@ -29,7 +30,22 @@ package su.fishr.market.service
 		public function ItemsServant( event:Event = null ) 
 		{
 			
-			init();
+			
+		}
+		
+		public function init():void 
+		{
+			const iniData:Object = JSON.parse(  new IniData );
+			
+			_iniConf = iniData.config;
+			
+			this.dispatchEvent( new WFMEvent( WFMEvent.UPDATE_CONF, false, false, _iniConf ) );
+			
+			implementItemsConfig( iniData.items as Array ); 
+			
+			
+			
+				
 		}
 		
 		public function setData( objson:Object  ):void
@@ -255,12 +271,13 @@ package su.fishr.market.service
 			return null;
 		}
 		
-		public function setHotDate(data:Array):void 
+		public function setHotDate(data:Object):void 
 		{
 			MarketplaceWF.NEED_UPDATE_CONFIG = true;
-			implementItemsConfig(  data  ); 
+			implementItemsConfig(  data.items  ); 
+			_iniConf = data.config;
 			
-			
+			this.dispatchEvent( new WFMEvent( WFMEvent.UPDATE_CONF, false, false, _iniConf ) );
 			
 			const len:int = _configItems.length;
 			for ( var j:int = 0; j < len; j++ )
@@ -428,16 +445,7 @@ package su.fishr.market.service
 		
 		
 		
-		private function init():void 
-		{
-			const itemsStr:String = new Items;
-			
-			implementItemsConfig( JSON.parse( itemsStr ) as Array ); 
-			
-			
-			
-				
-		}
+		
 		
 		private function implementItemsConfig( arr:Array ):void
 		{
@@ -594,8 +602,16 @@ package su.fishr.market.service
 			}
 			
 			
-			var result:String = "[";
 			
+			var result:String = '{ \r\t "config":{  ';
+			var n:Boolean = true;
+			for (var name:String in _iniConf) 
+			{
+				result += '\r\t\t ' + ( n?'"':' ,"' )  + name + '":"' + _iniConf[ name ] + '"';
+				n = false;
+			}
+			
+			result += '\r\t} \r \t ,"items": ['
 			/**
 			 * items[ 0 ] : Object (9): 
 				auto_cost:(int,2) 42
@@ -618,24 +634,24 @@ package su.fishr.market.service
 			{
 				const cst:int = MarketplaceWF.IGNORE_CONFIG?42:sortedItms[ i ].auto_cost;
 			
-				obStr = i == 0?'':',';
+				obStr = i == 0?'\t':'\t,';
 				obStr +='{ \r';
-				obStr += '\t "name": "' + String( sortedItms[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
-				obStr += '\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
-				obStr += '\t ,"entity_id": ' + sortedItms[ i ].entity_id + ' \r';
-				obStr += '\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
-				obStr += '\t ,"higth_cost": 0 \r';
-				obStr += '\t ,"low_cost": 42 \r';
-				obStr += '\t ,"hidden": 0 \r';
-				obStr += '\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:2 )+ ' \r';
-				obStr += '\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';
-				obStr += '\t ,"auto_cost": ' + cst +' \r';
-				obStr += '\t ,"exclude": [] \r';
-				obStr += '} \r';
+				obStr += '\t\t "name": "' + String( sortedItms[ i ].name ).replace(  /"/g, '\\"' )+'" \r';
+				obStr += '\t\t ,"key_word": "' + String( sortedItms[ i ].name ).replace( /"/g, '\\"' ) +'" \r';
+				obStr += '\t\t ,"entity_id": ' + sortedItms[ i ].entity_id + ' \r';
+				obStr += '\t\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
+				obStr += '\t\t ,"higth_cost": 0 \r';
+				obStr += '\t\t ,"low_cost": 42 \r';
+				obStr += '\t\t ,"hidden": 0 \r';
+				obStr += '\t\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:2 )+ ' \r';
+				obStr += '\t\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';
+				obStr += '\t\t ,"auto_cost": ' + cst +' \r';
+				obStr += '\t\t ,"exclude": [] \r';
+				obStr += '\t} \r';
 				result += obStr;
 			}
 			
-			result += ']';
+			result += '\t] \r }';
 			
 			
 			
