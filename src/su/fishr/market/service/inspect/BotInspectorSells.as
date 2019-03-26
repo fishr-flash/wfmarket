@@ -2,6 +2,9 @@ package su.fishr.market.service.inspect
 {
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
+	import flash.utils.clearTimeout;
+	import flash.utils.setTimeout;
+	import su.fishr.market.WFMEvent;
 	
 	/**
 	 * ...
@@ -10,10 +13,11 @@ package su.fishr.market.service.inspect
 	public class BotInspectorSells extends EventDispatcher 
 	{
 		
-		private static const TIME_INTERVAL:uint = 900000;
+		private static const TIME_INTERVAL:uint = 450000;
 		
 		private static var _self:BotInspectorSells;
-		private var _controlTime:uint;
+		private var _controlTime:Date;
+		private var _identTimeOut:uint;
 		
 		static public function get self():BotInspectorSells 
 		{
@@ -30,12 +34,22 @@ package su.fishr.market.service.inspect
 		}
 		
 		
-		public function ini( time:uint ):void
+		public function activate( ):void
 		{
-			_controlTime = time;
+			_controlTime = new Date;
+			//_controlTime = new Date( "Tue Mar 26 13:11:15 GMT+0300 2019" );
 			
+			if ( _identTimeOut )
+					clearTimeout( _identTimeOut );
+					
+			_identTimeOut = setTimeout( requestHistory, TIME_INTERVAL + ( Math.random() * TIME_INTERVAL ) )
+			
+			
+		}
+		
+		private function requestHistory():void
+		{
 			const req:HistorySellReq = new HistorySellReq( histResponse );
-			
 		}
 		
 		private function histResponse( data:* ):void 
@@ -69,29 +83,31 @@ package su.fishr.market.service.inspect
 					type:(str,9) inventory
 			 */
 					
+			 var cash:int = 0;
+			 
 			 const source:Object = JSON.parse( data );
 			 
-			 source.data.filter( excludeBuys );
+			 const summSale:int = source.data.filter( excludeBuys ).map( incrementSumm );
 			 
-			//////////////////////TRACE/////////////////////////////////
 			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
+			 _controlTime = new Date;
+			 
+			 this.dispatchEvent( new WFMEvent( WFMEvent.UPDATE_CASH, false, false, { "cash":cash } ) );
+			
+			
+			function incrementSumm( item:Object, index:int, array:Array ):void
 			{
-				const i:String = 
-				( "BotInspectorSells.as" + ". " +  "histResponse ")
-				+ ( "\r source: " + Dumper.dump( source.data[ 0 ] ) )
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r source.data[ 0 ].date ): " +  source.data[ 0 ].date )
-				+ ( "\r new Date( source[ 0 ].date ): " +  new Date( source.data[ 0 ].date ).toDateString() )
-				+ ( "\rparseDt( source.data[ 0 ].date ): " + parseDt( source.data[ 0 ].date ) )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				
-				Logw.inst.up( i );
+			
+				if ( parseDt( item.date ) > _controlTime )
+													cash += item.cost;
 			}
-			/////////////////////END TRACE//////////////////////////////
+			
+			
+			function excludeBuys( item:Object, index:int, array:Array ):Boolean
+			{
+										
+				return ( item.method == "sale" );
+			}
 			
 			
 			function parseDt( ss:String ):Date
@@ -103,7 +119,7 @@ package su.fishr.market.service.inspect
 				
 				
 				return new Date( days[ 0 ]
-								, days[ 1 ]
+								, days[ 1 ] - 1
 								, days[ 2 ]
 								, times[ 0 ]
 								, times[ 1 ]
@@ -111,29 +127,9 @@ package su.fishr.market.service.inspect
 								);
 			}
 			
-			function excludeBuys( item:Object ):Boolean
-			{
-				//////////////////////TRACE/////////////////////////////////
-				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const j:String = 
-					( "BotInspectorSells.as" + ". " +  "histResponse ")
-					+ ( "\r item: " + Dumper.dump( item ) )
-					//+ ( "\r : " + Dumper.dump( true ) )
-					+ ( "\r item.method: " + item.method )
-					+ ( "\r : " + "" )
-					+ ( "\r end" );
-					Logw.inst.up( j );
-				}
-				/////////////////////END TRACE//////////////////////////////
-				/*if ( item.method == "sale" )
-						return true*/;
-						
-				return true;
-			}
+			
+					
+			_identTimeOut = setTimeout( requestHistory, TIME_INTERVAL + ( Math.random() * TIME_INTERVAL ) )
 		}
 		
 		

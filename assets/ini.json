@@ -1,7 +1,7 @@
 { 
 	 "config":{  
-		 "count_buy":"100"
-		  ,"agent_online":"2"
+		 "count_buy":100
+		  ,"agent_online":1
 	} 
  	 ,"items": [	{ 
 		 "name": "Жилет медика Синдикат" 

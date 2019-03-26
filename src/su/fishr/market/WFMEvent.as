@@ -12,6 +12,7 @@ package su.fishr.market
 		static public const ON_AUTOBUY:String = "onAutobuy";
 		static public const ON_HEIGHT_COST:String = "onHeightCost";
 		static public const UPDATE_CONF:String = "updateConf";
+		static public const UPDATE_CASH:String = "updateCash";
 		
 		private var _data:Object;
 		public function get data():Object 

@@ -35,7 +35,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 1 ];
+		public static const VERSION:Array = [ 1, 15, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -258,11 +258,14 @@ package su.fishr.market
 			_botReqest = new BotRequest;
 			_botReqest.addEventListener( BotRequest.ON_RESULT_REQUEST, onResult );
 			
-			
+			BotInspectorSells.self.addEventListener( WFMEvent.UPDATE_CASH, updateCahsFromInspector );
+			BotInspectorSells.self.activate( );
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 		}
+		
+		
 		
 		/**
 		 *  "config":{
@@ -285,6 +288,8 @@ package su.fishr.market
 			_CASH = int( e.target.text );
 			if ( _CASH ) _btnAutoBuy.enabled = true;
 			else _btnAutoBuy.enabled = false;
+			
+			BotInspectorSells.self.activate( );
 		   
 		}
 		
@@ -387,7 +392,7 @@ package su.fishr.market
 		{
 			//const sellInspect:BotInspectorSells 
 			
-			BotInspectorSells.self.ini( new Date().date );
+			
 			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
@@ -647,6 +652,32 @@ package su.fishr.market
 		{
 			if ( _btnOnAlert.selected ) 
 								TelegramBot.inst.setMessageOnNegativeCost( e.data as WeaponGroup );
+		}
+		
+		private function updateCahsFromInspector(e:WFMEvent):void 
+		{
+			
+			const cash:uint = e.data.cash;
+			_CASH += ( cash / AGENT_ONLINE );
+			_tfCash.text = _CASH + "";
+			
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "updateCahsFromInspector ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r cash: " + cash )
+				+ ( "\r _CASH: " + _CASH )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
 		}
 		
 		private function onPlay(e:MouseEvent):void 
