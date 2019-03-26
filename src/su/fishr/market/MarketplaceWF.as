@@ -35,7 +35,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 2 ];
+		public static const VERSION:Array = [ 1, 15, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -289,7 +289,9 @@ package su.fishr.market
 			if ( _CASH ) _btnAutoBuy.enabled = true;
 			else _btnAutoBuy.enabled = false;
 			
-			BotInspectorSells.self.activate( );
+			_btnAutoBuy.selected = false;
+			
+			
 		   
 		}
 		
@@ -393,6 +395,7 @@ package su.fishr.market
 			//const sellInspect:BotInspectorSells 
 			
 			
+			BotInspectorSells.self.activate( );
 			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
