@@ -20,6 +20,7 @@ package su.fishr.market
 	import su.fishr.market.service.Logw;
 	import su.fishr.market.service.bayer.BotBuyer;
 	import su.fishr.market.service.connections.TelegramBot;
+	import su.fishr.market.service.inspect.BotInspectorSells;
 	import su.fishr.utils.createCustomTextField;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
@@ -34,7 +35,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 14, 1 ];
+		public static const VERSION:Array = [ 1, 15, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -384,6 +385,10 @@ package su.fishr.market
 		
 		private function btnBuyHandler(e:MouseEvent):void 
 		{
+			//const sellInspect:BotInspectorSells 
+			
+			BotInspectorSells.self.ini( new Date().date );
+			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
