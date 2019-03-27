@@ -2,7 +2,6 @@ package su.fishr.market.service.bayer
 {
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
-	import flash.external.ExternalInterface;
 	import flash.utils.setTimeout;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.utils.Dumper;
@@ -23,7 +22,7 @@ package su.fishr.market.service.bayer
 			super(target);
 			
 			
-			ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
+			
 			
 			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * 2, entity_id, cost, type, callback );
 			

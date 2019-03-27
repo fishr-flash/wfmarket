@@ -1,7 +1,7 @@
 { 
 	 "config":{  
 		 "count_buy":100
-		  ,"agent_online":1
+		  ,"agent_online":2
 	} 
  	 ,"items": [	{ 
 		 "name": "Жилет медика Синдикат" 
@@ -350,8 +350,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
-		 ,"auto_sell": 699 
-		 ,"auto_cost": 600 
+		 ,"auto_sell": 799 
+		 ,"auto_cost": 700 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -363,7 +363,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
-		 ,"auto_sell": 6285 
+		 ,"auto_sell": 7000 
 		 ,"auto_cost": 5250 
 		 ,"exclude": [] 
 	} 
@@ -427,9 +427,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 3000 
-		 ,"auto_cost": 42 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 7000 
+		 ,"auto_cost": 5250 
 		 ,"exclude": [] 
 	} 
 	,{ 

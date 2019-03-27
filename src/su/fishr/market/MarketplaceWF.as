@@ -8,6 +8,7 @@ package su.fishr.market
 	import flash.net.FileReference;
 	import flash.text.TextField;
 	import flash.utils.ByteArray;
+	import flash.utils.getTimer;
 	import su.fishr.bases.BaseSprites;
 	import su.fishr.market.components.BackgroundShape;
 	import su.fishr.market.components.ButtonClr;
@@ -27,6 +28,7 @@ package su.fishr.market
 	import su.fishr.market.service.utils.dateFormat;
 	import su.fishr.utils.AddZerroDate;
 	import su.fishr.utils.Dumper;
+	import flash.external.ExternalInterface;
 	
 	/**
 	 * ...
@@ -35,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 3 ];
+		public static const VERSION:Array = [ 1, 15, 4 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -77,6 +79,7 @@ package su.fishr.market
 		private var _btnCfg:ButtonClr;
 		private var _seller:Sellerq;
 		private var _tfCash:TextField;
+		private var _lastTimeOpenWindow:int;
 		
 		
 		public static function getCostOnCharge( cost:int ):int
@@ -471,6 +474,7 @@ package su.fishr.market
 			
 			const went:WeaponEnt = e.data as WeaponEnt;
 			
+			
 			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
@@ -486,6 +490,19 @@ package su.fishr.market
 							
 						onStop( null );
 							
+						
+						
+						const timeOpenWindow:int = getTimer();
+						
+						//min * sec * miliseconds
+						if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( 30 * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
+						{
+							
+							ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
+							_lastTimeOpenWindow = timeOpenWindow;
+						}
+											
+						
 						
 						new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
 					}
