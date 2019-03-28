@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 5 ];
+		public static const VERSION:Array = [ 1, 15, 6 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -50,6 +50,7 @@ package su.fishr.market
 		/// загужать все данные игнорируя джейсон файл перечня
 		public static const IGNORE_CONFIG:Boolean = false;
 		
+		
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
 		static public var COUNT_BUY:uint = 100;
@@ -60,6 +61,8 @@ package su.fishr.market
 		public static var _CASH:int = 0;
 		public static var NEED_UPDATE_CONFIG:Boolean = true;
 		public static var AGENT_ONLINE:int = 2;
+		
+		private static const DELAY_CALL_MARKET:uint = 15;
 		
 		private var _btnRequest:ButtonClr;
 		private var _botReqest:BotRequest;
@@ -495,7 +498,7 @@ package su.fishr.market
 						const timeOpenWindow:int = getTimer();
 						
 						//min * sec * miliseconds
-						if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( 15 * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
+						if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( DELAY_CALL_MARKET * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
 						{
 							
 							ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
