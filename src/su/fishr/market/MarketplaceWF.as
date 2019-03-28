@@ -37,13 +37,13 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 4 ];
+		public static const VERSION:Array = [ 1, 15, 5 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.05;
-		public static const DELAY_ON_BUYER:int = 1500;
+		public static const DELAY_ON_BUYER:int = 1300;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
@@ -495,7 +495,7 @@ package su.fishr.market
 						const timeOpenWindow:int = getTimer();
 						
 						//min * sec * miliseconds
-						if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( 30 * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
+						if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( 15 * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
 						{
 							
 							ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
