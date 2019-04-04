@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 6 ];
+		public static const VERSION:Array = [ 1, 15, 7 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -264,8 +264,11 @@ package su.fishr.market
 			_botReqest = new BotRequest;
 			_botReqest.addEventListener( BotRequest.ON_RESULT_REQUEST, onResult );
 			
-			BotInspectorSells.self.addEventListener( WFMEvent.UPDATE_CASH, updateCahsFromInspector );
-			BotInspectorSells.self.activate( );
+			if ( IGNORE_CONFIG == false )
+			{
+				BotInspectorSells.self.addEventListener( WFMEvent.UPDATE_CASH, updateCahsFromInspector );
+				BotInspectorSells.self.activate( );
+			}
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
@@ -401,7 +404,11 @@ package su.fishr.market
 			//const sellInspect:BotInspectorSells 
 			
 			
-			BotInspectorSells.self.activate( );
+			if ( IGNORE_CONFIG == false )
+			{
+				BotInspectorSells.self.addEventListener( WFMEvent.UPDATE_CASH, updateCahsFromInspector );
+				BotInspectorSells.self.activate( );
+			}
 			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;

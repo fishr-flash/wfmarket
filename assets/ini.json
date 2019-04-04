@@ -51,8 +51,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 208 
-		 ,"auto_cost": 157 
+		 ,"auto_sell": 197 
+		 ,"auto_cost": 105 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -90,8 +90,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 2
-		 ,"auto_sell": 2300 
-		 ,"auto_cost": 2100 
+		 ,"auto_sell": 2189 
+		 ,"auto_cost": 1999 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -194,8 +194,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 741 
-		 ,"auto_cost": 630 
+		 ,"auto_sell": 698 
+		 ,"auto_cost": 629 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -298,8 +298,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 741 
-		 ,"auto_cost": 630 
+		 ,"auto_sell": 698 
+		 ,"auto_cost": 629 
 		 ,"exclude": [] 
 	} 
 	,{ 
