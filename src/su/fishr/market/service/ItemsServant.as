@@ -22,6 +22,8 @@ package su.fishr.market.service
 		private var _weaponGroups:Vector.<WeaponGroup>;
 		private var _bufferStory:Array = new Array;
 		private var _iniConf:Object;
+		private var _countCommandBy:int = 5;
+		private var _remaindCommandBy:int;
 		public function get inst():ItemsServant
 		{
 			if ( !_self ) _self = new ItemsServant;
@@ -543,15 +545,18 @@ package su.fishr.market.service
 		{
 			const len:int = _weaponGroups.length;
 			var autocost:int;
+			_remaindCommandBy = _countCommandBy;
+			
 			
 			for (var i:int = 0; i < len; i++) 
 			{
-				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autocost )
+				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autocost && _remaindCommandBy > 0 )
 				{
 					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
 					break;
 					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ] ) );
 					//off break cicle for of search buy cost break;
+					_remaindCommandBy--;
 				}
 			}
 		}
