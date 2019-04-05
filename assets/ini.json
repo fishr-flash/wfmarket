@@ -50,9 +50,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 0
 		 ,"auto_sell": 197 
-		 ,"auto_cost": 1260 
+		 ,"auto_cost": 126 
 		 ,"exclude": [] 
 	} 
 	,{ 
