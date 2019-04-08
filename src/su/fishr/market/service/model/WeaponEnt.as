@@ -13,6 +13,7 @@ package su.fishr.market.service.model
 	public class WeaponEnt extends EventDispatcher
 	{
 		public var host:WeaponGroup;
+		public var maxBuyCount:int;
 		
 		protected var _type:String;
 		protected var _key:String;
@@ -111,7 +112,9 @@ package su.fishr.market.service.model
 		public function init(data:Object):WeaponEnt 
 		{
 			
-					
+			if( data.config )		
+					maxBuyCount = data.config.mxbuy;
+			
 			_history.head = {
 				key:data.title
 				, minc: data.min_cost

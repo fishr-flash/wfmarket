@@ -12,7 +12,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 169 
+		 ,"auto_sell": 144 
 		 ,"auto_cost": 105 
 		 ,"exclude": [] 
 	} 
@@ -26,7 +26,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 162 
-		 ,"auto_cost": 105 
+		 ,"auto_cost": 126 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -50,9 +50,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 197 
-		 ,"auto_cost": 126 
+		 ,"auto_cost": 158 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -65,7 +65,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 98 
-		 ,"auto_cost": 58 
+		 ,"auto_cost": 69 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -77,8 +77,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 379 
-		 ,"auto_cost": 314 
+		 ,"auto_sell": 371 
+		 ,"auto_cost": 315 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -89,9 +89,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 2090 
-		 ,"auto_cost": 1998 
+		 ,"mxbuy": 1
+		 ,"auto_sell": 2066 
+		 ,"auto_cost": 1785 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -103,8 +103,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 147 
-		 ,"auto_cost": 105 
+		 ,"auto_sell": 140 
+		 ,"auto_cost": 104 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -117,7 +117,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 365 
-		 ,"auto_cost": 304 
+		 ,"auto_cost": 315 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -129,7 +129,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 437 
+		 ,"auto_sell": 418 
 		 ,"auto_cost": 315 
 		 ,"exclude": [] 
 	} 
@@ -142,8 +142,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 741 
-		 ,"auto_cost": 630 
+		 ,"auto_sell": 684 
+		 ,"auto_cost": 629 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -155,7 +155,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 148 
+		 ,"auto_sell": 135 
 		 ,"auto_cost": 104 
 		 ,"exclude": [] 
 	} 
@@ -181,8 +181,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 130 
-		 ,"auto_cost": 104 
+		 ,"auto_sell": 129 
+		 ,"auto_cost": 99 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -194,8 +194,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 698 
-		 ,"auto_cost": 629 
+		 ,"auto_sell": 669 
+		 ,"auto_cost": 525 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -220,7 +220,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 299 
+		 ,"auto_sell": 296 
 		 ,"auto_cost": 210 
 		 ,"exclude": [] 
 	} 
@@ -233,7 +233,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 284 
+		 ,"auto_sell": 276 
 		 ,"auto_cost": 209 
 		 ,"exclude": [] 
 	} 
@@ -259,7 +259,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 108 
+		 ,"auto_sell": 96 
 		 ,"auto_cost": 60 
 		 ,"exclude": [] 
 	} 
@@ -285,7 +285,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 198 
+		 ,"auto_sell": 193 
 		 ,"auto_cost": 157 
 		 ,"exclude": [] 
 	} 
@@ -298,7 +298,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 698 
+		 ,"auto_sell": 778 
 		 ,"auto_cost": 630 
 		 ,"exclude": [] 
 	} 
@@ -311,7 +311,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 527 
+		 ,"auto_sell": 476 
 		 ,"auto_cost": 419 
 		 ,"exclude": [] 
 	} 
@@ -324,8 +324,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 119 
-		 ,"auto_cost": 94 
+		 ,"auto_sell": 113 
+		 ,"auto_cost": 42 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -337,8 +337,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 119 
-		 ,"auto_cost": 94 
+		 ,"auto_sell": 118 
+		 ,"auto_cost": 42 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -350,7 +350,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 798 
+		 ,"auto_sell": 757 
 		 ,"auto_cost": 630 
 		 ,"exclude": [] 
 	} 
@@ -363,8 +363,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5399 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 4718 
+		 ,"auto_cost": 4410 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -376,7 +376,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 593 
+		 ,"auto_sell": 570 
 		 ,"auto_cost": 472 
 		 ,"exclude": [] 
 	} 
@@ -389,7 +389,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 128 
+		 ,"auto_sell": 109 
 		 ,"auto_cost": 94 
 		 ,"exclude": [] 
 	} 
@@ -402,7 +402,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 298 
+		 ,"auto_sell": 283 
 		 ,"auto_cost": 210 
 		 ,"exclude": [] 
 	} 
@@ -415,7 +415,7 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 147 
+		 ,"auto_sell": 140 
 		 ,"auto_cost": 104 
 		 ,"exclude": [] 
 	} 
@@ -428,8 +428,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5333 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 5046 
+		 ,"auto_cost": 4620 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -441,8 +441,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 359 
-		 ,"auto_cost": 315 
+		 ,"auto_sell": 328 
+		 ,"auto_cost": 263 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -454,8 +454,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 514 
-		 ,"auto_cost": 419 
+		 ,"auto_sell": 490 
+		 ,"auto_cost": 420 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -467,8 +467,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5333 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 4760 
+		 ,"auto_cost": 4500 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -480,8 +480,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
-		 ,"auto_sell": 559 
-		 ,"auto_cost": 473 
+		 ,"auto_sell": 557 
+		 ,"auto_cost": 420 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -508,17 +508,89 @@
 		 ,"auto_sell": 131 
 		 ,"auto_cost": 41 
 		 ,"exclude": [] 
-	}  ,{ 
-		 "name": "Абсолют" 
-		 ,"key_word": "Абсолют" 
+	} ,{ 
+		 "name": "Шлем штурмовика \"Абсолют\"" 
+		 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
 		 ,"entity_id": 0 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
-		 ,"auto_sell": 131 
-		 ,"auto_cost": 41 
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Ботинки \"Абсолют\"" 
+		 ,"key_word": "Ботинки \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Шлем медика \"Абсолют\"" 
+		 ,"key_word": "Шлем медика \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Жилет \"Абсолют\"" 
+		 ,"key_word": "Жилет \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки \"Абсолют\"" 
+		 ,"key_word": "Перчатки \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Шлем инженера \"Абсолют\"" 
+		 ,"key_word": "Шлем инженера \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Шлем снайпера \"Абсолют\"" 
+		 ,"key_word": "Шлем снайпера \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 42 
+		 ,"hidden": 0 
+		 ,"mxbuy": 0
+		 ,"auto_sell": 2000 
+		 ,"auto_cost": 42 
 		 ,"exclude": [] 
 	} 
 	] 

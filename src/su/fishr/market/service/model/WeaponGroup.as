@@ -10,7 +10,7 @@ package su.fishr.market.service.model
 	 */
 	public class WeaponGroup extends WeaponEnt 
 	{
-		public var maxBuyCount:int;
+		
 		public var groupKey:String;
 		
 		private var _went:Vector.<WeaponEnt>;
