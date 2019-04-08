@@ -23,7 +23,7 @@ package su.fishr.market.components
 		{
 			super();
 			
-			_back = new BackgroundShape( 1400, 400 );
+			_back = new BackgroundShape( 1520, 400 );
 			this.addChild( _back ) ;
 			
 			

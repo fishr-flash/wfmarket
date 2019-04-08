@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 15, 9 ];
+		public static const VERSION:Array = [ 1, 17, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -270,9 +270,13 @@ package su.fishr.market
 				BotInspectorSells.self.activate( );
 			}
 			
+			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeOnBuy, true );
+			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 		}
+		
+		
 		
 		
 		
@@ -765,7 +769,10 @@ package su.fishr.market
 			_btnCfg.enabled = true;
 		}
 		
-		
+		private function onChangeOnBuy(e:WFMEvent):void 
+		{
+			_servant.onChangeMxBuy( e.data.entity_id, e.data.mbuy );
+		}
 
 	}
 
