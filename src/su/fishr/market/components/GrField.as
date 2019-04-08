@@ -38,7 +38,7 @@ package su.fishr.market.components
 			const len:int = wi.length;
 			
 			
-			liquidity = wi[ 0 ][ 6 ];
+			liquidity = wi[ 0 ][ 7 ];
 			cost = wi[ 0 ][ 0 ];
 				
 			
@@ -103,14 +103,18 @@ package su.fishr.market.components
 			}
 			
 			this.addChild( _list[ 0 ] );
+			//_list[ 0 ].nStep.visible = false;
 			
 			_btnOpn = new Button;
 			_btnOpn.label = "+";
 			_btnOpn.setSize( 20, 20 );
 			_btnOpn.addEventListener( MouseEvent.CLICK, onOpnClick );
-			_btnOpn.x = this.width;
+			_btnOpn.x = this.width + 10;
+			_btnOpn.validateNow();
 			/// добавляем кнопку позже потому, что иначе ресайзинг окна данных работает неправильно
 			this.addChild( _btnOpn );
+			
+			
 			
 		}
 		

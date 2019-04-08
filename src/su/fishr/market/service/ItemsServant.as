@@ -105,9 +105,9 @@ package su.fishr.market.service
 							, heigth_cost: 0
 							, low_cost: 42
 							, hidden: 0
-							, mxbuy: 3
+							, mxbuy: 0
 							, auto_cost: 42
-							, exclude: [ "Камуфляж Абсолют" ]
+							, exclude: [  ]
 						} );
 					
 				}
@@ -192,30 +192,36 @@ package su.fishr.market.service
 			var wg:Array = [];
 			var wi:Array = [];
 			
+			
 			const len:int = _weaponGroups.length;
 			for ( var i:int = 0; i < len; i++ )
 			{
+				
 				wi.push( [ _weaponGroups[ i ].groupKey
 								, _weaponGroups[ i ].cost
 								, _weaponGroups[ i ].mincost
 								, _weaponGroups[ i ].maxcost 
 								, _weaponGroups[ i ].went[ 0 ].entity_id
 								, _weaponGroups[ i ].session_cost 
+								, _weaponGroups[ i ].maxBuyCount
 								, _weaponGroups[ i ].liquidity] );
 								
 								
 				const lenj:int = _weaponGroups[ i ].went.length;
 				for ( var j:int = 0; j < lenj; j++ )
 				{
+					
 					wi.push( [ _weaponGroups[ i ].went[ j ].key
 								, _weaponGroups[ i ].went[ j ].cost
 								, _weaponGroups[ i ].went[ j ].mincost
 								, _weaponGroups[ i ].went[ j ].maxcost 
 								, _weaponGroups[ i ].went[ j ].entity_id 
+								, _weaponGroups[ i ].went[ j ].maxBuyCount
 								, _weaponGroups[ i ].went[ j ].liquidity ] );
 								
 								
 				}
+				
 				
 				wg.push( wi.slice() );
 				wi = [];
@@ -297,6 +303,11 @@ package su.fishr.market.service
 			
 			
 			
+		}
+		
+		public function onChangeMxBuy( entity_id:int, mbuy:int ):void 
+		{
+			getWent( entity_id ).maxBuyCount = mbuy;
 		}
 		
 		private function joinStory(data:Array):Array 
