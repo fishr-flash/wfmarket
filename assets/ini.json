@@ -363,8 +363,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5399 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 4999 
+		 ,"auto_cost": 4500 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -428,8 +428,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5333 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 4999 
+		 ,"auto_cost": 4500 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -467,8 +467,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
-		 ,"auto_sell": 5333 
-		 ,"auto_cost": 4750 
+		 ,"auto_sell": 4999 
+		 ,"auto_cost": 4500 
 		 ,"exclude": [] 
 	} 
 	,{ 
