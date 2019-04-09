@@ -192,23 +192,7 @@ package su.fishr.market.service
 			var wg:Array = [];
 			var wi:Array = [];
 			
-			//////////////////////TRACE/////////////////////////////////
-				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const k:String = 
-					( "ItemsServant.as" + ". " +  "getWeaponData ")
-					+ ( "\r _weaponGroups[ 5 ] : " + Dumper.dump( _weaponGroups[ 5 ], 1, true, true ) )
-					//+ ( "\r : " + Dumper.dump( true ) )
-					+ ( "\r _weaponGroups[ 5 ].cost: " + _weaponGroups[ 5 ].cost )
-					+ ( "\r _weaponGroups[ 5 ].autobuy: " + _weaponGroups[ 5 ].autobuy )
-					+ ( "\r : " + "" )
-					+ ( "\r end" );
-					Logw.inst.up( k );
-				}
-				/////////////////////END TRACE//////////////////////////////
+			
 				
 			
 			const len:int = _weaponGroups.length;
