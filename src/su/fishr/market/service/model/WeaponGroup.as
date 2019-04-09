@@ -58,6 +58,16 @@ package su.fishr.market.service.model
 		{
 			return _owner;
 		}
+		
+		public function set autobuy(value:int):void 
+		{
+			_autobuy = value;
+		}
+		
+		public function set autosell(value:uint):void 
+		{
+			_autosell = value;
+		}
 		public function WeaponGroup( data:Object ) 
 		{
 			super();

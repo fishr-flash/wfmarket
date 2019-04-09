@@ -74,7 +74,7 @@ package su.fishr.market.components
 			_buyStep.value = 0;
 			_buyStep.maximum = 100000;
 			this.addChild( _buyStep );
-			_buyStep.addEventListener(Event.CHANGE, onChangeStepper );
+			_buyStep.addEventListener(Event.CHANGE, onChangeCostStep );
 			
 			_sellStep = new NumericStepper;
 			_sellStep.x = _buyStep.x + _buyStep.width;
@@ -86,7 +86,7 @@ package su.fishr.market.components
 			_sellStep.value = 0;
 			_sellStep.maximum = 100000;
 			this.addChild( _sellStep );
-			_sellStep.addEventListener(Event.CHANGE, onChangeStepper );
+			_sellStep.addEventListener(Event.CHANGE, onChangeCostStep );
 			
 
 			_cntStep = new NumericStepper;
@@ -105,6 +105,8 @@ package su.fishr.market.components
 			setData( arr );
 			
 		}
+		
+		
 		
 		
 		
@@ -201,6 +203,13 @@ package su.fishr.market.components
 		private function onChangeStepper(e:Event):void 
 		{
 			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_MBUY, false, false, { entity_id: _entity_id,  mbuy: _cntStep.value } ) );
+		}
+		
+		private function onChangeCostStep(e:Event):void 
+		{
+			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_COST_STEPPER, false, false, { entity_id: _entity_id
+																								,  cbuy: _buyStep.value
+																								, csell: _sellStep.value } ) );
 		}
 	}
 

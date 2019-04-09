@@ -335,6 +335,12 @@ package su.fishr.market.service
 			
 		}
 		
+		public function onChangeCostStepper( entity_id:int, cbuy:int, csell:int):void 
+		{
+			getWent( entity_id ).host.autobuy = cbuy;
+			getWent( entity_id ).host.autosell = csell;
+		}
+		
 		private function joinStory(data:Array):Array 
 		{
 			if( data.length ) _bufferStory.push( data );

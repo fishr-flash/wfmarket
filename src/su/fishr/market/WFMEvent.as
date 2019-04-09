@@ -14,6 +14,7 @@ package su.fishr.market
 		static public const UPDATE_CONF:String = "updateConf";
 		static public const UPDATE_CASH:String = "updateCash";
 		static public const ON_CHANGE_MBUY:String = "onChangeMbuy";
+		static public const ON_CHANGE_COST_STEPPER:String = "onChangeCostStepper";
 		
 		private var _data:Object;
 		public function get data():Object 

@@ -270,12 +270,15 @@ package su.fishr.market
 				BotInspectorSells.self.activate( );
 			}
 			
-			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeOnBuy, true );
+			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeMaxBuy, true );
+			_price.addEventListener( WFMEvent.ON_CHANGE_COST_STEPPER, onChangeCostStepper, true );
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 			
 		}
+		
+		
 		
 		
 		
@@ -770,9 +773,14 @@ package su.fishr.market
 			_btnCfg.enabled = true;
 		}
 		
-		private function onChangeOnBuy(e:WFMEvent):void 
+		private function onChangeMaxBuy(e:WFMEvent):void 
 		{
 			_servant.onChangeMxBuy( e.data.entity_id, e.data.mbuy );
+		}
+		
+		private function onChangeCostStepper(e:WFMEvent):void 
+		{
+			_servant.onChangeCostStepper( e.data.entity_id, e.data.cbuy, e.data.csell );
 		}
 
 	}
