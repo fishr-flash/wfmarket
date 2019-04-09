@@ -337,8 +337,13 @@ package su.fishr.market.service
 		
 		public function onChangeCostStepper( entity_id:int, cbuy:int, csell:int):void 
 		{
-			getWent( entity_id ).host.autobuy = cbuy;
-			getWent( entity_id ).host.autosell = csell;
+			const went:WeaponEnt = getWent( entity_id );
+			went.host.autobuy = cbuy;
+			went.host.autosell = csell;
+			/// kastile
+			went.host.maxBuyCount++;
+			went.maxBuyCount++;
+			
 		}
 		
 		private function joinStory(data:Array):Array 
