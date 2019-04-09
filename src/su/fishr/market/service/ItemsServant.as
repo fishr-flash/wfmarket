@@ -270,6 +270,7 @@ package su.fishr.market.service
 				if ( went )
 				{
 						went.host.maxBuyCount--;
+						went.maxBuyCount--;
 						
 						
 						return went;
@@ -307,7 +308,7 @@ package su.fishr.market.service
 		
 		public function onChangeMxBuy( entity_id:int, mbuy:int ):void 
 		{
-			getWent( entity_id ).maxBuyCount = mbuy;
+			getWent( entity_id ).maxBuyCount = getWent( entity_id ).host.maxBuyCount = mbuy; // в getWent maxBuyCount отнимается
 		}
 		
 		private function joinStory(data:Array):Array 
