@@ -192,10 +192,29 @@ package su.fishr.market.service
 			var wg:Array = [];
 			var wi:Array = [];
 			
+			//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const k:String = 
+					( "ItemsServant.as" + ". " +  "getWeaponData ")
+					+ ( "\r _weaponGroups[ 5 ] : " + Dumper.dump( _weaponGroups[ 5 ], 1, true, true ) )
+					//+ ( "\r : " + Dumper.dump( true ) )
+					+ ( "\r _weaponGroups[ 5 ].cost: " + _weaponGroups[ 5 ].cost )
+					+ ( "\r _weaponGroups[ 5 ].autobuy: " + _weaponGroups[ 5 ].autobuy )
+					+ ( "\r : " + "" )
+					+ ( "\r end" );
+					Logw.inst.up( k );
+				}
+				/////////////////////END TRACE//////////////////////////////
+				
 			
 			const len:int = _weaponGroups.length;
 			for ( var i:int = 0; i < len; i++ )
 			{
+				
 				
 				wi.push( [ _weaponGroups[ i ].groupKey
 								, _weaponGroups[ i ].cost
@@ -203,6 +222,8 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].maxcost 
 								, _weaponGroups[ i ].went[ 0 ].entity_id
 								, _weaponGroups[ i ].session_cost 
+								, _weaponGroups[ i ].autobuy
+								, _weaponGroups[ i ].autosell
 								, _weaponGroups[ i ].maxBuyCount
 								, _weaponGroups[ i ].liquidity] );
 								
@@ -216,7 +237,9 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].went[ j ].mincost
 								, _weaponGroups[ i ].went[ j ].maxcost 
 								, _weaponGroups[ i ].went[ j ].entity_id 
-								, _weaponGroups[ i ].went[ j ].maxBuyCount
+								, _weaponGroups[ i ].autobuy
+								, _weaponGroups[ i ].autosell
+								, _weaponGroups[ i ].maxBuyCount
 								, _weaponGroups[ i ].went[ j ].liquidity ] );
 								
 								
@@ -309,6 +332,7 @@ package su.fishr.market.service
 		public function onChangeMxBuy( entity_id:int, mbuy:int ):void 
 		{
 			getWent( entity_id ).maxBuyCount = getWent( entity_id ).host.maxBuyCount = mbuy; // в getWent maxBuyCount отнимается
+			
 		}
 		
 		private function joinStory(data:Array):Array 
@@ -562,7 +586,7 @@ package su.fishr.market.service
 			
 			for (var i:int = 0; i < len; i++) 
 			{
-				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autocost && _remaindCommandBy > 0 )
+				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autobuy && _remaindCommandBy > 0 )
 				{
 					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
 					break;

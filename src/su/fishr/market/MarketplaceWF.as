@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 17, 1 ];
+		public static const VERSION:Array = [ 1, 18, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -273,6 +273,7 @@ package su.fishr.market
 			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeOnBuy, true );
 			
 			//const breq:BayRequester = new BayRequester( onResult );
+			
 			
 		}
 		
