@@ -541,8 +541,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
-		 ,"auto_sell": 2000 
-		 ,"auto_cost": 42 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 1313 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет \"Абсолют\"" 
@@ -553,8 +553,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
-		 ,"auto_sell": 2000 
-		 ,"auto_cost": 42 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 945 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки \"Абсолют\"" 
@@ -565,8 +565,8 @@
 		 ,"low_cost": 42 
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
-		 ,"auto_sell": 2000 
-		 ,"auto_cost": 42 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 1052 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем инженера \"Абсолют\"" 
