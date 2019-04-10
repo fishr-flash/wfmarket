@@ -25,7 +25,7 @@ package su.fishr.market.service.model
 		protected var _diff:int;
 		protected var _history:Object = {};
 		protected var _session_cost:int;
-		private var _takt:int = 0;
+		private var _takt:int = -1;
 		private var _maxBuyCount:int;
 		
 		

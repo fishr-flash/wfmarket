@@ -364,7 +364,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 4718 
-		 ,"auto_cost": 4410 
+		 ,"auto_cost": 4200 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -429,7 +429,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5046 
-		 ,"auto_cost": 4620 
+		 ,"auto_cost": 4200 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -468,7 +468,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 4760 
-		 ,"auto_cost": 4500 
+		 ,"auto_cost": 4200 
 		 ,"exclude": [] 
 	} 
 	,{ 

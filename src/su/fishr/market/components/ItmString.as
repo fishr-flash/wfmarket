@@ -139,8 +139,6 @@ package su.fishr.market.components
 			
 					
 			
-					
-			
 			var resar:String  =
 				 addgap( arr[ 0 ], true )  + ""
 							+ "cc: <font color=\"#" + _colorCost.toString( 16 ) + "\" ><b>" + addgap( arr[ 1 ] ) + "</b></font>"
@@ -148,14 +146,14 @@ package su.fishr.market.components
 							+ "mx: <font color=\"#" + colorMax.toString( 16 ) + "\" ><b>" + addgap( arr[ 3 ] ) + "</b></font>"
 							+ "";
 							
-			if ( arr.length > 7 ) 
+			if ( arr.length > 9 ) 
 			{
 					_colorSession = _oldSession > 0 && _oldSession < arr[ 5 ]?COLOR_UP:_oldSession > 0 && _oldSession > arr[ 5 ]?COLOR_DOWN:_colorSession;
 					_oldSession = arr[ 5 ];
 					resar += "ss: <font color=\"#" + _colorSession.toString( 16 ) + "\" ><b>" + addgap( arr[ 5 ] ) + "</b></font>";
 					
-					_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 7 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
-					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 7 ] ) + "</b></font>";
+					_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 9 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 9 ] ) + "</b></font>";
 					
 					_buyStep.value = arr[ 6 ];
 					_sellStep.value = arr[ 7 ];
@@ -165,8 +163,8 @@ package su.fishr.market.components
 			}
 			else
 			{
-				_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 6 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
-					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 6 ] ) + "</b></font>";
+				_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 8 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 8 ] ) + "</b></font>";
 				
 				_buyStep.value = arr[ 5 ];
 				_sellStep.value = arr[ 6 ];

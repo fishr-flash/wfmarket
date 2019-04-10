@@ -37,8 +37,7 @@ package su.fishr.market.components
 			var yy:int = 0;
 			const len:int = wi.length;
 			
-			
-			liquidity = wi[ 0 ][ 7 ];
+			liquidity = wi[ 0 ][ 9 ];
 			cost = wi[ 0 ][ 0 ];
 				
 			

@@ -29,6 +29,7 @@ package su.fishr.market.service.model
 		
 		public function get session_cost():int 
 		{
+			
 			return _session_cost / _went[ 0 ].takt;
 		}
 		
