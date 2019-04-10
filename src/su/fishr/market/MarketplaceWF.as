@@ -650,7 +650,8 @@ package su.fishr.market
 				
 				///TODO: point configure sell cost
 				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
-				_seller.sell( int( d.entity_id), int( ( w.sell / 105 ) * 100 ) );
+				if ( w.sell > 0 )
+						_seller.sell( int( d.entity_id), int( ( w.sell / 105 ) * 100 ) );
 			}
 			
 			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
