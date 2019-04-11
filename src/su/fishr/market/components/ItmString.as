@@ -3,6 +3,7 @@ package su.fishr.market.components
 	import fl.controls.NumericStepper;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.text.TextFormat;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.WFMEvent;
 	
@@ -205,9 +206,26 @@ package su.fishr.market.components
 		
 		private function onChangeCostStep(e:Event):void 
 		{
+			const bb:int = _buyStep.value;
+			const ss:int = _sellStep.value;
+			var tf:TextFormat = new TextFormat;
+			
+			if ( ( ( ss / 105 ) * 100 ) <= bb )
+			{
+				tf.bold = true;
+				tf.color = 0xFF9999;
+			}
+			else
+			{
+				tf.bold = false;
+				tf.color = 0x00;
+			}
+			
+			_sellStep.setStyle( 'textFormat', tf );
+			
 			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_COST_STEPPER, false, false, { entity_id: _entity_id
-																								,  cbuy: _buyStep.value
-																								, csell: _sellStep.value } ) );
+																								,  cbuy: bb
+																								, csell: ss } ) );
 		}
 	}
 
