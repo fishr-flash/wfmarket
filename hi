@@ -1,0 +1,1010 @@
+[33mcommit 25f5137f5be9f07a90e01a5fb568ab801dc6344a[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/add_buy_sell_fields[m[33m, [m[1;31morigin/feature/add_buy_sell_fields[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Apr 11 11:47:35 2019 +0300
+
+    01.18.007. scale market class, edit ini.json
+
+[33mcommit e10f72e1cae8b35ab29edcf24d1120c8f3229776[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Apr 11 09:46:01 2019 +0300
+
+    01.18.006, correct getWent
+
+[33mcommit 1927454369505bcc449199284bfb667703c8dd52[m
+Merge: 96a3ce3 b5f70aa
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Apr 11 02:12:31 2019 +0300
+
+    resolve conflicts
+
+[33mcommit 96a3ce3a9761ee915abecf47f115f15bb7686bb8[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Apr 11 02:06:13 2019 +0300
+
+    01.18.005. cost sells now by plus caef .05
+
+[33mcommit b5f70aaf67f976bb0f6cbd8cdc877fac5b8f0370[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Apr 10 20:45:18 2019 +0300
+
+    no message
+
+[33mcommit 0634e52153a7cf6ed1458bcb5b920b0631ca491b[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Apr 10 20:44:44 2019 +0300
+
+    01.18.005
+    added the condition when the sale does not occur ( if the value of the sale is 0 )
+
+[33mcommit 55a171a723c5df869b82a923274bf2774f5a82fa[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Apr 10 11:54:42 2019 +0300
+
+    01.18.004. alpha version apps with changable costs buy and sell
+
+[33mcommit cb2652c7d3dc6abd26b9d077cdc573c932cfd526[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 23:39:12 2019 +0300
+
+    no message
+
+[33mcommit ec6f1cc9d942217dc33c50fb163a99432f52634c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 23:26:02 2019 +0300
+
+    01.18.002, fix
+
+[33mcommit bbcecd93528aaf958522ff5f491abc2272fdf9a9[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 23:22:51 2019 +0300
+
+    01.18.001
+    - temporary exclude insert new buy and sell to config
+
+[33mcommit 9ae28d495066f5086728c318ccbcdf2085d2908a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 19:49:57 2019 +0300
+
+    add steppers
+
+[33mcommit ab157c23f4f6b901936f1573c0f08f518234a3d0[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 17:13:37 2019 +0300
+
+    fix little problem
+
+[33mcommit 9883ae49e5445494955b1e7b98c2a640f5db85c9[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 10:13:11 2019 +0300
+
+    on compile
+
+[33mcommit 182dea6d0127bcc2bee79606d01081eb5d95599a[m
+Merge: 17aaab6 8700113
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 01:36:56 2019 +0300
+
+    change ini
+
+[33mcommit 8700113a56a45134eada88a9486a240d0c908fc5[m
+Merge: 4360462 45de4a7
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 00:39:23 2019 +0300
+
+    Merge branch 'feature/dinamic_count_buy' into develop
+
+[33mcommit 4360462d98ea5b9a31d408d408d95971e1326f82[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Apr 9 00:39:09 2019 +0300
+
+    add component of fla file
+
+[33mcommit 45de4a7a7d4d088a094b6476f9bf9671669a631d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Apr 8 19:06:54 2019 +0300
+
+    01.17.001
+    - added feature of changes max buy counter on all items on scene
+
+[33mcommit aa4afb17562c705c17d37415d792bc5f2089e147[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Apr 8 14:02:04 2019 +0300
+
+    correct ini.json
+
+[33mcommit 17aaab646dcb4d2ac3a9f86d9502283eb89eefef[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Apr 7 13:30:05 2019 +0300
+
+    add checkbox on swc
+
+[33mcommit dfc0869b322d0ad6e69828e6e7b35daf79da4a52[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Apr 6 15:44:54 2019 +0300
+
+    change ini
+
+[33mcommit 00ce78344aa48542e9661d03a1a69ff3e28c44a6[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Apr 5 16:11:24 2019 +0300
+
+    01.15.009. fix, setup parallel count request of buy be 5
+
+[33mcommit b9e19a404ae3ff16436e9de0085670d4e4c9b5c7[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Apr 5 15:42:22 2019 +0300
+
+    01.15.008. off command break of cicle forin for search buy cost on items
+
+[33mcommit 045cc192617f5095ba8d8bd4ba7548f5a23556ee[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Apr 5 03:55:02 2019 +0300
+
+    edit ini
+
+[33mcommit f12c8c224b32a686dfa4df0572043f26836e4fee[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Apr 4 06:28:18 2019 +0300
+
+    01.15.007, now the sales inspector starts only when IGNORE CONFIG is false
+
+[33mcommit 3447320ea1d3f73e9e448bfa360838b2b58f9f0f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Apr 3 07:37:13 2019 +0300
+
+    hot update ini
+
+[33mcommit b389ec124fd7f07b07ece55b114e68e23ace13ee[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Apr 3 01:22:52 2019 +0300
+
+    edit ini
+
+[33mcommit ce8c3b121c2e41eac53408002996d97a6d9f17d1[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Apr 1 22:35:55 2019 +0300
+
+    change price
+
+[33mcommit 3415e236732c58cfe7ab8c04a86741f9c15ec6a2[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Apr 1 05:30:27 2019 +0300
+
+    add bat filese of control net, edit ini.json
+
+[33mcommit cd7342c0a3c0a4ba0bcf6cc44cbeff381feabf24[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 31 01:46:23 2019 +0300
+
+    edit ini.json
+
+[33mcommit 1dd29f7bcb6637ea93e0b276b62812025f8fef06[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 30 01:55:29 2019 +0300
+
+    change costs the ini.json
+
+[33mcommit 0e11ec4358d0464bccc3754ae65fe22a51413b6f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 29 18:36:06 2019 +0300
+
+    correct buy count an one goods
+
+[33mcommit 4ae83876e83457a0df24ab0e2c203a6333e4a993[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 29 01:32:47 2019 +0300
+
+    edit ini.json
+
+[33mcommit af42b4293a128f7d6423f12b2150c9b403596b1a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 28 06:12:05 2019 +0300
+
+    01.15.006. delay call market output in the const DELAY_CALL_MARKET
+
+[33mcommit 6a72d38d06364dd27b340e5dc9ea658af11bf135[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 28 06:07:39 2019 +0300
+
+    01.15.005, edit ini.json, reduced the delay time of the call to the resource
+
+[33mcommit e95813b01c87461e49630491bcede01fa4d80817[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 27 20:05:27 2019 +0300
+
+    change items ini.json
+
+[33mcommit e64804efd16019f17daabc0c32317a60695ed870[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 27 16:23:45 2019 +0300
+
+    change ini json
+
+[33mcommit fdad1b719d69f43d7bf245d8220249681c6a39ef[m[33m ([m[1;32mfeature/inspector_sells[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 27 11:11:24 2019 +0300
+
+    01.15.004. add timer of request ExternalInterface.call
+
+[33mcommit e913062b4b4aaddcd4095c80026dafb6bde0f5fa[m[33m ([m[1;31morigin/feature/inspector_sells[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 17:54:50 2019 +0300
+
+    small changes in entering the amount of money
+
+[33mcommit d853ed6aa86412b8b1ec4d5bbb3c395571682816[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 16:43:20 2019 +0300
+
+    01.15.002. release feature
+
+[33mcommit 8ca490eaf6e7f54788182210d01a2883d7cddb6b[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 15:28:16 2019 +0300
+
+    save not end result
+
+[33mcommit ac6177734d3febde2e4052885b6b1cacaedd3f5c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 12:52:28 2019 +0300
+
+    01.14.001. add config section on items.json, rename items.json on ini.json
+
+[33mcommit c66acb4b8c4ee5e93e82deadd259bf4f0983126b[m[33m ([m[1;31morigin/feature/hotup[m[33m, [m[1;32mfeature/hotup[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 08:41:04 2019 +0300
+
+    new tasks on tasks.txt file
+
+[33mcommit fa267aa65de361dcbc008384dfa4d946e5d1ef10[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 07:04:36 2019 +0300
+
+    01.13.012. simple version, non special costs sells
+
+[33mcommit e93f91a15d8cd03f4bf92627b7660c9f0229f276[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 26 00:35:21 2019 +0300
+
+    01.13.011. version with sell of 7000
+
+[33mcommit 05046f2c18ddb0c7d445f07496e86c83d77a0c5f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 25 03:38:00 2019 +0300
+
+    01.13.010. critical fix!!!
+
+[33mcommit a9c0542a46f5000a4049e78461bbf3b10bb2024d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 25 02:33:20 2019 +0300
+
+    01.13.009. little corrections
+
+[33mcommit 8230efd5102e13f4d453f13a05ba5e33dfbd8a7c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 25 02:08:08 2019 +0300
+
+    01.13.008. add request callback of buyer then error reques on mail
+
+[33mcommit d26c741cb8853a158ea5eb2fb57653376d21771f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 24 21:43:51 2019 +0300
+
+    change items.json
+
+[33mcommit 92879d71a638c622f196e773cf88d59da29b25e2[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 22 07:42:18 2019 +0300
+
+    01.13.007. critical change of buy operation handlers
+
+[33mcommit 5cbfce9aa53c1add61c697ffd9952544d1a8c9df[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 22 07:36:16 2019 +0300
+
+    change coutn buy one a goods
+
+[33mcommit 88c90d533e3132e98f8f47ceeddb4cc69eba1603[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 22 05:55:36 2019 +0300
+
+    01.13.006. fix big faken bug in analisis on buy operation
+
+[33mcommit 4e94fc3fbad49ac5519afcc4b814affab098091b[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 22 01:14:20 2019 +0300
+
+    change items.json
+
+[33mcommit e491e05e7a41c8c2c3eaa56288e1bf7304e79c7f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 21 22:33:00 2019 +0300
+
+    change items.json
+
+[33mcommit fa19e37350a5322225e5c79b51ace9bcb1314358[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 21 18:01:33 2019 +0300
+
+    change items.json
+
+[33mcommit f6c7d54ae91e4cd75078e8a1a4e1a7c8ea7c335a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 21 07:09:46 2019 +0300
+
+    correct cost positions items.json
+
+[33mcommit d2b7f9ddbfa772e1c1c1459524a6d38b4a16c24d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 21 07:09:33 2019 +0300
+
+    correct cost positions items.json
+
+[33mcommit eb212c718480599c565d754a03d773455bff0f2f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 21 00:03:01 2019 +0300
+
+    clean history folder
+
+[33mcommit cafdd8e23b7aa48f39f0d255fb85ba4425ecc351[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 20 11:26:00 2019 +0300
+
+    add history
+
+[33mcommit 3ef2cdd0dc77325567e943a7d2736440c581f734[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 19 21:50:06 2019 +0300
+
+    clean project, correct items.json
+
+[33mcommit d6b5df31a99f6847fd6efada9b3f2e8a126724c5[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 19 21:22:27 2019 +0300
+
+    changes items.json
+
+[33mcommit ec1e0714cbdd9c3dfd33140062953fe844a91ae0[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 19 11:55:00 2019 +0300
+
+    change items json, little fix ( logw name )
+
+[33mcommit 494c2bbedbb76591e5f4bf8e99b4d672a168745f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 18 23:34:47 2019 +0300
+
+    little change items.json
+
+[33mcommit cc0e5c53cd560bf9fa2d0d43f57a064f02e5fcf1[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 18 10:14:12 2019 +0300
+
+    change items.json
+
+[33mcommit 6b949ab52000222602ca64b970ecaacceed4a1a6[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 18 03:24:18 2019 +0300
+
+    change properties of items on json
+
+[33mcommit 8b6cecaf4ce07e45d18c1473acf214d6f191b2ef[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 17 13:25:37 2019 +0300
+
+    01.13.005. little change
+
+[33mcommit 50277ac46166b1aa246e1ef1f88de4b65b5bea5a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 17 12:45:37 2019 +0300
+
+    01.13.004. replace name id_market on entiti_id
+
+[33mcommit 05c7d5d5c3e83930b979e85532810080eb1e70ae[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 17 08:55:37 2019 +0300
+
+    01.13.003. first stable release
+
+[33mcommit 1cf084ee446f9ea87665910f9264b478c705355c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 17 01:53:15 2019 +0300
+
+    01.13.002. fix big faken bug of search items sell value
+
+[33mcommit e71369782dd8ea96873a10bcd0dcfd2c4c9c7a4a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 16 18:33:25 2019 +0300
+
+    debug hot upload configure items.json
+
+[33mcommit f8539364c4bb8919a67dac1a1ab6ab5f89768c87[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 16 01:52:28 2019 +0300
+
+    debug new features
+
+[33mcommit 8b4e2d0e4c0f465a3183de60f616e5336b2fdd4d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 21:35:05 2019 +0300
+
+    clean history
+
+[33mcommit 988cbf508733f0eceab89dd269d5302e27fa3c15[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 21:30:36 2019 +0300
+
+    01.13.001. release non checked version with hot load items json
+
+[33mcommit 78fd080370d4c8aa5439ea6bb8212566d8ece3ec[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 17:40:54 2019 +0300
+
+    01.13.001. start development the feature
+
+[33mcommit 9c874f8fa74f420ce42830073e40377ec24ae841[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 17:31:52 2019 +0300
+
+    start feature hot update items.json
+
+[33mcommit 19781986f8b4f76e435ed7ed40f48780d09d0760[m[33m ([m[1;31morigin/feature/implem_maxcountbuy[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 11:45:13 2019 +0300
+
+    01.12.007. change cost positions items json
+
+[33mcommit 618c994b431fce972e936fbdae081378e25bf814[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 11:34:45 2019 +0300
+
+    edit fail session cost group, setup count mxbuy - 2
+
+[33mcommit 36202e1dc384504cb0c5880eb3c2d388c21fad88[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 10:23:06 2019 +0300
+
+    edit items json
+
+[33mcommit 85d45bca7a9551c819d9a65806da07152de133c3[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 07:52:28 2019 +0300
+
+    01.12.005. fix and change items json
+
+[33mcommit b9f57ccb603e0e9ee74c251e60a394f5cc98684c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 01:26:13 2019 +0300
+
+    01.12.004. hot fix session cost
+
+[33mcommit 6310e51ff3dffd50c671132dc19cf6c880c1acac[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 15 01:10:40 2019 +0300
+
+    01.12.003. fix bug of maxBuyCount
+
+[33mcommit 7f7162ba0e6ca6b0d72c05ad31607364e732aa8e[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 23:58:08 2019 +0300
+
+    01.12.002. correct items_III.json
+
+[33mcommit 73b2f24d021b8f21b4ec0fdcdde60b42db73990a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 21:22:54 2019 +0300
+
+    01.12.001, add log proccessing decrement counter sells2
+
+[33mcommit e77f5c0ee519723070717e941242117518a05c14[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 21:19:58 2019 +0300
+
+    01.12.001, add log proccessing decrement counter sells
+
+[33mcommit de8747559343c02171578cbd69c6fe4cd9b2f6ba[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 14:52:21 2019 +0300
+
+    01.11.002. fix bug of calculation session cost
+
+[33mcommit 0531742493dcef18956edb3c2c574618f67458f7[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 10:19:57 2019 +0300
+
+    01.11.001. new method select middle value cost
+
+[33mcommit 7bdcd8814e34308b20ad774b2ea2dccc94b5ba13[m[33m ([m[1;32mmaster[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 14 00:09:34 2019 +0300
+
+    config home FD
+
+[33mcommit 5a38332f782142acf2b7a920a42c810ac5757078[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 21:22:35 2019 +0300
+
+    correct list items costs
+
+[33mcommit c8a60752608b1abe4a78fb9d4622d49fbf5c1e30[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 16:46:40 2019 +0300
+
+    change values items_II
+
+[33mcommit c7b6059073832dc70cb6494d5380b1852d98e211[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 14:11:58 2019 +0300
+
+    settings fd backup
+
+[33mcommit dd9c5f8b1e9efa62fdb8fbf5ac8c1bd2f6e25a22[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 14:09:47 2019 +0300
+
+    01.10.016. add the output in the console the filename of loaded a history file
+
+[33mcommit aecaf6b58cecdcf75fdd410190d33dc98d0993c6[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 09:59:47 2019 +0300
+
+    01.10.015. many change items_ii
+
+[33mcommit 9673a65c255dd18bd81b2248c1dfe43eebc5b804[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 02:08:38 2019 +0300
+
+    change some points of items_II.json
+
+[33mcommit 1744858017093a1e45c0a45c70ecc78bee61f9fa[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 13 01:59:44 2019 +0300
+
+    change cost vhs kiwi
+
+[33mcommit d8daff2079b43d8588e9ede80cf3893007d3a278[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 21:39:16 2019 +0300
+
+    01.10.014, new file items items_II.json
+
+[33mcommit e7b4a6de95faa2e66fda900281c4eb677294a2aa[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 21:38:37 2019 +0300
+
+    01.10.014, full update items.json file
+
+[33mcommit 42d14a21ed2cee4fe025519102f972cc55e49520[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 07:20:38 2019 +0300
+
+    01.10.013. warning fix, sorted non ignore config
+
+[33mcommit c7b80c93eb4d5a752a3845e43e41f1367aa09703[m
+Merge: 2440ea2 1d007fc
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 07:06:29 2019 +0300
+
+    01.10.012, minimize buy costs
+
+[33mcommit 2440ea247592267472ca59a96ebf025654db3fb4[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 07:04:34 2019 +0300
+
+    01.10.012, minimize buy costs
+
+[33mcommit 1d007fc4b1c9603221f97631d6180771d9ac8c24[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 01:08:13 2019 +0300
+
+    01.10.012. fix remove listener when litle cash
+
+[33mcommit ae7a23b5ffd88b5460aa20b34abeb49e0b1c8d07[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 12 00:50:09 2019 +0300
+
+    change cost at308
+
+[33mcommit 2802c2c166af21ef1345a437af48d6f2c5b06e01[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 20:06:50 2019 +0300
+
+    change items.json set
+
+[33mcommit db678bc6b2bdf6cec28bf45740b2fc78baca9947[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 19:37:00 2019 +0300
+
+    01.10.010. change cost of AT308 Синдикат
+
+[33mcommit 8a4eebbc20554620ba53b0f818870816e40c3c7f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 18:42:54 2019 +0300
+
+    01.10.009. change items.json cost msbs weapon karbon
+
+[33mcommit 798f19b313d43c466bab717d235b3292ffd27bd1[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 13:45:53 2019 +0300
+
+    01.10.008. FIX BIT PROBLEM with varivable _CASH and litle changes
+
+[33mcommit 04e5166746f7be892a53b2f183dda2ba74089c82[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 13:29:01 2019 +0300
+
+    01.10.007 litle change
+
+[33mcommit b04b9d4a99c700842ec244d4141c36e86352b3d0[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 11:48:31 2019 +0300
+
+    01.10.006. change sell cost, add cash control with buy operation
+
+[33mcommit a8339bb987188fa8514c0cf839a2e08467428f50[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 11:12:32 2019 +0300
+
+    01.10.004. change cost SAI GREY of 400, temporary
+
+[33mcommit 2b1b71eac6a5df590060d1b3f17dc51286366f55[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 07:28:46 2019 +0300
+
+    01.10.003. add true cost for autosell action
+
+[33mcommit dcfa686dcc55abe809101d945f8f099f456a310f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Mar 11 06:50:29 2019 +0300
+
+    01.10.002. moved function createCustormTextField
+
+[33mcommit 967699cde5b3fd79992a3043aae6f7f3045d1292[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 10 23:38:49 2019 +0300
+
+    01.10.002. function createCustomTextField moved on util folder
+
+[33mcommit e2d9df18085156d5c30f2d44812051bc69988a05[m[33m ([m[1;31morigin/feature/add_autosell[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 10 23:29:10 2019 +0300
+
+    01.10.001. added autosell feature, temporary random sell price
+
+[33mcommit a44fde25b5f0b1fa833e4f4dac0728f949d31439[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 10 16:32:02 2019 +0300
+
+    edit items.json file
+
+[33mcommit aa3ecd2ce8c84e173543c48d87b634f006a2e07d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 10 11:09:31 2019 +0300
+
+    01.09.006. edit items.json
+
+[33mcommit 00b2e7127f85661ec458c4778d933cac2d96ca68[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Mar 10 00:01:15 2019 +0300
+
+    01.09.004. add filter weapongroup for config gile
+
+[33mcommit 61c8741d4e1b571c22efb70df26a0c95f24962ab[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 20:48:54 2019 +0300
+
+    edit items.json
+
+[33mcommit 19df989fd7b102fef8aeccee30505b948823ad9d[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 19:48:14 2019 +0300
+
+    edit tasks.txt ( add bugs )
+
+[33mcommit 25fa25e7c875a304b9c82ab1383945e148683ca8[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 16:45:38 2019 +0300
+
+    01.09.003. select on buy positions of items json
+
+[33mcommit da75ed9ee60ff0904a8ca4369d2b5ce91ced3ba6[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 16:36:03 2019 +0300
+
+    01.09.002. update items.json
+
+[33mcommit a94a4da1b178995b5235d605e3c41f99497f2a93[m[33m ([m[1;31morigin/feature/seller_action[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 16:01:51 2019 +0300
+
+    01.09.001. add function seller!
+
+[33mcommit 7aafb6e11200e80a93ac92b684ca7abf6917a604[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 13:16:10 2019 +0300
+
+    a study of the sales process
+
+[33mcommit 1b778c7d8869e18a6b2bb756777a1c2b8c2a2551[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 9 10:39:34 2019 +0300
+
+    01.08.003, edit items.json, change sort config items
+
+[33mcommit d12a298c13bb4d3db7086f0d2fc9bc31096a2558[m[33m ([m[1;31morigin/feature/unload_config[m[33m, [m[1;31morigin/feature/add_activiti[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 8 22:18:30 2019 +0300
+
+    add button trace configure file config
+
+[33mcommit 8c447dd6865c09d7d5d64179f4573baa3e2e7c7a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Mar 7 18:31:01 2019 +0300
+
+    x
+
+[33mcommit cc1be64f38f8eef9205be4d582c67f592e94ed97[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 6 19:37:53 2019 +0300
+
+    01.07.005
+    - add construct json items function for IGNORE_CONFIG mode
+
+[33mcommit da6bf4d41f336343a04edf8e9f36c38fbb64e73b[m[33m ([m[1;31morigin/feature/load_all_goods[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 6 16:09:46 2019 +0300
+
+    - replace const SORT_PROP to var, and set her value from constants another
+
+[33mcommit 5f62db038a1d3a0e18adeec0c0b4080967de1cfa[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 6 08:47:18 2019 +0300
+
+    01.07.003
+    - added condition, what ignore config is true and liquidity < 2, operation buy is break
+
+[33mcommit 84930c0e291fda3a1a9812f1f7dc412b5659e482[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 6 08:05:29 2019 +0300
+
+    01.07.002
+    - add time min delay on request,
+    - add suffix on save history file with IGNORE_CONFIG option on true
+
+[33mcommit bab0756e5a53e26daf9c9cb3a11e75b1586bf4eb[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Mar 6 01:37:41 2019 +0300
+
+    01.07.001
+    - add load all goods,
+    - rebase sort operation from data to components/PriceOfWeapons.as
+    - add const to MarketplaceWF.as sort value and ignore json file items
+
+[33mcommit 1d21d80b9b48380bfb4274c0889ea8e42c6db42c[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 5 23:54:44 2019 +0300
+
+    second home commit
+
+[33mcommit 7352918d852cefdef321a35eff4ce52d3c3eb49a[m
+Merge: 41fb3f3 b3555c9
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 5 23:52:57 2019 +0300
+
+    Merge branch 'develop' of https://github.com/fishr-flash/wfmarket into develop
+
+[33mcommit 41fb3f3c67a686e22703993622f6304a486b1048[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 5 23:52:47 2019 +0300
+
+    home commit
+
+[33mcommit b3555c9a35f972ccfe24cf22158dbca5e9622ff5[m[33m ([m[1;31morigin/feature/joinhistory[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Mar 5 00:15:15 2019 +0300
+
+    - edit method  onPlay, request now of delay
+
+[33mcommit 39f5a6f211775a653b83db678bc3e756210eaf81[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Mar 2 22:08:31 2019 +0300
+
+    01.06.004 - change time of delay buyer request
+
+[33mcommit 3bfe1ff5fc9dbf1a0668d7e06404763634a24b32[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 1 14:48:04 2019 +0300
+
+    - 01.06.003, first positive result
+
+[33mcommit e7e174fe8d6b83fa850077a5c45859d5a82978e2[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Mar 1 12:36:49 2019 +0300
+
+    - reduce time delay of requewst site wf
+
+[33mcommit ab1519370c5d904195a17a728a89efa0ddfa445e[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 28 22:43:37 2019 +0300
+
+    intermediate commit
+
+[33mcommit e475abfaba49a5c52adf0934f2dc8ed80e937994[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 28 01:45:45 2019 +0300
+
+    history files take on ItemServan for sort and join
+
+[33mcommit 2e546703b090499b1c59dccb72a3b2b542f160da[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 27 21:54:27 2019 +0300
+
+    delete limit simbols of logw
+
+[33mcommit f7d11f38fff2254ddcc1b83b85fef644fd99fcf9[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 27 21:49:49 2019 +0300
+
+    01.06.001
+    - add processing load file history,
+    - decode string,
+    - json parse
+
+[33mcommit 0980e6a07aafee223e5de7604b0b40bea75dd23e[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 27 18:27:51 2019 +0300
+
+    01.05.005 change items.json prices
+
+[33mcommit ce7d83997a3b6eb5eec67262dad875192db92be7[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Feb 26 22:54:40 2019 +0300
+
+    01.05.004
+    - up count bay actions to 100 from 10
+    - edition items autocounts
+
+[33mcommit c11a685c950c3035c08448f226383d5158e9ed53[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Feb 26 00:00:39 2019 +0300
+
+    change cost of RPD
+
+[33mcommit b75c8e41ee9c5cd1f986c11cc57443f99b6aed97[m
+Merge: be6e0d9 573a6e6
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 19:59:45 2019 +0300
+
+    Merge branch 'develop' of https://github.com/fishr-flash/wfmarket into develop
+    
+    # Conflicts:
+    #       bin/mwf.swf
+    #       obj/MarketplaceWFConfig.xml
+
+[33mcommit be6e0d9782272383656580864c091ef7446661cd[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 19:57:57 2019 +0300
+
+    sdf
+
+[33mcommit 1e7a99b52e7f3d0a74e90d2ff9c6a7f019dbe47b[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 19:56:42 2019 +0300
+
+    Merge branch 'develop' of https://github.com/fishr-flash/wfmarket into HEAD
+    
+    # Conflicts:
+    #       bin/mwf.swf
+    #       obj/MarketplaceWFConfig.xml
+
+[33mcommit 573a6e62e074f3aeff677fcfdc685f7e1c3be4b1[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 19:38:56 2019 +0300
+
+    01.05.004
+    - возобновил покупки AT-308 ( 42кр), выключеные из за поломки лота на рынке
+
+[33mcommit 1a249f350b6ff383799f437d6c56fd3150098c55[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 13:23:53 2019 +0300
+
+    - клонировал мастера в новый каталог, чтобы освободить яндекс-диск
+
+[33mcommit 284adcd0b1a877bcae704f5945a2b683063cb8a7[m[33m ([m[1;31morigin/feature/create_history[m[33m)[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Mon Feb 25 12:58:50 2019 +0300
+
+    01.05.004
+    - фиксы работы бота покупателя
+
+[33mcommit 82d3bb9eb48c96a64ef2c24ee475d8e4a65645f7[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sun Feb 24 01:16:29 2019 +0300
+
+    01.05.003
+    - доабил свойства для списка выборки hitdden, оно позволяет иметь неактуальные объекты но не анализировать их и не выводить
+    - также добавил константу в MarketplaceWF позволяющую игнорировать это новое свойство
+
+[33mcommit 9a5e6df91a1319b75a6dae1ad30f07e1a3a21517[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Feb 23 01:06:13 2019 +0300
+
+    01.05.002
+    - выправил косяк с отключением покупок и запросов после первой же покупки
+
+[33mcommit 6504037404fcfa8f7892d1c779816db9a4893a0b[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Sat Feb 23 00:40:35 2019 +0300
+
+    01.05.001
+    - cut titles of history names elements
+    - add to history element session_cost (sess )
+    - relocation var session_cost from WeaponGroup.as to WeaponEnt
+
+[33mcommit 4dcfa107964b3b4b3c3459eb27c29abb61c33e0f[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Fri Feb 22 03:08:17 2019 +0300
+
+    01.04.002
+    - убран элемент из списка
+
+[33mcommit 6d19b211130c09120d8b079dde0a1b3c9bf9d0bd[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 21 23:50:22 2019 +0300
+
+    01.04.001
+    - изменение структуры истории, несовменстима с предыдущей
+
+[33mcommit bc9c33be199489162fe812d471fe70d08aed872e[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 21 14:15:14 2019 +0300
+
+    - add new a weapon,
+    - remove trace
+    - add simbol "+" to slicing strings
+
+[33mcommit 1372a4e2ba8b40e25491dcb747e3ddc1d7806021[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 21 11:16:06 2019 +0300
+
+    01.03.002
+    - добавлен айтем Камуфляж Картель для CZ Scorpion
+    - разнесены кнопки интерфейса
+    - длинные заголовки обрезаются до указанной длины
+
+[33mcommit 1600d8f16009d5ee90aa3a34fd8a787716feab74[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 21 07:32:14 2019 +0300
+
+    01.03.001, add height cost control with telegramm, need debug
+
+[33mcommit 748e78384eee66c943821988a1e964adbee53516[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Thu Feb 21 01:05:39 2019 +0300
+
+    change file name, now include on-date and end-date
+
+[33mcommit d7ec9bd3f1224b4ce36d0e4b1247e3bcfc69ffa7[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 20 22:48:33 2019 +0300
+
+    modify gitignore file
+
+[33mcommit 018dbed1cd56ee0789a69a52ad0f516d93cb359e[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 20 21:49:30 2019 +0300
+
+    01.02.001
+    - добавлено формирование истории запросов и выгрузка в файл джейсон строки
+
+[33mcommit 57e19c5fe7c07f2486c9cc485108397f848666d6[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Wed Feb 20 18:09:21 2019 +0300
+
+    add version sign
+
+[33mcommit a453ac2df5d986727480f8d16953f68501b0fa4a[m
+Author: fishr-flash <fishr.flash@gmail.com>
+Date:   Tue Feb 19 21:57:15 2019 +0300
+
+    initial commit
