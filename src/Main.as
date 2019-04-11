@@ -33,8 +33,9 @@ package
 			//stage.stageHeight = 1200;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			
-			
-			this.addChild( new MarketplaceWF ); 
+			const mp:MarketplaceWF = new MarketplaceWF;
+			mp.scaleX = mp.scaleY = 1.2;
+			this.addChild( mp ); 
 		}
 		
 	}

@@ -497,18 +497,6 @@
 		 ,"auto_cost": 84 
 		 ,"exclude": [] 
 	} ,{ 
-		 "name": "Абсолют" 
-		 ,"key_word": "Абсолют" 
-		 ,"entity_id": 0 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 42 
-		 ,"hidden": 0 
-		 ,"mxbuy": 0
-		 ,"auto_sell": 131 
-		 ,"auto_cost": 41 
-		 ,"exclude": [] 
-	} ,{ 
 		 "name": "Шлем штурмовика \"Абсолют\"" 
 		 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
 		 ,"entity_id": 0 
