@@ -275,13 +275,7 @@ package su.fishr.market.service
 			{
 				went = _weaponGroups[ i ].getItemOfbuyd( entity_id );
 				if ( went )
-				{
-						went.host.maxBuyCount--;
-						went.maxBuyCount--;
-						
-						
 						return went;
-				}
 			}
 			
 			return null;
