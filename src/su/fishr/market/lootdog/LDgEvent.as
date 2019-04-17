@@ -8,6 +8,7 @@ package su.fishr.market.lootdog
 	 */
 	public class LDgEvent extends Event 
 	{
+		static public const PLEASE_REQUEST_QUEUE:String = "pleaseRequestQueue";
 		
 		
 		private var _data:Object;

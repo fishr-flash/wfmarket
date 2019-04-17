@@ -15,6 +15,7 @@ package su.fishr.market
 	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
+	import su.fishr.market.lootdog.LootDog;
 	import su.fishr.market.seller.Sellerq;
 	import su.fishr.market.service.BotRequest;
 	import su.fishr.market.service.ItemsServant;
@@ -37,7 +38,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 18, 8 ];
+		public static const VERSION:Array = [ 1, 19, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -198,7 +199,7 @@ package su.fishr.market
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
 			_btnOnAlert.toggle = true;
-			_btnOnAlert.selected = true;
+			_btnOnAlert.selected = false;
 			
 			
 			_tfCash = createCustomTextField( 0, 0, 40, 20 );
@@ -249,7 +250,10 @@ package su.fishr.market
 			_seller.y = _btnAutoBuy.y;
 			this.addChild( _seller );
 			
-			
+			const lootDog:LootDog = new LootDog;
+			lootDog.x = _seller.x + _seller.width;
+			lootDog.y = _seller.y;
+			this.addChild( lootDog );
 			
 			//this.addChild( new shStyle )
 			//TelegramBot.inst.setMessage( '<a href="http://yandex.ru">sdfsdfsdf</a>' );
