@@ -1,4 +1,4 @@
-package su.fishr.lootdog 
+package su.fishr.market.lootdog 
 {
 	import flash.display.Sprite;
 	

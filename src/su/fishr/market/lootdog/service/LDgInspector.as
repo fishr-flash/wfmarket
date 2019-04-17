@@ -1,4 +1,4 @@
-package su.fishr.lootdog.service 
+package su.fishr.market.lootdog.service 
 {
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
