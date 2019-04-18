@@ -104,7 +104,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 144 
-		 ,"auto_cost": 104 
+		 ,"auto_cost": 74 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -169,7 +169,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 139 
-		 ,"auto_cost": 104 
+		 ,"auto_cost": 74 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -456,7 +456,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 479 
-		 ,"auto_cost": 419 
+		 ,"auto_cost": 368 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -507,7 +507,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1680 
+		 ,"auto_cost": 1000 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки \"Абсолют\"" 
@@ -519,7 +519,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1365 
+		 ,"auto_cost": 525 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем медика \"Абсолют\"" 
@@ -531,7 +531,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1680 
+		 ,"auto_cost": 1000 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет \"Абсолют\"" 
@@ -543,7 +543,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1050 
+		 ,"auto_cost": 525 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки \"Абсолют\"" 
@@ -555,7 +555,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1260 
+		 ,"auto_cost": 600 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем инженера \"Абсолют\"" 
@@ -567,7 +567,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1999 
+		 ,"auto_cost": 1000 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем снайпера \"Абсолют\"" 
@@ -579,7 +579,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1785 
+		 ,"auto_cost": 1000 
 		 ,"exclude": [] 
 	} 
 	] 
