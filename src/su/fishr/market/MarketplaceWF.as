@@ -420,7 +420,7 @@ package su.fishr.market
 			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
-			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		
@@ -493,7 +493,7 @@ package su.fishr.market
 			const went:WeaponEnt = e.data as WeaponEnt;
 			
 			
-			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
@@ -545,13 +545,13 @@ package su.fishr.market
 						}
 						/////////////////////END TRACE//////////////////////////////
 						
-						_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+						//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 					}
 					
 				}
 				else
 				{
-					_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+					//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 					
 					//////////////////////TRACE/////////////////////////////////
 					
@@ -652,12 +652,12 @@ package su.fishr.market
 				
 				///TODO: point configure sell cost
 				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
-				//if ( w.sell > 0 )
+				if ( w.sell > 0 )
+						_seller.sell( int( d.entity_id), w.sell );
 						//_seller.sell( int( d.entity_id), int( ( w.sell / CHARGE_RATIO ) * 100 ) );
-					
 			}
 			
-			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		private function onBtnAlert(e:MouseEvent):void 
@@ -737,6 +737,7 @@ package su.fishr.market
 			_botReqest.stop();
 			_btnPlay.enabled = true;
 			_btnStop.enabled = false;
+			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 		}
 		
