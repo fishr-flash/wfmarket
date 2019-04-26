@@ -4,6 +4,7 @@ package su.fishr.market.seller.nets
 	import flash.events.IEventDispatcher;
 	import flash.events.*;
 	import flash.net.*;
+	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.service.Logw;
 	import su.fishr.utils.Dumper;
 	
@@ -27,12 +28,12 @@ package su.fishr.market.seller.nets
             loader = new URLLoader();
             configureListeners(loader);
 
-            
+            const sellCost:int = int( ( cost / MarketplaceWF.CHARGE_RATIO ) * 1 );
             var request:URLRequest = new URLRequest("https://wf.mail.ru/minigames/inventory/api/sale");
 			request.method = URLRequestMethod.POST;
 			var variables:URLVariables = new URLVariables;
 			variables.item_id = entity_id + "";
-			variables.cost = cost + "";
+			variables.cost = sellCost + "";
 			request.data = variables;
 			
 			//////////////////////TRACE/////////////////////////////////
@@ -42,7 +43,7 @@ package su.fishr.market.seller.nets
 			if( true )
 			{
 				const i:String = 
-				( "BayRequest.as" + ". " +  "BayRequest ")
+				( "SellRequest.as" + ". " +  "SellRequest ")
 				//+ ( "\r : " + Dumper.dump( true ) )
 				//+ ( "\r request: " + Dumper.dump( request, 6, true, true ) )
 				+ ( "\r variables: " + Dumper.dump( variables, 6, true, true ) )
@@ -92,7 +93,7 @@ package su.fishr.market.seller.nets
 			if( true )
 			{
 				const i:String = 
-				( "BayRequest.as" + ". " +  "securityErrorHandler ")
+				( "SellRequest.as" + ". " +  "securityErrorHandler ")
 				+ ( "\r event.toString(): " +  event.toString())
 				//+ ( "\r : " + Dumper.dump( "" ) )
 				+ ( "\r end" );
@@ -113,7 +114,7 @@ package su.fishr.market.seller.nets
 			if( true )
 			{
 				const i:String = 
-				( "BayRequest.as" + ". " +  "ioErrorHandler ")
+				( "SellRequest.as" + ". " +  "ioErrorHandler ")
 				+ ( "\r event.toString(): " +  event.toString())
 				+ ( "\r end" );
 				Logw.inst.up( i );
