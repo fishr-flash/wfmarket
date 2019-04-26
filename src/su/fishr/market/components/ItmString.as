@@ -216,7 +216,7 @@ package su.fishr.market.components
 			const ss:int = _sellStep.value;
 			var tf:TextFormat = new TextFormat;
 			
-			if ( ( ( ss / 105 ) * 100 ) <= bb )
+			if ( ( ( ss / MarketplaceWF.CHARGE_RATIO ) * 1 ) <= bb )
 			{
 				tf.bold = true;
 				tf.color = 0xFF9999;
