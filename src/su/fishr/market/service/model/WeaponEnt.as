@@ -194,6 +194,7 @@ package su.fishr.market.service.model
 					,sec:time[ 5 ]
 				}
 				, c:_cost
+				, clr: int( ( _cost / MarketplaceWF.CHARGE_RATIO ) * 1 )
 				, lq:_liquidity
 				, cnt: data.count
 				, sess: int( _session_cost / _takt )
