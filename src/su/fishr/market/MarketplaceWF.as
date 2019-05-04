@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 19, 6 ];
+		public static const VERSION:Array = [ 1, 20, 2 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -49,7 +49,7 @@ package su.fishr.market
 		public static const IGNORE_HIDDEN:Boolean = false;
 		/// загужать все данные игнорируя джейсон файл перечня
 		public static const IGNORE_CONFIG:Boolean = false;
-		
+		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
 		static public const PROP_COST:String = "cost";
@@ -490,7 +490,7 @@ package su.fishr.market
 		private function onBayOperation(e:WFMEvent):void 
 		{
 			
-			const went:WeaponEnt = e.data as WeaponEnt;
+			const went:WeaponEnt = e.data.went as WeaponEnt;
 			
 			
 			//_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
@@ -501,7 +501,7 @@ package su.fishr.market
 				if ( _CASH >= int( went.cost ) )
 				{
 
-					if ( went.host.maxBuyCount > 0 )
+					if ( went.host.maxBuyCount > 0 || ( went.cost <= ( e.data.autobuy / 2 ) && e.data.autobuy  > SYSTEM_MIN_COST ))
 					{
 						if ( !_btnPlay.enabled )
 							_onPausePlay = true;

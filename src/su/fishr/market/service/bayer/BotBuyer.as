@@ -24,7 +24,7 @@ package su.fishr.market.service.bayer
 			
 			
 			
-			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * 2, entity_id, cost, type, callback );
+			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * 1.5, entity_id, cost, type, callback );
 			
 			
 			

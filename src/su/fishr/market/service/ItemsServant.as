@@ -579,7 +579,9 @@ package su.fishr.market.service
 				{
 					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
 					break;
-					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ] ) );
+					
+					const data:Object = { went: _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ], autobuy: _weaponGroups[ i ].autobuy }
+					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false,  data ) );
 					//off break cicle for of search buy cost break;
 					_remaindCommandBy--;
 				}
