@@ -104,7 +104,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 109 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -169,7 +169,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 109 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -182,7 +182,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 109 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -325,7 +325,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 114 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -338,7 +338,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 119 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -506,7 +506,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1840 
+		 ,"auto_cost": 1839 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки \"Абсолют\"" 
@@ -518,7 +518,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1323 
+		 ,"auto_cost": 1322 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем медика \"Абсолют\"" 
@@ -530,7 +530,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1723 
+		 ,"auto_cost": 1722 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет \"Абсолют\"" 
@@ -542,7 +542,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1149 
+		 ,"auto_cost": 1148 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки \"Абсолют\"" 
@@ -554,7 +554,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1265 
+		 ,"auto_cost": 1264 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем инженера \"Абсолют\"" 
@@ -566,7 +566,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 2415 
+		 ,"auto_cost": 2414 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем снайпера \"Абсолют\"" 
@@ -578,7 +578,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 1900 
+		 ,"auto_cost": 1899 
 		 ,"exclude": [] 
 	} 
 	] 
