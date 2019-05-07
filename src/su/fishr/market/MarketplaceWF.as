@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 20, 2 ];
+		public static const VERSION:Array = [ 1, 20, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -197,8 +197,8 @@ package su.fishr.market
 			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
-			_btnOnAlert.toggle = true;
-			_btnOnAlert.selected = true;
+			_btnOnAlert.toggle = false;
+			_btnOnAlert.selected = false;
 			
 			
 			_tfCash = createCustomTextField( 0, 0, 40, 20 );
@@ -607,7 +607,7 @@ package su.fishr.market
 				 15:22:24:372                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 				 MarketplaceWF.as. buyResult 
 				 d: Object (2): 
-					detals:Object (2): 
+					details:Object (2): 
 						state:(str,7) Success
 						data:Object (2): 
 							inv_id:(int,9) 140557407

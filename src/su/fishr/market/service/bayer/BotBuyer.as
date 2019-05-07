@@ -56,6 +56,21 @@ package su.fishr.market.service.bayer
  			 */
 			
 			var bayData:Object = JSON.parse( String( d ) );
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "BotBuyer.as" + ". " +  "resPrebay ")
+				+ ( "\r bayData : " + Dumper.dump( bayData ) )
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
 			
 			if ( bayData.state == "Success" )
 			{
@@ -66,12 +81,12 @@ package su.fishr.market.service.bayer
 				}
 				else
 				{
-					_callback( { status:"The operation was cancelled. Price has changed.", detals:bayData } );
+					_callback( { status:"The operation was cancelled. Price has changed.", details:bayData } );
 				}
 			}
 			else
 			{
-				_callback( { status:"The operation failed.", detals:bayData } );
+				_callback( { status:"The operation failed.", details:bayData } );
 			}
 			
 		}
@@ -101,7 +116,7 @@ package su.fishr.market.service.bayer
 			}
 			
 			_callback({state: data.state
-						//, detals: data.data?data.data:Dumper.dump( data )
+						//, details: data.data?data.data:Dumper.dump( data )
 						, entity_id: _entity_id
 						, cost: _cost
 			});
