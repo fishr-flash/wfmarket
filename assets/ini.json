@@ -11,7 +11,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 459
 		 ,"auto_cost": 344
 		 ,"exclude": [] 
@@ -24,7 +24,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 138
 		 ,"auto_cost": 91
 		 ,"exclude": [] 
@@ -37,7 +37,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 229
 		 ,"auto_cost": 115
 		 ,"exclude": [] 
@@ -50,7 +50,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 329
 		 ,"auto_cost": 229
 		 ,"exclude": [] 
@@ -63,7 +63,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 2229
 		 ,"auto_cost": 1724
 		 ,"exclude": [] 
@@ -76,7 +76,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 133
 		 ,"auto_cost": 92
 		 ,"exclude": [] 
@@ -89,7 +89,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 4499
 		 ,"auto_cost": 3450
 		 ,"exclude": [] 
@@ -102,7 +102,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 169
 		 ,"auto_cost": 114
 		 ,"exclude": [] 
@@ -115,7 +115,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 299
 		 ,"auto_cost": 207
 		 ,"exclude": [] 
@@ -128,7 +128,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 159
 		 ,"auto_cost": 114
 		 ,"exclude": [] 
@@ -141,7 +141,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 149
 		 ,"auto_cost": 91
 		 ,"exclude": [] 
@@ -154,7 +154,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 137
 		 ,"auto_cost": 98
 		 ,"exclude": [] 
@@ -167,7 +167,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 459
 		 ,"auto_cost": 345
 		 ,"exclude": [] 
@@ -180,7 +180,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 172
 		 ,"auto_cost": 114
 		 ,"exclude": [] 
@@ -193,7 +193,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 915
 		 ,"auto_cost": 630
 		 ,"exclude": [] 
@@ -206,7 +206,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 805
 		 ,"auto_cost": 632
 		 ,"exclude": [] 
@@ -219,7 +219,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 296
 		 ,"auto_cost": 229
 		 ,"exclude": [] 
@@ -232,7 +232,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 494
 		 ,"auto_cost": 345
 		 ,"exclude": [] 
@@ -245,7 +245,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 380
 		 ,"auto_cost": 276
 		 ,"exclude": [] 
@@ -258,7 +258,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 216
 		 ,"auto_cost": 149
 		 ,"exclude": [] 
@@ -271,7 +271,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 115
 		 ,"auto_cost": 76
 		 ,"exclude": [] 
@@ -284,7 +284,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 857
 		 ,"auto_cost": 689
 		 ,"exclude": [] 
@@ -297,7 +297,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 854
 		 ,"auto_cost": 633
 		 ,"exclude": [] 
@@ -310,7 +310,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 4312
 		 ,"auto_cost": 2875
 		 ,"exclude": [] 
@@ -323,7 +323,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 859
 		 ,"auto_cost": 575
 		 ,"exclude": [] 
@@ -336,7 +336,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 403
 		 ,"auto_cost": 320
 		 ,"exclude": [] 
@@ -349,7 +349,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 4599
 		 ,"auto_cost": 3450
 		 ,"exclude": [] 
@@ -362,7 +362,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 1380
 		 ,"exclude": [] 
@@ -375,7 +375,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 1790
 		 ,"exclude": [] 
@@ -388,7 +388,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 1016
 		 ,"auto_cost": 690
 		 ,"exclude": [] 
@@ -401,24 +401,11 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 920
 		 ,"auto_cost": 690
 		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "AMP DSR-1 Злой Санта" 
-		 ,"key_word": "AMP DSR-1 Злой Санта" 
-		 ,"entity_id": 689 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 299
-		 ,"auto_cost": 229
-		 ,"exclude": [] 
-	} 
+	}
 	,{ 
 		 "name": "Топор Black Hawk Абсолют" 
 		 ,"key_word": "Топор Black Hawk Абсолют" 
@@ -427,7 +414,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 399
 		 ,"auto_cost": 288
 		 ,"exclude": [] 
@@ -440,7 +427,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 627
 		 ,"exclude": [] 
@@ -453,9 +440,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
-		 ,"auto_cost": 2299
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -466,7 +453,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 1500
 		 ,"exclude": [] 
@@ -479,7 +466,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 690
 		 ,"exclude": [] 
@@ -492,7 +479,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 139
 		 ,"auto_cost": 58
 		 ,"exclude": [] 
@@ -505,24 +492,11 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 1034
 		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "FN Five-seveN Злой Санта" 
-		 ,"key_word": "FN Five-seveN Злой Санта" 
-		 ,"entity_id": 717 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 279
-		 ,"auto_cost": 138
-		 ,"exclude": [] 
-	} 
+	}
 	,{ 
 		 "name": "Снайпер отряда Абсолют" 
 		 ,"key_word": "Снайпер отряда Абсолют" 
@@ -531,7 +505,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 690
 		 ,"exclude": [] 
@@ -544,36 +518,10 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1 
+		 ,"mxbuy": 0
 		 ,"auto_sell": 0
 		 ,"auto_cost": 1265
 		 ,"exclude": [] 
 	}
-	,{ 
-		 "name": "AK-103 Злой Санта" 
-		 ,"key_word": "AK-103 Злой Санта" 
-		 ,"entity_id": 644 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 978
-		 ,"auto_cost": 747
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Fabarm P.S.S.10 Карбон" 
-		 ,"key_word": "Fabarm P.S.S.10 Карбон" 
-		 ,"entity_id": 3937 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 978
-		 ,"auto_cost": 873
-		 ,"exclude": [] 
-	} 
 	] 
  }
