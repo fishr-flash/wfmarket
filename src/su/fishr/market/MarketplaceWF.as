@@ -37,27 +37,29 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 17, 1 ];
+		public static const VERSION:Array = [ 1, 21, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
-		public static const CHARGE_RATIO:Number = 1.05;
+		public static const CHARGE_RATIO:Number = 1.15;
 		public static const DELAY_ON_BUYER:int = 1300;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
 		/// загужать все данные игнорируя джейсон файл перечня
 		public static const IGNORE_CONFIG:Boolean = false;
-		
+		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
+		static public const BUY_MIN_DIFFPERCENT:Number = .8;
 		static public const PROP_COST:String = "cost";
 		static public var COUNT_BUY:uint = 100;
 		
 		
+		
 		/// может переопределяться ниже
-		public static var SORT_PROP:String = "cost";
+		public static var SORT_PROP:String = "liquidity";
 		public static var _CASH:int = 0;
 		public static var NEED_UPDATE_CONFIG:Boolean = true;
 		public static var AGENT_ONLINE:int = 2;
@@ -76,7 +78,7 @@ package su.fishr.market
 		private var _btnAutoBuy:ButtonClr;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
-		private var _btnUnload:ButtonClr;
+		private var _btnUnloadHist:ButtonClr;
 		private var _btnLoad:ButtonClr;
 		private var _file:FileReference;
 		private var _btnCfg:ButtonClr;
@@ -152,20 +154,20 @@ package su.fishr.market
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
-			_btnUnload = new ButtonClr;
-			_btnUnload.label = "unl";
-			_btnUnload.x = _btnRequest.x + _btnRequest.width + 25;
-			_btnUnload.y = _btnRequest.y;
-			_btnUnload.setSize( WIDTH_BUTTONS, _btnRequest.height );
-			_btnUnload.colorFill( "e25e1d" );
-			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
-			this.addChild( _btnUnload );
-			_btnUnload.enabled = false;
+			_btnUnloadHist = new ButtonClr;
+			_btnUnloadHist.label = "unl";
+			_btnUnloadHist.x = _btnRequest.x + _btnRequest.width + 25;
+			_btnUnloadHist.y = _btnRequest.y;
+			_btnUnloadHist.setSize( WIDTH_BUTTONS, _btnRequest.height );
+			_btnUnloadHist.colorFill( "e25e1d" );
+			_btnUnloadHist.addEventListener( MouseEvent.CLICK, onUnloadHist );
+			this.addChild( _btnUnloadHist );
+			_btnUnloadHist.enabled = false;
 			
 			_btnLoad = new ButtonClr;
 			_btnLoad.label = "dwn";
-			_btnLoad.x = _btnUnload.x + _btnUnload.width + 5;
-			_btnLoad.y = _btnUnload.y;
+			_btnLoad.x = _btnUnloadHist.x + _btnUnloadHist.width + 5;
+			_btnLoad.y = _btnUnloadHist.y;
 			_btnLoad.setSize( WIDTH_BUTTONS + 5, _btnLoad.height );
 			_btnLoad.colorFill( "e25e1d" );
 			this.addChild( _btnLoad );
@@ -197,8 +199,8 @@ package su.fishr.market
 			_btnOnAlert.setSize( WIDTH_BUTTONS, _btnOnAlert.height );
 			_btnOnAlert.addEventListener( MouseEvent.CLICK, onBtnAlert );
 			this.addChild( _btnOnAlert );
-			_btnOnAlert.toggle = true;
-			_btnOnAlert.selected = true;
+			_btnOnAlert.toggle = false;
+			_btnOnAlert.selected = false;
 			
 			
 			_tfCash = createCustomTextField( 0, 0, 40, 20 );
@@ -270,11 +272,15 @@ package su.fishr.market
 				BotInspectorSells.self.activate( );
 			}
 			
-			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeOnBuy, true );
+			_price.addEventListener( WFMEvent.ON_CHANGE_MBUY, onChangeMaxBuy, true );
+			_price.addEventListener( WFMEvent.ON_CHANGE_COST_STEPPER, onChangeCostStepper, true );
 			
 			//const breq:BayRequester = new BayRequester( onResult );
 			
+			
 		}
+		
+		
 		
 		
 		
@@ -398,7 +404,7 @@ package su.fishr.market
 			const b:ByteArray = e.target.data;
 			b.position = 0;
 			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
-			_btnUnload.enabled = true;
+			_btnUnloadHist.enabled = true;
 		}
 		
 		
@@ -416,7 +422,7 @@ package su.fishr.market
 			
 			if ( _btnAutoBuy.selected )
 						_buy_counter = COUNT_BUY;
-			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		
@@ -437,7 +443,7 @@ package su.fishr.market
 					cost:(int,4) 3150
 		 * @param	e
 		 */
-		private function onUnload(e:MouseEvent):void 
+		private function onUnloadHist(e:MouseEvent):void 
 		{
 			const data:Array = _servant.getHistory();
 			
@@ -486,10 +492,10 @@ package su.fishr.market
 		private function onBayOperation(e:WFMEvent):void 
 		{
 			
-			const went:WeaponEnt = e.data as WeaponEnt;
+			const went:WeaponEnt = e.data.went as WeaponEnt;
 			
 			
-			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
@@ -497,7 +503,7 @@ package su.fishr.market
 				if ( _CASH >= int( went.cost ) )
 				{
 
-					if ( went.host.maxBuyCount > 0 )
+					if ( went.host.maxBuyCount > 0 || ( went.cost <= ( e.data.autobuy / 2 ) && e.data.autobuy  > SYSTEM_MIN_COST ))
 					{
 						if ( !_btnPlay.enabled )
 							_onPausePlay = true;
@@ -541,13 +547,13 @@ package su.fishr.market
 						}
 						/////////////////////END TRACE//////////////////////////////
 						
-						_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+						//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 					}
 					
 				}
 				else
 				{
-					_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+					//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 					
 					//////////////////////TRACE/////////////////////////////////
 					
@@ -603,7 +609,7 @@ package su.fishr.market
 				 15:22:24:372                              ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 				 MarketplaceWF.as. buyResult 
 				 d: Object (2): 
-					detals:Object (2): 
+					details:Object (2): 
 						state:(str,7) Success
 						data:Object (2): 
 							inv_id:(int,9) 140557407
@@ -640,16 +646,20 @@ package su.fishr.market
 			{
 				_buy_counter--;
 				const w:WeaponEnt = _servant.getWent( int( d.entity_id ) );
+				w.maxBuyCount--;
+				w.host.maxBuyCount--;
 				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
 				
 				
 				///TODO: point configure sell cost
 				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
-				_seller.sell( int( d.entity_id), w.sell );
+				if ( w.sell > 0 )
+						_seller.sell( int( d.entity_id), w.sell );
+						//_seller.sell( int( d.entity_id), int( ( w.sell / CHARGE_RATIO ) * 100 ) );
 			}
 			
-			_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+			//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 		}
 		
 		private function onBtnAlert(e:MouseEvent):void 
@@ -664,7 +674,6 @@ package su.fishr.market
 			
 			
 			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
 			if( true )
 			{
 				const i:String = _servant.generateCofig();
@@ -729,6 +738,7 @@ package su.fishr.market
 			_botReqest.stop();
 			_btnPlay.enabled = true;
 			_btnStop.enabled = false;
+			_servant.removeEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
 			
 		}
 		
@@ -765,13 +775,18 @@ package su.fishr.market
 			
 			_price.setWeaponData( _servant.getWeaponData() );
 			
-			_btnUnload.enabled = true;
+			_btnUnloadHist.enabled = true;
 			_btnCfg.enabled = true;
 		}
 		
-		private function onChangeOnBuy(e:WFMEvent):void 
+		private function onChangeMaxBuy(e:WFMEvent):void 
 		{
 			_servant.onChangeMxBuy( e.data.entity_id, e.data.mbuy );
+		}
+		
+		private function onChangeCostStepper(e:WFMEvent):void 
+		{
+			_servant.onChangeCostStepper( e.data.entity_id, e.data.cbuy, e.data.csell );
 		}
 
 	}

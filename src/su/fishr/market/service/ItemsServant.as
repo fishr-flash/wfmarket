@@ -7,6 +7,7 @@ package su.fishr.market.service
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.utils.Dumper;
+	import su.fishr.utils.searcPropValueInArr;
 	/**
 	 * ...
 	 * @author  
@@ -17,12 +18,15 @@ package su.fishr.market.service
 		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
 		private const IniData:Class;
 		
+		
+		public static const COUNT_COMMAND_BUY:int = 5;
+		
 		private var _self:ItemsServant;
 		private var _configItems:Array;
 		private var _weaponGroups:Vector.<WeaponGroup>;
 		private var _bufferStory:Array = new Array;
 		private var _iniConf:Object;
-		private var _countCommandBy:int = 5;
+		
 		private var _remaindCommandBy:int;
 		public function get inst():ItemsServant
 		{
@@ -103,10 +107,10 @@ package su.fishr.market.service
 							, entity_id: objson.data[ j ].entity_id
 							, kind:objson.data[ j ].kind
 							, heigth_cost: 0
-							, low_cost: 42
+							, low_cost:  MarketplaceWF.SYSTEM_MIN_COST
 							, hidden: 0
 							, mxbuy: 0
-							, auto_cost: 42
+							, auto_cost: MarketplaceWF.SYSTEM_MIN_COST
 							, exclude: [  ]
 						} );
 					
@@ -129,6 +133,8 @@ package su.fishr.market.service
 				
 				if ( itms[ 0 ] )
 				{
+					_configItems[ i ].entity_id = itms[ 0 ].entity_id;
+					
 					
 					if( MarketplaceWF.NEED_UPDATE_CONFIG )itms[ 0 ].config = _configItems[ i ];
 					
@@ -193,9 +199,12 @@ package su.fishr.market.service
 			var wi:Array = [];
 			
 			
+				
+			
 			const len:int = _weaponGroups.length;
 			for ( var i:int = 0; i < len; i++ )
 			{
+				
 				
 				wi.push( [ _weaponGroups[ i ].groupKey
 								, _weaponGroups[ i ].cost
@@ -203,6 +212,8 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].maxcost 
 								, _weaponGroups[ i ].went[ 0 ].entity_id
 								, _weaponGroups[ i ].session_cost 
+								, _weaponGroups[ i ].autobuy
+								, _weaponGroups[ i ].autosell
 								, _weaponGroups[ i ].maxBuyCount
 								, _weaponGroups[ i ].liquidity] );
 								
@@ -216,7 +227,9 @@ package su.fishr.market.service
 								, _weaponGroups[ i ].went[ j ].mincost
 								, _weaponGroups[ i ].went[ j ].maxcost 
 								, _weaponGroups[ i ].went[ j ].entity_id 
-								, _weaponGroups[ i ].went[ j ].maxBuyCount
+								, _weaponGroups[ i ].autobuy
+								, _weaponGroups[ i ].autosell
+								, _weaponGroups[ i ].maxBuyCount
 								, _weaponGroups[ i ].went[ j ].liquidity ] );
 								
 								
@@ -268,13 +281,7 @@ package su.fishr.market.service
 			{
 				went = _weaponGroups[ i ].getItemOfbuyd( entity_id );
 				if ( went )
-				{
-						went.host.maxBuyCount--;
-						went.maxBuyCount--;
-						
-						
 						return went;
-				}
 			}
 			
 			return null;
@@ -309,6 +316,44 @@ package su.fishr.market.service
 		public function onChangeMxBuy( entity_id:int, mbuy:int ):void 
 		{
 			getWent( entity_id ).maxBuyCount = getWent( entity_id ).host.maxBuyCount = mbuy; // в getWent maxBuyCount отнимается
+			
+		}
+		
+		public function onChangeCostStepper( entity_id:int, cbuy:int, csell:int):void 
+		{
+			const went:WeaponEnt = getWent( entity_id );
+			went.host.autobuy = cbuy;
+			went.host.autosell = csell;
+			
+			const index:int = searcPropValueInArr( "entity_id", went.entity_id, _configItems );
+			
+			
+			if ( index > -1 ) 
+			{
+				/**
+				 * => Object (11): 
+						entity_id:(int,4) 1351
+						higth_cost:(int,1) 0
+						mxbuy:(int,1) 1
+						auto_sell:(int,1) 0
+						hidden:(int,1) 0
+						low_cost:(int,2) 46
+						name:(str,24) Штурмовик отряда Абсолют
+						kind:(str,10) appearance
+						exclude:Array(0):
+						key_word:(str,24) Штурмовик отряда Абсолют
+						auto_cost:(int,1) 0
+				 */
+				_configItems[ index ].auto_cost = cbuy;
+				_configItems[ index ].auto_sell = csell;
+				
+			}
+			
+			
+			/// kastile
+			//went.host.maxBuyCount++;
+			//went.maxBuyCount++;
+			
 		}
 		
 		private function joinStory(data:Array):Array 
@@ -557,21 +602,77 @@ package su.fishr.market.service
 		{
 			const len:int = _weaponGroups.length;
 			var autocost:int;
-			_remaindCommandBy = _countCommandBy;
+			_remaindCommandBy = COUNT_COMMAND_BUY;
+			
+			
 			
 			
 			for (var i:int = 0; i < len; i++) 
 			{
-				if ( _weaponGroups[ i ].cost <= _weaponGroups[ i ].autocost && _remaindCommandBy > 0 )
+				autocost =  _weaponGroups[ i ].autobuy;
+				
+				/// покупка по интеллектуальной цене
+				if ( _weaponGroups[ i ].autobuy == 0 
+					&& willBePurchase( _weaponGroups[ i ].cost
+												, _weaponGroups[ i ].session_cost
+												, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ].liquidity ) )
+				{
+						//_weaponGroups[ i ].autobuy = _weaponGroups[ i ].cost;
+						autocost = _weaponGroups[ i ].cost;
+				};
+			
+				if ( _weaponGroups[ i ].cost <= autocost
+				&& _remaindCommandBy > 0 )
 				{
 					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
 					break;
-					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ] ) );
+
+					const data:Object = { went: _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ], autobuy: autocost }
+					this.dispatchEvent( new WFMEvent( WFMEvent.ON_AUTOBUY, false, false,  data ) );
 					//off break cicle for of search buy cost break;
 					_remaindCommandBy--;
+					
 				}
+				
+				autocost = 0;
 			}
 		}
+		
+		private function willBePurchase( cost:int, average:int, liquidity:int ):Boolean
+		{
+			var result:Boolean = false;
+			
+			if ( liquidity > 10 
+					&& average > 0  
+					&& cost > 0
+					&& ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
+			{
+				result = true;
+			}
+
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( ( cost / average ) < .9  )
+			{
+				const i:String = 
+				( "ItemsServant.as" + ". " +  "willBePurchase ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r liquidity: " + liquidity )
+				+ ( "\r average: " + average )
+				+ ( "\r cost: " + cost )
+				+ ( "\r ( cost / average ): " + ( cost / average ) )
+				+ ( "\r result: " + result )
+				+ ( "\r MarketplaceWF.BUY_MIN_DIFFPERCENT : " +  MarketplaceWF.BUY_MIN_DIFFPERCENT )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			return result;
+		}
+		
 		
 		private function selectLowCost():void
 		{
@@ -658,7 +759,7 @@ package su.fishr.market.service
 				obStr += '\t\t ,"entity_id": ' + sortedItms[ i ].entity_id + ' \r';
 				obStr += '\t\t ,"kind": "' + sortedItms[ i ].kind +'" \r';
 				obStr += '\t\t ,"higth_cost": 0 \r';
-				obStr += '\t\t ,"low_cost": 42 \r';
+				obStr += '\t\t ,"low_cost": ' + MarketplaceWF.SYSTEM_MIN_COST + '\r';
 				obStr += '\t\t ,"hidden": 0 \r';
 				obStr += '\t\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:2 )+ ' \r';
 				obStr += '\t\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';

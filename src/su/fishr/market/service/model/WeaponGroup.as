@@ -15,7 +15,7 @@ package su.fishr.market.service.model
 		
 		private var _went:Vector.<WeaponEnt>;
 		//private var _alertData:Object;
-		private var _autocost:int;
+		private var _autobuy:int;
 		private var _lowcost:int;
 		private var _owner:int;
 		private var _heightcost:int;
@@ -29,14 +29,15 @@ package su.fishr.market.service.model
 		
 		public function get session_cost():int 
 		{
+			
 			return _session_cost / _went[ 0 ].takt;
 		}
 		
 		
 		
-		public function get autocost():int 
+		public function get autobuy():int 
 		{
-			return _autocost;
+			return _autobuy;
 		}
 		
 		public function get lowcost():int 
@@ -57,6 +58,16 @@ package su.fishr.market.service.model
 		public function get owner():int 
 		{
 			return _owner;
+		}
+		
+		public function set autobuy(value:int):void 
+		{
+			_autobuy = value;
+		}
+		
+		public function set autosell(value:uint):void 
+		{
+			_autosell = value;
 		}
 		public function WeaponGroup( data:Object ) 
 		{
@@ -113,7 +124,7 @@ package su.fishr.market.service.model
 			
 			groupKey = _key = data["0"].config.key_word;
 			_lowcost = data["0"].config.low_cost;
-			_autocost  = data["0"].config.auto_cost;
+			_autobuy  = data["0"].config.auto_cost;
 			_heightcost = data["0"].config.higth_cost;
 			_autosell = data["0"].config.auto_sell;
 			maxBuyCount = data["0"].config.mxbuy;
@@ -140,7 +151,7 @@ package su.fishr.market.service.model
 		{
 			
 			_lowcost = data.low_cost;
-			_autocost  = data.auto_cost;
+			_autobuy  = data.auto_cost;
 			_autosell  = data.auto_sell;
 			_heightcost = data.higth_cost;
 			maxBuyCount = data.mxbuy;

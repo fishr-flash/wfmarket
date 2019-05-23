@@ -21,7 +21,7 @@ package su.fishr.market.service
 		private static var _area:TextArea;
 		private static var _self:Logw;
 		private const _MY_WIDTH:int = 1000;
-		private const _MY_HEIGHT:int = 300;
+		private const _MY_HEIGHT:int = 250;
 		static public function get inst():Logw
 		{
 			if ( !_self )_self = new Logw;

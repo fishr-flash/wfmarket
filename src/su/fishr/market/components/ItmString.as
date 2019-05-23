@@ -3,6 +3,7 @@ package su.fishr.market.components
 	import fl.controls.NumericStepper;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.text.TextFormat;
 	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.WFMEvent;
 	
@@ -31,8 +32,10 @@ package su.fishr.market.components
 		private var _colorSession:uint;
 		private var _colorLiquidity:uint;
 		private var _oldLiquidity:uint;
-		private var _nStep:NumericStepper;
+		private var _cntStep:NumericStepper;
 		private var _entity_id:int;
+		private var _buyStep:NumericStepper;
+		private var _sellStep:NumericStepper;
 		
 		
 		
@@ -50,7 +53,9 @@ package su.fishr.market.components
 			
 			
 			_mainItm.htmlText = formatWeaponEnt( arr );
-			_nStep.move( _mainItm.textWidth - 5, _nStep.y );
+			_buyStep.move( _mainItm.textWidth - 5, _buyStep.y );
+			_sellStep.move( _buyStep.x + _buyStep.width + 15, _buyStep.y );
+			_cntStep.move( _sellStep.x + _sellStep.width + 15, _sellStep.y );
 			_entity_id = arr[ 4 ];
 		}
 		
@@ -60,19 +65,51 @@ package su.fishr.market.components
 			_mainItm = new TFItem;
 			this.addChild( _mainItm );
 			
-			_nStep = new NumericStepper;
-			_nStep.x = _mainItm.x + _mainItm.width;
-			_nStep.y = _mainItm.y;
-			_nStep.width = 45;
-			_nStep.height = 20;
-			_nStep.setSize( 45, 20 );
-			_nStep.validateNow();
+			_buyStep = new NumericStepper;
+			_buyStep.x = _mainItm.x + _mainItm.width;
+			_buyStep.y = _mainItm.y;
+			_buyStep.width = 60;
+			_buyStep.height = 20;
+			_buyStep.setSize( 60, 20 );
+			_buyStep.validateNow();
+			_buyStep.value = 0;
+			_buyStep.maximum = 100000;
+			this.addChild( _buyStep );
+			_buyStep.addEventListener(Event.CHANGE, onChangeCostStep );
+			
+			_sellStep = new NumericStepper;
+			_sellStep.x = _buyStep.x + _buyStep.width;
+			_sellStep.y = _buyStep.y;
+			_sellStep.width = 60;
+			_sellStep.height = 20;
+			_sellStep.setSize( 60, 20 );
+			_sellStep.validateNow();
+			_sellStep.value = 0;
+			_sellStep.maximum = 100000;
+			this.addChild( _sellStep );
+			_sellStep.addEventListener(Event.CHANGE, onChangeCostStep );
+			
+
+			_cntStep = new NumericStepper;
+			_cntStep.x = _sellStep.x + _sellStep.width;
+			_cntStep.y = _sellStep.y;
+			_cntStep.width = 45;
+			_cntStep.height = 20;
+			_cntStep.setSize( 45, 20 );
+			_cntStep.validateNow();
+			_cntStep.value = 0;
+			_cntStep.maximum = 100;
+			this.addChild( _cntStep );
+			_cntStep.addEventListener(Event.CHANGE, onChangeStepper );
+			
+			
 			setData( arr );
-			_nStep.value = 0;
-			this.addChild( _nStep );
-			_nStep.addEventListener(Event.CHANGE, onChangeStepper );
+			
+			onChangeCostStep( null )
 			
 		}
+		
+		
 		
 		
 		
@@ -105,8 +142,6 @@ package su.fishr.market.components
 			
 					
 			
-					
-			
 			var resar:String  =
 				 addgap( arr[ 0 ], true )  + ""
 							+ "cc: <font color=\"#" + _colorCost.toString( 16 ) + "\" ><b>" + addgap( arr[ 1 ] ) + "</b></font>"
@@ -114,25 +149,30 @@ package su.fishr.market.components
 							+ "mx: <font color=\"#" + colorMax.toString( 16 ) + "\" ><b>" + addgap( arr[ 3 ] ) + "</b></font>"
 							+ "";
 							
-			if ( arr.length > 7 ) 
+			if ( arr.length > 9 ) 
 			{
 					_colorSession = _oldSession > 0 && _oldSession < arr[ 5 ]?COLOR_UP:_oldSession > 0 && _oldSession > arr[ 5 ]?COLOR_DOWN:_colorSession;
 					_oldSession = arr[ 5 ];
 					resar += "ss: <font color=\"#" + _colorSession.toString( 16 ) + "\" ><b>" + addgap( arr[ 5 ] ) + "</b></font>";
 					
-					_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 7 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
-					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 7 ] ) + "</b></font>";
+					_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 9 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 9 ] ) + "</b></font>";
 					
-					_oldLiquidity = arr[ 7 ];
-					_nStep.value = arr[ 6 ];
+					_buyStep.value = arr[ 6 ];
+					_sellStep.value = arr[ 7 ];
+					_cntStep.value = arr[ 8 ];
+					_oldLiquidity = arr[ 9 ];
 					
 			}
 			else
 			{
-				_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 6 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
-					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 6 ] ) + "</b></font>";
-				_oldLiquidity = arr[ 6 ];
-				_nStep.value = arr[ 5 ];
+				_colorLiquidity = _oldLiquidity > 0  && _oldLiquidity < arr[ 8 ]?COLOR_UP:MarketplaceWF.FONT_COLOR;
+					resar += "lq: <font color=\"#" + _colorLiquidity.toString( 16 ) + "\" ><b>" + addgap( arr[ 8 ] ) + "</b></font>";
+				
+				_buyStep.value = arr[ 5 ];
+				_sellStep.value = arr[ 6 ];
+				_cntStep.value = arr[ 7 ];
+				_oldLiquidity = arr[ 8 ];
 				
 			}
 			
@@ -163,7 +203,35 @@ package su.fishr.market.components
 		
 		private function onChangeStepper(e:Event):void 
 		{
-			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_MBUY, false, false, { entity_id: _entity_id,  mbuy: _nStep.value } ) );
+			
+			
+			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_MBUY, false, false, { entity_id: _entity_id,  mbuy: _cntStep.value } ) );
+			
+			
+		}
+		
+		private function onChangeCostStep(e:Event):void 
+		{
+			const bb:int = _buyStep.value;
+			const ss:int = _sellStep.value;
+			var tf:TextFormat = new TextFormat;
+			
+			if ( ( ( ss / MarketplaceWF.CHARGE_RATIO ) * 1 ) <= bb )
+			{
+				tf.bold = true;
+				tf.color = 0xFF9999;
+			}
+			else
+			{
+				tf.bold = false;
+				tf.color = 0x00;
+			}
+			
+			_sellStep.setStyle( 'textFormat', tf );
+			
+			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_COST_STEPPER, false, false, { entity_id: _entity_id
+																								,  cbuy: bb
+																								, csell: ss } ) );
 		}
 	}
 

@@ -23,7 +23,7 @@ package su.fishr.market.components
 		{
 			super();
 			
-			_back = new BackgroundShape( 1540, 400 );
+			_back = new BackgroundShape( 935, 400 );
 			this.addChild( _back ) ;
 			
 			
@@ -145,11 +145,12 @@ package su.fishr.market.components
 				
 				_itms[ i ].x = xx;
 				
-				if ( i == int( len / 2 ) )
+				/// исключено разнесение на колонки
+				/*if ( i == int( len / 2 ) )
 				{
 					yy = 0;
 					xx += _itms[ i ].width + 20;
-				}
+				}*/
 				
 				
 			}
