@@ -203,11 +203,11 @@ package su.fishr.market.components
 		
 		private function onChangeStepper(e:Event):void 
 		{
-			_cntStep.removeEventListener(Event.CHANGE, onChangeStepper );
+			
 			
 			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_MBUY, false, false, { entity_id: _entity_id,  mbuy: _cntStep.value } ) );
 			
-			_cntStep.addEventListener(Event.CHANGE, onChangeStepper );
+			
 		}
 		
 		private function onChangeCostStep(e:Event):void 

@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 20, 4 ];
+		public static const VERSION:Array = [ 1, 21, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -52,8 +52,10 @@ package su.fishr.market
 		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
+		static public const BUY_MIN_DIFFPERCENT:Number = .8;
 		static public const PROP_COST:String = "cost";
 		static public var COUNT_BUY:uint = 100;
+		
 		
 		
 		/// может переопределяться ниже
@@ -76,7 +78,7 @@ package su.fishr.market
 		private var _btnAutoBuy:ButtonClr;
 		private var _onPausePlay:Boolean;
 		private var _versionLabel:TFItem;
-		private var _btnUnload:ButtonClr;
+		private var _btnUnloadHist:ButtonClr;
 		private var _btnLoad:ButtonClr;
 		private var _file:FileReference;
 		private var _btnCfg:ButtonClr;
@@ -152,20 +154,20 @@ package su.fishr.market
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
-			_btnUnload = new ButtonClr;
-			_btnUnload.label = "unl";
-			_btnUnload.x = _btnRequest.x + _btnRequest.width + 25;
-			_btnUnload.y = _btnRequest.y;
-			_btnUnload.setSize( WIDTH_BUTTONS, _btnRequest.height );
-			_btnUnload.colorFill( "e25e1d" );
-			_btnUnload.addEventListener( MouseEvent.CLICK, onUnload );
-			this.addChild( _btnUnload );
-			_btnUnload.enabled = false;
+			_btnUnloadHist = new ButtonClr;
+			_btnUnloadHist.label = "unl";
+			_btnUnloadHist.x = _btnRequest.x + _btnRequest.width + 25;
+			_btnUnloadHist.y = _btnRequest.y;
+			_btnUnloadHist.setSize( WIDTH_BUTTONS, _btnRequest.height );
+			_btnUnloadHist.colorFill( "e25e1d" );
+			_btnUnloadHist.addEventListener( MouseEvent.CLICK, onUnloadHist );
+			this.addChild( _btnUnloadHist );
+			_btnUnloadHist.enabled = false;
 			
 			_btnLoad = new ButtonClr;
 			_btnLoad.label = "dwn";
-			_btnLoad.x = _btnUnload.x + _btnUnload.width + 5;
-			_btnLoad.y = _btnUnload.y;
+			_btnLoad.x = _btnUnloadHist.x + _btnUnloadHist.width + 5;
+			_btnLoad.y = _btnUnloadHist.y;
 			_btnLoad.setSize( WIDTH_BUTTONS + 5, _btnLoad.height );
 			_btnLoad.colorFill( "e25e1d" );
 			this.addChild( _btnLoad );
@@ -402,7 +404,7 @@ package su.fishr.market
 			const b:ByteArray = e.target.data;
 			b.position = 0;
 			_servant.setStory( JSON.parse(  b.readUTFBytes( b.bytesAvailable ) ) as Array);
-			_btnUnload.enabled = true;
+			_btnUnloadHist.enabled = true;
 		}
 		
 		
@@ -441,7 +443,7 @@ package su.fishr.market
 					cost:(int,4) 3150
 		 * @param	e
 		 */
-		private function onUnload(e:MouseEvent):void 
+		private function onUnloadHist(e:MouseEvent):void 
 		{
 			const data:Array = _servant.getHistory();
 			
@@ -672,7 +674,6 @@ package su.fishr.market
 			
 			
 			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
 			if( true )
 			{
 				const i:String = _servant.generateCofig();
@@ -774,7 +775,7 @@ package su.fishr.market
 			
 			_price.setWeaponData( _servant.getWeaponData() );
 			
-			_btnUnload.enabled = true;
+			_btnUnloadHist.enabled = true;
 			_btnCfg.enabled = true;
 		}
 		
