@@ -19,7 +19,7 @@ package su.fishr.market.service.model
 		private var _lowcost:int;
 		private var _owner:int;
 		private var _heightcost:int;
-		private var _autosell:uint;
+		private var _autosell:int;
 		
 		
 		public function get went():Vector.<WeaponEnt> 
@@ -50,7 +50,7 @@ package su.fishr.market.service.model
 			return _heightcost;
 		}
 		
-		public function get autosell():uint 
+		public function get autosell():int 
 		{
 			return _autosell;
 		}
@@ -65,7 +65,7 @@ package su.fishr.market.service.model
 			_autobuy = value;
 		}
 		
-		public function set autosell(value:uint):void 
+		public function set autosell(value:int):void 
 		{
 			_autosell = value;
 		}

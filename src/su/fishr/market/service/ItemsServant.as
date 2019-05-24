@@ -642,7 +642,7 @@ package su.fishr.market.service
 		{
 			var result:Boolean = false;
 			
-			if ( liquidity > 10 
+			if ( liquidity >= 5 
 					&& average > 0  
 					&& cost > 0
 					&& ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
