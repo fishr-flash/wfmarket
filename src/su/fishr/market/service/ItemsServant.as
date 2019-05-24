@@ -15,7 +15,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/ini_3.json", mimeType = "application/octet-stream")]
 		private const IniData:Class;
 		
 		
@@ -642,7 +642,7 @@ package su.fishr.market.service
 		{
 			var result:Boolean = false;
 			
-			if ( liquidity >= 5 
+			if ( liquidity >= MarketplaceWF.START_NUMBER_BUY_TO_ANALISE
 					&& average > 0  
 					&& cost > 0
 					&& ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
