@@ -24,7 +24,7 @@ package su.fishr.market.service.bayer
 			
 			
 			
-			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * 1.5, entity_id, cost, type, callback );
+			setTimeout( init, MarketplaceWF.DELAY_ON_BUYER * .5, entity_id, cost, type, callback );
 			
 			
 			
@@ -72,7 +72,7 @@ package su.fishr.market.service.bayer
 			}
 			/////////////////////END TRACE//////////////////////////////
 			
-			if ( bayData.state == "Success" )
+			if (bayData is Object && bayData.state == "Success" )
 			{
 				if ( MarketplaceWF.getCostOnCharge( bayData.data.cost ) <= _cost )
 				{

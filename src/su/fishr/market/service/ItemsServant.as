@@ -15,7 +15,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/ini_3.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
 		private const IniData:Class;
 		
 		
@@ -665,6 +665,7 @@ package su.fishr.market.service
 				+ ( "\r ( cost / average ): " + ( cost / average ) )
 				+ ( "\r result: " + result )
 				+ ( "\r MarketplaceWF.BUY_MIN_DIFFPERCENT : " +  MarketplaceWF.BUY_MIN_DIFFPERCENT )
+				+ ( "\r MarketplaceWF.START_NUMBER_BUY_TO_ANALISE: " + MarketplaceWF.START_NUMBER_BUY_TO_ANALISE )
 				+ ( "\r : " + "" )
 				+ ( "\r end" );
 				Logw.inst.up( i );

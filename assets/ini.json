@@ -2,7 +2,7 @@
 	 "config":{  
 		 "agent_online":"2"
 		  ,"count_buy":"100"
-		  ,"start_buy_analise":"3"
+		  ,"start_buy_analise":"1"
 	} 
  	 ,"items": [{ 
 		 "name": "SAI GRY AR-15 Синдикат" 
