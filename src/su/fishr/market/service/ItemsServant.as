@@ -654,7 +654,7 @@ package su.fishr.market.service
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
-			if( ( cost / average ) < .9  )
+			if( ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
 			{
 				const i:String = 
 				( "ItemsServant.as" + ". " +  "willBePurchase ")
