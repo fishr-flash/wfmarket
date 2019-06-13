@@ -176,6 +176,8 @@ package su.fishr.market.components
 				
 			}
 			
+			cntStepColorUpdate();
+			
 			return resar;
 		}
 		
@@ -232,6 +234,27 @@ package su.fishr.market.components
 			this.dispatchEvent( new WFMEvent( WFMEvent.ON_CHANGE_COST_STEPPER, false, false, { entity_id: _entity_id
 																								,  cbuy: bb
 																								, csell: ss } ) );
+		}
+		
+		
+		private function cntStepColorUpdate():void
+		{
+			
+			var tf:TextFormat = new TextFormat;
+			
+			if ( _cntStep.value )
+			{
+				tf.bold = false;
+				tf.color = 0x00;
+			}
+			else
+			{
+				tf.bold = true;
+				tf.color = 0xFF9999;
+				
+			}
+			
+			_cntStep.setStyle( 'textFormat', tf );
 		}
 	}
 
