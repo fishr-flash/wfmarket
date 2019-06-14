@@ -32,7 +32,7 @@ package su.fishr.market
 	
 	/**
 	 * ...
-	 * @author  
+	 * @author   
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
@@ -240,11 +240,15 @@ package su.fishr.market
 			this.addChild( _versionLabel );
 			function configureVersion():String
 			{
-				return AddZerroDate( VERSION[ 0 ] )
-				+ "." 
-				+ AddZerroDate( VERSION[ 1 ] )
-				+ "." 
-				+ AddZerroDate( VERSION[ 2 ], 3 );
+				var str:String = AddZerroDate( VERSION[ 0 ] );
+				const len:int = VERSION.length;
+				for (var i:int = 1; i < len; i++) 
+				{
+					str += "." +  AddZerroDate( VERSION[ i ], 3 )
+				}
+				
+				
+				return str;
 			}
 			
 			
