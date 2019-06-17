@@ -15,6 +15,7 @@ package su.fishr.market
 	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
+	import su.fishr.market.seller.SalesMonitoringService;
 	import su.fishr.market.seller.Sellerq;
 	import su.fishr.market.service.BotRequest;
 	import su.fishr.market.service.ItemsServant;
@@ -37,7 +38,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 21, 8, 70 ];
+		public static const VERSION:Array = [ 1, 22, 1, 70 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -282,6 +283,9 @@ package su.fishr.market
 			_price.addEventListener( WFMEvent.ON_CHANGE_COST_STEPPER, onChangeCostStepper, true );
 			
 			//const breq:BayRequester = new BayRequester( onResult );
+			
+			
+			new SalesMonitoringService;
 			
 			
 		}
