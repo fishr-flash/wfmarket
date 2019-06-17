@@ -624,7 +624,7 @@ package su.fishr.market.service
 				if ( _weaponGroups[ i ].cost <= autocost
 				&& _remaindCommandBy > 0 )
 				{
-					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
+					if ( MarketplaceWF.IGNORE_CONFIG ) 
 					break;
 
 					const data:Object = { went: _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ], autobuy: autocost }
@@ -642,7 +642,7 @@ package su.fishr.market.service
 		{
 			var result:Boolean = false;
 			
-			if ( liquidity > 10 
+			if ( liquidity >= MarketplaceWF.START_NUMBER_BUY_TO_ANALISE
 					&& average > 0  
 					&& cost > 0
 					&& ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
@@ -654,7 +654,7 @@ package su.fishr.market.service
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
-			if( ( cost / average ) < .9  )
+			if( ( cost / average ) <= MarketplaceWF.BUY_MIN_DIFFPERCENT )
 			{
 				const i:String = 
 				( "ItemsServant.as" + ". " +  "willBePurchase ")
@@ -665,6 +665,7 @@ package su.fishr.market.service
 				+ ( "\r ( cost / average ): " + ( cost / average ) )
 				+ ( "\r result: " + result )
 				+ ( "\r MarketplaceWF.BUY_MIN_DIFFPERCENT : " +  MarketplaceWF.BUY_MIN_DIFFPERCENT )
+				+ ( "\r MarketplaceWF.START_NUMBER_BUY_TO_ANALISE: " + MarketplaceWF.START_NUMBER_BUY_TO_ANALISE )
 				+ ( "\r : " + "" )
 				+ ( "\r end" );
 				Logw.inst.up( i );

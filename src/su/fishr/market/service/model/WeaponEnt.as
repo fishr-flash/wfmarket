@@ -35,9 +35,9 @@ package su.fishr.market.service.model
 		}
 	
 		
-		public function get sell():uint
+		public function get sell():int
 		{
-			const s:uint = uint( host.autosell );
+			const s:int = int( host.autosell );
 			return s;
 		}
 		

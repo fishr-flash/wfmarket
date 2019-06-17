@@ -32,18 +32,18 @@ package su.fishr.market
 	
 	/**
 	 * ...
-	 * @author  
+	 * @author   
 	 */
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 21, 2 ];
+		public static const VERSION:Array = [ 1, 21, 8, 70 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.15;
-		public static const DELAY_ON_BUYER:int = 1300;
+		public static const DELAY_ON_BUYER:int = 1250;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
@@ -52,8 +52,10 @@ package su.fishr.market
 		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
-		static public const BUY_MIN_DIFFPERCENT:Number = .8;
+		static public const BUY_MIN_DIFFPERCENT:Number = .70;
 		static public const PROP_COST:String = "cost";
+		static public var START_NUMBER_BUY_TO_ANALISE:int = 10;
+		
 		static public var COUNT_BUY:uint = 100;
 		
 		
@@ -238,11 +240,15 @@ package su.fishr.market
 			this.addChild( _versionLabel );
 			function configureVersion():String
 			{
-				return AddZerroDate( VERSION[ 0 ] )
-				+ "." 
-				+ AddZerroDate( VERSION[ 1 ] )
-				+ "." 
-				+ AddZerroDate( VERSION[ 2 ], 3 );
+				var str:String = AddZerroDate( VERSION[ 0 ] );
+				const len:int = VERSION.length;
+				for (var i:int = 1; i < len; i++) 
+				{
+					str += "." +  AddZerroDate( VERSION[ i ], 3 )
+				}
+				
+				
+				return str;
 			}
 			
 			
@@ -297,6 +303,7 @@ package su.fishr.market
 		{
 			COUNT_BUY = int( e.data.count_buy );
 			AGENT_ONLINE = int( e.data.agent_online );
+			START_NUMBER_BUY_TO_ANALISE = int( e.data.start_buy_analise );
 		}
 		
 		
@@ -503,7 +510,7 @@ package su.fishr.market
 				if ( _CASH >= int( went.cost ) )
 				{
 
-					if ( went.host.maxBuyCount > 0 || ( went.cost <= ( e.data.autobuy / 2 ) && e.data.autobuy  > SYSTEM_MIN_COST ))
+					if ( went.host.maxBuyCount > 0 )
 					{
 						if ( !_btnPlay.enabled )
 							_onPausePlay = true;
@@ -657,6 +664,8 @@ package su.fishr.market
 				//_seller.sell( int( d.entity_id ), int( ( Math.random() * 5 ) +  7000  ) );
 				if ( w.sell > 0 )
 						_seller.sell( int( d.entity_id), w.sell );
+				else if ( w.sell == 0 )
+						_seller.sell( int( d.entity_id), w.maxcost  - 1);
 						//_seller.sell( int( d.entity_id), int( ( w.sell / CHARGE_RATIO ) * 100 ) );
 			}
 			

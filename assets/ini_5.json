@@ -2,7 +2,7 @@
 	 "config":{  
 		 "agent_online":"2"
 		  ,"count_buy":"100"
-		  ,"start_buy_analise":"1"
+		  ,"start_buy_analise":"5"
 	} 
  	 ,"items": [{ 
 		 "name": "SAI GRY AR-15 Синдикат" 
@@ -363,8 +363,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -376,8 +376,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -415,7 +415,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 2
 		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
@@ -428,8 +428,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -441,8 +441,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -454,8 +454,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -467,8 +467,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
@@ -480,7 +480,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 2
 		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
@@ -493,8 +493,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	}
@@ -506,8 +506,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	}
@@ -519,164 +519,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "M60E4 Фобос" 
-		 ,"key_word": "M60E4 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Ледоруб Фобос" 
-		 ,"key_word": "Ледоруб Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "ПП-2000 Фобос" 
-		 ,"key_word": "ПП-2000 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Winchester 1887 Фобос" 
-		 ,"key_word": "Winchester 1887 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 50000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "ACR CQB Фобос" 
-		 ,"key_word": "ACR CQB Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Type 97 Фобос" 
-		 ,"key_word": "Type 97 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "SAP6 Фобос" 
-		 ,"key_word": "SAP6 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "ОРСИС Т-5000 Фобос" 
-		 ,"key_word": "ОРСИС Т-5000 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Нож-бабочка Фобос" 
-		 ,"key_word": "Нож-бабочка Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Maxim 9 Фобос" 
-		 ,"key_word": "Maxim 9 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "McMillan CS5 Фобос" 
-		 ,"key_word": "McMillan CS5 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Typhoon F12" 
-		 ,"key_word": "Typhoon F12" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 50000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Деймос" 
-		 ,"key_word": "Деймос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 50000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	}
