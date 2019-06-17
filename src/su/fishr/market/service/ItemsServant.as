@@ -624,7 +624,7 @@ package su.fishr.market.service
 				if ( _weaponGroups[ i ].cost <= autocost
 				&& _remaindCommandBy > 0 )
 				{
-					if ( MarketplaceWF.IGNORE_CONFIG && _weaponGroups[ i ].liquidity < 2 ) 
+					if ( MarketplaceWF.IGNORE_CONFIG ) 
 					break;
 
 					const data:Object = { went: _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ], autobuy: autocost }

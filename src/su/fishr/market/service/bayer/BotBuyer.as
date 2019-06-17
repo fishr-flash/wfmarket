@@ -101,20 +101,6 @@ package su.fishr.market.service.bayer
 		private function resBay( data:Object ):void 
 		{
 			
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "BotBuyer.as" + ". " +  "resBay ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r data: " + Dumper.dump( data ) )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			
 			_callback({state: data.state
 						//, details: data.data?data.data:Dumper.dump( data )
 						, entity_id: _entity_id
