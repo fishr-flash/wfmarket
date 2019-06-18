@@ -4,6 +4,7 @@ package su.fishr.market.seller
 	import flash.events.IEventDispatcher;
 	import flash.utils.clearTimeout;
 	import flash.utils.setTimeout;
+	import su.fishr.market.WFMEvent;
 	import su.fishr.market.seller.nets.ListSellsRequest;
 	import su.fishr.utils.AddZerroDate;
 	
@@ -15,8 +16,12 @@ package su.fishr.market.seller
 	{
 		private var _tm:int;
 		private var _control_day:int;
+		private var _listItems:Object;
+		private var _iterator:int;
+		
 		//static public const DELAY_ON_MONITORING:int = 1000 * 60 * 60 * 3;
-		static public const DELAY_ON_MONITORING:int = 1000 * 2;
+		static public const DELAY_ON_MONITORING:int = 1000 * 10;
+		static public const TIME_OUT_ON_ITERATION:int = 1000 * 30;
 		
 		public function SalesMonitoringService(target:flash.events.IEventDispatcher=null) 
 		{
@@ -37,19 +42,21 @@ package su.fishr.market.seller
 			
 			clearTimeout( _tm );
 			
+			const d:Date  = new Date();
+			//2019-06-22
+			_control_day = int(  d.date );
+			
 			new ListSellsRequest( onList );
 			
 			
-			const d:Date  = new Date();
-			//2019-06-22
-			_control_day= int(  d.date - 1 );
+			
 			
 			
 			//////////////////////TRACE/////////////////////////////////
 			
 			import su.fishr.market.service.Logw;
 			import su.fishr.utils.Dumper;
-			if( true )
+			if( false )
 			{
 				const i:String = 
 				( "SalesMonitoringService.as" + ". " +  "onMonitoring ")
@@ -93,53 +100,11 @@ package su.fishr.market.seller
 			
 			if ( dt.state === "Success" )
 			{
-				//////////////////////TRACE/////////////////////////////////
 				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const j:String = 
-					( "SalesMonitoringService.as" + ". " +  "onList ")
-					+ ( "\r dt.data.inventory: " + Dumper.dump( dt.data.inventory ) )
-					//+ ( "\r : " + Dumper.dump( true ) )
-					+ ( "\r : " + "" )
-					+ ( "\r end" );
-					Logw.inst.up( j );
-				}
-				/////////////////////END TRACE//////////////////////////////
+				_listItems = dt;
+				_iterator = 0;
 				
-				var dd:int = 0;
-				var dstr:String = "";
-				const len:int = dt.data.inventory.length;
-				for (var k:int = 0; k < len; k++) 
-				{
-					dstr = dt.data.inventory[ k ].blocked_nearest_date;
-					
-					dd = int( dstr.slice( dstr.length - 2 ) );
-					
-					if ( dd <= _control_day )
-					{
-						/// here report of moment sale
-						
-						return;
-					}
-					//////////////////////TRACE/////////////////////////////////
-					
-					import su.fishr.market.service.Logw;
-					import su.fishr.utils.Dumper;
-					if( true )
-					{
-						const l:String = 
-						( "SalesMonitoringService.as" + ". " +  "onList ")
-						//+ ( "\r : " + Dumper.dump( true ) )
-						+ ( "\r : " + dt.data.inventory[ k ].blocked_nearest_date )
-						+ ( "\r : " + "" )
-						+ ( "\r end" );
-						Logw.inst.up( l );
-					}
-					/////////////////////END TRACE//////////////////////////////
-				}
+				runSearch();
 			}
 			else
 			{
@@ -161,6 +126,39 @@ package su.fishr.market.seller
 			}
 			
 			
+			
+		}
+		
+		private function runSearch():void
+		{
+			clearTimeout( _tm );
+			var dd:int = 0;
+			var dstr:String = "";
+			var available:int = 0;
+			const len:int = _listItems.data.inventory.length;
+			for ( ; _iterator < len; _iterator++) 
+			{
+				dstr = _listItems.data.inventory[ _iterator ].blocked_nearest_date;
+				available = _listItems.data.inventory[ _iterator ].available_count;
+				
+				dd = int( dstr.slice( dstr.length - 2 ) );
+				
+				if ( dd <= _control_day  && available > 0)
+				{
+					
+						_listItems.data.inventory[ _iterator ].available_count--;
+						dispatchEvent( new WFMEvent( WFMEvent.NEED_SELL, false, false,  _listItems.data.inventory[ _iterator ]  ) );
+						_tm = setTimeout( runSearch, TIME_OUT_ON_ITERATION + ( TIME_OUT_ON_ITERATION * Math.random() ) ) ;
+						return;
+				}
+				
+				
+				
+			}
+			
+			//_tm = setTimeout( onMonitoring, DELAY_ON_MONITORING );
+			
+			dispatchEvent( new WFMEvent( WFMEvent.SERVICE_OSALE_ON_COMPLETE ) );
 			
 		}
 		

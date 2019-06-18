@@ -38,7 +38,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 22, 1, 70 ];
+		public static const VERSION:Array = [ 1, 22, 1, 65 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -53,7 +53,7 @@ package su.fishr.market
 		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
-		static public const BUY_MIN_DIFFPERCENT:Number = .70;
+		static public const BUY_MIN_DIFFPERCENT:Number = .65;
 		static public const PROP_COST:String = "cost";
 		static public var START_NUMBER_BUY_TO_ANALISE:int = 10;
 		
@@ -88,6 +88,8 @@ package su.fishr.market
 		private var _seller:Sellerq;
 		private var _tfCash:TextField;
 		private var _lastTimeOpenWindow:int;
+		private var _salesMonitor:SalesMonitoringService;
+		private var _btnOSale:ButtonClr;
 		
 		
 		public static function getCostOnCharge( cost:int ):int
@@ -157,11 +159,21 @@ package su.fishr.market
 			_btnRequest.addEventListener( MouseEvent.CLICK, onRequest );
 			this.addChild( _btnRequest );
 			
+			
+			_btnOSale = new ButtonClr;
+			_btnOSale.label = "osl";
+			_btnOSale.x = _btnRequest.x + _btnRequest.width + 25;
+			_btnOSale.y = _btnRequest.y;
+			_btnOSale.setSize( WIDTH_BUTTONS, _btnOSale.height );
+			_btnOSale.colorFill( "FFEC27"  );
+			_btnOSale.addEventListener( MouseEvent.CLICK, onOSale );
+			this.addChild( _btnOSale );
+			
 			_btnUnloadHist = new ButtonClr;
 			_btnUnloadHist.label = "unl";
-			_btnUnloadHist.x = _btnRequest.x + _btnRequest.width + 25;
-			_btnUnloadHist.y = _btnRequest.y;
-			_btnUnloadHist.setSize( WIDTH_BUTTONS, _btnRequest.height );
+			_btnUnloadHist.x = _btnOSale.x + _btnOSale.width + 25;
+			_btnUnloadHist.y = _btnOSale.y;
+			_btnUnloadHist.setSize( WIDTH_BUTTONS, _btnOSale.height );
 			_btnUnloadHist.colorFill( "e25e1d" );
 			_btnUnloadHist.addEventListener( MouseEvent.CLICK, onUnloadHist );
 			this.addChild( _btnUnloadHist );
@@ -285,9 +297,27 @@ package su.fishr.market
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 			
-			new SalesMonitoringService;
 			
 			
+			
+		}
+		
+		private function onOSale(e:MouseEvent):void 
+		{
+			_btnOSale.enabled = false;
+			_btnOSale.colorFill( "000000" );
+			_salesMonitor = new SalesMonitoringService;
+			_salesMonitor.addEventListener( WFMEvent.NEED_SELL, onNeedSell );
+			_salesMonitor.addEventListener( WFMEvent.SERVICE_OSALE_ON_COMPLETE, oSaleComplete );
+		}
+		
+		private function oSaleComplete(e:WFMEvent):void 
+		{
+			_btnOSale.enabled = true;
+			_btnOSale.colorFill( "FFEC27" );
+			_salesMonitor.removeEventListener( WFMEvent.NEED_SELL, onNeedSell );
+			_salesMonitor.removeEventListener( WFMEvent.SERVICE_OSALE_ON_COMPLETE, oSaleComplete );
+			_salesMonitor = null;
 		}
 		
 		
@@ -674,6 +704,59 @@ package su.fishr.market
 			}
 			
 			//_servant.addEventListener( WFMEvent.ON_AUTOBUY, onBayOperation );
+		}
+		
+		private function onNeedSell( evt:WFMEvent  ):void
+		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "MarketplaceWF.as" + ". " +  "onNeedSell ")
+				+ ( "\r evt.data: " + Dumper.dump( evt.data ) )
+				//+ ( "\r _servant.getWent: " + Dumper.dump( _servant.getWent( int( evt.data.item_id ) ) ) )
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r evt.data.item_id: " + evt.data.item_id )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+				
+				
+			}
+			//return;
+			/////////////////////END TRACE//////////////////////////////
+			const w:WeaponEnt = _servant.getWent( int( evt.data.item_id ) );
+			
+			if ( w )
+			{
+				if ( w.sell > 0 )
+					_seller.sell( int( evt.data.item_id ), w.sell );
+				else if ( w.sell == 0 )
+					_seller.sell( int( evt.data.item_id ), w.maxcost  * 10);
+			}
+			else
+			{
+				//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const j:String = 
+					( "MarketplaceWF.as" + ". " +  "onNeedSell ")
+					+ ( "\r evt.data: " + Dumper.dump( evt.data ) )
+					//+ ( "\r : " + Dumper.dump( true ) )
+					+ ( "\r : " + "NOT AVAILABLE ENTITY!!!!!!!!!!!" )
+					+ ( "\r end" );
+					Logw.inst.up( j );
+				}
+				/////////////////////END TRACE//////////////////////////////
+			}
+			
+			
 		}
 		
 		private function onBtnAlert(e:MouseEvent):void 
