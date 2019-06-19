@@ -143,7 +143,9 @@ package su.fishr.market.seller
 				
 				dd = int( dstr.slice( dstr.length - 2 ) );
 				
-				if ( dd <= _control_day  && available > 0)
+				if (_listItems.data.inventory[ _iterator ].game_item.sale === true
+					&& dd <= _control_day  
+					&& available > 0)
 				{
 					
 						_listItems.data.inventory[ _iterator ].available_count--;

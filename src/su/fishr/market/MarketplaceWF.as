@@ -4,7 +4,7 @@ package su.fishr.market
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.events.TextEvent;
+	import flash.external.ExternalInterface;
 	import flash.net.FileReference;
 	import flash.text.TextField;
 	import flash.utils.ByteArray;
@@ -23,13 +23,12 @@ package su.fishr.market
 	import su.fishr.market.service.bayer.BotBuyer;
 	import su.fishr.market.service.connections.TelegramBot;
 	import su.fishr.market.service.inspect.BotInspectorSells;
-	import su.fishr.utils.createCustomTextField;
 	import su.fishr.market.service.model.WeaponEnt;
 	import su.fishr.market.service.model.WeaponGroup;
 	import su.fishr.market.service.utils.dateFormat;
 	import su.fishr.utils.AddZerroDate;
 	import su.fishr.utils.Dumper;
-	import flash.external.ExternalInterface;
+	import su.fishr.utils.createCustomTextField;
 	
 	/**
 	 * ...
@@ -38,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 22, 2, 65 ];
+		public static const VERSION:Array = [ 1, 22, 3, 65 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000;
 		public static const WIDTH_BUTTONS:int = 35;
@@ -692,6 +691,8 @@ package su.fishr.market
 				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
 				
+				/// excluded sell processing
+				return;
 				
 				const sellCost:int = w.sell?w.sell:w.maxcost - 1;
 				///TODO: point configure sell cost

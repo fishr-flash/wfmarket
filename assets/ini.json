@@ -864,19 +864,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "FN FAL DSA-58" 
-		 ,"key_word": "FN FAL DSA-58" 
-		 ,"entity_id": 3002 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "K.I.W.I. VHS-2" 
 		 ,"key_word": "K.I.W.I. VHS-2" 
 		 ,"entity_id": 3304 
@@ -968,19 +955,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Шлем снайпера \"Абсолют\"" 
-		 ,"key_word": "Шлем снайпера \"Абсолют\"" 
-		 ,"entity_id": 1462 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Шлем медика K.I.W.I." 
 		 ,"key_word": "Шлем медика K.I.W.I." 
 		 ,"entity_id": 3307 
@@ -992,72 +966,7 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	} 
-	 ,{ 
-		 "name": "SAI GRY AR-15 Синдикат" 
-		 ,"key_word": "SAI GRY AR-15 Синдикат" 
-		 ,"entity_id": 3932 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Сайга H.G.C. Custom Синдикат" 
-		 ,"key_word": "Сайга H.G.C. Custom Синдикат" 
-		 ,"entity_id": 3924 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "H&K MP5A5 Custom Синдикат" 
-		 ,"key_word": "H&K MP5A5 Custom Синдикат" 
-		 ,"entity_id": 3920 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "AT308 Синдикат" 
-		 ,"key_word": "AT308 Синдикат" 
-		 ,"entity_id": 3928 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Beretta ARX160 Синдикат" 
-		 ,"key_word": "Beretta ARX160 Синдикат" 
-		 ,"entity_id": 3864 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
+	}
 	,{ 
 		 "name": "MSBS Radon Карбон" 
 		 ,"key_word": "MSBS Radon Карбон" 
@@ -1192,19 +1101,6 @@
 		 "name": "Шлем инженера Синдикат" 
 		 ,"key_word": "Шлем инженера Синдикат" 
 		 ,"entity_id": 3865 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем снайпера Синдикат" 
-		 ,"key_word": "Шлем снайпера Синдикат" 
-		 ,"entity_id": 3872 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
