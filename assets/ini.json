@@ -53,7 +53,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 45 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -695,19 +695,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "ПП-19 Бизон Злой Санта" 
-		 ,"key_word": "ПП-19 Бизон Злой Санта" 
-		 ,"entity_id": 659 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "LWRC SMG-45 Деймос" 
 		 ,"key_word": "LWRC SMG-45 Деймос" 
 		 ,"entity_id": 4181 
@@ -764,32 +751,6 @@
 		 ,"key_word": "Инженер отряда SAS" 
 		 ,"entity_id": 1530 
 		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "FN Five-seveN Злой Санта" 
-		 ,"key_word": "FN Five-seveN Злой Санта" 
-		 ,"entity_id": 717 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Desert Eagle Абсолют" 
-		 ,"key_word": "Desert Eagle Абсолют" 
-		 ,"entity_id": 2975 
-		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
@@ -906,19 +867,6 @@
 		 "name": "Micro-Roni CAA Синдикат" 
 		 ,"key_word": "Micro-Roni CAA Синдикат" 
 		 ,"entity_id": 3871 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "AMP DSR-1 Злой Санта" 
-		 ,"key_word": "AMP DSR-1 Злой Санта" 
-		 ,"entity_id": 689 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
@@ -1159,7 +1107,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2
 		 ,"auto_sell": 0
-		 ,"auto_cost": 0
+		 ,"auto_cost": 45
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1300,7 +1248,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
+		 ,"mxbuy": 2
 		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
@@ -1358,19 +1306,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "K.I.W.I. Нож M48 Bowie" 
-		 ,"key_word": "K.I.W.I. Нож M48 Bowie" 
-		 ,"entity_id": 2994 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Штурмовик отряда Абсолют" 
 		 ,"key_word": "Штурмовик отряда Абсолют" 
 		 ,"entity_id": 1351 
@@ -1416,9 +1351,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Ледоруб Фобос" 
@@ -1428,20 +1363,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "ПП-2000 Фобос" 
-		 ,"key_word": "ПП-2000 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1452,8 +1375,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 50000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1464,8 +1387,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1476,8 +1399,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1488,8 +1411,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1500,8 +1423,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1512,8 +1435,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1524,8 +1447,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1536,8 +1459,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 5000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
@@ -1548,8 +1471,8 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
 		 ,"hidden": 0 
-		 ,"mxbuy": 1
-		 ,"auto_sell": 50000
+		 ,"mxbuy": 2
+		 ,"auto_sell": 00
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	}

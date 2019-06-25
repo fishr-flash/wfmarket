@@ -736,7 +736,7 @@ package su.fishr.market
 				if ( w.sell > 0 )
 					_seller.sell( int( evt.data.item_id ), w.sell );
 				else if ( w.sell == 0 )
-					_seller.sell( int( evt.data.item_id ), w.maxcost  * 10);
+					_seller.sell( int( evt.data.item_id ), w.maxcost  - 1 );
 			}
 			else
 			{
