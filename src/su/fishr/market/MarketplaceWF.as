@@ -39,7 +39,7 @@ package su.fishr.market
 		/// version build
 		public static const VERSION:Array = [ 1, 22, 5 ];
 		
-		public static const MAX_REQUEST_DELAY:int = 25000;
+		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.15;
