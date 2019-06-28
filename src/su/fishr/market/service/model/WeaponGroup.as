@@ -183,6 +183,7 @@ package su.fishr.market.service.model
 				for ( var inx1:Object in data )
 				{
 					const index:int = searchKey(  data[ inx1 ].title );
+					if ( index === -1 ) continue;
 					_went[ index ].setJson( data[ inx1 ] );
 					
 				}
