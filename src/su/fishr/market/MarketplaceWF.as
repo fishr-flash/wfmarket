@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 22, 5 ];
+		public static const VERSION:Array = [ 1, 22, 6 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
@@ -66,7 +66,7 @@ package su.fishr.market
 		public static var NEED_UPDATE_CONFIG:Boolean = true;
 		public static var AGENT_ONLINE:int = 2;
 		
-		private static const DELAY_CALL_MARKET:uint = 15;
+		public static const DELAY_CALL_MARKET:uint = 15;
 		
 		private var _btnRequest:ButtonClr;
 		private var _botReqest:BotRequest;

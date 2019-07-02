@@ -2,8 +2,11 @@ package su.fishr.market.seller
 {
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
+	import flash.external.ExternalInterface;
 	import flash.utils.clearTimeout;
+	import flash.utils.getTimer;
 	import flash.utils.setTimeout;
+	import su.fishr.market.MarketplaceWF;
 	import su.fishr.market.WFMEvent;
 	import su.fishr.market.seller.nets.ListSellsRequest;
 	import su.fishr.utils.AddZerroDate;
@@ -22,6 +25,7 @@ package su.fishr.market.seller
 		//static public const DELAY_ON_MONITORING:int = 1000 * 60 * 60 * 3;
 		static public const DELAY_ON_MONITORING:int = 1000 * 10;
 		static public const TIME_OUT_ON_ITERATION:int = 1000 * 30;
+		private var _lastTimeOpenWindow:int;
 		
 		public function SalesMonitoringService(target:flash.events.IEventDispatcher=null) 
 		{
@@ -49,7 +53,15 @@ package su.fishr.market.seller
 			new ListSellsRequest( onList );
 			
 			
-			
+			const timeOpenWindow:int = getTimer();
+						
+			//min * sec * miliseconds
+			if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( MarketplaceWF.DELAY_CALL_MARKET * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
+			{
+				
+				ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
+				_lastTimeOpenWindow = timeOpenWindow;
+			}
 			
 			
 			//////////////////////TRACE/////////////////////////////////

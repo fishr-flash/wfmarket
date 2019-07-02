@@ -96,7 +96,7 @@ package su.fishr.market.service.model
 					entity_id:(int,4) 1505
 					item:Object (4): 
 						title:(str,21) SAI GRY AR-15 Абсолют
-						count:(int,1) 1
+						count:(int,1) 1  
 						id:(str,15) ar28_set10_shop
 						permanent:(int,1) 1
 					count:(int,2) 68
