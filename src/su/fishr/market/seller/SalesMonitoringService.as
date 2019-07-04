@@ -53,16 +53,6 @@ package su.fishr.market.seller
 			new ListSellsRequest( onList );
 			
 			
-			const timeOpenWindow:int = getTimer();
-						
-			//min * sec * miliseconds
-			if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( MarketplaceWF.DELAY_CALL_MARKET * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
-			{
-				
-				ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
-				_lastTimeOpenWindow = timeOpenWindow;
-			}
-			
 			
 			//////////////////////TRACE/////////////////////////////////
 			
@@ -143,26 +133,62 @@ package su.fishr.market.seller
 		
 		private function runSearch():void
 		{
+			//////////////////////TRACE/////////////////////////////////
+			
+			import su.fishr.market.service.Logw;
+			import su.fishr.utils.Dumper;
+			if( true )
+			{
+				const i:String = 
+				( "SalesMonitoringService.as" + ". " +  "runSearch ")
+				//+ ( "\r : " + Dumper.dump( true ) )
+				+ ( "\r _iterator: " + _iterator )
+				+ ( "\r _listItems.data.inventory.length: " + _listItems.data.inventory.length )
+				+ ( "\r : " + "" )
+				+ ( "\r end" );
+				Logw.inst.up( i );
+			}
+			/////////////////////END TRACE//////////////////////////////
+			
+			
 			clearTimeout( _tm );
+			
+			
+			const timeOpenWindow:int = getTimer();
+						
+			//min * sec * miliseconds
+			if ( !_lastTimeOpenWindow || ( ( timeOpenWindow - ( MarketplaceWF.DELAY_CALL_MARKET * 60 * 1000 ) ) >  _lastTimeOpenWindow  ) )
+			{
+				
+				ExternalInterface.call( "function(){ window.open(\"https://wf.mail.ru/inventory/\"); }" );
+				_lastTimeOpenWindow = timeOpenWindow;
+			}
+			
+			
 			var dd:int = 0;
 			var dstr:String = "";
 			var available:int = 0;
-			const len:int = _listItems.data.inventory.length;
+			var items:Array = _listItems.data.inventory.slice();
+			const len:int = items.length;
+			items = items.reverse();
 			for ( ; _iterator < len; _iterator++) 
 			{
-				dstr = _listItems.data.inventory[ _iterator ].blocked_nearest_date;
-				available = _listItems.data.inventory[ _iterator ].available_count;
+				dstr = items[ _iterator ].blocked_nearest_date;
+				available = items[ _iterator ].available_count;
 				
-				dd = int( dstr.slice( dstr.length - 2 ) );
+				//dd = int( dstr.slice( dstr.length - 2 ) );
+				dd = int( dstr.slice( 8, 10 ) );
 				
-				if (_listItems.data.inventory[ _iterator ].game_item.sale === true
+				if (items[ _iterator ].game_item.sale === true
 					&& dd <= _control_day  
 					&& available > 0)
 				{
 					
-						_listItems.data.inventory[ _iterator ].available_count--;
-						dispatchEvent( new WFMEvent( WFMEvent.NEED_SELL, false, false,  _listItems.data.inventory[ _iterator ]  ) );
+					
+						items[ _iterator ].available_count--;
+						dispatchEvent( new WFMEvent( WFMEvent.NEED_SELL, false, false,  items[ _iterator ]  ) );
 						_tm = setTimeout( runSearch, TIME_OUT_ON_ITERATION + ( TIME_OUT_ON_ITERATION * Math.random() ) ) ;
+						_iterator++;
 						return;
 				}
 				
