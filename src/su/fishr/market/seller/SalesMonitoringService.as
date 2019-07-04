@@ -19,7 +19,7 @@ package su.fishr.market.seller
 	{
 		private var _tm:int;
 		private var _control_day:int;
-		private var _listItems:Object;
+		private var _serverJSON:Object;
 		private var _iterator:int;
 		
 		//static public const DELAY_ON_MONITORING:int = 1000 * 60 * 60 * 3;
@@ -103,7 +103,7 @@ package su.fishr.market.seller
 			if ( dt.state === "Success" )
 			{
 				
-				_listItems = dt;
+				_serverJSON = dt;
 				_iterator = 0;
 				
 				runSearch();
@@ -143,7 +143,7 @@ package su.fishr.market.seller
 				( "SalesMonitoringService.as" + ". " +  "runSearch ")
 				//+ ( "\r : " + Dumper.dump( true ) )
 				+ ( "\r _iterator: " + _iterator )
-				+ ( "\r _listItems.data.inventory.length: " + _listItems.data.inventory.length )
+				+ ( "\r _listItems.data.inventory.length: " + _serverJSON.data.inventory.length )
 				+ ( "\r : " + "" )
 				+ ( "\r end" );
 				Logw.inst.up( i );
@@ -168,7 +168,7 @@ package su.fishr.market.seller
 			var dd:int = 0;
 			var dstr:String = "";
 			var available:int = 0;
-			var items:Array = _listItems.data.inventory.slice();
+			var items:Array = _serverJSON.data.inventory.slice();
 			const len:int = items.length;
 			items = items.reverse();
 			for ( ; _iterator < len; _iterator++) 
@@ -176,8 +176,25 @@ package su.fishr.market.seller
 				dstr = items[ _iterator ].blocked_nearest_date;
 				available = items[ _iterator ].available_count;
 				
+				//////////////////////TRACE/////////////////////////////////
+				
+				import su.fishr.market.service.Logw;
+				import su.fishr.utils.Dumper;
+				if( true )
+				{
+					const j:String = 
+					( "SalesMonitoringService.as" + ". " +  "runSearch ")
+					//+ ( "\r : " + Dumper.dump( true ) )
+					+ ( "\r items[ _iterator ]: " + Dumper.dump( items[ _iterator ] ) )
+					+ ( "\r : " + '' )
+					+ ( "\r : " + "" )
+					+ ( "\r end" );
+					Logw.inst.up( j );
+				}
+				/////////////////////END TRACE//////////////////////////////
+				
 				//dd = int( dstr.slice( dstr.length - 2 ) );
-				dd = int( dstr.slice( 8, 10 ) );
+				dd = dstr?int( dstr.slice( 8, 10 ) ):_control_day;
 				
 				if (items[ _iterator ].game_item.sale === true
 					&& dd <= _control_day  
@@ -188,7 +205,6 @@ package su.fishr.market.seller
 						items[ _iterator ].available_count--;
 						dispatchEvent( new WFMEvent( WFMEvent.NEED_SELL, false, false,  items[ _iterator ]  ) );
 						_tm = setTimeout( runSearch, TIME_OUT_ON_ITERATION + ( TIME_OUT_ON_ITERATION * Math.random() ) ) ;
-						_iterator++;
 						return;
 				}
 				
