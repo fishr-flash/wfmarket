@@ -781,8 +781,8 @@
 		 ,"low_cost": 0
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_sell": 5000
+		 ,"auto_cost": 1415
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1098,19 +1098,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "ПП-2000 Карбон" 
-		 ,"key_word": "ПП-2000 Карбон" 
-		 ,"entity_id": 723 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 45
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "K.I.W.I. UZI PRO" 
 		 ,"key_word": "K.I.W.I. UZI PRO" 
 		 ,"entity_id": 3303 
@@ -1211,7 +1198,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 1438
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1263,7 +1250,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 616
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1276,7 +1263,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 1783
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1289,7 +1276,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 1208
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1302,7 +1289,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 805
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1315,7 +1302,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 1000
 		 ,"exclude": [] 
 	}
 	,{ 
@@ -1328,7 +1315,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
+		 ,"auto_cost": 828
 		 ,"exclude": [] 
 	}
 	,{ 
@@ -1341,31 +1328,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "M60E4 Фобос" 
-		 ,"key_word": "M60E4 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 45
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Ледоруб Фобос" 
-		 ,"key_word": "Ледоруб Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
+		 ,"auto_cost": 1208
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Winchester 1887 Фобос" 
