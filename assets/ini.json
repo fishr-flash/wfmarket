@@ -40,7 +40,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -118,7 +118,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -214,19 +214,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Сайга H.G.C. Custom Синдикат" 
-		 ,"key_word": "Сайга H.G.C. Custom Синдикат" 
-		 ,"entity_id": 3924 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Honey Badger Деймос" 
 		 ,"key_word": "Honey Badger Деймос" 
 		 ,"entity_id": 4151 
@@ -279,19 +266,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Sidewinder Venom Карбон" 
-		 ,"key_word": "Sidewinder Venom Карбон" 
-		 ,"entity_id": 3898 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	 ,{ 
 		 "name": "M249 Para Деймос" 
 		 ,"key_word": "M249 Para Деймос" 
 		 ,"entity_id": 4154 
@@ -360,19 +334,6 @@
 		 "name": "Сайга Spike Синдикат" 
 		 ,"key_word": "Сайга Spike Синдикат" 
 		 ,"entity_id": 3870 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Ледоруб Фобос" 
-		 ,"key_word": "Ледоруб Фобос" 
-		 ,"entity_id": 4138 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 0
@@ -915,20 +876,7 @@
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	}
-	,{ 
-		 "name": "MSBS Radon Карбон" 
-		 ,"key_word": "MSBS Radon Карбон" 
-		 ,"entity_id": 3900 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 45
-		 ,"exclude": [] 
-	} 
-	,{ 
+	 ,{ 
 		 "name": "KRISS Super V Custom" 
 		 ,"key_word": "KRISS Super V Custom" 
 		 ,"entity_id": 3014 
@@ -991,19 +939,6 @@
 		 ,"mxbuy": 2
 		 ,"auto_sell": 0
 		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Sidewinder Venom Карбон" 
-		 ,"key_word": "Sidewinder Venom Карбон" 
-		 ,"entity_id": 3898 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 45
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1085,19 +1020,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Сайга Spike Синдикат" 
-		 ,"key_word": "Сайга Spike Синдикат" 
-		 ,"entity_id": 3870 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "K.I.W.I. UZI PRO" 
 		 ,"key_word": "K.I.W.I. UZI PRO" 
 		 ,"entity_id": 3303 
@@ -1122,59 +1044,7 @@
 		 ,"auto_sell": 0
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "АК \"Альфа\"" 
-		 ,"key_word": "АК \"Альфа\"" 
-		 ,"entity_id": 2891 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "РПД Custom Карбон" 
-		 ,"key_word": "РПД Custom Карбон" 
-		 ,"entity_id": 3935 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем медика Синдикат" 
-		 ,"key_word": "Шлем медика Синдикат" 
-		 ,"entity_id": 3867 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "CDX-MC Kraken" 
-		 ,"key_word": "CDX-MC Kraken" 
-		 ,"entity_id": 3897 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
+	}
 	,{ 
 		 "name": "Шлем штурмовика \"Абсолют\"" 
 		 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
@@ -1199,45 +1069,6 @@
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
 		 ,"auto_cost": 1438
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. Тактический топор" 
-		 ,"key_word": "K.I.W.I. Тактический топор" 
-		 ,"entity_id": 2996 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Magpul FMG-9 Карбон" 
-		 ,"key_word": "Magpul FMG-9 Карбон" 
-		 ,"entity_id": 3936 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	}
-	,{ 
-		 "name": "Топор Black Hawk Абсолют" 
-		 ,"key_word": "Топор Black Hawk Абсолют" 
-		 ,"entity_id": 2879 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
