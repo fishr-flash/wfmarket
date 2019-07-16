@@ -743,7 +743,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0 
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 1415
+		 ,"auto_cost": 1228
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1068,7 +1068,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 1438
+		 ,"auto_cost": 1150
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1081,7 +1081,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 616
+		 ,"auto_cost": 610
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1094,7 +1094,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 1783
+		 ,"auto_cost": 1599
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1107,7 +1107,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 1208
+		 ,"auto_cost": 1014
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1146,7 +1146,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 828
+		 ,"auto_cost": 805
 		 ,"exclude": [] 
 	}
 	,{ 
@@ -1159,7 +1159,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000
-		 ,"auto_cost": 1208
+		 ,"auto_cost": 1093
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Winchester 1887 Фобос" 
@@ -1268,6 +1268,42 @@
 		 ,"mxbuy": 2
 		 ,"auto_sell": 00
 		 ,"auto_cost": 0
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Шлем медика Армагеддон" 
+		 ,"key_word": "Шлем медика Армагеддон" 
+		 ,"entity_id": 0
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 0
+		 ,"hidden": 0 
+		 ,"mxbuy": 2
+		 ,"auto_sell": 5000
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Шлем инженера Армагеддон" 
+		 ,"key_word": "Шлем инженера Армагеддон" 
+		 ,"entity_id": 0
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 0
+		 ,"hidden": 0 
+		 ,"mxbuy": 2
+		 ,"auto_sell": 5000
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Армагеддон" 
+		 ,"key_word": "Армагеддон" 
+		 ,"entity_id": 0
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 0
+		 ,"hidden": 0 
+		 ,"mxbuy": 2
+		 ,"auto_sell": 5000
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	}
 	] 
