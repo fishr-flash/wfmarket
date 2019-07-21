@@ -15,7 +15,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/ini2.json", mimeType = "application/octet-stream")]
 		private const IniData:Class;
 		
 		
@@ -762,7 +762,7 @@ package su.fishr.market.service
 				obStr += '\t\t ,"higth_cost": 0 \r';
 				obStr += '\t\t ,"low_cost": ' + MarketplaceWF.SYSTEM_MIN_COST + '\r';
 				obStr += '\t\t ,"hidden": 0 \r';
-				obStr += '\t\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:2 )+ ' \r';
+				obStr += '\t\t ,"mxbuy": ' + ( sortedItms[ i ].mxbuy?sortedItms[ i ].mxbuy:0 )+ ' \r';
 				obStr += '\t\t ,"auto_sell": '+sortedItms[ i ].auto_sell +' \r';
 				obStr += '\t\t ,"auto_cost": ' + cst +' \r';
 				obStr += '\t\t ,"exclude": [] \r';
