@@ -31,19 +31,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "SAP6 Деймос" 
-		 ,"key_word": "SAP6 Деймос" 
-		 ,"entity_id": 4133 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Тактический глушитель (KRISS Custom)" 
 		 ,"key_word": "Тактический глушитель (KRISS Custom)" 
 		 ,"entity_id": 3233 
@@ -1188,18 +1175,6 @@
 	},{ 
 		 "name": "Type 97 Фобос" 
 		 ,"key_word": "Type 97 Фобос" 
-		 ,"entity_id": 0
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 0
-		 ,"hidden": 0 
-		 ,"mxbuy": 2
-		 ,"auto_sell": 0
-		 ,"auto_cost": 0
-		 ,"exclude": [] 
-	},{ 
-		 "name": "SAP6 Фобос" 
-		 ,"key_word": "SAP6 Фобос" 
 		 ,"entity_id": 0
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
