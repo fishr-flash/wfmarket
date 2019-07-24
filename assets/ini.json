@@ -486,19 +486,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "VHS-2 Деймос" 
-		 ,"key_word": "VHS-2 Деймос" 
-		 ,"entity_id": 4132 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "LWRC SMG-45 Деймос" 
 		 ,"key_word": "LWRC SMG-45 Деймос" 
 		 ,"entity_id": 4181 
