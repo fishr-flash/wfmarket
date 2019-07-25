@@ -92,7 +92,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 250 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -209,7 +209,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 120 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
