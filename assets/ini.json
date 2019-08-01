@@ -991,6 +991,54 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
+	},{ 
+		 "name": "Micro Desert Eagle Фобос" 
+		 ,"key_word": "Micro Desert Eagle Фобос" 
+		 ,"entity_id": 4139 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "McMillan CS5 Фобос" 
+		 ,"key_word": "McMillan CS5 Фобос" 
+		 ,"entity_id": 4280 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "АПС Фобос" 
+		 ,"key_word": "АПС Фобос" 
+		 ,"entity_id": 4137 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Жилет штурмовика Армагеддон" 
+		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"entity_id": 4145 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
 	} 
 	] 
  }
