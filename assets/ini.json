@@ -1051,6 +1051,30 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки \"Абсолют\"" 
+		 ,"key_word": "Перчатки \"Абсолют\"" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	}  ,{ 
+		 "name": "Абсолют" 
+		 ,"key_word": "Абсолют" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
 	}  
 	] 
  }
