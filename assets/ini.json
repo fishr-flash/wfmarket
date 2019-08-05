@@ -143,7 +143,7 @@
 		 ,"low_cost": 46
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
-		 ,"auto_sell": 5000 
+		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
