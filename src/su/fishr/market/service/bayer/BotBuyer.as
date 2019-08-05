@@ -72,7 +72,7 @@ package su.fishr.market.service.bayer
 			}
 			/////////////////////END TRACE//////////////////////////////
 			
-			if (bayData is Object && bayData.state && bayData.state == "Success" )
+			if ( ( bayData is Number ) === false && bayData is Object && bayData.state && bayData.state == "Success" )
 			{
 				if ( MarketplaceWF.getCostOnCharge( bayData.data.cost ) <= _cost )
 				{
