@@ -15,7 +15,7 @@ package su.fishr.market.service
 	public class ItemsServant extends EventDispatcher
 	{
 		//[Embed(source = "../../../../../assets/items.json", mimeType = "application/octet-stream")]
-		[Embed(source = "../../../../../assets/ini.json", mimeType = "application/octet-stream")]
+		[Embed(source = "../../../../../assets/ini2.json", mimeType = "application/octet-stream")]
 		private const IniData:Class;
 		
 		
