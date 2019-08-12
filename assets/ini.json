@@ -5,6 +5,32 @@
 		  ,"start_buy_analise":"1"
 	} 
  	 ,"items": [	{ 
+		 "name": "DSA SA58 SPR Деймос" 
+		 ,"key_word": "DSA SA58 SPR Деймос" 
+		 ,"entity_id": 4147 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Сайга-12С Деймос" 
+		 ,"key_word": "Сайга-12С Деймос" 
+		 ,"entity_id": 4149 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
 		 "name": "Uzi Pro Деймос" 
 		 ,"key_word": "Uzi Pro Деймос" 
 		 ,"entity_id": 4131 
@@ -14,20 +40,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем снайпера Армагеддон" 
-		 ,"key_word": "Шлем снайпера Армагеддон" 
-		 ,"entity_id": 4144 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -35,19 +48,6 @@
 		 ,"key_word": "CZ 75 Czechmate Parrot Деймос" 
 		 ,"entity_id": 4190 
 		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем штурмовика Армагеддон" 
-		 ,"key_word": "Шлем штурмовика Армагеддон" 
-		 ,"entity_id": 4143 
-		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
@@ -70,9 +70,22 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Шлем инженера Армагеддон" 
-		 ,"key_word": "Шлем инженера Армагеддон" 
-		 ,"entity_id": 4141 
+		 "name": "Жилет снайпера Армагеддон" 
+		 ,"key_word": "Жилет снайпера Армагеддон" 
+		 ,"entity_id": 4146 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Жилет штурмовика Армагеддон" 
+		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"entity_id": 4145 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -96,6 +109,71 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
+		 "name": "Шлем штурмовика Армагеддон" 
+		 ,"key_word": "Шлем штурмовика Армагеддон" 
+		 ,"entity_id": 4143 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Type 97 Фобос" 
+		 ,"key_word": "Type 97 Фобос" 
+		 ,"entity_id": 4209 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем инженера Армагеддон" 
+		 ,"key_word": "Шлем инженера Армагеддон" 
+		 ,"entity_id": 4141 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Micro Desert Eagle Фобос" 
+		 ,"key_word": "Micro Desert Eagle Фобос" 
+		 ,"entity_id": 4139 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем снайпера Армагеддон" 
+		 ,"key_word": "Шлем снайпера Армагеддон" 
+		 ,"entity_id": 4144 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
 		 "name": "ACR CQB Фобос" 
 		 ,"key_word": "ACR CQB Фобос" 
 		 ,"entity_id": 4203 
@@ -109,9 +187,48 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Type 97 Фобос" 
-		 ,"key_word": "Type 97 Фобос" 
-		 ,"entity_id": 4209 
+		 "name": "АПС Фобос" 
+		 ,"key_word": "АПС Фобос" 
+		 ,"entity_id": 4137 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 45 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Нож-бабочка Фобос" 
+		 ,"key_word": "Нож-бабочка Фобос" 
+		 ,"entity_id": 4274 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "H&K G28 Деймос" 
+		 ,"key_word": "H&K G28 Деймос" 
+		 ,"entity_id": 4204 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Honey Badger Деймос" 
+		 ,"key_word": "Honey Badger Деймос" 
+		 ,"entity_id": 4151 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -148,19 +265,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Honey Badger Деймос" 
-		 ,"key_word": "Honey Badger Деймос" 
-		 ,"entity_id": 4151 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "M249 Para Деймос" 
 		 ,"key_word": "M249 Para Деймос" 
 		 ,"entity_id": 4154 
@@ -174,9 +278,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Нож-бабочка Фобос" 
-		 ,"key_word": "Нож-бабочка Фобос" 
-		 ,"entity_id": 4274 
+		 "name": "Maxim 9 Фобос" 
+		 ,"key_word": "Maxim 9 Фобос" 
+		 ,"entity_id": 4277 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -184,58 +288,6 @@
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "H&K G28 Деймос" 
-		 ,"key_word": "H&K G28 Деймос" 
-		 ,"entity_id": 4204 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Сайга-12С Деймос" 
-		 ,"key_word": "Сайга-12С Деймос" 
-		 ,"entity_id": 4149 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "KRISS Super V Custom" 
-		 ,"key_word": "KRISS Super V Custom" 
-		 ,"entity_id": 3014 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "DSA SA58 SPR Деймос" 
-		 ,"key_word": "DSA SA58 SPR Деймос" 
-		 ,"entity_id": 4147 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -252,9 +304,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Maxim 9 Фобос" 
-		 ,"key_word": "Maxim 9 Фобос" 
-		 ,"entity_id": 4277 
+		 "name": "KRISS Super V Custom" 
+		 ,"key_word": "KRISS Super V Custom" 
+		 ,"entity_id": 3014 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -278,10 +330,10 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Жилет K.I.W.I." 
-		 ,"key_word": "Жилет K.I.W.I." 
-		 ,"entity_id": 2983 
-		 ,"kind": "equipment" 
+		 "name": "АК \"Альфа\"" 
+		 ,"key_word": "АК \"Альфа\"" 
+		 ,"entity_id": 2891 
+		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
@@ -317,19 +369,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Beretta ARX160 Синдикат" 
-		 ,"key_word": "Beretta ARX160 Синдикат" 
-		 ,"entity_id": 3864 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Ботинки K.I.W.I." 
 		 ,"key_word": "Ботинки K.I.W.I." 
 		 ,"entity_id": 2984 
@@ -343,49 +382,36 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "АК \"Альфа\"" 
-		 ,"key_word": "АК \"Альфа\"" 
-		 ,"entity_id": 2891 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "AT308 Синдикат" 
-		 ,"key_word": "AT308 Синдикат" 
-		 ,"entity_id": 3928 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "H&K MP5A5 Custom Синдикат" 
-		 ,"key_word": "H&K MP5A5 Custom Синдикат" 
-		 ,"entity_id": 3920 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Жилет медика Синдикат" 
-		 ,"key_word": "Жилет медика Синдикат" 
-		 ,"entity_id": 3868 
+		 "name": "Жилет K.I.W.I." 
+		 ,"key_word": "Жилет K.I.W.I." 
+		 ,"entity_id": 2983 
 		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Uzkon UNG-12 Деймос" 
+		 ,"key_word": "Uzkon UNG-12 Деймос" 
+		 ,"entity_id": 4276 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Beretta ARX160 Синдикат" 
+		 ,"key_word": "Beretta ARX160 Синдикат" 
+		 ,"entity_id": 3864 
+		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
@@ -408,9 +434,22 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Winchester 1887 Фобос" 
-		 ,"key_word": "Winchester 1887 Фобос" 
-		 ,"entity_id": 4192 
+		 "name": "LWRC SMG-45 Деймос" 
+		 ,"key_word": "LWRC SMG-45 Деймос" 
+		 ,"entity_id": 4181 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "HArms CQR Деймос" 
+		 ,"key_word": "HArms CQR Деймос" 
+		 ,"entity_id": 4278 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -434,10 +473,23 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Жилет снайпера Синдикат" 
-		 ,"key_word": "Жилет снайпера Синдикат" 
-		 ,"entity_id": 3873 
-		 ,"kind": "equipment" 
+		 "name": "H&K MP5A5 Custom Синдикат" 
+		 ,"key_word": "H&K MP5A5 Custom Синдикат" 
+		 ,"entity_id": 3920 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "AT308 Синдикат" 
+		 ,"key_word": "AT308 Синдикат" 
+		 ,"entity_id": 3928 
+		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
@@ -473,6 +525,19 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
+		 "name": "Winchester 1887 Фобос" 
+		 ,"key_word": "Winchester 1887 Фобос" 
+		 ,"entity_id": 4192 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
 		 "name": "Шлем снайпера Синдикат" 
 		 ,"key_word": "Шлем снайпера Синдикат" 
 		 ,"entity_id": 3872 
@@ -486,9 +551,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Жилет штурмовика Синдикат" 
-		 ,"key_word": "Жилет штурмовика Синдикат" 
-		 ,"entity_id": 3875 
+		 "name": "Жилет медика Синдикат" 
+		 ,"key_word": "Жилет медика Синдикат" 
+		 ,"entity_id": 3868 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -499,9 +564,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Uzkon UNG-12 Деймос" 
-		 ,"key_word": "Uzkon UNG-12 Деймос" 
-		 ,"entity_id": 4276 
+		 "name": "K.I.W.I. Тактический топор" 
+		 ,"key_word": "K.I.W.I. Тактический топор" 
+		 ,"entity_id": 2996 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -512,22 +577,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "HArms CQR Деймос" 
-		 ,"key_word": "HArms CQR Деймос" 
-		 ,"entity_id": 4278 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Ботинки Синдикат" 
-		 ,"key_word": "Ботинки Синдикат" 
-		 ,"entity_id": 3813 
+		 "name": "Жилет снайпера Синдикат" 
+		 ,"key_word": "Жилет снайпера Синдикат" 
+		 ,"entity_id": 3873 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -538,35 +590,9 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Жилет инженера Синдикат" 
-		 ,"key_word": "Жилет инженера Синдикат" 
-		 ,"entity_id": 3866 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "LWRC SMG-45 Деймос" 
-		 ,"key_word": "LWRC SMG-45 Деймос" 
-		 ,"entity_id": 4181 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем инженера Синдикат" 
-		 ,"key_word": "Шлем инженера Синдикат" 
-		 ,"entity_id": 3865 
+		 "name": "Шлем медика Синдикат" 
+		 ,"key_word": "Шлем медика Синдикат" 
+		 ,"entity_id": 3867 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -590,9 +616,48 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Перчатки Синдикат" 
-		 ,"key_word": "Перчатки Синдикат" 
-		 ,"entity_id": 3869 
+		 "name": "Полярная униформа штурмовика" 
+		 ,"key_word": "Полярная униформа штурмовика" 
+		 ,"entity_id": 638 
+		 ,"kind": "appearance" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Ботинки Синдикат" 
+		 ,"key_word": "Ботинки Синдикат" 
+		 ,"entity_id": 3813 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Fabarm XLR5 Prestige Синдикат" 
+		 ,"key_word": "Fabarm XLR5 Prestige Синдикат" 
+		 ,"entity_id": 3890 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем инженера Синдикат" 
+		 ,"key_word": "Шлем инженера Синдикат" 
+		 ,"entity_id": 3865 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -612,46 +677,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 495 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. Тактический топор" 
-		 ,"key_word": "K.I.W.I. Тактический топор" 
-		 ,"entity_id": 2996 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. UZI PRO" 
-		 ,"key_word": "K.I.W.I. UZI PRO" 
-		 ,"entity_id": 3303 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Ботинки \"Абсолют\"" 
-		 ,"key_word": "Ботинки \"Абсолют\"" 
-		 ,"entity_id": 1279 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 952 
+		 ,"auto_cost": 805 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -665,58 +691,6 @@
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем инженера \"Абсолют\"" 
-		 ,"key_word": "Шлем инженера \"Абсолют\"" 
-		 ,"entity_id": 1384 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1207 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Полярная униформа штурмовика" 
-		 ,"key_word": "Полярная униформа штурмовика" 
-		 ,"entity_id": 638 
-		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем штурмовика \"Абсолют\"" 
-		 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
-		 ,"entity_id": 1476 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 999 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем снайпера \"Абсолют\"" 
-		 ,"key_word": "Шлем снайпера \"Абсолют\"" 
-		 ,"entity_id": 1462 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 978 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -746,15 +720,119 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Шлем медика Синдикат" 
-		 ,"key_word": "Шлем медика Синдикат" 
-		 ,"entity_id": 3867 
+		 "name": "Жилет инженера Синдикат" 
+		 ,"key_word": "Жилет инженера Синдикат" 
+		 ,"entity_id": 3866 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Перчатки Синдикат" 
+		 ,"key_word": "Перчатки Синдикат" 
+		 ,"entity_id": 3869 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем штурмовика \"Абсолют\"" 
+		 ,"key_word": "Шлем штурмовика \"Абсолют\"" 
+		 ,"entity_id": 1476 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Жилет штурмовика Синдикат" 
+		 ,"key_word": "Жилет штурмовика Синдикат" 
+		 ,"entity_id": 3875 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Ботинки \"Абсолют\"" 
+		 ,"key_word": "Ботинки \"Абсолют\"" 
+		 ,"entity_id": 1279 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 1148 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "K.I.W.I. VHS-2" 
+		 ,"key_word": "K.I.W.I. VHS-2" 
+		 ,"entity_id": 3304 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Magpul FMG-9 Карбон" 
+		 ,"key_word": "Magpul FMG-9 Карбон" 
+		 ,"entity_id": 3936 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Снайпер отряда SAS" 
+		 ,"key_word": "Снайпер отряда SAS" 
+		 ,"entity_id": 1212 
+		 ,"kind": "appearance" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем снайпера \"Абсолют\"" 
+		 ,"key_word": "Шлем снайпера \"Абсолют\"" 
+		 ,"entity_id": 1462 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
@@ -781,7 +859,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 0 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 725 
+		 ,"auto_cost": 966 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -789,162 +867,6 @@
 		 ,"key_word": "Пустынный камуфляж для TDI Kriss Super V" 
 		 ,"entity_id": 4252 
 		 ,"kind": "camouflage" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Magpul FMG-9 Карбон" 
-		 ,"key_word": "Magpul FMG-9 Карбон" 
-		 ,"entity_id": 3936 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Fabarm XLR5 Prestige Синдикат" 
-		 ,"key_word": "Fabarm XLR5 Prestige Синдикат" 
-		 ,"entity_id": 3890 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Штурмовик отряда Абсолют" 
-		 ,"key_word": "Штурмовик отряда Абсолют" 
-		 ,"entity_id": 1351 
-		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1003 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Снайпер отряда SAS" 
-		 ,"key_word": "Снайпер отряда SAS" 
-		 ,"entity_id": 1212 
-		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. Gepard GM6 Lynx" 
-		 ,"key_word": "K.I.W.I. Gepard GM6 Lynx" 
-		 ,"entity_id": 3297 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Инженер отряда SAS" 
-		 ,"key_word": "Инженер отряда SAS" 
-		 ,"entity_id": 1530 
-		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. VHS-2" 
-		 ,"key_word": "K.I.W.I. VHS-2" 
-		 ,"entity_id": 3304 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "K.I.W.I. Сайга H.G.C. Custom" 
-		 ,"key_word": "K.I.W.I. Сайга H.G.C. Custom" 
-		 ,"entity_id": 3305 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Штурмовик отряда SAS" 
-		 ,"key_word": "Штурмовик отряда SAS" 
-		 ,"entity_id": 1251 
-		 ,"kind": "appearance" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем медика \"Абсолют\"" 
-		 ,"key_word": "Шлем медика \"Абсолют\"" 
-		 ,"entity_id": 1220 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 901 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Шлем медика K.I.W.I." 
-		 ,"key_word": "Шлем медика K.I.W.I." 
-		 ,"entity_id": 3307 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
-		 "name": "Тактический топор \"Стужа\"" 
-		 ,"key_word": "Тактический топор \"Стужа\"" 
-		 ,"entity_id": 2966 
-		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
@@ -967,9 +889,152 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "FN FAL DSA-58 Карбон" 
-		 ,"key_word": "FN FAL DSA-58 Карбон" 
-		 ,"entity_id": 3877 
+		 "name": "Инженер отряда SAS" 
+		 ,"key_word": "Инженер отряда SAS" 
+		 ,"entity_id": 1530 
+		 ,"kind": "appearance" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Штурмовик отряда SAS" 
+		 ,"key_word": "Штурмовик отряда SAS" 
+		 ,"entity_id": 1251 
+		 ,"kind": "appearance" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Перчатки \"Абсолют\"" 
+		 ,"key_word": "Перчатки \"Абсолют\"" 
+		 ,"entity_id": 1196 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Штурмовик отряда Абсолют" 
+		 ,"key_word": "Штурмовик отряда Абсолют" 
+		 ,"entity_id": 1351 
+		 ,"kind": "appearance" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 1173 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "K.I.W.I. UZI PRO" 
+		 ,"key_word": "K.I.W.I. UZI PRO" 
+		 ,"entity_id": 3303 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем инженера \"Абсолют\"" 
+		 ,"key_word": "Шлем инженера \"Абсолют\"" 
+		 ,"entity_id": 1384 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем медика \"Абсолют\"" 
+		 ,"key_word": "Шлем медика \"Абсолют\"" 
+		 ,"entity_id": 1220 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Абсолют" 
+		 ,"key_word": "Абсолют" 
+		 ,"entity_id": 1196 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Жилет \"Абсолют\"" 
+		 ,"key_word": "Жилет \"Абсолют\"" 
+		 ,"entity_id": 1490 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 0 
+		 ,"auto_sell": 5000 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "K.I.W.I. Gepard GM6 Lynx" 
+		 ,"key_word": "K.I.W.I. Gepard GM6 Lynx" 
+		 ,"entity_id": 3297 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "Шлем медика K.I.W.I." 
+		 ,"key_word": "Шлем медика K.I.W.I." 
+		 ,"entity_id": 3307 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} 
+	,{ 
+		 "name": "K.I.W.I. Сайга H.G.C. Custom" 
+		 ,"key_word": "K.I.W.I. Сайга H.G.C. Custom" 
+		 ,"entity_id": 3305 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -991,10 +1056,11 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	},{ 
-		 "name": "Micro Desert Eagle Фобос" 
-		 ,"key_word": "Micro Desert Eagle Фобос" 
-		 ,"entity_id": 4139 
+	} 
+	,{ 
+		 "name": "Тактический топор \"Стужа\"" 
+		 ,"key_word": "Тактический топор \"Стужа\"" 
+		 ,"entity_id": 2966 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -1003,10 +1069,11 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	},{ 
-		 "name": "McMillan CS5 Фобос" 
-		 ,"key_word": "McMillan CS5 Фобос" 
-		 ,"entity_id": 4280 
+	} 
+	,{ 
+		 "name": "FN FAL DSA-58 Карбон" 
+		 ,"key_word": "FN FAL DSA-58 Карбон" 
+		 ,"entity_id": 3877 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -1015,78 +1082,6 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	},{ 
-		 "name": "АПС Фобос" 
-		 ,"key_word": "АПС Фобос" 
-		 ,"entity_id": 4137 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 45 
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Жилет штурмовика Армагеддон" 
-		 ,"key_word": "Жилет штурмовика Армагеддон" 
-		 ,"entity_id": 4145 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Жилет снайпера Армагеддон" 
-		 ,"key_word": "Жилет снайпера Армагеддон" 
-		 ,"entity_id": 0 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	},{ 
-		 "name": "Жилет \"Абсолют\"" 
-		 ,"key_word": "Жилет \"Абсолют\"" 
-		 ,"entity_id": 0 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} ,{ 
-		 "name": "Перчатки \"Абсолют\"" 
-		 ,"key_word": "Перчатки \"Абсолют\"" 
-		 ,"entity_id": 0 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	}  ,{ 
-		 "name": "Абсолют" 
-		 ,"key_word": "Абсолют" 
-		 ,"entity_id": 0 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 1 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	}  
+	} 
 	] 
  }
