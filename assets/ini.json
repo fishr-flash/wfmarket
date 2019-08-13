@@ -980,19 +980,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Абсолют" 
-		 ,"key_word": "Абсолют" 
-		 ,"entity_id": 1196 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 0 
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Жилет \"Абсолют\"" 
 		 ,"key_word": "Жилет \"Абсолют\"" 
 		 ,"entity_id": 1490 
