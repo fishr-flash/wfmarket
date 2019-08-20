@@ -94,6 +94,30 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
+	},{ 
+		 "name": "Жилет инженера Армагеддон" 
+		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"entity_id": 4145 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Жилет медика Армагеддон" 
+		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"entity_id": 4145 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
 	} 
 	,{ 
 		 "name": "Glock 18C Деймос" 
