@@ -96,7 +96,7 @@
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Жилет инженера Армагеддон" 
-		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"key_word": "Жилет инженера Армагеддон" 
 		 ,"entity_id": 4145 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
@@ -108,7 +108,7 @@
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Жилет медика Армагеддон" 
-		 ,"key_word": "Жилет штурмовика Армагеддон" 
+		 ,"key_word": "Жилет медика Армагеддон" 
 		 ,"entity_id": 4145 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
@@ -129,7 +129,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -699,7 +699,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 754 
 		 ,"exclude": [] 
@@ -777,9 +777,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1150
+		 ,"auto_cost": 1093
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -803,7 +803,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1209 
 		 ,"exclude": [] 
@@ -855,7 +855,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1196
 		 ,"exclude": [] 
@@ -881,9 +881,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 955 
+		 ,"auto_cost": 930 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -907,7 +907,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 931 
 		 ,"exclude": [] 
@@ -946,9 +946,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1208
+		 ,"auto_cost": 1150
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -959,9 +959,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1173 
+		 ,"auto_cost": 1150 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -985,7 +985,7 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1380 
 		 ,"exclude": [] 
@@ -998,9 +998,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1037
+		 ,"auto_cost": 1035
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1011,9 +1011,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1159
+		 ,"auto_cost": 920
 		 ,"exclude": [] 
 	} 
 	,{ 
