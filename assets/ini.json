@@ -287,6 +287,30 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
+	},{ 
+		 "name": "Ботинки Армагеддон" 
+		 ,"key_word": "Ботинки Армагеддон" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 120
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки Армагеддон" 
+		 ,"key_word": "Перчатки Армагеддон" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 525
+		 ,"exclude": [] 
 	} 
 	,{ 
 		 "name": "M249 Para Деймос" 
@@ -701,7 +725,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 754 
+		 ,"auto_cost": 690 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -779,7 +803,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1093
+		 ,"auto_cost": 1099
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -987,7 +1011,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1380 
+		 ,"auto_cost": 1265 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1000,7 +1024,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1035
+		 ,"auto_cost": 920
 		 ,"exclude": [] 
 	} 
 	,{ 
