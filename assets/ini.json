@@ -297,7 +297,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 120
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки Армагеддон" 
@@ -309,7 +309,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 525
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -725,7 +725,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 690 
+		 ,"auto_cost": 633 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -803,7 +803,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1099
+		 ,"auto_cost": 978
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -829,7 +829,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1209 
+		 ,"auto_cost": 1206 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -881,7 +881,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1196
+		 ,"auto_cost": 999
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -933,7 +933,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 931 
+		 ,"auto_cost": 863 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1011,7 +1011,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1265 
+		 ,"auto_cost": 1035 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1024,7 +1024,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 5000 
-		 ,"auto_cost": 920
+		 ,"auto_cost": 748
 		 ,"exclude": [] 
 	} 
 	,{ 
