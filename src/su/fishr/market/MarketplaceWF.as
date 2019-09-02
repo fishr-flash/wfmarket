@@ -37,13 +37,13 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 22, 13, 8 ];
+		public static const VERSION:Array = [ 1, 22, 14, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
 		public static const MIN_REQUEST_DELAY:int = 40000;
 		public static const CHARGE_RATIO:Number = 1.15;
-		public static const DELAY_ON_BUYER:int = 1250;
+		public static const DELAY_ON_BUYER:int = 600;
 		public static const TEME_COLOR:uint = 0x343343;
 		public static const FONT_COLOR:uint = 0xAAAAAA;
 		public static const IGNORE_HIDDEN:Boolean = false;
@@ -52,7 +52,7 @@ package su.fishr.market
 		public static const SYSTEM_MIN_COST:int = 46;
 		
 		static public const PROP_LIQUIBITY:String = "liquidity";
-		static public const BUY_MIN_DIFFPERCENT:Number = .65;
+		static public const BUY_MIN_DIFFPERCENT:Number = .7;
 		static public const PROP_COST:String = "cost";
 		static public var START_NUMBER_BUY_TO_ANALISE:int = 10;
 		
