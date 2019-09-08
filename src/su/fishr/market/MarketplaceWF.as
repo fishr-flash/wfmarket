@@ -89,6 +89,7 @@ package su.fishr.market
 		private var _lastTimeOpenWindow:int;
 		private var _salesMonitor:SalesMonitoringService;
 		private var _btnOSale:ButtonClr;
+		private var _queueOfBuy:Array = [];
 		
 		
 		public static function getCostOnCharge( cost:int ):int
@@ -564,8 +565,15 @@ package su.fishr.market
 						}
 											
 						
-						
-						new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
+						if( !_queueOfBuy.length )
+								new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
+						else
+							_queueOfBuy.push({
+							id: went.entity_id
+							, cost: went.cost
+							, type: went.type
+							, buyResult: buyResult
+						});
 					}
 					else
 					{
@@ -692,6 +700,15 @@ package su.fishr.market
 				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
 				
+				if ( _queueOfBuy.length )
+				{
+					const buyEnt:Object = _queueOfBuy.pop();
+					new BotBuyer(buyEnt.id
+										, buyEnt.cost
+										, buyEnt.type
+										, buyEnt.buyResult );
+					
+				}
 				/// excluded sell processing
 				return;
 				
