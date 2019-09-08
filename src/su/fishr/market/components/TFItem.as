@@ -21,7 +21,7 @@ package su.fishr.market.components
 		private function init():void 
 		{
 			//this.defaultTextFormat = new TextFormat( "Arial");
-			this.defaultTextFormat = new TextFormat( "Courier", 14, MarketplaceWF.FONT_COLOR);
+			this.defaultTextFormat = new TextFormat( "Courier New", 14, MarketplaceWF.FONT_COLOR);
 			this.autoSize = TextFieldAutoSize.LEFT;
 			
 			this.backgroundColor = MarketplaceWF.TEME_COLOR;
