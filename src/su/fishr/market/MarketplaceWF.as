@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 23, 1, 1 ];
+		public static const VERSION:Array = [ 1, 23, 2, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
@@ -565,15 +565,16 @@ package su.fishr.market
 						}
 											
 						
-						if( !_queueOfBuy.length )
-								new BotBuyer( went.entity_id, went.cost, went.type, buyResult )
-						else
-							_queueOfBuy.push({
+						_queueOfBuy.push({
 							id: went.entity_id
 							, cost: went.cost
 							, type: went.type
 							, buyResult: buyResult
 						});
+						
+						
+						if( _queueOfBuy.length == 1 )queueOn();
+							
 					}
 					else
 					{
@@ -700,15 +701,7 @@ package su.fishr.market
 				_CASH -= w.cost;
 				_tfCash.text = _CASH + "";
 				
-				if ( _queueOfBuy.length )
-				{
-					const buyEnt:Object = _queueOfBuy.pop();
-					new BotBuyer(buyEnt.id
-										, buyEnt.cost
-										, buyEnt.type
-										, buyEnt.buyResult );
-					
-				}
+				queueOn();
 				/// excluded sell processing
 				return;
 				
@@ -894,6 +887,20 @@ package su.fishr.market
 			_btnUnloadHist.enabled = true;
 			_btnCfg.enabled = true;
 		}
+		
+		private function queueOn():void 
+		{
+				
+			if ( _queueOfBuy.length )
+			{
+				const wb:Object = _queueOfBuy.pop();
+				
+				new BotBuyer( wb.id
+									, wb.cost
+									, wb.type
+									, wb.buyResult );
+			}
+		};
 		
 		private function onChangeMaxBuy(e:WFMEvent):void 
 		{
