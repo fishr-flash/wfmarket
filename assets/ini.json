@@ -722,7 +722,7 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 633 
@@ -800,7 +800,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 978
@@ -826,7 +826,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1206 
@@ -878,7 +878,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 999
@@ -904,7 +904,7 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 930 
@@ -930,7 +930,7 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 863 
@@ -969,7 +969,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1150
@@ -982,7 +982,7 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1150 
@@ -1008,7 +1008,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1035 
@@ -1021,7 +1021,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 748
@@ -1034,7 +1034,7 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0
 		 ,"mxbuy": 0
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 920
