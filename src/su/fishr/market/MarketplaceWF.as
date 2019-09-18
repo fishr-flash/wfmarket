@@ -37,7 +37,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 23, 2, 4 ];
+		public static const VERSION:Array = [ 1, 24, 1, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
@@ -747,7 +747,7 @@ package su.fishr.market
 				if ( w.sell > 0 )
 					_seller.sell( int( evt.data.item_id ), w.sell );
 				else if ( w.sell == 0 )
-					_seller.sell( int( evt.data.item_id ),  w.maxcost  - 1 );
+					_seller.sell( int( evt.data.item_id ),  w.maxcost  - ( w.maxcost * .01 ) );
 			}
 			else
 			{
