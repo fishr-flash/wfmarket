@@ -263,19 +263,6 @@
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Армагеддон" 
-		 ,"key_word": "Армагеддон" 
-		 ,"entity_id": 4140 
-		 ,"kind": "equipment" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
-		 ,"exclude": [] 
-	} 
-	,{ 
 		 "name": "Шлем медика Армагеддон" 
 		 ,"key_word": "Шлем медика Армагеддон" 
 		 ,"entity_id": 4140 
@@ -287,7 +274,8 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	},{ 
+	}
+	,{ 
 		 "name": "Ботинки Армагеддон" 
 		 ,"key_word": "Ботинки Армагеддон" 
 		 ,"entity_id": 0 
@@ -299,7 +287,8 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0
 		 ,"exclude": [] 
-	} ,{ 
+	} 
+	,{ 
 		 "name": "Перчатки Армагеддон" 
 		 ,"key_word": "Перчатки Армагеддон" 
 		 ,"entity_id": 0 
@@ -1119,9 +1108,9 @@
 		 ,"exclude": [] 
 	}
 	,{ 
-		 "name": "Берсерк" 
-		 ,"key_word": "Берсерк" 
-		 ,"entity_id": 3877 
+		 "name": "Desert Tech MDR-C Берсерк" 
+		 ,"key_word": "Desert Tech MDR-C Берсерк" 
+		 ,"entity_id": 0 
 		 ,"kind": "weapon" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
@@ -1130,6 +1119,54 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 46
 		 ,"exclude": [] 
-	} 
+	},{ 
+		 "name": "ОРСИС Т-5000 Берсерк" 
+		 ,"key_word": "ОРСИС Т-5000 Берсерк" 
+		 ,"entity_id": 0 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	},{ 
+		 "name": "ACR Берсерк" 
+		 ,"key_word": "ACR Берсерк" 
+		 ,"entity_id": 0 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	},{ 
+		 "name": "M16A3 Custom Берсерк" 
+		 ,"key_word": "M16A3 Custom Берсерк" 
+		 ,"entity_id": 0 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	},{ 
+		 "name": "SIX12 Берсерк" 
+		 ,"key_word": "SIX12 Берсерк" 
+		 ,"entity_id": 0 
+		 ,"kind": "weapon" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 46
+		 ,"exclude": [] 
+	}
 	] 
  }
