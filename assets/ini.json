@@ -170,7 +170,7 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 0 
 		 ,"exclude": [] 
-	} 
+	}
 	,{ 
 		 "name": "Micro Desert Eagle Фобос" 
 		 ,"key_word": "Micro Desert Eagle Фобос" 
@@ -1167,6 +1167,19 @@
 		 ,"auto_sell": 0 
 		 ,"auto_cost": 46
 		 ,"exclude": [] 
-	}
+	} 
+	,{ 
+		 "name": "Саламандра" 
+		 ,"key_word": "Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 2 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 46 
+		 ,"exclude": [] 
+	} 
 	] 
  }
