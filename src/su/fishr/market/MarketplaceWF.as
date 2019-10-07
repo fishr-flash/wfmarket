@@ -15,6 +15,7 @@ package su.fishr.market
 	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
+	import su.fishr.market.lootdog.LootDog;
 	import su.fishr.market.seller.SalesMonitoringService;
 	import su.fishr.market.seller.Sellerq;
 	import su.fishr.market.service.BotRequest;
@@ -300,7 +301,7 @@ package su.fishr.market
 			
 			
 			
-			
+			new LootDog();
 		}
 		
 		private function onOSale(e:MouseEvent):void 

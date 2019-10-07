@@ -22,6 +22,7 @@ package su.fishr.market.service.model
 		private var _autosell:int;
 		
 		
+		
 		public function get went():Vector.<WeaponEnt> 
 		{
 			return _went;
@@ -39,6 +40,8 @@ package su.fishr.market.service.model
 		{
 			return _autobuy;
 		}
+		
+		
 		
 		public function get lowcost():int 
 		{

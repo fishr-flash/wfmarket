@@ -711,8 +711,9 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 633 
 		 ,"exclude": [] 
@@ -789,8 +790,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 978
 		 ,"exclude": [] 
@@ -815,8 +817,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1206 
 		 ,"exclude": [] 
@@ -867,8 +870,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 999
 		 ,"exclude": [] 
@@ -893,8 +897,9 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 930 
 		 ,"exclude": [] 
@@ -919,8 +924,9 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 863 
 		 ,"exclude": [] 
@@ -958,8 +964,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1150
 		 ,"exclude": [] 
@@ -971,8 +978,9 @@
 		 ,"kind": "appearance" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 920 
 		 ,"exclude": [] 
@@ -997,8 +1005,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 1035 
 		 ,"exclude": [] 
@@ -1010,8 +1019,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 736
 		 ,"exclude": [] 
@@ -1023,8 +1033,9 @@
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
-		 ,"hidden": 1 
+		 ,"hidden": 0 
 		 ,"mxbuy": 0
+		 ,"lootdog": 1
 		 ,"auto_sell": 5000 
 		 ,"auto_cost": 920
 		 ,"exclude": [] 

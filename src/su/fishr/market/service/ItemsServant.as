@@ -620,9 +620,28 @@ package su.fishr.market.service
 						//_weaponGroups[ i ].autobuy = _weaponGroups[ i ].cost;
 						autocost = _weaponGroups[ i ].cost;
 				};
+				
+				/*if ( _weaponGroups[ i ].lootdog === 1 )
+				{
+						//////////////////////TRACE/////////////////////////////////
+						
+						import su.fishr.market.service.Logw;
+						import su.fishr.utils.Dumper;
+						if( true )
+						{
+							const j:String = 
+							( "ItemsServant.as" + ". " +  "selectAutoBuy ")
+							+ ( "\r _weaponGroups[ i ]: " + Dumper.dump( _weaponGroups[ i ] ) )
+							//+ ( "\r : " + Dumper.dump( true ) )
+							+ ( "\r : " + "" )
+							+ ( "\r end" );
+							Logw.inst.up( j );
+						}
+						/////////////////////END TRACE//////////////////////////////
+				}*/
 			
 				if ( _weaponGroups[ i ].cost <= autocost
-				&& _remaindCommandBy > 0 )
+									&& _remaindCommandBy > 0 )
 				{
 					if ( MarketplaceWF.IGNORE_CONFIG ) 
 					break;

@@ -27,7 +27,7 @@ package su.fishr.market.service.model
 		protected var _session_cost:int;
 		private var _takt:int = -1;
 		private var _maxBuyCount:int;
-		
+		private var _lootdog:int;
 		
 		public function get key():String 
 		{
@@ -95,6 +95,16 @@ package su.fishr.market.service.model
 		{
 			
 			_maxBuyCount = value;
+		}
+		
+		public function get lootdog():int 
+		{
+			return _lootdog;
+		}
+		
+		public function set lootdog( ld:int ):void
+		{
+			_lootdog = ld;
 		}
 		
 		public function WeaponEnt( event:Event = null ) 
