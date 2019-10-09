@@ -9,6 +9,7 @@ package su.fishr.market.lootdog
 	public class LDgEvent extends Event 
 	{
 		
+		static public const ON_UPDATED_LOOTDOG_LIST:String = "onUpdatedLootdogList";
 		
 		private var _data:Object;
 		public function get data():Object 

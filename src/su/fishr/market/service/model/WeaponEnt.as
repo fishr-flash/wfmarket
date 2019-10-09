@@ -134,14 +134,20 @@ package su.fishr.market.service.model
 		public function init(data:Object):WeaponEnt 
 		{
 			
-			if( data.config )		
-					maxBuyCount = data.config.mxbuy;
+			if ( data.config )
+			{
+				
+				maxBuyCount = data.config.mxbuy;
+				_lootdog = data.config.lootdog || 0;
+					
+			}
 			
 			_history.head = {
 				key:data.title
 				, minc: data.min_cost
 				, maxc: data.min_cost
 				, id:data.entity_id
+				
 				
 				
 			};

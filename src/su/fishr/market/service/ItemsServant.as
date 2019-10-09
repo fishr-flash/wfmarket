@@ -20,6 +20,7 @@ package su.fishr.market.service
 		
 		
 		public static const COUNT_COMMAND_BUY:int = 5;
+		private var _ldItems:Array;
 		
 		private var _self:ItemsServant;
 		private var _configItems:Array;
@@ -32,6 +33,11 @@ package su.fishr.market.service
 		{
 			if ( !_self ) _self = new ItemsServant;
 			return _self;
+		}
+		
+		public function set ldItems(value:Array):void 
+		{
+			_ldItems = value;
 		}
 		public function ItemsServant( event:Event = null ) 
 		{
@@ -609,10 +615,13 @@ package su.fishr.market.service
 			
 			for (var i:int = 0; i < len; i++) 
 			{
+				
+				
 				autocost =  _weaponGroups[ i ].autobuy;
 				
 				/// покупка по интеллектуальной цене
 				if ( _weaponGroups[ i ].autobuy == 0 
+					&& _weaponGroups[ i ].lootdog == 0
 					&& willBePurchase( _weaponGroups[ i ].cost
 												, _weaponGroups[ i ].session_cost
 												, _weaponGroups[ i ].went[ _weaponGroups[ i ].owner ].liquidity ) )
@@ -621,24 +630,43 @@ package su.fishr.market.service
 						autocost = _weaponGroups[ i ].cost;
 				};
 				
-				/*if ( _weaponGroups[ i ].lootdog === 1 )
+				if ( _weaponGroups[ i ].lootdog === 1 )
 				{
-						//////////////////////TRACE/////////////////////////////////
-						
-						import su.fishr.market.service.Logw;
-						import su.fishr.utils.Dumper;
-						if( true )
+					
+					const id:int = searcPropValueInArr( "name", _weaponGroups[ i ].key, _ldItems );
+					
+					if ( id > -1 )
+					{
+						if ( ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount ) ) <= 5   )
 						{
-							const j:String = 
-							( "ItemsServant.as" + ". " +  "selectAutoBuy ")
-							+ ( "\r _weaponGroups[ i ]: " + Dumper.dump( _weaponGroups[ i ] ) )
-							//+ ( "\r : " + Dumper.dump( true ) )
-							+ ( "\r : " + "" )
-							+ ( "\r end" );
-							Logw.inst.up( j );
+								//////////////////////TRACE/////////////////////////////////
+							
+								import su.fishr.market.service.Logw;
+								import su.fishr.utils.Dumper;
+								if( true )
+								{
+									const j:String = 
+									( "ItemsServant.as" + ". " +  "selectAutoBuy ")
+									//+ ( "\r : " + Dumper.dump( true ) )
+									+ ( "\r : ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount )" + ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount ) ) )
+									+ ( "\r _weaponGroups[ i ].key: " + _weaponGroups[ i ].key )
+									+ ( "\r MarketplaceWF.CASH: " + MarketplaceWF.CASH )
+									+ ( "\r : " + "" )
+									+ ( "\r end" );
+									Logw.inst.up( j );
+								}
+								/////////////////////END TRACE//////////////////////////////
+						
+								if( MarketplaceWF.CASH > 8000 )autocost = _weaponGroups[ i ].cost;
 						}
-						/////////////////////END TRACE//////////////////////////////
-				}*/
+						
+						
+						
+						
+					}
+						
+						
+				}
 			
 				if ( _weaponGroups[ i ].cost <= autocost
 									&& _remaindCommandBy > 0 )

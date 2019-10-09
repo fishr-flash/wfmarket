@@ -23,6 +23,7 @@ package su.fishr.market.service.model
 		
 		
 		
+		
 		public function get went():Vector.<WeaponEnt> 
 		{
 			return _went;
@@ -131,6 +132,8 @@ package su.fishr.market.service.model
 			_heightcost = data["0"].config.higth_cost;
 			_autosell = data["0"].config.auto_sell;
 			maxBuyCount = data["0"].config.mxbuy;
+			super.lootdog = data["0"].config.lootdog;
+			
 			
 			setJsonGroup( data );
 			

@@ -30,8 +30,13 @@ package su.fishr.market.lootdog
 		{
 			super();
 
-			new LDListRequest( _callback );
 			
+			
+		}
+		
+		public function start():void
+		{
+			new LDListRequest( _callback );
 		}
 		
 		public function setState( stopped:Boolean = false ):void
@@ -126,27 +131,27 @@ package su.fishr.market.lootdog
 				
 			}
 			
-			//////////////////////TRACE/////////////////////////////////
 			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "LootDog.as" + ". " +  "_callback ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				//+ ( "\r Dumper.dump( data.results ): " + Dumper.dump( data.results[ 1 ] ) )
-				+ ( "\r Dumper.dump( lootList ): " + Dumper.dump( _list ) )
-				//+ ( "\r data.results[ 0 ].buy_price: " + Dumper.dump( data.results[ 0 ].buy_price ) )
-				//+ ( "\r data.results[ 0 ].buy_price.amount: " + data.results[ 0 ].buy_price.amount )
-				+ ( "\r : " + "" )
-				//+ ( "\r data: " + Dumper.dump( data ) )
-				//+ ( "\r data.buy_price: " + Dumper.dump( data ) )
-				//+ "\r  Dumper.dump( result ): " + Dumper.dump( result )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
+			/**
+			 * [0] => Object (4): 
+					amount:(number,2.2) 15.99
+					popularity:(int,3) 367
+					id:(int,5) 12073
+					name:(str,27) АК «Альфа» «Абсолют» (6 ч.)
+				[1] => Object (4): 
+					amount:(int,3) 220
+					popularity:(int,2) 69
+					id:(int,3) 913
+					name:(str,24) Штурмовик отряда Абсолют
+				[2] => Object (4): 
+					amount:(number,3.2) 225.99
+					popularity:(int,2) 49
+					id:(int,3) 910
+					name:(str,23) Шлем инженера "Абсолют"
+			 */
+			this.dispatchEvent( new LDgEvent( LDgEvent.ON_UPDATED_LOOTDOG_LIST, false, false,  _list ) );
+			
+			
 		}
 		
 	}

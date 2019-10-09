@@ -15,6 +15,7 @@ package su.fishr.market
 	import su.fishr.market.components.HotItemsUpdater;
 	import su.fishr.market.components.PriceOfWeapons;
 	import su.fishr.market.components.TFItem;
+	import su.fishr.market.lootdog.LDgEvent;
 	import su.fishr.market.lootdog.LootDog;
 	import su.fishr.market.seller.SalesMonitoringService;
 	import su.fishr.market.seller.Sellerq;
@@ -38,7 +39,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 25, 1, 3 ];
+		public static const VERSION:Array = [ 1, 26, 1, 1 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
@@ -63,7 +64,7 @@ package su.fishr.market
 		
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "liquidity";
-		public static var _CASH:int = 0;
+		public static var CASH:int = 0;
 		public static var NEED_UPDATE_CONFIG:Boolean = true;
 		public static var AGENT_ONLINE:int = 2;
 		
@@ -91,6 +92,7 @@ package su.fishr.market
 		private var _salesMonitor:SalesMonitoringService;
 		private var _btnOSale:ButtonClr;
 		private var _queueOfBuy:Array = [];
+		private var _lootDog:LootDog;
 		
 		
 		public static function getCostOnCharge( cost:int ):int
@@ -299,9 +301,15 @@ package su.fishr.market
 			//const breq:BayRequester = new BayRequester( onResult );
 			
 			
+			_lootDog = new LootDog();
+			_lootDog.addEventListener( LDgEvent.ON_UPDATED_LOOTDOG_LIST, onUpdatedLootdog );
 			
-			
-			new LootDog();
+			_lootDog.start();
+		}
+		
+		private function onUpdatedLootdog(e:LDgEvent):void 
+		{
+			_servant.ldItems = e.data as Array;
 		}
 		
 		private function onOSale(e:MouseEvent):void 
@@ -347,8 +355,8 @@ package su.fishr.market
 		private function inputCash(e:Event):void 
 		{
 			
-			_CASH = int( e.target.text );
-			if ( _CASH ) _btnAutoBuy.enabled = true;
+			CASH = int( e.target.text );
+			if ( CASH ) _btnAutoBuy.enabled = true;
 			else _btnAutoBuy.enabled = false;
 			
 			_btnAutoBuy.selected = false;
@@ -543,7 +551,7 @@ package su.fishr.market
 			if ( _buy_counter > 0 && _btnAutoBuy.selected == true  )
 			{
 				
-				if ( _CASH >= int( went.cost ) )
+				if ( CASH >= int( went.cost ) )
 				{
 
 					if ( went.host.maxBuyCount > 0 )
@@ -615,7 +623,7 @@ package su.fishr.market
 						const i:String = 
 						( "MarketplaceWF.as" + ". " +  "onBayOperation ")
 						+ ( "\r : " + "not enough money to buy, need: " + went.cost )
-						+ ( "\r : " + "_CASH: " + _CASH )
+						+ ( "\r : " + "_CASH: " + CASH )
 						//+ ( "\r : " + Dumper.dump( "" ) )
 						+ ( "\r end" );
 						Logw.inst.up( i );
@@ -699,8 +707,8 @@ package su.fishr.market
 				const w:WeaponEnt = _servant.getWent( int( d.entity_id ) );
 				w.maxBuyCount--;
 				w.host.maxBuyCount--;
-				_CASH -= w.cost;
-				_tfCash.text = _CASH + "";
+				CASH -= w.cost;
+				_tfCash.text = CASH + "";
 				
 				queueOn();
 				/// excluded sell processing
@@ -811,8 +819,8 @@ package su.fishr.market
 		{
 			
 			const cash:uint = e.data.cash;
-			_CASH += ( cash / AGENT_ONLINE );
-			_tfCash.text = _CASH + "";
+			CASH += ( cash / AGENT_ONLINE );
+			_tfCash.text = CASH + "";
 			
 			//////////////////////TRACE/////////////////////////////////
 			
@@ -824,7 +832,7 @@ package su.fishr.market
 				( "MarketplaceWF.as" + ". " +  "updateCahsFromInspector ")
 				//+ ( "\r : " + Dumper.dump( true ) )
 				+ ( "\r cash: " + cash )
-				+ ( "\r _CASH: " + _CASH )
+				+ ( "\r _CASH: " + CASH )
 				+ ( "\r : " + "" )
 				+ ( "\r end" );
 				Logw.inst.up( i );
