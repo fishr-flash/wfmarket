@@ -4,20 +4,7 @@
 		  ,"count_buy":"100"
 		  ,"start_buy_analise":"1"
 	} 
- 	 ,"items": [	{ 
-		 "name": "DSA SA58 SPR Деймос" 
-		 ,"key_word": "DSA SA58 SPR Деймос" 
-		 ,"entity_id": 4147 
-		 ,"kind": "weapon" 
-		 ,"higth_cost": 0 
-		 ,"low_cost": 46
-		 ,"hidden": 0 
-		 ,"mxbuy": 2 
-		 ,"auto_sell": 0 
-		 ,"auto_cost": 45
-		 ,"exclude": [] 
-	} 
-	,{ 
+	,"items": [	{ 
 		 "name": "Сайга-12С Деймос" 
 		 ,"key_word": "Сайга-12С Деймос" 
 		 ,"entity_id": 4149 
@@ -129,7 +116,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -714,8 +701,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 633 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -793,8 +780,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 978
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -820,8 +807,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1206 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -873,8 +860,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 999
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -900,8 +887,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 930 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -927,8 +914,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 863 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -967,8 +954,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1150
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -981,8 +968,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 920 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1008,8 +995,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 1035 
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1022,8 +1009,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 736
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1036,8 +1023,8 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"lootdog": 1
-		 ,"auto_sell": 5000 
-		 ,"auto_cost": 920
+		 ,"auto_sell": 0
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
@@ -1128,7 +1115,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
 		 "name": "ОРСИС Т-5000 Берсерк" 
@@ -1140,7 +1127,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
 		 "name": "ACR Берсерк" 
@@ -1152,7 +1139,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
 		 "name": "M16A3 Custom Берсерк" 
@@ -1164,7 +1151,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	},{ 
 		 "name": "SIX12 Берсерк" 
@@ -1176,20 +1163,200 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 2 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46
+		 ,"auto_cost": 0
 		 ,"exclude": [] 
 	} 
 	,{ 
-		 "name": "Саламандра" 
-		 ,"key_word": "Саламандра" 
+		 "name": "Шлем снайпера Саламандра" 
+		 ,"key_word": "Шлем снайпера Саламандра" 
 		 ,"entity_id": 0 
 		 ,"kind": "equipment" 
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 2 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Жилет снайпера Саламандра" 
+		 ,"key_word": "Жилет снайпера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Ботинки снайпера Саламандра" 
+		 ,"key_word": "Ботинки снайпера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки снайпера Саламандра" 
+		 ,"key_word": "Перчатки снайпера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Жилет инженера Саламандра" 
+		 ,"key_word": "Жилет инженера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Шлем инженера Саламандра" 
+		 ,"key_word": "Шлем инженера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки инженера Саламандра" 
+		 ,"key_word": "Перчатки инженера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Ботинки инженера Саламандра" 
+		 ,"key_word": "Ботинки инженера Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Шлем медика Саламандра" 
+		 ,"key_word": "Шлем медика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Жилет медика Саламандра" 
+		 ,"key_word": "Жилет медика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Шлем штурмовика Саламандра" 
+		 ,"key_word": "Шлем штурмовика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Жилет штурмовика Саламандра" 
+		 ,"key_word": "Жилет штурмовика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Ботинки штурмовика Саламандра" 
+		 ,"key_word": "Ботинки штурмовика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	},{ 
+		 "name": "Перчатки штурмовика Саламандра" 
+		 ,"key_word": "Перчатки штурмовика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Ботинки медика Саламандра" 
+		 ,"key_word": "Ботинки медика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
+		 ,"exclude": [] 
+	} ,{ 
+		 "name": "Перчатки медика Саламандраа" 
+		 ,"key_word": "Перчатки медика Саламандра" 
+		 ,"entity_id": 0 
+		 ,"kind": "equipment" 
+		 ,"higth_cost": 0 
+		 ,"low_cost": 46
+		 ,"hidden": 0 
+		 ,"mxbuy": 1 
+		 ,"auto_sell": 0 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	] 
