@@ -657,7 +657,7 @@ package su.fishr.market.service
 								}
 								/////////////////////END TRACE//////////////////////////////
 						
-								if( MarketplaceWF.CASH > 8000 )autocost = _weaponGroups[ i ].cost;
+								if( MarketplaceWF.CASH > MarketplaceWF.MIN_CASH_FOR_LOOTDOG )autocost = _weaponGroups[ i ].cost;
 						}
 						
 						
