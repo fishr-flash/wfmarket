@@ -1174,9 +1174,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет снайпера Саламандра" 
@@ -1186,9 +1186,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки снайпера Саламандра" 
@@ -1198,9 +1198,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки снайпера Саламандра" 
@@ -1210,9 +1210,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет инженера Саламандра" 
@@ -1222,9 +1222,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем инженера Саламандра" 
@@ -1234,9 +1234,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки инженера Саламандра" 
@@ -1246,9 +1246,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки инженера Саламандра" 
@@ -1258,9 +1258,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Шлем медика Саламандра" 
@@ -1270,9 +1270,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Жилет медика Саламандра" 
@@ -1282,9 +1282,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Шлем штурмовика Саламандра" 
@@ -1294,9 +1294,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет штурмовика Саламандра" 
@@ -1306,9 +1306,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки штурмовика Саламандра" 
@@ -1318,9 +1318,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Перчатки штурмовика Саламандра" 
@@ -1330,9 +1330,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки медика Саламандра" 
@@ -1342,9 +1342,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0
+		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки медика Саламандраа" 
@@ -1354,9 +1354,9 @@
 		 ,"higth_cost": 0 
 		 ,"low_cost": 46
 		 ,"hidden": 0 
-		 ,"mxbuy": 0 
+		 ,"mxbuy": 1 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 0 
+		 ,"auto_cost": 46 
 		 ,"exclude": [] 
 	} 
 	] 
