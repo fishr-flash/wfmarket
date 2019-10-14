@@ -651,6 +651,7 @@ package su.fishr.market.service
 									+ ( "\r : ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount )" + ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount ) ) )
 									+ ( "\r _weaponGroups[ i ].key: " + _weaponGroups[ i ].key )
 									+ ( "\r MarketplaceWF.CASH: " + MarketplaceWF.CASH )
+									+ ( "\r MarketplaceWF.LOOTDOG_RATIO: " + MarketplaceWF.LOOTDOG_RATIO )
 									+ ( "\r : " + "" )
 									+ ( "\r end" );
 									Logw.inst.up( j );
