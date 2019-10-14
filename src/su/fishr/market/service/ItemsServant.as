@@ -660,23 +660,7 @@ package su.fishr.market.service
 								if( MarketplaceWF.CASH > MarketplaceWF.MIN_CASH_FOR_LOOTDOG )autocost = _weaponGroups[ i ].cost;
 						}
 						
-						//////////////////////TRACE/////////////////////////////////
-							
-								import su.fishr.market.service.Logw;
-								import su.fishr.utils.Dumper;
-								if( true )
-								{
-									const jj:String = 
-									( "ItemsServant.as" + ". " +  "selectAutoBuy ")
-									//+ ( "\r : " + Dumper.dump( true ) )
-									+ ( "\r : ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount )" + ( _weaponGroups[ i ].cost / int( _ldItems[ id ].amount ) ) )
-									+ ( "\r _weaponGroups[ i ].key: " + _weaponGroups[ i ].key )
-									+ ( "\r MarketplaceWF.CASH: " + MarketplaceWF.CASH )
-									+ ( "\r : " + "" )
-									+ ( "\r end" );
-									Logw.inst.up( jj );
-								}
-								/////////////////////END TRACE//////////////////////////////
+						
 						
 						
 						

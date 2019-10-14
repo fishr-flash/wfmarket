@@ -39,7 +39,7 @@ package su.fishr.market
 	public class MarketplaceWF extends BaseSprites 
 	{
 		/// version build
-		public static const VERSION:Array = [ 1, 26, 3, 2 ];
+		public static const VERSION:Array = [ 1, 26, 3, 3 ];
 		
 		public static const MAX_REQUEST_DELAY:int = 25000; 
 		public static const WIDTH_BUTTONS:int = 35;
@@ -65,12 +65,14 @@ package su.fishr.market
 		/// может переопределяться ниже
 		public static var SORT_PROP:String = "liquidity";
 		public static var CASH:int = 0;
-		public static var MIN_CASH_FOR_LOOTDOG:int = 8000;
+		
 		public static var NEED_UPDATE_CONFIG:Boolean = true;
 		public static var AGENT_ONLINE:int = 2;
 		
 		public static const DELAY_CALL_MARKET:uint = 15;
+		
 		static public const LOOTDOG_RATIO:int = 5.5;
+		public static var MIN_CASH_FOR_LOOTDOG:int = 8000;
 		
 		private var _btnRequest:ButtonClr;
 		private var _botReqest:BotRequest;
