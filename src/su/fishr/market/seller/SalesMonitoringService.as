@@ -52,24 +52,6 @@ package su.fishr.market.seller
 			
 			new ListSellsRequest( onList );
 			
-			
-			
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( false )
-			{
-				const i:String = 
-				( "SalesMonitoringService.as" + ". " +  "onMonitoring ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r : " + "ON MONITORING" )
-				+ ( "\r _control_date: " + _control_day )
-				
-				
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
 		}
 		
 		private function onList( data:* ):void 
@@ -110,7 +92,7 @@ package su.fishr.market.seller
 			}
 			else
 			{
-				//////////////////////TRACE/////////////////////////////////
+				
 				
 				import su.fishr.market.service.Logw;
 				import su.fishr.utils.Dumper;
@@ -124,7 +106,7 @@ package su.fishr.market.seller
 					+ ( "\r end" );
 					Logw.inst.up( i );
 				}
-				/////////////////////END TRACE//////////////////////////////
+				
 			}
 			
 			
@@ -133,23 +115,6 @@ package su.fishr.market.seller
 		
 		private function runSearch():void
 		{
-			//////////////////////TRACE/////////////////////////////////
-			
-			import su.fishr.market.service.Logw;
-			import su.fishr.utils.Dumper;
-			if( true )
-			{
-				const i:String = 
-				( "SalesMonitoringService.as" + ". " +  "runSearch ")
-				//+ ( "\r : " + Dumper.dump( true ) )
-				+ ( "\r _iterator: " + _iterator )
-				+ ( "\r _listItems.data.inventory.length: " + _serverJSON.data.inventory.length )
-				+ ( "\r : " + "" )
-				+ ( "\r end" );
-				Logw.inst.up( i );
-			}
-			/////////////////////END TRACE//////////////////////////////
-			
 			
 			clearTimeout( _tm );
 			
@@ -176,22 +141,7 @@ package su.fishr.market.seller
 				dstr = items[ _iterator ].blocked_nearest_date;
 				available = items[ _iterator ].available_count;
 				
-				//////////////////////TRACE/////////////////////////////////
 				
-				import su.fishr.market.service.Logw;
-				import su.fishr.utils.Dumper;
-				if( true )
-				{
-					const j:String = 
-					( "SalesMonitoringService.as" + ". " +  "runSearch ")
-					//+ ( "\r : " + Dumper.dump( true ) )
-					+ ( "\r items[ _iterator ]: " + Dumper.dump( items[ _iterator ] ) )
-					+ ( "\r : " + '' )
-					+ ( "\r : " + "" )
-					+ ( "\r end" );
-					Logw.inst.up( j );
-				}
-				/////////////////////END TRACE//////////////////////////////
 				
 				//dd = int( dstr.slice( dstr.length - 2 ) );
 				dd = dstr?int( dstr.slice( 8, 10 ) ):_control_day;
