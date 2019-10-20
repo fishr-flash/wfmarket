@@ -1176,7 +1176,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет снайпера Саламандра" 
@@ -1188,7 +1188,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки снайпера Саламандра" 
@@ -1200,7 +1200,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки снайпера Саламандра" 
@@ -1212,7 +1212,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет инженера Саламандра" 
@@ -1224,7 +1224,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Шлем инженера Саламандра" 
@@ -1236,7 +1236,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Перчатки инженера Саламандра" 
@@ -1248,7 +1248,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки инженера Саламандра" 
@@ -1260,7 +1260,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Шлем медика Саламандра" 
@@ -1272,7 +1272,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Жилет медика Саламандра" 
@@ -1284,7 +1284,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Шлем штурмовика Саламандра" 
@@ -1296,7 +1296,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Жилет штурмовика Саламандра" 
@@ -1308,7 +1308,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки штурмовика Саламандра" 
@@ -1320,7 +1320,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	},{ 
 		 "name": "Перчатки штурмовика Саламандра" 
@@ -1332,7 +1332,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
 		 "name": "Ботинки медика Саламандра" 
@@ -1344,10 +1344,10 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} ,{ 
-		 "name": "Перчатки медика Саламандраа" 
+		 "name": "Перчатки медика Саламандра" 
 		 ,"key_word": "Перчатки медика Саламандра" 
 		 ,"entity_id": 0 
 		 ,"kind": "equipment" 
@@ -1356,7 +1356,7 @@
 		 ,"hidden": 0 
 		 ,"mxbuy": 1 
 		 ,"auto_sell": 0 
-		 ,"auto_cost": 46 
+		 ,"auto_cost": 0 
 		 ,"exclude": [] 
 	} 
 	] 
