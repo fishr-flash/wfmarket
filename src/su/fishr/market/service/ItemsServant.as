@@ -619,8 +619,9 @@ package su.fishr.market.service
 				
 				autocost =  _weaponGroups[ i ].autobuy;
 				
+				///TODO: Отключена покупка по интеллектуальной цене здесь
 				/// покупка по интеллектуальной цене
-				if ( _weaponGroups[ i ].autobuy == 0 
+				/*if ( _weaponGroups[ i ].autobuy == 0 
 					&& _weaponGroups[ i ].lootdog == 0
 					&& willBePurchase( _weaponGroups[ i ].cost
 												, _weaponGroups[ i ].session_cost
@@ -628,7 +629,7 @@ package su.fishr.market.service
 				{
 						//_weaponGroups[ i ].autobuy = _weaponGroups[ i ].cost;
 						autocost = _weaponGroups[ i ].cost;
-				};
+				};*/
 				
 				if ( _weaponGroups[ i ].lootdog === 1 )
 				{
